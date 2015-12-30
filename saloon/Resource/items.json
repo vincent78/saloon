@@ -1,0 +1,92 @@
+ [
+  {
+  "icon": "",
+  "title": "系统UI组件",
+  "desc": "系统提供的UI组件的使用经验",
+  "subitems": [
+               {
+               "icon": "",
+               "title": "calculate the string size",
+               "desc": "计算指定字符串的宽和高",
+               "params": [],
+               "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "NSLayout",
+               "desc": "关于NSLayout的应用",
+               "params": [],
+               "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "UILabel",
+               "desc": "UILabel的应用：阴影文字 ，跳马灯...",
+               "params": [],
+               "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "UITableView",
+               "desc": "UITableView的内容",
+               "params": [],
+               "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "UICollectionView",
+               "desc": "表格控件",
+               "params": [],
+               "viewcontroller": ""
+               }
+               ],
+  "params": [],
+  "viewcontroller": ""
+  },
+  {
+  "icon": "",
+  "title": "视图",
+  "desc": "界面上小的视图",
+  "subitems": [
+               {
+               "icon": "",
+               "title": "矢量图",
+               "desc": "",
+               "params": [],
+               "viewcontroller": ""
+               }
+               ],
+  "params": [],
+  "viewcontroller": "FTTAppHelperDelegate"
+  },
+  {
+  "icon": "",
+  "title": "动画",
+  "desc": "所有动态效果的显示",
+  "params": [],
+  "viewcontroller": ""
+  },
+  {
+  "icon": "",
+  "title": "框架",
+  "desc": "框架运行相关内容",
+  "subitems": [
+               {
+               "icon": "",
+               "title": "导航栏",
+               "desc": "APP界面上的导航栏",
+               "params": [],
+               "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "界面跳转",
+               "desc": "ViewController之间的跳转",
+               "params": [],
+               "viewcontroller": ""
+               }
+               ],
+  "params": [],
+  "viewcontroller": "FTTAppHelperDelegate"
+  }
+  ]

@@ -1,0 +1,17 @@
+//
+//  saloon-Prefix.pch
+//  saloon
+//
+//  Created by vincent on 15/12/30.
+//  Copyright © 2015年 fruit. All rights reserved.
+//
+
+#ifndef saloon_Prefix_pch
+#define saloon_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "fertile.h"
+
+#endif /* saloon_Prefix_pch */
