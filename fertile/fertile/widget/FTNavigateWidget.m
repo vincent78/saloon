@@ -42,7 +42,6 @@
 
 - (void)widgetDidLoad
 {
-    [super widgetDidLoad];
     //标题
     _titleLabel = [[UILabel alloc] init];
     [self addSubview:_titleLabel];
@@ -60,7 +59,6 @@
 
 - (void)widgetWillAppear
 {
-    [super widgetWillAppear];
     _titleLabel.text = _title;
     
     if ([[FTRouteHelper sharedInstance] getCurrNav].viewControllers.count > 1 )
@@ -77,7 +75,6 @@
 
 - (void)widgetDidAppear
 {
-    [super widgetDidAppear];
     [_titleLabel sizeToFit];
     [_titleLabel centerInParent];
 }
@@ -99,7 +96,7 @@
 - (void)setNavTitle:(NSString*)title
 {
     _title = title;
-    if (self.hasAppeared) {
+    if (self.isAppear) {
         _titleLabel.text = _title;
         [_titleLabel sizeToFit];
         [_titleLabel centerInParent];
@@ -109,7 +106,7 @@
 - (void)setNavTitleLabel:(UILabel*)navTitleLabel
 {
     _titleLabel = navTitleLabel;
-    if (self.hasAppeared) {
+    if (self.isAppear) {
         [_titleLabel centerInParent];
     }
 }

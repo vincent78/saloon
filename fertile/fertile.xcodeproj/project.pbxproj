@@ -29,6 +29,10 @@
 		BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF15970B1C167244000B70D0 /* FTCornerView.h */; };
 		BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15970C1C167244000B70D0 /* FTCornerView.m */; };
 		BF1597571C1722BC000B70D0 /* common.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15973E1C171FCD000B70D0 /* common.ttf */; };
+		BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF19122D1C34CDD7007D9924 /* FTNavigateWidgetController.h */; };
+		BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19122E1C34CDD7007D9924 /* FTNavigateWidgetController.m */; };
+		BF1912331C34D0D2007D9924 /* FTBaseWidgetController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */; };
+		BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */; };
 		BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */; };
 		BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */; };
 		BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */; };
@@ -137,6 +141,10 @@
 		BF15970B1C167244000B70D0 /* FTCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCornerView.h; sourceTree = "<group>"; };
 		BF15970C1C167244000B70D0 /* FTCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCornerView.m; sourceTree = "<group>"; };
 		BF15973E1C171FCD000B70D0 /* common.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = common.ttf; path = Resource/common.ttf; sourceTree = "<group>"; };
+		BF19122D1C34CDD7007D9924 /* FTNavigateWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNavigateWidgetController.h; sourceTree = "<group>"; };
+		BF19122E1C34CDD7007D9924 /* FTNavigateWidgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNavigateWidgetController.m; sourceTree = "<group>"; };
+		BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseWidgetController.h; sourceTree = "<group>"; };
+		BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidgetController.m; sourceTree = "<group>"; };
 		BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDashLineWidget.h; sourceTree = "<group>"; };
 		BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDashLineWidget.m; sourceTree = "<group>"; };
 		BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fitSize.h"; sourceTree = "<group>"; };
@@ -300,6 +308,8 @@
 			children = (
 				BFB16F6C1BEB370500CEEBC9 /* FTNavigateWidget.h */,
 				BFB16F6D1BEB370500CEEBC9 /* FTNavigateWidget.m */,
+				BF19122D1C34CDD7007D9924 /* FTNavigateWidgetController.h */,
+				BF19122E1C34CDD7007D9924 /* FTNavigateWidgetController.m */,
 			);
 			path = navigate;
 			sourceTree = "<group>";
@@ -410,6 +420,8 @@
 				BFC8218A1BDE2CAC0066A77C /* FTWidget.h */,
 				BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */,
 				BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */,
+				BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */,
+				BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */,
 				BF51B6221C06F5D900D26E9B /* lineView */,
 				BF15970A1C16721A000B70D0 /* cornerView */,
 				BF51B6211C06F5A600D26E9B /* navigate */,
@@ -553,6 +565,7 @@
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */,
 				BFC821BD1BDE462E0066A77C /* UITableViewCell+normal.h in Headers */,
+				BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */,
 				BF1533BB1BE0B40F00809493 /* NSDictionary+json.h in Headers */,
 				BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */,
 				BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */,
@@ -563,6 +576,7 @@
 				BF1533B71BE0B30E00809493 /* NSArray+json.h in Headers */,
 				BF1533B31BE0A8CD00809493 /* NSString+json.h in Headers */,
 				BF1533C31BE0D15400809493 /* FTUtil.h in Headers */,
+				BF1912331C34D0D2007D9924 /* FTBaseWidgetController.h in Headers */,
 				BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */,
 				BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */,
 				BF51B6291C0709CA00D26E9B /* FT3DLineWidget.h in Headers */,
@@ -682,12 +696,14 @@
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
 				BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */,
 				BF43F6591BDDF24700A1389B /* FTBaseHelper.m in Sources */,
+				BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */,
 				BFFC5D561BE8BF3200F005F2 /* FTBaseVectorView.m in Sources */,
 				BF43F65D1BDDF26600A1389B /* FTAnimateHelper.m in Sources */,
 				BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */,
 				BFC821BE1BDE462E0066A77C /* UITableViewCell+normal.m in Sources */,
 				BFD1F2871BFC71DA00AFD63C /* FTLoggerHelper.m in Sources */,
 				BFFAD9121BE360A80050A21B /* NSArray+normal.m in Sources */,
+				BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */,
 				BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */,
 				BFFAD9171BE36AAF0050A21B /* NSString+file.m in Sources */,
 				BFFAD90E1BE35FFF0050A21B /* NSMutableArray+normal.m in Sources */,

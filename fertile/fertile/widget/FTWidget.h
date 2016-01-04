@@ -9,6 +9,10 @@
 #ifndef FTWidget_h
 #define FTWidget_h
 
+#import "FTBaseWidget.h"
+#import "FTBaseWidgetController.h"
+
+
 #import "FTImgBtn.h"
 
 #import "FTBaseVectorView.h"

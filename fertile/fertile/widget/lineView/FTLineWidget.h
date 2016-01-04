@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, FTLineType) {
+    FTLineOnePix = 0,
+    FTLine3D = 1,
+    FTLineDash = 2
+};
+
 @interface FTLineWidget : FTBaseWidget
 
 @property UIColor *strokeColor;

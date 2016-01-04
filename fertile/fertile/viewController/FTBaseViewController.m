@@ -66,74 +66,32 @@
     }
     [self.view addSubview:self.contentView];
     
-    for (int i=0;i<self.widgets.count;i++)
-    {
-        FTBaseWidget *widget = (FTBaseWidget *)[self.widgets safeObjectAtIndex:i];
-        if (!widget.hasDidLoad)
-            [widget widgetDidLoad];
-    }
     self.view.backgroundColor = [FTAppHelper sharedInstance].vcBackGroundColor;
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    
-    
-    for (int i=0;i<self.widgets.count;i++)
-    {
-        FTBaseWidget *widget = (FTBaseWidget *)[self.widgets safeObjectAtIndex:i];
-        if (!widget.hasAppeared)
-            [widget widgetWillAppear];
-    }
-    
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
-    for (int i=0;i<self.widgets.count;i++)
-    {
-        FTBaseWidget *widget = [self.widgets safeObjectAtIndex:i];
-        if (!widget.hasAppeared)
-            [widget widgetDidAppear];
-    }
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
-    for (int i=(int)self.widgets.count -1;i>= 0;i--)
-    {
-        FTBaseWidget *widget = [self.widgets safeObjectAtIndex:i];
-        if (widget.hasAppeared)
-            [widget widgetWillDisappear];
-    }
 }
 
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    for (int i=(int)self.widgets.count -1;i >= 0;i--)
-    {
-        FTBaseWidget *widget = [self.widgets safeObjectAtIndex:i];
-        if (widget.hasAppeared)
-            [widget widgetDidDisappear];
-    }
 }
 
 -(void)dealloc
 {
     self.ftNavWidget = nil;
-    
-//    for (int i=(int)self.widgets.count -1;i>= 0;i--)
-//    {
-//        FTBaseWidget *widget = [self.widgets safeObjectAtIndex:i];
-//        widget = nil;
-//    }
     [self.widgets removeAllObjects];
     self.widgets = nil;
     
