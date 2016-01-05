@@ -105,6 +105,16 @@
 		BF6C2B6E1C3A04EC00CDA1E8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */; };
 		BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */; };
 		BF6C2B701C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */; };
+		BF8343C91C3B578A0082A845 /* SXColorGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8343BF1C3B578A0082A845 /* SXColorGradientView.h */; };
+		BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8343C01C3B578A0082A845 /* SXColorGradientView.m */; };
+		BF8343CB1C3B578A0082A845 /* SXColorLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8343C11C3B578A0082A845 /* SXColorLabel.h */; };
+		BF8343CC1C3B578A0082A845 /* SXColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8343C21C3B578A0082A845 /* SXColorLabel.m */; };
+		BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8343C31C3B578A0082A845 /* SXMarquee.h */; };
+		BF8343CE1C3B578A0082A845 /* SXMarquee.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8343C41C3B578A0082A845 /* SXMarquee.m */; };
+		BF8343CF1C3B578A0082A845 /* UIColor+Separate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8343C51C3B578A0082A845 /* UIColor+Separate.h */; };
+		BF8343D01C3B578A0082A845 /* UIColor+Separate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8343C61C3B578A0082A845 /* UIColor+Separate.m */; };
+		BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8343C71C3B578A0082A845 /* UIColor+Wonderful.h */; };
+		BF8343D21C3B578A0082A845 /* UIColor+Wonderful.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8343C81C3B578A0082A845 /* UIColor+Wonderful.m */; };
 		BF8EAD041BD4E53F004A051D /* fertile.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EAD031BD4E53F004A051D /* fertile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF935AEA1BDE71E500824D6E /* FTRouteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF935AE81BDE71E500824D6E /* FTRouteHelper.h */; };
 		BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF935AE91BDE71E500824D6E /* FTRouteHelper.m */; };
@@ -261,6 +271,16 @@
 		BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		BF8343BF1C3B578A0082A845 /* SXColorGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXColorGradientView.h; sourceTree = "<group>"; };
+		BF8343C01C3B578A0082A845 /* SXColorGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXColorGradientView.m; sourceTree = "<group>"; };
+		BF8343C11C3B578A0082A845 /* SXColorLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXColorLabel.h; sourceTree = "<group>"; };
+		BF8343C21C3B578A0082A845 /* SXColorLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXColorLabel.m; sourceTree = "<group>"; };
+		BF8343C31C3B578A0082A845 /* SXMarquee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXMarquee.h; sourceTree = "<group>"; };
+		BF8343C41C3B578A0082A845 /* SXMarquee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXMarquee.m; sourceTree = "<group>"; };
+		BF8343C51C3B578A0082A845 /* UIColor+Separate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Separate.h"; sourceTree = "<group>"; };
+		BF8343C61C3B578A0082A845 /* UIColor+Separate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Separate.m"; sourceTree = "<group>"; };
+		BF8343C71C3B578A0082A845 /* UIColor+Wonderful.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Wonderful.h"; sourceTree = "<group>"; };
+		BF8343C81C3B578A0082A845 /* UIColor+Wonderful.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Wonderful.m"; sourceTree = "<group>"; };
 		BF8EAD001BD4E53F004A051D /* fertile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fertile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8EAD031BD4E53F004A051D /* fertile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fertile.h; sourceTree = "<group>"; };
 		BF8EAD051BD4E53F004A051D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -476,6 +496,23 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		BF8343BE1C3B578A0082A845 /* Wonderful */ = {
+			isa = PBXGroup;
+			children = (
+				BF8343BF1C3B578A0082A845 /* SXColorGradientView.h */,
+				BF8343C01C3B578A0082A845 /* SXColorGradientView.m */,
+				BF8343C11C3B578A0082A845 /* SXColorLabel.h */,
+				BF8343C21C3B578A0082A845 /* SXColorLabel.m */,
+				BF8343C31C3B578A0082A845 /* SXMarquee.h */,
+				BF8343C41C3B578A0082A845 /* SXMarquee.m */,
+				BF8343C51C3B578A0082A845 /* UIColor+Separate.h */,
+				BF8343C61C3B578A0082A845 /* UIColor+Separate.m */,
+				BF8343C71C3B578A0082A845 /* UIColor+Wonderful.h */,
+				BF8343C81C3B578A0082A845 /* UIColor+Wonderful.m */,
+			);
+			path = Wonderful;
+			sourceTree = "<group>";
+		};
 		BF8EACF61BD4E53F004A051D = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				BF6C2B2E1C3A04EC00CDA1E8 /* SDWebImage */,
+				BF8343BE1C3B578A0082A845 /* Wonderful */,
 				BFB57D151C33C0B4005187B6 /* Aspects */,
 				BF098CAF1C082E5F00ED81C3 /* ZipArchive */,
 			);
@@ -713,11 +751,14 @@
 				BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+normal.h in Headers */,
 				BFC821B61BDE45BF0066A77C /* NSString+size.h in Headers */,
 				BFC821AE1BDE45BF0066A77C /* NSData+Hash.h in Headers */,
+				BF8343CB1C3B578A0082A845 /* SXColorLabel.h in Headers */,
 				BF6C2B671C3A04EC00CDA1E8 /* UIImage+MultiFormat.h in Headers */,
+				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BF0B84741BE7322D009C76E1 /* FTAlertUtil.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */,
 				BFC821BD1BDE462E0066A77C /* UITableViewCell+normal.h in Headers */,
+				BF8343C91C3B578A0082A845 /* SXColorGradientView.h in Headers */,
 				BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */,
 				BF1533BB1BE0B40F00809493 /* NSDictionary+json.h in Headers */,
 				BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */,
@@ -758,6 +799,7 @@
 				BFB861D21BE6F8790051BE20 /* NSDate+normal.h in Headers */,
 				BF8EAD041BD4E53F004A051D /* fertile.h in Headers */,
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
+				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
 				BFFC5D551BE8BF3200F005F2 /* FTBaseVectorView.h in Headers */,
 				BF6C2B631C3A04EC00CDA1E8 /* UIButton+WebCache.h in Headers */,
 				BF6C2B5C1C3A04EC00CDA1E8 /* SDWebImageDownloaderOperation.h in Headers */,
@@ -778,6 +820,7 @@
 				BF6C2B581C3A04EC00CDA1E8 /* SDWebImageDecoder.h in Headers */,
 				BFC821B21BDE45BF0066A77C /* NSString+regExp.h in Headers */,
 				BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */,
+				BF8343CF1C3B578A0082A845 /* UIColor+Separate.h in Headers */,
 				BFC821C51BDE47920066A77C /* FTBaseViewController.h in Headers */,
 				BFB16F6E1BEB370500CEEBC9 /* FTNavigateWidget.h in Headers */,
 				BF43F6721BDE0BC900A1389B /* FTMaskWidget.h in Headers */,
@@ -878,9 +921,11 @@
 				BF6C2B621C3A04EC00CDA1E8 /* SDWebImagePrefetcher.m in Sources */,
 				BFFC5D561BE8BF3200F005F2 /* FTBaseVectorView.m in Sources */,
 				BF43F65D1BDDF26600A1389B /* FTAnimateHelper.m in Sources */,
+				BF8343CC1C3B578A0082A845 /* SXColorLabel.m in Sources */,
 				BF6C2B261C3A01DB00CDA1E8 /* FTIndicatorWidget.m in Sources */,
 				BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */,
 				BFC821BE1BDE462E0066A77C /* UITableViewCell+normal.m in Sources */,
+				BF8343CE1C3B578A0082A845 /* SXMarquee.m in Sources */,
 				BFD1F2871BFC71DA00AFD63C /* FTLoggerHelper.m in Sources */,
 				BFFAD9121BE360A80050A21B /* NSArray+normal.m in Sources */,
 				BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */,
@@ -908,6 +953,7 @@
 				BFC821AD1BDE45BF0066A77C /* NSData+base64.m in Sources */,
 				BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */,
 				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
+				BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */,
 				BF6C2B591C3A04EC00CDA1E8 /* SDWebImageDecoder.m in Sources */,
 				BF6C2B701C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m in Sources */,
 				BFB16F6F1BEB370500CEEBC9 /* FTNavigateWidget.m in Sources */,
@@ -916,8 +962,10 @@
 				BF1533B41BE0A8CD00809493 /* NSString+json.m in Sources */,
 				BFC821AF1BDE45BF0066A77C /* NSData+Hash.m in Sources */,
 				BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */,
+				BF8343D01C3B578A0082A845 /* UIColor+Separate.m in Sources */,
 				BF1533C71BE0D95300809493 /* FTFileUtil+md5.m in Sources */,
 				BFC821B51BDE45BF0066A77C /* NSString+Security.m in Sources */,
+				BF8343D21C3B578A0082A845 /* UIColor+Wonderful.m in Sources */,
 				BFB861D31BE6F8790051BE20 /* NSDate+normal.m in Sources */,
 				BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */,
 				BF6C2B551C3A04EC00CDA1E8 /* SDImageCache.m in Sources */,
