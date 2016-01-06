@@ -30,11 +30,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        self.widgets = [[NSMutableArray alloc] initWithCapacity:1];
+
         self.ftNavWidget = [[FTAppHelper sharedInstance] getNavWidget];
-        
-        if (self.ftNavWidget)
-            [self.widgets safeAddObject:self.ftNavWidget];
         
         self.showNav = YES;
         self.showStatusBar = YES;
@@ -92,9 +89,6 @@
 -(void)dealloc
 {
     self.ftNavWidget = nil;
-    [self.widgets removeAllObjects];
-    self.widgets = nil;
-    
     if (container)
     {
         [container removeFromSuperview];

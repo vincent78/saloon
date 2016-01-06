@@ -19,10 +19,6 @@
  */
 @property (nonatomic,strong) UIView *contentView;
 
-
-@property (nonatomic) NSMutableArray *widgets;
-
-
 #pragma mark - 导航栏相关
 
 /**

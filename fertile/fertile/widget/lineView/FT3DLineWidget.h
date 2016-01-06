@@ -10,7 +10,7 @@
 
 @interface FT3DLineWidget : FTBaseWidget
 
-@property UIColor *strokeColor;
+@property(assign) UIColor *strokeColor;
 
 /**
  *  @brief  画一横线

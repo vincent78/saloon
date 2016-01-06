@@ -34,12 +34,12 @@ typedef NS_ENUM(NSInteger, FTNavigateBtnType)
 /**
  *  @brief  右侧btn的数组（从右到左）
  */
-@property NSMutableArray *rightBtns;
+@property (nonatomic,copy) NSMutableArray *rightBtns;
 
 /**
  *  @brief  左侧btn的数组(从左到右)
  */
-@property NSMutableArray *leftBtns;
+@property (nonatomic,copy) NSMutableArray *leftBtns;
 
 
 

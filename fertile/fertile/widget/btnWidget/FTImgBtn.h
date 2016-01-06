@@ -15,13 +15,13 @@
  */
 @property (nonatomic,strong) NSString *key;
 
-@property NSString *fontName;
+@property(nonatomic,copy) NSString *fontName;
 
-@property NSString *imgName;
+@property(nonatomic,copy) NSString *imgName;
 
-@property UIColor *normalColor;
+@property(nonatomic,copy) UIColor *normalColor;
 
-@property UIColor *highlightColor;
+@property(nonatomic,copy) UIColor *highlightColor;
 
 //@property (nonatomic)
 

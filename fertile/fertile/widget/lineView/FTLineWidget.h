@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, FTLineType) {
 
 @interface FTLineWidget : FTBaseWidget
 
-@property UIColor *strokeColor;
+@property(assign) UIColor *strokeColor;
 
 /**
  *  @brief  画一横线
