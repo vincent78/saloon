@@ -22,15 +22,7 @@
  *  @return 为空则显示系统的导航栏
  */
 -(FTNavigateWidget *) prepareNavigateBar;
-/**
- *  @brief  As its name hints.
- */
--(void) appInit;
 
-/**
- *  @brief  As its name hints.
- */
--(void) appRelease;
 
 @end
 

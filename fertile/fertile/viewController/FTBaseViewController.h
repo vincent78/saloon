@@ -37,10 +37,4 @@
 @property (nonatomic) BOOL overlapNavAndStatusBar;
 
 
-
-
-
-
-
-
 @end

@@ -49,26 +49,20 @@ static FTAppHelper *sharedInstance = nil;
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
     
+#ifdef DEBUG
+    NSLog(@"app docPath :%@",[FTFileUtil getDocDirectory]);
     
-    NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
-    [FTSystemHelper loadFont:path];
-//    [FTSystemHelper printSysAllFontInfo];
-//    NSLog(path,nil);
+#endif
     
 }
 
 -(void)helperRelease
 {
-    if (self.delegate)
-    {
-        [self.delegate appRelease];
-    }
-    
     for (int i= ((int)helperArray.count -1); i>=0; i--) {
         FTBaseHelper *helper = [helperArray objectAtIndex:i];
         [helper helperRelease];
+        helper = nil;
     }
-    
     self.appDic = nil;
 }
 
@@ -145,7 +139,6 @@ static FTAppHelper *sharedInstance = nil;
     FTNavigateWidget * navWidget ;
     if (self.delegate)
     {
-        [self.delegate appInit];
         navWidget = [self.delegate prepareNavigateBar];
     }
     else

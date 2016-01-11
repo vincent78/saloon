@@ -36,9 +36,6 @@
 
 - (void)helperWillTerminate:(UIApplication*)application;
 
-
-
-
 @end
 
 @interface FTBaseHelper : NSObject <FTHelperProtocol>

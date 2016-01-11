@@ -10,4 +10,7 @@
 
 @interface FTNavigateWidgetController : FTBaseWidgetController
 
+
+
+
 @end

@@ -8,12 +8,6 @@
 
 #import "FTBaseViewController.h"
 
-@protocol FTTableViewDelegate<UITableViewDataSource>
-
-@required
-
-
-@end
 
 @interface FTTableViewController : FTBaseViewController<UITableViewDataSource,UITableViewDelegate>
 

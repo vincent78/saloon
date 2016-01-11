@@ -38,6 +38,14 @@ static FTSystemHelper* sharedInstance = nil;
 - (void)helperInit
 {
     [super helperInit];
+    NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
+    [FTSystemHelper loadFont:path];
+    
+#ifdef DEBUG
+    NSLog(@"screenHeight: %f",[FTSystemHelper screenHeight]);
+    NSLog(@"screenWidth: %f",[FTSystemHelper screenWidth]);
+    NSLog(@"scale:%f",[FTSystemHelper scale]);
+#endif
 }
 
 - (void)helperRelease
@@ -61,7 +69,7 @@ static FTSystemHelper* sharedInstance = nil;
 
 + (CGFloat)navBarHeight
 {
-    return 40.0f;
+    return 64.0f;
 }
 
 + (CGFloat)screenHeight

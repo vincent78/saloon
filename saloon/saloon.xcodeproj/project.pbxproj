@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B35F51C43A02300858C4C /* SNItemListScene.m */; };
 		BFB57CC71C3383BA005187B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC61C3383BA005187B6 /* main.m */; };
 		BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC91C3383BA005187B6 /* AppDelegate.m */; };
 		BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CD11C3383BA005187B6 /* Assets.xcassets */; };
-		BFB57CD51C3383BA005187B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CD31C3383BA005187B6 /* LaunchScreen.storyboard */; };
 		BFB57CE51C33846A005187B6 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CE41C33846A005187B6 /* items.json */; };
 		BFB57CEE1C3384F6005187B6 /* fertile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; };
 		BFB57CEF1C3384F6005187B6 /* fertile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BFFA40FF1C33C3D4009813BE /* SNAppHelperDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA40FE1C33C3D4009813BE /* SNAppHelperDelegate.m */; };
-		BFFA41031C33C46D009813BE /* SNItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFA41011C33C46D009813BE /* SNItemListViewController.m */; };
-		BFFA41041C33C46D009813BE /* SNItemListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFFA41021C33C46D009813BE /* SNItemListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF9B35F41C43A02300858C4C /* SNItemListScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNItemListScene.h; sourceTree = "<group>"; };
+		BF9B35F51C43A02300858C4C /* SNItemListScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNItemListScene.m; sourceTree = "<group>"; };
 		BFB57CC21C3383BA005187B6 /* saloon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saloon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB57CC61C3383BA005187B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BFB57CC81C3383BA005187B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,11 +67,6 @@
 		BFB57CE41C33846A005187B6 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		BFB57CE61C33848A005187B6 /* fertile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fertile.xcodeproj; path = ../../fertile/fertile.xcodeproj; sourceTree = "<group>"; };
 		BFB57CF61C338637005187B6 /* saloon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saloon-Prefix.pch"; sourceTree = "<group>"; };
-		BFFA40FD1C33C3D4009813BE /* SNAppHelperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNAppHelperDelegate.h; sourceTree = "<group>"; };
-		BFFA40FE1C33C3D4009813BE /* SNAppHelperDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNAppHelperDelegate.m; sourceTree = "<group>"; };
-		BFFA41001C33C46D009813BE /* SNItemListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNItemListViewController.h; sourceTree = "<group>"; };
-		BFFA41011C33C46D009813BE /* SNItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNItemListViewController.m; sourceTree = "<group>"; };
-		BFFA41021C33C46D009813BE /* SNItemListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNItemListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +109,8 @@
 				BFB57CD61C3383BA005187B6 /* Info.plist */,
 				BFB57CC51C3383BA005187B6 /* Supporting Files */,
 				BFB57CF61C338637005187B6 /* saloon-Prefix.pch */,
-				BFFA40FD1C33C3D4009813BE /* SNAppHelperDelegate.h */,
-				BFFA40FE1C33C3D4009813BE /* SNAppHelperDelegate.m */,
-				BFFA41001C33C46D009813BE /* SNItemListViewController.h */,
-				BFFA41011C33C46D009813BE /* SNItemListViewController.m */,
-				BFFA41021C33C46D009813BE /* SNItemListViewController.xib */,
+				BF9B35F41C43A02300858C4C /* SNItemListScene.h */,
+				BF9B35F51C43A02300858C4C /* SNItemListScene.m */,
 			);
 			path = saloon;
 			sourceTree = "<group>";
@@ -233,9 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB57CE51C33846A005187B6 /* items.json in Resources */,
-				BFB57CD51C3383BA005187B6 /* LaunchScreen.storyboard in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
-				BFFA41041C33C46D009813BE /* SNItemListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFA41031C33C46D009813BE /* SNItemListViewController.m in Sources */,
-				BFFA40FF1C33C3D4009813BE /* SNAppHelperDelegate.m in Sources */,
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
+				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

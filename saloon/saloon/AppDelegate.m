@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "SNAppHelperDelegate.h"
-#import "SNItemListViewController.h"
+#import "SNItemListScene.h"
 #import "NSString+RACKeyPathUtilities.h"
 
 @interface AppDelegate ()
@@ -22,12 +21,9 @@
     // Override point for customization after application launch.
     [[FTAppHelper sharedInstance] helper:application didFinishLaunchingWithOptions:launchOptions];
     
-    [FTAppHelper sharedInstance].delegate = [SNAppHelperDelegate new];
-    
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [FTRouteHelper sharedInstance].getCurrNav;
-    [[FTRouteHelper sharedInstance] pushWithVC:[SNItemListViewController new]];
+    [[FTRouteHelper sharedInstance] pushWithVC:[SNItemListScene new]];
     
     [self.window makeKeyAndVisible];
     

@@ -1,30 +1,28 @@
 //
-//  SNItemListViewController.m
+//  SNItemListScene.m
 //  saloon
 //
-//  Created by vincent on 15/12/30.
-//  Copyright © 2015年 fruit. All rights reserved.
+//  Created by vincent on 16/1/11.
+//  Copyright © 2016年 fruit. All rights reserved.
 //
 
-#import "SNItemListViewController.h"
+#import "SNItemListScene.h"
 
-@interface SNItemListViewController ()
+@interface SNItemListScene ()
 
 @end
 
-@implementation SNItemListViewController
+@implementation SNItemListScene
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"Demo信息"];
     [self prepareItems];
+    [self setExtraCellLineHidden:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
-
 
 
 -(void) prepareItems
@@ -39,10 +37,26 @@
 
 
 #pragma mark - tableview
+
+/**
+ *  @brief 去掉多余的分隔线
+ *
+ *  @param tableView <#tableView description#>
+ */
+- (void)setExtraCellLineHidden: (UITableView *)tableView
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.items ? self.items.count : 0;
 }
+
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -72,10 +86,15 @@
     NSArray *subItems =  [[self.items objectAtIndex:indexPath.row] objectForKey:@"subitems"];
     if (subItems && subItems.count>0)
     {
-        SNItemListViewController *itemListVC = [[SNItemListViewController alloc] init];
+        SNItemListScene *itemListVC = [[SNItemListScene alloc] init];
         itemListVC.items = subItems;
         [[FTRouteHelper sharedInstance] pushWithVC:itemListVC];
     }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0f;
 }
 
 @end

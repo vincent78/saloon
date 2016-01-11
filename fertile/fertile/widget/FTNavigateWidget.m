@@ -191,18 +191,12 @@
     if (!arrowView)
     {
         //生成回退的图片
-//        arrowView = [[FTBaseVectorView alloc] initWithFrame:CGRectMake(self.leftPadding, 0, 20, 20)
-//                                             fontFamilyName:@"iconfont"
-//                                                   fontName:@"\U0000e679"];
-        
         arrowView = [[FTBaseVectorView alloc] initWithFrame:CGRectMake(self.leftPadding, 0, 20, 20)
                                              fontFamilyName:@"common"
                                                    fontName:@"\U0000e616"];
         
         
     }
-//    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, [FTSystemHelper navBarHeight])];
-//    backBtn.backgroundColor = [UIColor yellowColor];
     [self addSubview:arrowView];
 }
 

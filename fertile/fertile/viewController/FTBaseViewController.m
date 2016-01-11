@@ -23,22 +23,12 @@
 
 -(instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (!nibNameOrNil)
-    {
-        nibNameOrNil = NSStringFromClass([self class]);
-    }
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-
-        self.ftNavWidget = [[FTAppHelper sharedInstance] getNavWidget];
-        
         self.showNav = YES;
         self.showStatusBar = YES;
         self.overlapNavAndStatusBar = NO;
-        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0
-                                                                   , [FTSystemHelper screenWidth]
-                                                                   , [FTSystemHelper screenHeight])];
         
     }
     return self;
@@ -52,18 +42,20 @@
     return self;
 }
 
+
+
+
 -(void)viewDidLoad
 {
     [super viewDidLoad];
     
-    //加载导航栏
-    if (self.showNav)
-    {
-        [self appendNavBar];
-    }
+    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0
+                                                                , [FTSystemHelper screenWidth]
+                                                                , [FTSystemHelper screenHeight])];
     [self.view addSubview:self.contentView];
-    
     self.view.backgroundColor = [FTAppHelper sharedInstance].vcBackGroundColor;
+    //导航栏相关
+    [self appendNavBar];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -106,6 +98,12 @@
 
 -(void) appendNavBar
 {
+    if (!self.showNav)
+    {
+        return;
+    }
+    
+    float navTop = 0;
     if (!self.ftNavWidget)
     {
         [self.navigationController setNavigationBarHidden:NO];
@@ -113,31 +111,18 @@
     else
     {
         [self.navigationController setNavigationBarHidden:YES];
-    }
         
-    float navTop = 0;
-    if (self.showStatusBar && !self.overlapNavAndStatusBar)
-    {
-        navTop = [FTSystemHelper statusBarHeight];
+        if (self.showStatusBar && !self.overlapNavAndStatusBar)
+        {
+            navTop = [FTSystemHelper statusBarHeight];
+        }
+        self.ftNavWidget.ftTop = navTop;
+        [self.view addSubview:self.ftNavWidget];
     }
-    self.ftNavWidget.ftTop = navTop;
-    [self.view addSubview:self.ftNavWidget];
-    
-    
     self.contentView.frame = CGRectMake(0
                                         , navTop + [FTSystemHelper navBarHeight]
                                         , [FTSystemHelper screenWidth]
                                         , [FTSystemHelper screenHeight] - navTop - [FTSystemHelper navBarHeight]);
+    
 }
-
-
--(void) setTitle:(NSString *)title
-{
-    [super setTitle:title];
-    [self.ftNavWidget setNavTitle:title];
-}
-
-
-
-
 @end

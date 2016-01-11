@@ -185,4 +185,23 @@
           addConstraints:
           [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics views:dict]];
 }
+
+-(void) fillInView:(UIView *)pView
+{
+    if (!pView)
+        return;
+    [pView addSubview:self];
+    //    NSDictionary *dict = NSDictionaryOfVariableBindings (self);
+    [self setTranslatesAutoresizingMaskIntoConstraints:NO];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:self,@"selfView", nil];
+    NSDictionary *metrics = @{ @"hPadding": @0, @"vPadding": @0 };
+    NSString *vfl1 = @"H:|-hPadding-[selfView]-hPadding-|";
+    NSString *vfl2 = @"V:|-vPadding-[selfView]-vPadding-|";
+    [pView
+     addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:vfl1 options:0 metrics:metrics views:dict]];
+    [pView
+     addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics views:dict]];
+}
 @end

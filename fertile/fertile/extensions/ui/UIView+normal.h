@@ -66,4 +66,11 @@
  */
 -(void)fillInParent;
 
+/**
+ *  @brief As its name hints
+ *
+ *  @param pView <#pView description#>
+ */
+-(void) fillInView:(UIView *)pView;
+
 @end
