@@ -69,7 +69,7 @@ static FTSystemHelper* sharedInstance = nil;
 
 + (CGFloat)navBarHeight
 {
-    return 64.0f;
+    return 44.0f;
 }
 
 + (CGFloat)screenHeight
@@ -103,7 +103,7 @@ static FTSystemHelper* sharedInstance = nil;
 
 + (void)printSysAllFontInfo
 {
-    NSLog(@"===================");
+    NSLog(@"======================================");
     for (NSString* fontfamilyname in [UIFont familyNames]) {
         NSLog(@"family:'%@'", fontfamilyname);
         for (NSString* fontName in [UIFont fontNamesForFamilyName:fontfamilyname]) {
@@ -111,7 +111,7 @@ static FTSystemHelper* sharedInstance = nil;
         }
         NSLog(@"-------------");
     }
-    NSLog(@"===================");
+    NSLog(@"======================================");
 }
 
 + (void)loadFont:(NSString*)fontFile
