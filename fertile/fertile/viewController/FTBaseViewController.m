@@ -103,7 +103,7 @@
         return;
     }
     
-    float navTop = 0;
+
     if (!self.ftNavWidget)
     {
         [self.navigationController setNavigationBarHidden:NO];
@@ -111,18 +111,19 @@
     else
     {
         [self.navigationController setNavigationBarHidden:YES];
-        
+        float navTop = 0;
         if (self.showStatusBar && !self.overlapNavAndStatusBar)
         {
             navTop = [FTSystemHelper statusBarHeight];
         }
         self.ftNavWidget.ftTop = navTop;
         [self.view addSubview:self.ftNavWidget];
+        self.contentView.frame = CGRectMake(0
+                                            , navTop + [FTSystemHelper navBarHeight]
+                                            , [FTSystemHelper screenWidth]
+                                            , [FTSystemHelper screenHeight] - navTop - [FTSystemHelper navBarHeight]);
+
     }
-    self.contentView.frame = CGRectMake(0
-                                        , navTop + [FTSystemHelper navBarHeight]
-                                        , [FTSystemHelper screenWidth]
-                                        , [FTSystemHelper screenHeight] - navTop - [FTSystemHelper navBarHeight]);
     
 }
 @end
