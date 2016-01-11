@@ -11,3 +11,4 @@
 #import "RACSignal+Operations.h"
 #import "RACStream.h"
 #import "RACSubscriber.h"
+#import "RACSubject.h"

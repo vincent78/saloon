@@ -52,8 +52,8 @@ static FTAppHelper *sharedInstance = nil;
     
     NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
     [FTSystemHelper loadFont:path];
-    [FTSystemHelper printSysAllFontInfo];
-    NSLog(path,nil);
+//    [FTSystemHelper printSysAllFontInfo];
+//    NSLog(path,nil);
     
 }
 

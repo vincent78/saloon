@@ -216,7 +216,7 @@
 		BF52E57A1C3CE1950052A107 /* RACUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4B21C3CE1950052A107 /* RACUnit.m */; };
 		BF52E57B1C3CE1950052A107 /* RACValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4B31C3CE1950052A107 /* RACValueTransformer.h */; };
 		BF52E57C1C3CE1950052A107 /* RACValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4B41C3CE1950052A107 /* RACValueTransformer.m */; };
-		BF52E57D1C3CE1950052A107 /* ReactiveCocoa-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4B51C3CE1950052A107 /* ReactiveCocoa-Bridging-Header.h */; };
+		BF52E57D1C3CE1950052A107 /* ReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4B51C3CE1950052A107 /* ReactiveCocoa.h */; };
 		BF52E57E1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4B61C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h */; };
 		BF52E57F1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4B71C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m */; };
 		BF52E5801C3CE1950052A107 /* UIAlertView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4B81C3CE1950052A107 /* UIAlertView+RACSignalSupport.h */; };
@@ -574,7 +574,7 @@
 		BF52E4B21C3CE1950052A107 /* RACUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACUnit.m; sourceTree = "<group>"; };
 		BF52E4B31C3CE1950052A107 /* RACValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACValueTransformer.h; sourceTree = "<group>"; };
 		BF52E4B41C3CE1950052A107 /* RACValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACValueTransformer.m; sourceTree = "<group>"; };
-		BF52E4B51C3CE1950052A107 /* ReactiveCocoa-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF52E4B51C3CE1950052A107 /* ReactiveCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoa.h; sourceTree = "<group>"; };
 		BF52E4B61C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BF52E4B71C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BF52E4B81C3CE1950052A107 /* UIAlertView+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+RACSignalSupport.h"; sourceTree = "<group>"; };
@@ -968,7 +968,7 @@
 				BF52E4B21C3CE1950052A107 /* RACUnit.m */,
 				BF52E4B31C3CE1950052A107 /* RACValueTransformer.h */,
 				BF52E4B41C3CE1950052A107 /* RACValueTransformer.m */,
-				BF52E4B51C3CE1950052A107 /* ReactiveCocoa-Bridging-Header.h */,
+				BF52E4B51C3CE1950052A107 /* ReactiveCocoa.h */,
 				BF52E4B61C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h */,
 				BF52E4B71C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m */,
 				BF52E4B81C3CE1950052A107 /* UIAlertView+RACSignalSupport.h */,
@@ -1404,7 +1404,7 @@
 				BF1533C31BE0D15400809493 /* FTUtil.h in Headers */,
 				BF52E5131C3CE1950052A107 /* NSUserDefaults+RACSupport.h in Headers */,
 				BF52E4E01C3CE1950052A107 /* metamacros.h in Headers */,
-				BF52E57D1C3CE1950052A107 /* ReactiveCocoa-Bridging-Header.h in Headers */,
+				BF52E57D1C3CE1950052A107 /* ReactiveCocoa.h in Headers */,
 				BF52E5321C3CE1950052A107 /* RACErrorSignal.h in Headers */,
 				BF52E5661C3CE1950052A107 /* RACSubject.h in Headers */,
 				BF1912331C34D0D2007D9924 /* FTBaseWidgetController.h in Headers */,

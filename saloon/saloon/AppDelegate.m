@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SNAppHelperDelegate.h"
 #import "SNItemListViewController.h"
+#import "NSString+RACKeyPathUtilities.h"
 
 @interface AppDelegate ()
 
@@ -27,10 +28,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [FTRouteHelper sharedInstance].getCurrNav;
     [[FTRouteHelper sharedInstance] pushWithVC:[SNItemListViewController new]];
-    
-    //    NSLog(@"[%@]",[@"这" toUnicode]);
-    //    NSLog(@"[%@]",[@"\u8fd9" fromUnicode]);
-    
     
     [self.window makeKeyAndVisible];
     
