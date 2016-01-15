@@ -153,4 +153,19 @@
 }
 
 
+- (NSInteger)getWeek
+{
+    NSCalendar *calendar = [NSDate getCurrentCalendar];
+    
+    NSInteger unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfMonth |
+    NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    
+    NSDateComponents *comps = [calendar components:unitFlags fromDate:self];
+    NSInteger week = [comps weekday];
+    
+    return week;
+}
+
+
+
 @end

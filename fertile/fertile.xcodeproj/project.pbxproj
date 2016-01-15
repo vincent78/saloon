@@ -738,21 +738,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF098CAF1C082E5F00ED81C3 /* ZipArchive */ = {
-			isa = PBXGroup;
-			children = (
-				BF098CB01C082E5F00ED81C3 /* minizip */,
-			);
-			path = ZipArchive;
-			sourceTree = "<group>";
-		};
-		BF098CB01C082E5F00ED81C3 /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
 		BF15970A1C16721A000B70D0 /* cornerView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1235,7 +1220,6 @@
 				BF6C2B2E1C3A04EC00CDA1E8 /* SDWebImage */,
 				BF8343BE1C3B578A0082A845 /* Wonderful */,
 				BFB57D151C33C0B4005187B6 /* Aspects */,
-				BF098CAF1C082E5F00ED81C3 /* ZipArchive */,
 			);
 			path = Dependency;
 			sourceTree = "<group>";

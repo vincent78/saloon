@@ -45,13 +45,52 @@
   },
   {
   "icon": "",
-  "title": "视图",
-  "desc": "界面上小的视图",
+  "title": "自定义或扩展的组件",
+  "desc": "自定义或扩展界面上小的视图",
   "subitems": [
                {
                "icon": "",
-               "title": "矢量图",
+               "title": "图片相关",
                "desc": "",
+               "subitems":[
+                   {
+                   "icon": "",
+                   "title": "fontIcon",
+                   "desc": "使用font方式使用icon",
+                   "params": [],
+                   "viewcontroller": ""
+                   }
+                   ,{
+                   "icon": "",
+                   "title": "ftImage",
+                   "desc": "本地图片，远程图片，图片的缓存，压缩等功能",
+                   "params": [],
+                   "viewcontroller": ""
+                   }
+               ],
+               "params": [],
+               "viewcontroller": ""
+               }
+               ,{
+               "icon": "",
+               "title": "线条相关",
+               "desc": "",
+               "subitems":[
+                   {
+                   "icon": "",
+                   "title": "单像素线条",
+                   "desc": "最细的线条",
+                   "params": [],
+                   "viewcontroller": ""
+                   }
+                   ,{
+                   "icon": "",
+                   "title": "3D的线条",
+                   "desc": "其实就是两根单像素线条",
+                   "params": [],
+                   "viewcontroller": ""
+                   }
+                   ],
                "params": [],
                "viewcontroller": ""
                }
@@ -63,13 +102,23 @@
   "icon": "",
   "title": "动画",
   "desc": "所有动态效果的显示",
+  "subitems": [
+               {
+               "icon": "",
+               "title": "转圈",
+               "desc": "图片按顺时针进行转动",
+               "params": [],
+               "viewcontroller": "SNCycleAnimationViewController"
+               }
+  
+  ],
   "params": [],
   "viewcontroller": ""
   },
   {
   "icon": "",
-  "title": "框架",
-  "desc": "框架运行相关内容",
+  "title": "功能性的展示",
+  "desc": "功能性的相关内容",
   "subitems": [
                {
                "icon": "",

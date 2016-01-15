@@ -86,12 +86,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *subItems =  [[self.items objectAtIndex:indexPath.row] objectForKey:@"subitems"];
+    NSDictionary *item = [self.items objectAtIndex:indexPath.row];
+    
+    NSArray *subItems =  [item objectForKey:@"subitems"];
     if (subItems && subItems.count>0)
     {
         SNItemListScene *itemListVC = [[SNItemListScene alloc] init];
         itemListVC.items = subItems;
         [[FTRouteHelper sharedInstance] pushWithVC:itemListVC];
+    }
+    else
+    {
+        NSString * vcName = [item objectForKey:@"viewcontroller"];
+        if (![NSString isNilOrEmpty:vcName])
+        {
+            [[FTRouteHelper sharedInstance] pushWithClass:NSClassFromString(vcName)];
+        }
     }
 }
 

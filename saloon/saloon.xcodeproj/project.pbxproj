@@ -14,6 +14,8 @@
 		BFB57CE51C33846A005187B6 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CE41C33846A005187B6 /* items.json */; };
 		BFB57CEE1C3384F6005187B6 /* fertile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; };
 		BFB57CEF1C3384F6005187B6 /* fertile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFBE5ADE1C478BE000CF84EC /* SNCycleAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBE5ADC1C478BE000CF84EC /* SNCycleAnimationViewController.m */; };
+		BFBE5ADF1C478BE000CF84EC /* SNCycleAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFBE5ADD1C478BE000CF84EC /* SNCycleAnimationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		BFB57CE41C33846A005187B6 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		BFB57CE61C33848A005187B6 /* fertile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fertile.xcodeproj; path = ../../fertile/fertile.xcodeproj; sourceTree = "<group>"; };
 		BFB57CF61C338637005187B6 /* saloon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saloon-Prefix.pch"; sourceTree = "<group>"; };
+		BFBE5ADB1C478BE000CF84EC /* SNCycleAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCycleAnimationViewController.h; sourceTree = "<group>"; };
+		BFBE5ADC1C478BE000CF84EC /* SNCycleAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCycleAnimationViewController.m; sourceTree = "<group>"; };
+		BFBE5ADD1C478BE000CF84EC /* SNCycleAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNCycleAnimationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFB3E6121C45E2100041E614 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				BFB3E6131C45E2360041E614 /* image */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		BFB3E6131C45E2360041E614 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		BFB57CB91C3383BA005187B6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +122,8 @@
 		BFB57CC41C3383BA005187B6 /* saloon */ = {
 			isa = PBXGroup;
 			children = (
+				BFBE5ADA1C478B8E00CF84EC /* animation */,
+				BFB3E6121C45E2100041E614 /* widget */,
 				BFB57CC81C3383BA005187B6 /* AppDelegate.h */,
 				BFB57CC91C3383BA005187B6 /* AppDelegate.m */,
 				BFB57CD11C3383BA005187B6 /* Assets.xcassets */,
@@ -145,6 +167,16 @@
 				BFB57CEB1C33848A005187B6 /* fertile.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBE5ADA1C478B8E00CF84EC /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				BFBE5ADB1C478BE000CF84EC /* SNCycleAnimationViewController.h */,
+				BFBE5ADC1C478BE000CF84EC /* SNCycleAnimationViewController.m */,
+				BFBE5ADD1C478BE000CF84EC /* SNCycleAnimationViewController.xib */,
+			);
+			path = animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +257,7 @@
 			files = (
 				BFB57CE51C33846A005187B6 /* items.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
+				BFBE5ADF1C478BE000CF84EC /* SNCycleAnimationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +270,7 @@
 			files = (
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
+				BFBE5ADE1C478BE000CF84EC /* SNCycleAnimationViewController.m in Sources */,
 				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

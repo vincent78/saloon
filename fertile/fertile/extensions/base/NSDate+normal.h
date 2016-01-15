@@ -121,6 +121,13 @@ typedef NS_ENUM(NSInteger,FTDATEFIELD) {
  *  @return <#return value description#>
  */
 - (NSDate *)getFirstDateOfMonth;
-
+/**
+ *  @brief 星期几数字索引. 从周日开始，如果date是nil，返回-1
+ *
+ *  @param date <#date description#>
+ *
+ *  @return <#return value description#>
+ */
+- (NSInteger)getWeek;
 
 @end
