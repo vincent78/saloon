@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */; };
+		BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */; };
 		BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B35F51C43A02300858C4C /* SNItemListScene.m */; };
 		BFB57CC71C3383BA005187B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC61C3383BA005187B6 /* main.m */; };
 		BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC91C3383BA005187B6 /* AppDelegate.m */; };
@@ -57,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_city_switch_circle@3x.png"; sourceTree = "<group>"; };
+		BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_switch_circle@2x.png"; sourceTree = "<group>"; };
 		BF9B35F41C43A02300858C4C /* SNItemListScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNItemListScene.h; sourceTree = "<group>"; };
 		BF9B35F51C43A02300858C4C /* SNItemListScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNItemListScene.m; sourceTree = "<group>"; };
 		BFB57CC21C3383BA005187B6 /* saloon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saloon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF5432901C4C833B00BA9C5C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */,
+				BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		BFB3E6121C45E2100041E614 /* widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +169,7 @@
 		BFB57CE31C33842D005187B6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BF5432901C4C833B00BA9C5C /* image */,
 				BFB57CE41C33846A005187B6 /* items.json */,
 			);
 			path = Resource;
@@ -258,6 +272,8 @@
 				BFB57CE51C33846A005187B6 /* items.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
 				BFBE5ADF1C478BE000CF84EC /* SNCycleAnimationViewController.xib in Resources */,
+				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
+				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

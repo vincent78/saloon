@@ -105,8 +105,8 @@
   "subitems": [
                {
                "icon": "",
-               "title": "转圈",
-               "desc": "图片按顺时针进行转动",
+               "title": "CABasicAnimation",
+               "desc": "简单的动画",
                "params": [],
                "viewcontroller": "SNCycleAnimationViewController"
                }

@@ -10,6 +10,8 @@
 
 @interface SNCycleAnimationViewController ()
 
+@property (strong, nonatomic) IBOutlet UIImageView *circleImg;
+
 @end
 
 @implementation SNCycleAnimationViewController
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+//    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +27,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)circleAction:(id)sender {
+    CABasicAnimation * swapAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    swapAnimation.duration = 0.5;
+    swapAnimation.removedOnCompletion = YES;
+    swapAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+    swapAnimation.toValue = [NSNumber numberWithFloat:M_PI];
+    [self.circleImg.layer addAnimation:swapAnimation forKey:@"transform.rotation"];
 }
-*/
 
 @end

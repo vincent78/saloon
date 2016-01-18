@@ -48,7 +48,8 @@
     self.tableView = [[UITableView alloc] init];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [self.tableView fillInView:self.contentView];
+    self.tableView.frame = self.contentFrame;
+    [self.view addSubview:self.tableView];
 }
 
 -(void)viewDidAppear:(BOOL)animated

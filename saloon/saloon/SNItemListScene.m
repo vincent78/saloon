@@ -35,6 +35,11 @@
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self formatLastCellSeparatorLine];
+}
+
 
 #pragma mark - tableview
 
@@ -45,9 +50,24 @@
  */
 - (void)setExtraCellLineHidden: (UITableView *)tableView
 {
-    UIView *view = [UIView new];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
     view.backgroundColor = [UIColor clearColor];
     [tableView setTableFooterView:view];
+}
+
+-(void) formatLastCellSeparatorLine
+{
+    UITableViewCell *cell = [self.tableView.visibleCells lastObject];
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+    
+    if([cell respondsToSelector:@selector(setPreservesSuperviewLayoutMargins:)]){
+        [cell setPreservesSuperviewLayoutMargins:NO];
+    }
 }
 
 
@@ -61,6 +81,10 @@
     return 0;
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -100,7 +124,9 @@
         NSString * vcName = [item objectForKey:@"viewcontroller"];
         if (![NSString isNilOrEmpty:vcName])
         {
-            [[FTRouteHelper sharedInstance] pushWithClass:NSClassFromString(vcName)];
+            FTBaseViewController *vc = [NSClassFromString(vcName) new];
+//            [[FTRouteHelper sharedInstance] pushWithClass:NSClassFromString(vcName)];
+            [[FTRouteHelper sharedInstance] pushWithVC:vc];
         }
     }
 }

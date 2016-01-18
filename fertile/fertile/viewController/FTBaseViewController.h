@@ -17,7 +17,9 @@
 /**
  *  @brief  内容容器
  */
-@property (nonatomic,strong) UIView *contentView;
+//@property (nonatomic,strong) UIView *contentView;
+
+@property (nonatomic,assign) CGRect contentFrame;
 
 #pragma mark - 导航栏相关
 

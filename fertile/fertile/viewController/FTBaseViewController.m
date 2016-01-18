@@ -29,7 +29,7 @@
         self.showNav = YES;
         self.showStatusBar = YES;
         self.overlapNavAndStatusBar = NO;
-        
+        self.contentFrame = CGRectMake(0, 0, [FTSystemHelper screenWidth], [FTSystemHelper screenHeight]);
     }
     return self;
 }
@@ -49,10 +49,10 @@
 {
     [super viewDidLoad];
     
-    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0
-                                                                , [FTSystemHelper screenWidth]
-                                                                , [FTSystemHelper screenHeight])];
-    [self.view addSubview:self.contentView];
+//    self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0
+//                                                                , [FTSystemHelper screenWidth]
+//                                                                , [FTSystemHelper screenHeight])];
+//    [self.view addSubview:self.contentView];
     self.view.backgroundColor = [FTAppHelper sharedInstance].vcBackGroundColor;
     //导航栏相关
     [self appendNavBar];
@@ -102,8 +102,6 @@
     {
         return;
     }
-    
-
     if (!self.ftNavWidget)
     {
         [self.navigationController setNavigationBarHidden:NO];
@@ -117,8 +115,8 @@
             navTop = [FTSystemHelper statusBarHeight];
         }
         self.ftNavWidget.ftTop = navTop;
-        [self.view addSubview:self.ftNavWidget];
-        self.contentView.frame = CGRectMake(0
+        [self.view addSubview:self.ftNavWidget];        
+        self.contentFrame = CGRectMake(0
                                             , navTop + [FTSystemHelper navBarHeight]
                                             , [FTSystemHelper screenWidth]
                                             , [FTSystemHelper screenHeight] - navTop - [FTSystemHelper navBarHeight]);
