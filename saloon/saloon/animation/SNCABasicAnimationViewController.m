@@ -1,25 +1,23 @@
 //
-//  SNCycleAnimationViewController.m
+//  SNCABasicAnimationViewController.m
 //  saloon
 //
-//  Created by vincent on 16/1/14.
+//  Created by vincent on 16/1/18.
 //  Copyright © 2016年 fruit. All rights reserved.
 //
 
-#import "SNCycleAnimationViewController.h"
+#import "SNCABasicAnimationViewController.h"
 
-@interface SNCycleAnimationViewController ()
-
+@interface SNCABasicAnimationViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *circleImg;
 
 @end
 
-@implementation SNCycleAnimationViewController
+@implementation SNCABasicAnimationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-//    self.view.backgroundColor = [UIColor yellowColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,5 +33,6 @@
     swapAnimation.toValue = [NSNumber numberWithFloat:M_PI];
     [self.circleImg.layer addAnimation:swapAnimation forKey:@"transform.rotation"];
 }
+
 
 @end

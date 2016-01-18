@@ -108,7 +108,7 @@
                "title": "CABasicAnimation",
                "desc": "简单的动画",
                "params": [],
-               "viewcontroller": "SNCycleAnimationViewController"
+               "viewcontroller": "SNCABasicAnimationViewController"
                }
   
   ],
