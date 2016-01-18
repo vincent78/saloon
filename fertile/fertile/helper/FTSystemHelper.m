@@ -22,6 +22,7 @@
 #pragma mark - single
 
 static FTSystemHelper* sharedInstance = nil;
+static NSMutableArray* ftFontArray = nil;
 
 + (FTSystemHelper*)sharedInstance
 {
@@ -39,7 +40,7 @@ static FTSystemHelper* sharedInstance = nil;
 {
     [super helperInit];
     NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
-    [FTSystemHelper loadFont:path];
+    [FTSystemHelper registFont:path];
     
 #ifdef DEBUG
     NSLog(@"screenHeight: %f",[FTSystemHelper screenHeight]);
@@ -52,6 +53,12 @@ static FTSystemHelper* sharedInstance = nil;
 {
 
     [super helperRelease];
+    
+    [ftFontArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [FTSystemHelper unregistFont:(NSString *)obj];
+    }];
+    [ftFontArray removeAllObjects];
+    ftFontArray = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -114,8 +121,20 @@ static FTSystemHelper* sharedInstance = nil;
     NSLog(@"======================================");
 }
 
-+ (void)loadFont:(NSString*)fontFile
++ (void)registFont:(NSString*)fontFile
 {
+    if (!ftFontArray)
+    {
+        ftFontArray = [NSMutableArray arrayWithCapacity:1];
+    }
+    else
+    {
+        if ([ftFontArray containsObject:fontFile])
+        {
+            return;
+        }
+    }
+    
     NSURL* url = [NSURL fileURLWithPath:fontFile];
     CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
     if (fontDataProvider == NULL)
@@ -123,6 +142,35 @@ static FTSystemHelper* sharedInstance = nil;
     CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
     CFErrorRef error;
     if (!CTFontManagerRegisterGraphicsFont(newFont, &error)) {
+        CFStringRef errorDescription = CFErrorCopyDescription(error);
+        NSLog(@"Failed to load font: %@", errorDescription);
+        CFRelease(errorDescription);
+    }
+    else
+    {
+        [ftFontArray addObject:fontFile];
+    }
+    CFRelease(newFont);
+    CFRelease(fontDataProvider);
+    
+    
+}
+
++ (void) unregistFont:(NSString *)fontFile
+{
+    
+    if (!ftFontArray || [ftFontArray containsObject:fontFile])
+    {
+        return;
+    }
+    
+    NSURL* url = [NSURL fileURLWithPath:fontFile];
+    CGDataProviderRef fontDataProvider = CGDataProviderCreateWithURL((__bridge CFURLRef)url);
+    if (fontDataProvider == NULL)
+        return;
+    CGFontRef newFont = CGFontCreateWithDataProvider(fontDataProvider);
+    CFErrorRef error;
+    if (!CTFontManagerUnregisterGraphicsFont(newFont, &error)) {
         CFStringRef errorDescription = CFErrorCopyDescription(error);
         NSLog(@"Failed to load font: %@", errorDescription);
         CFRelease(errorDescription);

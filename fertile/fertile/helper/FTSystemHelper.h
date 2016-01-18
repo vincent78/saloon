@@ -82,9 +82,13 @@
  *
  *  @param fontFile <#fontFile description#>
  */
-+(void)loadFont:(NSString *)fontFile;
-
-
++(void)registFont:(NSString *)fontFile;
+/**
+ *  @brief 动态卸载字体
+ *
+ *  @param fontName <#fontName description#>
+ */
++(void)unregistFont:(NSString *)fontFile;
 
 #pragma mark - 内存相关
 

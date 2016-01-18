@@ -255,6 +255,8 @@
 		BF52E5A11C3CE1950052A107 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4D91C3CE1950052A107 /* UITextField+RACSignalSupport.m */; };
 		BF52E5A21C3CE1950052A107 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4DA1C3CE1950052A107 /* UITextView+RACSignalSupport.h */; };
 		BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */; };
+		BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5432B11C4CB72500BA9C5C /* UIImage+font.h */; };
+		BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B21C4CB72500BA9C5C /* UIImage+font.m */; };
 		BF6C2B1D1C3A00F300CDA1E8 /* FTIconFontWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1B1C3A00F300CDA1E8 /* FTIconFontWidget.h */; };
 		BF6C2B1E1C3A00F300CDA1E8 /* FTIconFontWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B1C1C3A00F300CDA1E8 /* FTIconFontWidget.m */; };
 		BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */; };
@@ -613,6 +615,8 @@
 		BF52E4D91C3CE1950052A107 /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BF52E4DA1C3CE1950052A107 /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		BF5432B11C4CB72500BA9C5C /* UIImage+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+font.h"; sourceTree = "<group>"; };
+		BF5432B21C4CB72500BA9C5C /* UIImage+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+font.m"; sourceTree = "<group>"; };
 		BF6C2B1B1C3A00F300CDA1E8 /* FTIconFontWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIconFontWidget.h; sourceTree = "<group>"; };
 		BF6C2B1C1C3A00F300CDA1E8 /* FTIconFontWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIconFontWidget.m; sourceTree = "<group>"; };
 		BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImageWidget.h; sourceTree = "<group>"; };
@@ -1008,6 +1012,15 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
+		BF5432A81C4CB38600BA9C5C /* image */ = {
+			isa = PBXGroup;
+			children = (
+				BF5432B11C4CB72500BA9C5C /* UIImage+font.h */,
+				BF5432B21C4CB72500BA9C5C /* UIImage+font.m */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		BF6C2B1A1C3A00AD00CDA1E8 /* imageWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -1184,6 +1197,7 @@
 				BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */,
 				BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */,
 				BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */,
+				BF5432A81C4CB38600BA9C5C /* image */,
 				BF6C2B1A1C3A00AD00CDA1E8 /* imageWidget */,
 				BF51B6221C06F5D900D26E9B /* lineView */,
 				BF15970A1C16721A000B70D0 /* cornerView */,
@@ -1449,6 +1463,7 @@
 				BF52E5361C3CE1950052A107 /* RACGroupedSignal.h in Headers */,
 				BF52E4DF1C3CE1950052A107 /* EXTScope.h in Headers */,
 				BFC821BF1BDE462E0066A77C /* UIView+normal.h in Headers */,
+				BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */,
 				BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */,
 				BF52E54E1C3CE1950052A107 /* RACReturnSignal.h in Headers */,
 				BFB861D21BE6F8790051BE20 /* NSDate+normal.h in Headers */,
@@ -1580,6 +1595,7 @@
 				BF52E54D1C3CE1950052A107 /* RACReplaySubject.m in Sources */,
 				BF52E5231C3CE1950052A107 /* RACDelegateProxy.m in Sources */,
 				BF52E58F1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.m in Sources */,
+				BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */,
 				BF52E5651C3CE1950052A107 /* RACStringSequence.m in Sources */,
 				BF52E5631C3CE1950052A107 /* RACStream.m in Sources */,
 				BF52E5331C3CE1950052A107 /* RACErrorSignal.m in Sources */,
