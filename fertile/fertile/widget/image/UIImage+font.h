@@ -10,17 +10,9 @@
 
 @interface UIImage (font)
 
-/**
- *  @brief 加载字体文件
- *
- *  @param fontFilePath <#fontFilePath description#>
- */
-+(void) registFont:(NSString *)fontFilePath;
-
-
-
--(void) initWithText:(NSString *)text;
-
--(void) initWithText:(NSString *)text withFont:(NSString *)font;
+-(instancetype) initWithText:(NSString *)text
+            withFont:(NSString *)font
+           withFrame:(CGRect) frame
+           withColor:(UIColor *)color;
 
 @end

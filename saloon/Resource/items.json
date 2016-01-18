@@ -58,7 +58,7 @@
                    "title": "fontIcon",
                    "desc": "使用font方式使用icon",
                    "params": [],
-                   "viewcontroller": ""
+                   "viewcontroller": "SNFontImgViewController"
                    }
                    ,{
                    "icon": "",

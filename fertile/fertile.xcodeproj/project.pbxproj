@@ -257,8 +257,6 @@
 		BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */; };
 		BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5432B11C4CB72500BA9C5C /* UIImage+font.h */; };
 		BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B21C4CB72500BA9C5C /* UIImage+font.m */; };
-		BF6C2B1D1C3A00F300CDA1E8 /* FTIconFontWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1B1C3A00F300CDA1E8 /* FTIconFontWidget.h */; };
-		BF6C2B1E1C3A00F300CDA1E8 /* FTIconFontWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B1C1C3A00F300CDA1E8 /* FTIconFontWidget.m */; };
 		BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */; };
 		BF6C2B221C3A010C00CDA1E8 /* FTImageWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */; };
 		BF6C2B251C3A01DB00CDA1E8 /* FTIndicatorWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */; };
@@ -617,8 +615,6 @@
 		BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BF5432B11C4CB72500BA9C5C /* UIImage+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+font.h"; sourceTree = "<group>"; };
 		BF5432B21C4CB72500BA9C5C /* UIImage+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+font.m"; sourceTree = "<group>"; };
-		BF6C2B1B1C3A00F300CDA1E8 /* FTIconFontWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIconFontWidget.h; sourceTree = "<group>"; };
-		BF6C2B1C1C3A00F300CDA1E8 /* FTIconFontWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIconFontWidget.m; sourceTree = "<group>"; };
 		BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImageWidget.h; sourceTree = "<group>"; };
 		BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTImageWidget.m; sourceTree = "<group>"; };
 		BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIndicatorWidget.h; sourceTree = "<group>"; };
@@ -1024,8 +1020,6 @@
 		BF6C2B1A1C3A00AD00CDA1E8 /* imageWidget */ = {
 			isa = PBXGroup;
 			children = (
-				BF6C2B1B1C3A00F300CDA1E8 /* FTIconFontWidget.h */,
-				BF6C2B1C1C3A00F300CDA1E8 /* FTIconFontWidget.m */,
 				BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */,
 				BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */,
 				BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */,
@@ -1384,7 +1378,6 @@
 				BF52E57B1C3CE1950052A107 /* RACValueTransformer.h in Headers */,
 				BF6C2B561C3A04EC00CDA1E8 /* SDWebImageCompat.h in Headers */,
 				BF1533C61BE0D95300809493 /* FTFileUtil+md5.h in Headers */,
-				BF6C2B1D1C3A00F300CDA1E8 /* FTIconFontWidget.h in Headers */,
 				BF52E59E1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */,
 				BF52E4DD1C3CE1950052A107 /* EXTRuntimeExtensions.h in Headers */,
 				BF52E5A01C3CE1950052A107 /* UITextField+RACSignalSupport.h in Headers */,
@@ -1664,7 +1657,6 @@
 				BF6C2B6E1C3A04EC00CDA1E8 /* UIImageView+WebCache.m in Sources */,
 				BFFAD9171BE36AAF0050A21B /* NSString+file.m in Sources */,
 				BF52E51A1C3CE1950052A107 /* RACBlockTrampoline.m in Sources */,
-				BF6C2B1E1C3A00F300CDA1E8 /* FTIconFontWidget.m in Sources */,
 				BF6C2B5B1C3A04EC00CDA1E8 /* SDWebImageDownloader.m in Sources */,
 				BFFAD90E1BE35FFF0050A21B /* NSMutableArray+normal.m in Sources */,
 				BF52E4FA1C3CE1950052A107 /* NSObject+RACDeallocating.m in Sources */,

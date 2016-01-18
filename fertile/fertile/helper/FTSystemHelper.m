@@ -42,7 +42,9 @@ static NSMutableArray* ftFontArray = nil;
     NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
     [FTSystemHelper registFont:path];
     
-#ifdef DEBUG
+//    [FTSystemHelper printSysAllFontInfo];
+    
+#ifdef DEBUGr
     NSLog(@"screenHeight: %f",[FTSystemHelper screenHeight]);
     NSLog(@"screenWidth: %f",[FTSystemHelper screenWidth]);
     NSLog(@"scale:%f",[FTSystemHelper scale]);

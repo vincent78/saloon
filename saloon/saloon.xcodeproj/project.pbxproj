@@ -11,6 +11,10 @@
 		BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */; };
 		BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */; };
 		BF5432A51C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5432A31C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib */; };
+		BF5432B71C4CC9BB00BA9C5C /* SNFontImgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B61C4CC9BB00BA9C5C /* SNFontImgViewController.m */; };
+		BF5432BB1C4CCA6700BA9C5C /* SNFontImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B91C4CCA6700BA9C5C /* SNFontImgCell.m */; };
+		BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF5432BA1C4CCA6700BA9C5C /* SNFontImgCell.xib */; };
+		BF5432BE1C4CCEEA00BA9C5C /* FontImgItem.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5432BD1C4CCEEA00BA9C5C /* FontImgItem.json */; };
 		BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9B35F51C43A02300858C4C /* SNItemListScene.m */; };
 		BFB57CC71C3383BA005187B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC61C3383BA005187B6 /* main.m */; };
 		BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC91C3383BA005187B6 /* AppDelegate.m */; };
@@ -64,6 +68,12 @@
 		BF5432A11C4CACE500BA9C5C /* SNCABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCABasicAnimationViewController.h; sourceTree = "<group>"; };
 		BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNCABasicAnimationViewController.m; sourceTree = "<group>"; };
 		BF5432A31C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNCABasicAnimationViewController.xib; sourceTree = "<group>"; };
+		BF5432B51C4CC9BB00BA9C5C /* SNFontImgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNFontImgViewController.h; sourceTree = "<group>"; };
+		BF5432B61C4CC9BB00BA9C5C /* SNFontImgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFontImgViewController.m; sourceTree = "<group>"; };
+		BF5432B81C4CCA6700BA9C5C /* SNFontImgCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNFontImgCell.h; sourceTree = "<group>"; };
+		BF5432B91C4CCA6700BA9C5C /* SNFontImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFontImgCell.m; sourceTree = "<group>"; };
+		BF5432BA1C4CCA6700BA9C5C /* SNFontImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNFontImgCell.xib; sourceTree = "<group>"; };
+		BF5432BD1C4CCEEA00BA9C5C /* FontImgItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FontImgItem.json; sourceTree = "<group>"; };
 		BF9B35F41C43A02300858C4C /* SNItemListScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNItemListScene.h; sourceTree = "<group>"; };
 		BF9B35F51C43A02300858C4C /* SNItemListScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNItemListScene.m; sourceTree = "<group>"; };
 		BFB57CC21C3383BA005187B6 /* saloon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saloon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +120,11 @@
 		BFB3E6131C45E2360041E614 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				BF5432B51C4CC9BB00BA9C5C /* SNFontImgViewController.h */,
+				BF5432B61C4CC9BB00BA9C5C /* SNFontImgViewController.m */,
+				BF5432B81C4CCA6700BA9C5C /* SNFontImgCell.h */,
+				BF5432B91C4CCA6700BA9C5C /* SNFontImgCell.m */,
+				BF5432BA1C4CCA6700BA9C5C /* SNFontImgCell.xib */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -171,6 +186,7 @@
 			children = (
 				BF5432901C4C833B00BA9C5C /* image */,
 				BFB57CE41C33846A005187B6 /* items.json */,
+				BF5432BD1C4CCEEA00BA9C5C /* FontImgItem.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -270,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB57CE51C33846A005187B6 /* items.json in Resources */,
+				BF5432BE1C4CCEEA00BA9C5C /* FontImgItem.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
 				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
+				BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */,
 				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
 				BF5432A51C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib in Resources */,
 			);
@@ -284,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5432B71C4CC9BB00BA9C5C /* SNFontImgViewController.m in Sources */,
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
 				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 				BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */,
+				BF5432BB1C4CCA6700BA9C5C /* SNFontImgCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

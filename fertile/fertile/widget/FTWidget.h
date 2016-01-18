@@ -26,6 +26,8 @@
 #import "FTNavigateWidget.h"
 
 
+#import "UIImage+font.h"
+
 
 
 

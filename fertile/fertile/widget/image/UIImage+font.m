@@ -10,4 +10,19 @@
 
 @implementation UIImage (font)
 
+-(instancetype) initWithText:(NSString *)text
+            withFont:(NSString *)font
+           withFrame:(CGRect) frame
+           withColor:(UIColor *)color
+{
+    FTBaseVectorView *tmpView = [[FTBaseVectorView alloc] initWithFrame:frame
+                                                         fontFamilyName:font
+                                                               fontName:text
+                                                              fontColor:color];
+    self = tmpView.toImage;
+//    tmpView = nil;
+    return self;
+}
+
+
 @end

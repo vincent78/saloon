@@ -45,6 +45,21 @@
     fontFamilyName:(NSString *)fontFamily
           fontName:(NSString *)fontName;
 
+/**
+ *  @brief 初始化矢量图
+ *
+ *  @param frame       图像大小
+ *  @param fontFamily1 图片Family（字体类型）
+ *  @param fontName1   图片内容（字体内容）
+ *  @param fontColor1  颜色
+ *
+ *  @return 矢量图
+ */
+- (id)initWithFrame:(CGRect)frame
+     fontFamilyName:(NSString*)fontFamily1
+           fontName:(NSString*)fontName1
+          fontColor:(UIColor *)fontColor1;
+
 
 /**
  *  @brief  转成UIImage
