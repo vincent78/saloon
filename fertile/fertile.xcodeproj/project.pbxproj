@@ -358,8 +358,8 @@
 		BFFAD9171BE36AAF0050A21B /* NSString+file.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9151BE36AAF0050A21B /* NSString+file.m */; };
 		BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9181BE370BD0050A21B /* FTThreadHelper.h */; };
 		BFFAD91B1BE370BD0050A21B /* FTThreadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9191BE370BD0050A21B /* FTThreadHelper.m */; };
-		BFFC5D551BE8BF3200F005F2 /* FTBaseVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFC5D531BE8BF3200F005F2 /* FTBaseVectorView.h */; };
-		BFFC5D561BE8BF3200F005F2 /* FTBaseVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC5D541BE8BF3200F005F2 /* FTBaseVectorView.m */; };
+		BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFC5D531BE8BF3200F005F2 /* FTVectorView.h */; };
+		BFFC5D561BE8BF3200F005F2 /* FTVectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFC5D541BE8BF3200F005F2 /* FTVectorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -723,8 +723,8 @@
 		BFFAD9151BE36AAF0050A21B /* NSString+file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+file.m"; sourceTree = "<group>"; };
 		BFFAD9181BE370BD0050A21B /* FTThreadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTThreadHelper.h; sourceTree = "<group>"; };
 		BFFAD9191BE370BD0050A21B /* FTThreadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTThreadHelper.m; sourceTree = "<group>"; };
-		BFFC5D531BE8BF3200F005F2 /* FTBaseVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseVectorView.h; sourceTree = "<group>"; };
-		BFFC5D541BE8BF3200F005F2 /* FTBaseVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseVectorView.m; sourceTree = "<group>"; };
+		BFFC5D531BE8BF3200F005F2 /* FTVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTVectorView.h; sourceTree = "<group>"; };
+		BFFC5D541BE8BF3200F005F2 /* FTVectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTVectorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1317,8 +1317,8 @@
 		BFFC5D521BE8BEE400F005F2 /* vectorView */ = {
 			isa = PBXGroup;
 			children = (
-				BFFC5D531BE8BF3200F005F2 /* FTBaseVectorView.h */,
-				BFFC5D541BE8BF3200F005F2 /* FTBaseVectorView.m */,
+				BFFC5D531BE8BF3200F005F2 /* FTVectorView.h */,
+				BFFC5D541BE8BF3200F005F2 /* FTVectorView.m */,
 			);
 			path = vectorView;
 			sourceTree = "<group>";
@@ -1463,7 +1463,7 @@
 				BF8EAD041BD4E53F004A051D /* fertile.h in Headers */,
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
 				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
-				BFFC5D551BE8BF3200F005F2 /* FTBaseVectorView.h in Headers */,
+				BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */,
 				BF6C2B631C3A04EC00CDA1E8 /* UIButton+WebCache.h in Headers */,
 				BF52E5791C3CE1950052A107 /* RACUnit.h in Headers */,
 				BF6C2B5C1C3A04EC00CDA1E8 /* SDWebImageDownloaderOperation.h in Headers */,
@@ -1634,7 +1634,7 @@
 				BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */,
 				BF52E59D1C3CE1950052A107 /* UITableViewCell+RACSignalSupport.m in Sources */,
 				BF6C2B621C3A04EC00CDA1E8 /* SDWebImagePrefetcher.m in Sources */,
-				BFFC5D561BE8BF3200F005F2 /* FTBaseVectorView.m in Sources */,
+				BFFC5D561BE8BF3200F005F2 /* FTVectorView.m in Sources */,
 				BF43F65D1BDDF26600A1389B /* FTAnimateHelper.m in Sources */,
 				BF8343CC1C3B578A0082A845 /* SXColorLabel.m in Sources */,
 				BF6C2B261C3A01DB00CDA1E8 /* FTIndicatorWidget.m in Sources */,

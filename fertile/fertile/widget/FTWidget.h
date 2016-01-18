@@ -15,7 +15,7 @@
 
 #import "FTImgBtn.h"
 
-#import "FTBaseVectorView.h"
+#import "FTVectorView.h"
 
 #import "FTMaskWidget.h"
 

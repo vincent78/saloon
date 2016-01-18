@@ -10,7 +10,7 @@
 
 #define MainFontFileNameForVectorLabel @"iconfont"
 
-@interface FTBaseVectorView : FTBaseWidget
+@interface FTVectorView : FTBaseWidget
 
 /**
  @private 不建议直接使用

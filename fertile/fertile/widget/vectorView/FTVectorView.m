@@ -6,16 +6,16 @@
 //  Copyright © 2015年 fruit. All rights reserved.
 //
 
-#import "FTBaseVectorView.h"
+#import "FTVectorView.h"
 
-@interface FTBaseVectorView ()
+@interface FTVectorView ()
 
 @property (strong, nonatomic) UILabel* vectorLabel;
 @property (strong, nonatomic) UIFont* vectorLabelFont;
 
 @end
 
-@implementation FTBaseVectorView
+@implementation FTVectorView
 
 @synthesize fontColor;
 @synthesize fontContentSize;

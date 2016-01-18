@@ -11,7 +11,7 @@
 @interface FTNavigateWidget () {
     NSString* _title;
     UILabel* _titleLabel;
-    FTBaseVectorView *arrowView;
+    FTVectorView *arrowView;
     
     
 }
@@ -191,7 +191,7 @@
     if (!arrowView)
     {
         //生成回退的图片
-        arrowView = [[FTBaseVectorView alloc] initWithFrame:CGRectMake(self.leftPadding, 0, 20, 20)
+        arrowView = [[FTVectorView alloc] initWithFrame:CGRectMake(self.leftPadding, 0, 20, 20)
                                              fontFamilyName:@"common"
                                                    fontName:@"\U0000e616"];
         

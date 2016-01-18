@@ -15,7 +15,7 @@
            withFrame:(CGRect) frame
            withColor:(UIColor *)color
 {
-    FTBaseVectorView *tmpView = [[FTBaseVectorView alloc] initWithFrame:frame
+    FTVectorView *tmpView = [[FTVectorView alloc] initWithFrame:frame
                                                          fontFamilyName:font
                                                                fontName:text
                                                               fontColor:color];
