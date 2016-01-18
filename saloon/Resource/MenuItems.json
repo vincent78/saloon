@@ -138,4 +138,12 @@
   "params": [],
   "viewcontroller": "FTTAppHelperDelegate"
   }
+  ,  {
+  "icon": "",
+  "title": "测试使用的VC",
+  "desc": "这个是开发中的VC",
+  "subitems": [],
+  "params": [],
+  "viewcontroller": "SNTestViewController"
+  }
   ]

@@ -19,9 +19,11 @@
 		BFB57CC71C3383BA005187B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC61C3383BA005187B6 /* main.m */; };
 		BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57CC91C3383BA005187B6 /* AppDelegate.m */; };
 		BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CD11C3383BA005187B6 /* Assets.xcassets */; };
-		BFB57CE51C33846A005187B6 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CE41C33846A005187B6 /* items.json */; };
+		BFB57CE51C33846A005187B6 /* MenuItems.json in Resources */ = {isa = PBXBuildFile; fileRef = BFB57CE41C33846A005187B6 /* MenuItems.json */; };
 		BFB57CEE1C3384F6005187B6 /* fertile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; };
 		BFB57CEF1C3384F6005187B6 /* fertile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFD777541C4CDDF800E35DDA /* SNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD777521C4CDDF800E35DDA /* SNTestViewController.m */; };
+		BFD777551C4CDDF800E35DDA /* SNTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD777531C4CDDF800E35DDA /* SNTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,9 +85,12 @@
 		BFB57CD11C3383BA005187B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB57CD41C3383BA005187B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFB57CD61C3383BA005187B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFB57CE41C33846A005187B6 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		BFB57CE41C33846A005187B6 /* MenuItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuItems.json; sourceTree = "<group>"; };
 		BFB57CE61C33848A005187B6 /* fertile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fertile.xcodeproj; path = ../../fertile/fertile.xcodeproj; sourceTree = "<group>"; };
 		BFB57CF61C338637005187B6 /* saloon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "saloon-Prefix.pch"; sourceTree = "<group>"; };
+		BFD777511C4CDDF800E35DDA /* SNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTestViewController.h; sourceTree = "<group>"; };
+		BFD777521C4CDDF800E35DDA /* SNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNTestViewController.m; sourceTree = "<group>"; };
+		BFD777531C4CDDF800E35DDA /* SNTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +166,9 @@
 				BFB57CF61C338637005187B6 /* saloon-Prefix.pch */,
 				BF9B35F41C43A02300858C4C /* SNItemListScene.h */,
 				BF9B35F51C43A02300858C4C /* SNItemListScene.m */,
+				BFD777511C4CDDF800E35DDA /* SNTestViewController.h */,
+				BFD777521C4CDDF800E35DDA /* SNTestViewController.m */,
+				BFD777531C4CDDF800E35DDA /* SNTestViewController.xib */,
 			);
 			path = saloon;
 			sourceTree = "<group>";
@@ -185,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5432901C4C833B00BA9C5C /* image */,
-				BFB57CE41C33846A005187B6 /* items.json */,
+				BFB57CE41C33846A005187B6 /* MenuItems.json */,
 				BF5432BD1C4CCEEA00BA9C5C /* FontImgItem.json */,
 			);
 			path = Resource;
@@ -285,7 +293,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB57CE51C33846A005187B6 /* items.json in Resources */,
+				BFB57CE51C33846A005187B6 /* MenuItems.json in Resources */,
+				BFD777551C4CDDF800E35DDA /* SNTestViewController.xib in Resources */,
 				BF5432BE1C4CCEEA00BA9C5C /* FontImgItem.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
 				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
@@ -304,6 +313,7 @@
 			files = (
 				BF5432B71C4CC9BB00BA9C5C /* SNFontImgViewController.m in Sources */,
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
+				BFD777541C4CDDF800E35DDA /* SNTestViewController.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
 				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 				BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */,

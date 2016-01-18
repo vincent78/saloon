@@ -29,7 +29,7 @@
 {
     if (!self.items || self.items.count == 0)
     {
-        NSString *tmpFileFullName = [[NSBundle mainBundle] pathForResource:@"items" ofType:@"json"];
+        NSString *tmpFileFullName = [[NSBundle mainBundle] pathForResource:@"MenuItems" ofType:@"json"];
         if ([FTFileUtil exist:tmpFileFullName])
             self.items = [FTFileUtil readArrayFromFile:tmpFileFullName];
     }
