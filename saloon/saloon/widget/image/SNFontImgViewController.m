@@ -62,10 +62,10 @@
 {
     SNFontImgCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellNibName forIndexPath:indexPath];
     NSDictionary *itemDic = [items objectAtIndex:indexPath.row];
-    UIImage *img = [[UIImage alloc] initWithText:@"\U0000E62C"//[itemDic objectForKey:@"txt2"]
-                                        withFont:@"common"
-                                       withFrame:CGRectMake(0, 0, 70, 70)
-                                       withColor:[UIColor clearColor]];
+
+    FTVectorView *img = [[FTVectorView alloc] initWithFrame:CGRectMake(0, 0, 70, 70)
+                                             fontFamilyName:@"common"
+                                                   fontName:@"\U0000e62c"];
     [cell initWithImg:img
              withTxt1:[itemDic objectForKey:@"txt1"]
              withTxt2:[itemDic objectForKey:@"txt2"]

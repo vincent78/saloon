@@ -13,15 +13,16 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uhr-B1-Feq">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAN-2a-fa8">
                         <rect key="frame" x="5" y="5" width="70" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="3CC-R4-szb"/>
-                            <constraint firstAttribute="height" constant="70" id="gha-Of-6EE"/>
+                            <constraint firstAttribute="height" constant="70" id="T1y-wL-9cM"/>
+                            <constraint firstAttribute="width" constant="70" id="f6W-ng-Fbc"/>
                         </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdf-8l-4Ka">
-                        <rect key="frame" x="80" y="5" width="65" height="20"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdf-8l-4Ka">
+                        <rect key="frame" x="80" y="5" width="95" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="XD9-aw-yy0"/>
                         </constraints>
@@ -29,14 +30,14 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRT-Pc-itl">
-                        <rect key="frame" x="80" y="30" width="65" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRT-Pc-itl">
+                        <rect key="frame" x="80" y="30" width="95" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-JP-7ZD">
-                        <rect key="frame" x="80" y="55" width="65" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzP-JP-7ZD">
+                        <rect key="frame" x="80" y="55" width="95" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="vyE-Eh-rM7"/>
                         </constraints>
@@ -48,22 +49,22 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="JRT-Pc-itl" firstAttribute="leading" secondItem="Uhr-B1-Feq" secondAttribute="trailing" constant="5" id="2ca-Se-QpL"/>
-                <constraint firstItem="Uhr-B1-Feq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="3LE-VL-Xn7"/>
-                <constraint firstItem="Uhr-B1-Feq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="9Tn-Sd-vYl"/>
+                <constraint firstItem="JRT-Pc-itl" firstAttribute="leading" secondItem="AAN-2a-fa8" secondAttribute="trailing" constant="5" id="91E-cW-QV7"/>
+                <constraint firstItem="XzP-JP-7ZD" firstAttribute="leading" secondItem="AAN-2a-fa8" secondAttribute="trailing" constant="5" id="9c1-7Q-ncE"/>
                 <constraint firstItem="JRT-Pc-itl" firstAttribute="top" secondItem="gdf-8l-4Ka" secondAttribute="bottom" constant="5" id="E4S-nf-6dy"/>
                 <constraint firstAttribute="trailing" secondItem="XzP-JP-7ZD" secondAttribute="trailing" constant="5" id="Fc1-Da-Upz"/>
+                <constraint firstItem="AAN-2a-fa8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="R4j-XQ-iYc"/>
                 <constraint firstItem="gdf-8l-4Ka" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Zmo-eg-q76"/>
-                <constraint firstItem="gdf-8l-4Ka" firstAttribute="leading" secondItem="Uhr-B1-Feq" secondAttribute="trailing" constant="5" id="ais-8x-oys"/>
                 <constraint firstItem="XzP-JP-7ZD" firstAttribute="top" secondItem="JRT-Pc-itl" secondAttribute="bottom" constant="5" id="e2h-OD-Avd"/>
+                <constraint firstAttribute="bottom" secondItem="AAN-2a-fa8" secondAttribute="bottom" constant="5" id="hZc-WQ-6av"/>
                 <constraint firstAttribute="trailing" secondItem="gdf-8l-4Ka" secondAttribute="trailing" constant="5" id="jzG-aA-00q"/>
                 <constraint firstAttribute="bottom" secondItem="XzP-JP-7ZD" secondAttribute="bottom" constant="5" id="od9-q2-U4z"/>
-                <constraint firstItem="XzP-JP-7ZD" firstAttribute="leading" secondItem="Uhr-B1-Feq" secondAttribute="trailing" constant="5" id="q0r-AM-TWG"/>
-                <constraint firstAttribute="bottom" secondItem="Uhr-B1-Feq" secondAttribute="bottom" constant="5" id="q8n-1N-J1o"/>
+                <constraint firstItem="AAN-2a-fa8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="qVd-ZF-Xut"/>
+                <constraint firstItem="gdf-8l-4Ka" firstAttribute="leading" secondItem="AAN-2a-fa8" secondAttribute="trailing" constant="5" id="s8S-bI-CJ0"/>
                 <constraint firstAttribute="trailing" secondItem="JRT-Pc-itl" secondAttribute="trailing" constant="5" id="stP-Zn-DgN"/>
             </constraints>
             <connections>
-                <outlet property="img" destination="Uhr-B1-Feq" id="VFI-Cw-hdb"/>
+                <outlet property="img" destination="AAN-2a-fa8" id="Q7v-Ux-bHU"/>
                 <outlet property="label1" destination="gdf-8l-4Ka" id="rwh-qe-LOf"/>
                 <outlet property="label2" destination="JRT-Pc-itl" id="yvm-Js-mgf"/>
                 <outlet property="label3" destination="XzP-JP-7ZD" id="QCp-nE-sDp"/>

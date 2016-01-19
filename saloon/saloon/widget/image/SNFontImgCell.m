@@ -21,9 +21,9 @@
     return CGSizeMake(180, 80);
 }
 
--(void) initWithImg:(UIImage *)img withTxt1:(NSString *)txt1 withTxt2:(NSString *)txt2 withTxt3:(NSString *)txt3
+-(void) initWithImg:(UIView *)img withTxt1:(NSString *)txt1 withTxt2:(NSString *)txt2 withTxt3:(NSString *)txt3
 {
-    self.img.image = img;
+    self.img = img;
     self.label1.text = txt1;
     self.label2.text = txt2;
     self.label3.text = txt3;
