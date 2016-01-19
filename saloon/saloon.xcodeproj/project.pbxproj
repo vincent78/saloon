@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF30EB581C4E34F50032FB9D /* SNUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */; };
+		BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */; };
 		BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */; };
 		BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */; };
 		BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */; };
@@ -65,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF30EB551C4E34F50032FB9D /* SNUIViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUIViewAnimationViewController.h; sourceTree = "<group>"; };
+		BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUIViewAnimationViewController.m; sourceTree = "<group>"; };
+		BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNUIViewAnimationViewController.xib; sourceTree = "<group>"; };
 		BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_city_switch_circle@3x.png"; sourceTree = "<group>"; };
 		BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_switch_circle@2x.png"; sourceTree = "<group>"; };
 		BF5432A11C4CACE500BA9C5C /* SNCABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCABasicAnimationViewController.h; sourceTree = "<group>"; };
@@ -213,6 +218,9 @@
 				BF5432A11C4CACE500BA9C5C /* SNCABasicAnimationViewController.h */,
 				BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */,
 				BF5432A31C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib */,
+				BF30EB551C4E34F50032FB9D /* SNUIViewAnimationViewController.h */,
+				BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */,
+				BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */,
 			);
 			path = animation;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 				BFD777551C4CDDF800E35DDA /* SNTestViewController.xib in Resources */,
 				BF5432BE1C4CCEEA00BA9C5C /* FontImgItem.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
+				BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */,
 				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
 				BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */,
 				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
@@ -318,6 +327,7 @@
 				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 				BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */,
 				BF5432BB1C4CCA6700BA9C5C /* SNFontImgCell.m in Sources */,
+				BF30EB581C4E34F50032FB9D /* SNUIViewAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
