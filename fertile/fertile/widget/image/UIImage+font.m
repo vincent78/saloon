@@ -20,7 +20,6 @@
                                                                fontName:text
                                                               fontColor:color];
     self = tmpView.toImage;
-//    tmpView = nil;
     return self;
 }
 

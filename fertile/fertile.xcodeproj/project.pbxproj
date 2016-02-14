@@ -615,6 +615,7 @@
 		BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BF5432B11C4CB72500BA9C5C /* UIImage+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+font.h"; sourceTree = "<group>"; };
 		BF5432B21C4CB72500BA9C5C /* UIImage+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+font.m"; sourceTree = "<group>"; };
+		BF64746A1C7013CD00569048 /* FTConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTConfiguration.h; sourceTree = "<group>"; };
 		BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImageWidget.h; sourceTree = "<group>"; };
 		BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTImageWidget.m; sourceTree = "<group>"; };
 		BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIndicatorWidget.h; sourceTree = "<group>"; };
@@ -1127,6 +1128,7 @@
 				BF8EAD031BD4E53F004A051D /* fertile.h */,
 				BF8EAD231BD4E659004A051D /* fertile-Prefix.pch */,
 				BF8EAD051BD4E53F004A051D /* Info.plist */,
+				BF64746A1C7013CD00569048 /* FTConfiguration.h */,
 			);
 			path = fertile;
 			sourceTree = "<group>";

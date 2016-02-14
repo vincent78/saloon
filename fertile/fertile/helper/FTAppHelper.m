@@ -48,12 +48,7 @@ static FTAppHelper *sharedInstance = nil;
     [helperArray addObject:[FTThreadHelper sharedInstance]];
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
-    
-#ifdef DEBUG
-    NSLog(@"app docPath :%@",[FTFileUtil getDocDirectory]);
-    
-#endif
-    
+
 }
 
 -(void)helperRelease

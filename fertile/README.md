@@ -10,7 +10,7 @@
 使用说明：
 工程嵌入式：
 1、需要在build setting 的Header Search Paths 中添加  ../**
-2、需要添加到Embedded binaries
+2、需要添加到Embedded binariesx
 
 
 

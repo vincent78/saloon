@@ -56,4 +56,17 @@ static NSMutableDictionary * dateFormatters ;
     return [NSString stringWithFormat:@"%llu",[self toMilliSecond]];
 }
 
++(NSString *)timeStr
+{
+    NSDate *date = [NSDate new];
+    return [date toString:@"HH:mm:ss.SSS"];
+}
+
++(NSString *)dateStr
+{
+    NSDate *date = [NSDate new];
+    return [date toString:@"yyyy-MM-dd"];
+}
+
+
 @end

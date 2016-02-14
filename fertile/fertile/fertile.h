@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "FTConfiguration.h"
 #import "FTExtensions.h"
 #import "FTModel.h"
 #import "FTUtil.h"

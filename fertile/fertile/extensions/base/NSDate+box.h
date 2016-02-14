@@ -135,6 +135,19 @@
 +(NSDateFormatter *) getFormatterByStr:(NSString *)str;
 
 
+/**
+ *  @brief 转成时间格式的字符串
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)timeStr;
+
+/**
+ *  @brief 转成日期格式的字符串
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)dateStr;
 
 /**
  *  @brief  格式化成字符串
@@ -159,5 +172,7 @@
  *  @return <#return value description#>
  */
 -(NSString *)toMilliSecondStr;
+
+
 
 @end
