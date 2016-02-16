@@ -16,3 +16,9 @@
 
 待处理：
 1、框架中需要加载JSPatch
+
+
+
+第三方：
+MJExtension(JSON与MODEL的转化)
+https://github.com/CoderMJLee/MJExtension
