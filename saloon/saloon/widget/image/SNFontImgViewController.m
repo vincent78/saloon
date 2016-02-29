@@ -61,16 +61,15 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SNFontImgCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellNibName forIndexPath:indexPath];
-    NSDictionary *itemDic = [items objectAtIndex:indexPath.row];
+    [cell setFontFamily:[UIFont fontWithName:@"common" size:24] withColor:[UIColor blackColor]];
 
-    FTVectorView *img = [[FTVectorView alloc] initWithFrame:CGRectMake(0, 0, 70, 70)
-                                             fontFamilyName:@"common"
-                                                   fontName:@"\U0000e62c"];
-    [cell initWithImg:img
-             withTxt1:[itemDic objectForKey:@"txt1"]
-             withTxt2:[itemDic objectForKey:@"txt2"]
-             withTxt3:[itemDic objectForKey:@"txt3"]];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    SNFontImgCell *tmpCell = (SNFontImgCell *)cell;
+    [tmpCell initWithImg:@"\U0000e62c" withTxt1:@"txt1" withTxt2:@"txt2" withTxt3:@"txt3"];
 }
 
 
