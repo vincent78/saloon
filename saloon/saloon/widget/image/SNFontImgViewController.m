@@ -61,7 +61,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SNFontImgCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellNibName forIndexPath:indexPath];
-    [cell setFontFamily:[UIFont fontWithName:@"common" size:24] withColor:[UIColor blackColor]];
+//    [cell setFontFamily:[UIFont fontWithName:@"common" size:24] withColor:[UIColor blackColor]];
+    [cell setFontFamily:@"common" withColor:[UIColor blackColor]];
 
     return cell;
 }

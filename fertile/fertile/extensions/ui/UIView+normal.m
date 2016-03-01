@@ -170,38 +170,40 @@
 
 -(void)fillInParent
 {
+    [self fillInParent:UIEdgeInsetsZero];
+}
+
+-(void)fillInParent:(UIEdgeInsets)edgeInsets
+{
     if (!self.superview)
         return;
-//    NSDictionary *dict = NSDictionaryOfVariableBindings (self);
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:self,@"selfView", nil];
-    NSDictionary *metrics = @{ @"hPadding": @0, @"vPadding": @0 };
-    NSString *vfl1 = @"H:|-hPadding-[selfView]-hPadding-|";
-    NSString *vfl2 = @"V:|-vPadding-[selfView]-vPadding-|";
+    NSDictionary *metrics1 = @{ @"leftPadding": [NSNumber numberWithFloat:edgeInsets.left]
+                                , @"rightPadding": [NSNumber numberWithFloat:edgeInsets.right] };
+    NSString *vfl1 = @"H:|-leftPadding-[selfView]-rightPadding-|";
+    NSDictionary *metrics2 = @{ @"topPadding": [NSNumber numberWithFloat:edgeInsets.top]
+                                , @"bottomPadding": [NSNumber numberWithFloat:edgeInsets.bottom] };
+    NSString *vfl2 = @"V:|-topPadding-[selfView]-bottomPadding-|";
     [self.superview
-          addConstraints:
-          [NSLayoutConstraint constraintsWithVisualFormat:vfl1 options:0 metrics:metrics views:dict]];
+     addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:vfl1 options:0 metrics:metrics1 views:dict]];
     [self.superview
-          addConstraints:
-          [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics views:dict]];
+     addConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics2 views:dict]];
+
 }
 
 -(void) fillInView:(UIView *)pView
 {
+    [self fillInView:pView withEdgeInsets:UIEdgeInsetsZero];
+}
+
+-(void) fillInView:(UIView *)pView withEdgeInsets:(UIEdgeInsets)edgeInsets
+{
     if (!pView)
         return;
     [pView addSubview:self];
-    //    NSDictionary *dict = NSDictionaryOfVariableBindings (self);
-    [self setTranslatesAutoresizingMaskIntoConstraints:NO];
-    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:self,@"selfView", nil];
-    NSDictionary *metrics = @{ @"hPadding": @0, @"vPadding": @0 };
-    NSString *vfl1 = @"H:|-hPadding-[selfView]-hPadding-|";
-    NSString *vfl2 = @"V:|-vPadding-[selfView]-vPadding-|";
-    [pView
-     addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:vfl1 options:0 metrics:metrics views:dict]];
-    [pView
-     addConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics views:dict]];
+    [self fillInParent:edgeInsets];
 }
 @end

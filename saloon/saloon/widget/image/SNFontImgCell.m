@@ -7,6 +7,16 @@
 //
 
 #import "SNFontImgCell.h"
+#import "UIImage+font.h"
+
+@interface SNFontImgCell()
+{
+    NSString *fontFamily;
+    UIColor *textColor;
+    UIColor *bkColor;
+}
+
+@end
 
 @implementation SNFontImgCell
 
@@ -23,22 +33,20 @@
 }
 
 
--(void) setFontFamily:(UIFont *)font withColor:(UIColor *)color
+-(void) setFontFamily:(NSString *)fontFamily1 withColor:(UIColor *)color1
 {
-    self.fontImg.font = font;
-    self.fontImg.textColor = color;
-    [self.fontImg setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [self.fontImg setTextAlignment:NSTextAlignmentCenter];
-    self.fontImg.numberOfLines = 1;
-    self.fontImg.backgroundColor = [UIColor clearColor];
+    fontFamily = fontFamily1;
+    textColor = color1;
+    bkColor = [UIColor clearColor];
 }
 
 -(void) initWithImg:(NSString *)img withTxt1:(NSString *)txt1 withTxt2:(NSString *)txt2 withTxt3:(NSString *)txt3
 {
-    self.fontImg.text = img;
+    self.iconImg.image = [[UIImage alloc] initWithText:img withFontFamilyName:fontFamily withSize:self.iconImg.bounds.size withColor:textColor];
     self.label1.text = txt1;
     self.label2.text = txt2;
     self.label3.text = txt3;
 }
+
 
 @end

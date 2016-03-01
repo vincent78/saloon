@@ -8,20 +8,20 @@
 
 #import "UIImage+font.h"
 
+
+
 @implementation UIImage (font)
 
--(instancetype) initWithText:(NSString *)text
-            withFont:(NSString *)font
-           withFrame:(CGRect) frame
-           withColor:(UIColor *)color
-{
-    FTVectorView *tmpView = [[FTVectorView alloc] initWithFrame:frame
-                                                         fontFamilyName:font
-                                                               fontName:text
-                                                              fontColor:color];
-    self = tmpView.toImage;
-    return self;
-}
 
+-(instancetype) initWithText:(NSString *)text
+                    withFontFamilyName:(NSString *)fontFamilyName
+                   withSize:(CGSize) size
+                   withColor:(UIColor *)color
+{
+    return [[FTVectorView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)
+                                                         fontFamilyName:fontFamilyName
+                                                               fontName:text
+                                                              fontColor:color].toImage;
+}
 
 @end

@@ -67,10 +67,26 @@
 -(void)fillInParent;
 
 /**
+ *  @brief <#Description#>
+ *
+ *  @param fillInView <#fillInView description#>
+ *  @param pView      <#pView description#>
+ */
+-(void)fillInParent:(UIEdgeInsets)edgeInsets;
+
+/**
  *  @brief As its name hints
  *
  *  @param pView <#pView description#>
  */
 -(void) fillInView:(UIView *)pView;
+
+/**
+ *  @brief <#Description#>
+ *
+ *  @param pView      <#pView description#>
+ *  @param edgeInsets <#edgeInsets description#>
+ */
+-(void) fillInView:(UIView *)pView withEdgeInsets:(UIEdgeInsets)edgeInsets;
 
 @end

@@ -73,19 +73,13 @@
     if (!self.vectorLabel) {
         self.vectorLabel = [[UILabel alloc] initWithFrame:self.bounds];
         [self.vectorLabel setBackgroundColor:[UIColor clearColor]];
-        NSLayoutConstraint* topConstraint = [NSLayoutConstraint constraintWithItem:self.vectorLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:0];
-        NSLayoutConstraint* leftConstraint = [NSLayoutConstraint constraintWithItem:self.vectorLabel attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1 constant:0];
-        NSLayoutConstraint* bottomConstraint = [NSLayoutConstraint constraintWithItem:self.vectorLabel attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
-        NSLayoutConstraint* rightConstraint = [NSLayoutConstraint constraintWithItem:self.vectorLabel attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTrailing multiplier:1 constant:0];
-        [self addSubview:self.vectorLabel];
-
+        [self.vectorLabel fillInView:self];
         [self.vectorLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.vectorLabel setTextAlignment:NSTextAlignmentCenter];
         self.vectorLabel.numberOfLines = 1;
         self.vectorLabel.font = self.vectorLabelFont;
         self.backgroundColor = [UIColor clearColor];
         [self setClipsToBounds:YES];
-        [self addConstraints:@[ topConstraint, leftConstraint, bottomConstraint, rightConstraint ]];
     }
 }
 
@@ -191,18 +185,14 @@
     _autoSizable = autoSizable;
 }
 
-- (UIImage*)toImage
+-(UIImage*)toImage
 {
-    CGRect rect = self.bounds;
-    if (CGRectIsEmpty(rect) || CGRectIsNull(rect) || CGRectIsInfinite(rect)) {
-        return nil;
-    }
-    //https://github.com/kif-framework/KIF/issues/679
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0.0f);
-    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
-    UIImage* snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return snapshotImage;
+    CGSize imageSize = self.bounds.size;
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, [[UIScreen mainScreen] scale]);
+    [self.vectorLabel.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
+    return retImage;
 }
+
 
 @end

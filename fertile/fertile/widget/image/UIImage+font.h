@@ -11,8 +11,8 @@
 @interface UIImage (font)
 
 -(instancetype) initWithText:(NSString *)text
-            withFont:(NSString *)font
-           withFrame:(CGRect) frame
-           withColor:(UIColor *)color;
+                    withFontFamilyName:(NSString *)fontFamilyName
+                    withSize:(CGSize) size
+                   withColor:(UIColor *)color;
 
 @end
