@@ -1,0 +1,292 @@
+[
+    {
+        "font": ".caidan", 
+        "code": "&#xe62c;", 
+        "name": "菜单"
+    }, 
+    {
+        "font": ".caidan1", 
+        "code": "&#xe62d;", 
+        "name": "菜单"
+    }, 
+    {
+        "font": ".caidan2", 
+        "code": "&#xe62e;", 
+        "name": "菜单"
+    }, 
+    {
+        "font": ".youjian", 
+        "code": "&#xe638;", 
+        "name": "邮件"
+    }, 
+    {
+        "font": ".youjian1", 
+        "code": "&#xe639;", 
+        "name": "邮件"
+    }, 
+    {
+        "font": ".caidanyingyong2", 
+        "code": "&#xe62f;", 
+        "name": "菜单 应用2"
+    }, 
+    {
+        "font": ".gift", 
+        "code": "&#xe600;", 
+        "name": "gift"
+    }, 
+    {
+        "font": ".gift1", 
+        "code": "&#xe601;", 
+        "name": "gift"
+    }, 
+    {
+        "font": ".shezhi", 
+        "code": "&#xe630;", 
+        "name": "设置"
+    }, 
+    {
+        "font": ".caidan3", 
+        "code": "&#xe631;", 
+        "name": "菜单"
+    }, 
+    {
+        "font": ".iconfontup", 
+        "code": "&#xe602;", 
+        "name": "向上翻页"
+    }, 
+    {
+        "font": ".iconfontdown", 
+        "code": "&#xe603;", 
+        "name": "向下翻页"
+    }, 
+    {
+        "font": ".svgmoban17", 
+        "code": "&#xe632;", 
+        "name": "测试"
+    }, 
+    {
+        "font": ".yonghu", 
+        "code": "&#xe604;", 
+        "name": "用户"
+    }, 
+    {
+        "font": ".zan", 
+        "code": "&#xe605;", 
+        "name": "赞"
+    }, 
+    {
+        "font": ".wuliu", 
+        "code": "&#xe606;", 
+        "name": "物流"
+    }, 
+    {
+        "font": ".anquan", 
+        "code": "&#xe607;", 
+        "name": "安全"
+    }, 
+    {
+        "font": ".bukaixin", 
+        "code": "&#xe608;", 
+        "name": "不开心"
+    }, 
+    {
+        "font": ".dibiao", 
+        "code": "&#xe609;", 
+        "name": "地标"
+    }, 
+    {
+        "font": ".fenxiang", 
+        "code": "&#xe60a;", 
+        "name": "分享"
+    }, 
+    {
+        "font": ".kaixin", 
+        "code": "&#xe60b;", 
+        "name": "开心"
+    }, 
+    {
+        "font": ".scan", 
+        "code": "&#xe60c;", 
+        "name": "scan"
+    }, 
+    {
+        "font": ".cart", 
+        "code": "&#xe60d;", 
+        "name": "cart"
+    }, 
+    {
+        "font": ".fold", 
+        "code": "&#xe60e;", 
+        "name": "fold"
+    }, 
+    {
+        "font": ".home", 
+        "code": "&#xe60f;", 
+        "name": "home"
+    }, 
+    {
+        "font": ".order", 
+        "code": "&#xe610;", 
+        "name": "order"
+    }, 
+    {
+        "font": ".personalcenter", 
+        "code": "&#xe611;", 
+        "name": "personalcenter"
+    }, 
+    {
+        "font": ".search", 
+        "code": "&#xe612;", 
+        "name": "search"
+    }, 
+    {
+        "font": ".unfold", 
+        "code": "&#xe613;", 
+        "name": "unfold"
+    }, 
+    {
+        "font": ".iconfontaddcart", 
+        "code": "&#xe614;", 
+        "name": "addcart"
+    }, 
+    {
+        "font": ".address", 
+        "code": "&#xe615;", 
+        "name": "address"
+    }, 
+    {
+        "font": ".back", 
+        "code": "&#xe616;", 
+        "name": "back"
+    }, 
+    {
+        "font": ".checkmark", 
+        "code": "&#xe617;", 
+        "name": "checkmark"
+    }, 
+    {
+        "font": ".close", 
+        "code": "&#xe618;", 
+        "name": "close"
+    }, 
+    {
+        "font": ".collect", 
+        "code": "&#xe619;", 
+        "name": "collect"
+    }, 
+    {
+        "font": ".droparrow", 
+        "code": "&#xe61a;", 
+        "name": "droparrow"
+    }, 
+    {
+        "font": ".edit", 
+        "code": "&#xe61b;", 
+        "name": "edit"
+    }, 
+    {
+        "font": ".gift2", 
+        "code": "&#xe61c;", 
+        "name": "gift"
+    }, 
+    {
+        "font": ".history", 
+        "code": "&#xe61d;", 
+        "name": "history"
+    }, 
+    {
+        "font": ".setting", 
+        "code": "&#xe61e;", 
+        "name": "setting"
+    }, 
+    {
+        "font": ".news", 
+        "code": "&#xe61f;", 
+        "name": "news"
+    }, 
+    {
+        "font": ".refresh", 
+        "code": "&#xe620;", 
+        "name": "refresh"
+    }, 
+    {
+        "font": ".remind", 
+        "code": "&#xe621;", 
+        "name": "remind"
+    }, 
+    {
+        "font": ".right", 
+        "code": "&#xe622;", 
+        "name": "right"
+    }, 
+    {
+        "font": ".share", 
+        "code": "&#xe623;", 
+        "name": "share"
+    }, 
+    {
+        "font": ".top", 
+        "code": "&#xe624;", 
+        "name": "top"
+    }, 
+    {
+        "font": ".uparrow", 
+        "code": "&#xe625;", 
+        "name": "uparrow"
+    }, 
+    {
+        "font": ".collectselected", 
+        "code": "&#xe626;", 
+        "name": "collect_selected"
+    }, 
+    {
+        "font": ".new", 
+        "code": "&#xe627;", 
+        "name": "new"
+    }, 
+    {
+        "font": ".fire", 
+        "code": "&#xe628;", 
+        "name": "fire"
+    }, 
+    {
+        "font": ".notice", 
+        "code": "&#xe629;", 
+        "name": "notice"
+    }, 
+    {
+        "font": ".addressfill", 
+        "code": "&#xe62a;", 
+        "name": "address_fill"
+    }, 
+    {
+        "font": ".unfoldfill", 
+        "code": "&#xe62b;", 
+        "name": "unfold_fill"
+    }, 
+    {
+        "font": ".caidan4", 
+        "code": "&#xe633;", 
+        "name": "菜单"
+    }, 
+    {
+        "font": ".iconcaidanshouye", 
+        "code": "&#xe634;", 
+        "name": "icon_菜单_首页"
+    }, 
+    {
+        "font": ".iconcaidanshouqi", 
+        "code": "&#xe635;", 
+        "name": "icon_菜单_收起"
+    }, 
+    {
+        "font": ".iconcaidanzhankai", 
+        "code": "&#xe636;", 
+        "name": "icon_菜单_展开"
+    }, 
+    {
+        "font": ".shezhi1", 
+        "code": "&#xe637;", 
+        "name": "设置"
+    }
+]
