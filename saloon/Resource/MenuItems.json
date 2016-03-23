@@ -94,6 +94,23 @@
                "params": [],
                "viewcontroller": ""
                }
+               
+               ,{
+               "icon": "",
+               "title": "进度条相关",
+               "desc": "",
+               "subitems":[
+                           {
+                           "icon": "",
+                           "title": "自定义的进度条",
+                           "desc": "",
+                           "params": [],
+                           "viewcontroller": "SNProgressViewController"
+                           }
+                           ],
+               "params": [],
+               "viewcontroller": ""
+               }
                ],
   "params": [],
   "viewcontroller": "FTTAppHelperDelegate"

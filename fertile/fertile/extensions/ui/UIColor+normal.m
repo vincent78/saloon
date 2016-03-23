@@ -39,7 +39,7 @@
     }
     // strip 0X if it appears
     //如果是0x开头的，那么截取字符串，字符串从索引为2的位置开始，一直到末尾
-    if ([cString hasPrefix:@"0X"])
+    if ([[cString uppercaseString] hasPrefix:@"0X"])
     {
         cString = [cString substringFromIndex:2];
     }

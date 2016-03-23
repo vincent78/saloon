@@ -14,13 +14,12 @@
     UICollectionView *colView;
     NSArray *items;
     NSString *cellNibName;
+    NSArray *data;
 }
 
 @end
 
 @implementation SNFontImgViewController
-
-
 
 -(void)viewDidLoad
 {
@@ -42,7 +41,7 @@
 {
     if (!items || items.count == 0)
     {
-        NSString *tmpFileFullName = [[NSBundle mainBundle] pathForResource:@"FontImgItem" ofType:@"json"];
+        NSString *tmpFileFullName = [FTFileUtil getResFullPath:@"common" ofType:@"json" withFramework:@"fertile"];
         if ([FTFileUtil exist:tmpFileFullName])
             items = [FTFileUtil readArrayFromFile:tmpFileFullName];
     }
@@ -70,9 +69,13 @@
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SNFontImgCell *tmpCell = (SNFontImgCell *)cell;
-    [tmpCell initWithImg:@"\U0000e62c" withTxt1:@"txt1" withTxt2:@"txt2" withTxt3:@"txt3"];
+    NSString *fontText = [[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"];
+    fontText = [fontText stringByReplacingOccurrencesOfString:@"&#x" withString:@"\\U0000"];
+    [tmpCell initWithImg:fontText
+                withTxt1:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]
+                withTxt2:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]
+                withTxt3:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]];
 }
-
 
 
 

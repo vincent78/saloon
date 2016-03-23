@@ -28,7 +28,7 @@
 
 #import "UIImage+font.h"
 
-
+#import "FTProgressView.h"
 
 
 #endif /* FTWidget_h */

@@ -28,7 +28,6 @@
 		BF1533C71BE0D95300809493 /* FTFileUtil+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533C51BE0D95300809493 /* FTFileUtil+md5.m */; };
 		BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF15970B1C167244000B70D0 /* FTCornerView.h */; };
 		BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF15970C1C167244000B70D0 /* FTCornerView.m */; };
-		BF1597571C1722BC000B70D0 /* common.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF15973E1C171FCD000B70D0 /* common.ttf */; };
 		BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF19122D1C34CDD7007D9924 /* FTNavigateWidgetController.h */; };
 		BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF19122E1C34CDD7007D9924 /* FTNavigateWidgetController.m */; };
 		BF1912331C34D0D2007D9924 /* FTBaseWidgetController.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */; };
@@ -255,6 +254,8 @@
 		BF52E5A11C3CE1950052A107 /* UITextField+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4D91C3CE1950052A107 /* UITextField+RACSignalSupport.m */; };
 		BF52E5A21C3CE1950052A107 /* UITextView+RACSignalSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = BF52E4DA1C3CE1950052A107 /* UITextView+RACSignalSupport.h */; };
 		BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */; };
+		BF530C6C1CA0E1EA001B192C /* common.json in Resources */ = {isa = PBXBuildFile; fileRef = BF530C6A1CA0E1EA001B192C /* common.json */; };
+		BF530C6D1CA0E1EA001B192C /* common.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF530C6B1CA0E1EA001B192C /* common.ttf */; };
 		BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5432B11C4CB72500BA9C5C /* UIImage+font.h */; };
 		BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B21C4CB72500BA9C5C /* UIImage+font.m */; };
 		BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */; };
@@ -310,7 +311,8 @@
 		BF8EAD041BD4E53F004A051D /* fertile.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8EAD031BD4E53F004A051D /* fertile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF935AEA1BDE71E500824D6E /* FTRouteHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF935AE81BDE71E500824D6E /* FTRouteHelper.h */; };
 		BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF935AE91BDE71E500824D6E /* FTRouteHelper.m */; };
-		BF983C0B1C86D30900F1DD73 /* common.json in Resources */ = {isa = PBXBuildFile; fileRef = BF983C0A1C86D30900F1DD73 /* common.json */; };
+		BF9C3CB71CA2778A007FE0EA /* FTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9C3CB51CA2778A007FE0EA /* FTProgressView.h */; };
+		BF9C3CB81CA2778A007FE0EA /* FTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */; };
 		BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */; };
 		BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */; };
 		BFB16F421BEAF9F700CEEBC9 /* FTTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */; };
@@ -406,7 +408,6 @@
 		BF1533C51BE0D95300809493 /* FTFileUtil+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+md5.m"; sourceTree = "<group>"; };
 		BF15970B1C167244000B70D0 /* FTCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCornerView.h; sourceTree = "<group>"; };
 		BF15970C1C167244000B70D0 /* FTCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCornerView.m; sourceTree = "<group>"; };
-		BF15973E1C171FCD000B70D0 /* common.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = common.ttf; path = Resource/common.ttf; sourceTree = "<group>"; };
 		BF19122D1C34CDD7007D9924 /* FTNavigateWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNavigateWidgetController.h; sourceTree = "<group>"; };
 		BF19122E1C34CDD7007D9924 /* FTNavigateWidgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNavigateWidgetController.m; sourceTree = "<group>"; };
 		BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseWidgetController.h; sourceTree = "<group>"; };
@@ -635,6 +636,8 @@
 		BF52E4D91C3CE1950052A107 /* UITextField+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RACSignalSupport.m"; sourceTree = "<group>"; };
 		BF52E4DA1C3CE1950052A107 /* UITextView+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RACSignalSupport.h"; sourceTree = "<group>"; };
 		BF52E4DB1C3CE1950052A107 /* UITextView+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RACSignalSupport.m"; sourceTree = "<group>"; };
+		BF530C6A1CA0E1EA001B192C /* common.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = common.json; sourceTree = "<group>"; };
+		BF530C6B1CA0E1EA001B192C /* common.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = common.ttf; sourceTree = "<group>"; };
 		BF5432B11C4CB72500BA9C5C /* UIImage+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+font.h"; sourceTree = "<group>"; };
 		BF5432B21C4CB72500BA9C5C /* UIImage+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+font.m"; sourceTree = "<group>"; };
 		BF64746A1C7013CD00569048 /* FTConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTConfiguration.h; sourceTree = "<group>"; };
@@ -694,7 +697,8 @@
 		BF8EAD231BD4E659004A051D /* fertile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fertile-Prefix.pch"; sourceTree = "<group>"; };
 		BF935AE81BDE71E500824D6E /* FTRouteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTRouteHelper.h; sourceTree = "<group>"; };
 		BF935AE91BDE71E500824D6E /* FTRouteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRouteHelper.m; sourceTree = "<group>"; };
-		BF983C0A1C86D30900F1DD73 /* common.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = common.json; path = Resource/common.json; sourceTree = "<group>"; };
+		BF9C3CB51CA2778A007FE0EA /* FTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTProgressView.h; sourceTree = "<group>"; };
+		BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTProgressView.m; sourceTree = "<group>"; };
 		BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+normal.h"; sourceTree = "<group>"; };
 		BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+normal.m"; sourceTree = "<group>"; };
 		BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewController.h; sourceTree = "<group>"; };
@@ -795,9 +799,8 @@
 		BF1597581C1722E4000B70D0 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BF530C691CA0E1EA001B192C /* iconFont */,
 				BF6C2B271C3A032D00CDA1E8 /* image */,
-				BF15973E1C171FCD000B70D0 /* common.ttf */,
-				BF983C0A1C86D30900F1DD73 /* common.json */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -1054,6 +1057,16 @@
 			path = extobjc;
 			sourceTree = "<group>";
 		};
+		BF530C691CA0E1EA001B192C /* iconFont */ = {
+			isa = PBXGroup;
+			children = (
+				BF530C6A1CA0E1EA001B192C /* common.json */,
+				BF530C6B1CA0E1EA001B192C /* common.ttf */,
+			);
+			name = iconFont;
+			path = Resource/iconFont;
+			sourceTree = "<group>";
+		};
 		BF5432A81C4CB38600BA9C5C /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -1238,6 +1251,7 @@
 				BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */,
 				BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */,
 				BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */,
+				BF9C3CB41CA27754007FE0EA /* progressWidget */,
 				BF5432A81C4CB38600BA9C5C /* image */,
 				BF6C2B1A1C3A00AD00CDA1E8 /* imageWidget */,
 				BF51B6221C06F5D900D26E9B /* lineView */,
@@ -1248,6 +1262,15 @@
 				BFFC5D501BE8BE8F00F005F2 /* maskWidget */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		BF9C3CB41CA27754007FE0EA /* progressWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BF9C3CB51CA2778A007FE0EA /* FTProgressView.h */,
+				BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */,
+			);
+			path = progressWidget;
 			sourceTree = "<group>";
 		};
 		BFB16F701BEB4E4800CEEBC9 /* btnWidget */ = {
@@ -1454,6 +1477,7 @@
 				BF52E54C1C3CE1950052A107 /* RACReplaySubject.h in Headers */,
 				BF52E50B1C3CE1950052A107 /* NSString+RACSequenceAdditions.h in Headers */,
 				BFFAD9161BE36AAF0050A21B /* NSString+file.h in Headers */,
+				BF9C3CB71CA2778A007FE0EA /* FTProgressView.h in Headers */,
 				BF52E57B1C3CE1950052A107 /* RACValueTransformer.h in Headers */,
 				BFC75D971C72C1360085B4E3 /* NSObject+MJKeyValue.h in Headers */,
 				BF6C2B561C3A04EC00CDA1E8 /* SDWebImageCompat.h in Headers */,
@@ -1658,9 +1682,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6C2B2D1C3A035500CDA1E8 /* main_icon_small_c_refresh@2x.png in Resources */,
-				BF983C0B1C86D30900F1DD73 /* common.json in Resources */,
-				BF1597571C1722BC000B70D0 /* common.ttf in Resources */,
 				BF6C2B2B1C3A035500CDA1E8 /* main_icon_big_c_refresh@2x.png in Resources */,
+				BF530C6D1CA0E1EA001B192C /* common.ttf in Resources */,
+				BF530C6C1CA0E1EA001B192C /* common.json in Resources */,
 				BF6C2B2C1C3A035500CDA1E8 /* main_icon_big_c_refresh@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1757,6 +1781,7 @@
 				BFB16F491BEB06A700CEEBC9 /* FTNavigateControllerModel.m in Sources */,
 				BF52E5701C3CE1950052A107 /* RACTargetQueueScheduler.m in Sources */,
 				BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */,
+				BF9C3CB81CA2778A007FE0EA /* FTProgressView.m in Sources */,
 				BF52E56C1C3CE1950052A107 /* RACSubscriptingAssignmentTrampoline.m in Sources */,
 				BF52E57F1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m in Sources */,
 				BF52E55D1C3CE1950052A107 /* RACSignal.m in Sources */,

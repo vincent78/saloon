@@ -43,7 +43,7 @@ static NSMutableArray* ftFontArray = nil;
     FTLog(@"\n%@\n%@\n\n\n%@\n%@"
           ,@"==================="
           ,[NSString stringWithFormat:@"docPath:\n%@",[FTFileUtil getDocDirectory]]
-          ,[NSString stringWithFormat:@"screenWidth: %f  screenHeight: %f scale:%f"
+          ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
                         ,[FTSystemHelper screenWidth]
                         ,[FTSystemHelper screenHeight]
                         ,[FTSystemHelper scale]]
