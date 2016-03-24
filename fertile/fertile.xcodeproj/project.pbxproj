@@ -36,6 +36,8 @@
 		BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */; };
 		BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */; };
 		BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */; };
+		BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */; };
+		BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */; };
 		BF43F6501BDDF18B00A1389B /* FTBaseWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */; };
 		BF43F6511BDDF18B00A1389B /* FTBaseWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */; };
 		BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F6561BDDF24700A1389B /* FTBaseHelper.h */; };
@@ -416,6 +418,8 @@
 		BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDashLineWidget.m; sourceTree = "<group>"; };
 		BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fitSize.h"; sourceTree = "<group>"; };
 		BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+fitSize.m"; sourceTree = "<group>"; };
+		BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToastWidget.h; sourceTree = "<group>"; };
+		BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToastWidget.m; sourceTree = "<group>"; };
 		BF3CF3EB1BF43D4100B80A4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseWidget.h; sourceTree = "<group>"; };
 		BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidget.m; sourceTree = "<group>"; };
@@ -810,6 +814,15 @@
 			children = (
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		BF3AD2711CA3F6EA006F6F99 /* toastTipWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */,
+				BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */,
+			);
+			path = toastTipWidget;
 			sourceTree = "<group>";
 		};
 		BF43F6C41BDE255200A1389B /* model */ = {
@@ -1251,6 +1264,7 @@
 				BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */,
 				BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */,
 				BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */,
+				BF3AD2711CA3F6EA006F6F99 /* toastTipWidget */,
 				BF9C3CB41CA27754007FE0EA /* progressWidget */,
 				BF5432A81C4CB38600BA9C5C /* image */,
 				BF6C2B1A1C3A00AD00CDA1E8 /* imageWidget */,
@@ -1438,6 +1452,7 @@
 				BFC821B61BDE45BF0066A77C /* NSString+size.h in Headers */,
 				BFC821AE1BDE45BF0066A77C /* NSData+Hash.h in Headers */,
 				BF52E5641C3CE1950052A107 /* RACStringSequence.h in Headers */,
+				BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */,
 				BF8343CB1C3B578A0082A845 /* SXColorLabel.h in Headers */,
 				BF52E5861C3CE1950052A107 /* UICollectionReusableView+RACSignalSupport.h in Headers */,
 				BF52E4EF1C3CE1950052A107 /* NSFileHandle+RACSupport.h in Headers */,
@@ -1811,6 +1826,7 @@
 				BFC75D8E1C72C1360085B4E3 /* MJProperty.m in Sources */,
 				BF52E59F1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				BF52E5761C3CE1950052A107 /* RACTupleSequence.m in Sources */,
+				BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */,
 				BF52E50A1C3CE1950052A107 /* NSString+RACKeyPathUtilities.m in Sources */,
 				BFFAD91B1BE370BD0050A21B /* FTThreadHelper.m in Sources */,
 				BF52E5851C3CE1950052A107 /* UIButton+RACCommandSupport.m in Sources */,

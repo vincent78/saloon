@@ -18,7 +18,7 @@
 #import "FTVectorView.h"
 
 #import "FTMaskWidget.h"
-
+#import "FTToastWidget.h"
 
 #import "FTLineWidget.h"
 #import "FT3DLineWidget.h"
