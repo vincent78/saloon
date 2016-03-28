@@ -12,6 +12,7 @@
 
 
 #import "FTBaseHelper.h"
+#import "FTDeviceHelper.h"
 #import "FTAppHelper.h"
 #import "FTLoggerHelper.h"
 #import "FTHotfixHelper.h"

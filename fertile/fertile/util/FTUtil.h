@@ -11,5 +11,7 @@
 
 #import "FTFileUtil.h"
 #import "FTFileUtil+md5.h"
+#import "FTDateUtil.h"
+#import "FTAlertUtil.h"
 
 #endif /* FTUtil_h */
