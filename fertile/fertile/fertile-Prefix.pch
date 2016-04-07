@@ -14,8 +14,12 @@
 
 #endif /* fertile_oc_Prefix_pch */
 
+#ifdef __OBJC__
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-
 #import "fertile.h"
+
+#endif
+
+

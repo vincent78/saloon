@@ -127,6 +127,33 @@
     return filesPath;
 }
 
+/**
+ *  @brief  返回目录下所有的文件
+ *
+ *  @param targetPath    <#targetPath description#>
+ *  @param hasPrefixPath <#hasPrefixPath description#>
+ *
+ *  @return <#return value description#>
+ */
++ (NSMutableArray *)findFiles:(NSString *)targetPath HasPrefixPath:(BOOL)hasPrefixPath
+{
+    if (hasPrefixPath)
+    {
+        return [self findFiles:targetPath];
+    }
+    else
+    {
+        NSMutableArray *filesInfo = [FTFileUtil findFiles:targetPath];
+        int pathPrefixLength = (int)targetPath.length;
+        for (int i = 0; i < filesInfo.count; i++)
+        {
+            [filesInfo replaceObjectAtIndex:i
+                                 withObject:[[filesInfo objectAtIndex:i] substringFromIndex:(pathPrefixLength + 1)]];
+        }
+        return filesInfo;
+    }
+}
+
 
 + (NSMutableArray *)findFilesOnLevel:(NSString *)targetPath
 {

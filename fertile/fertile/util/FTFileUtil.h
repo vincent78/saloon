@@ -106,6 +106,9 @@
 +(NSMutableArray *)findFiles:(NSString *)subDirPath;
 
 
++ (NSMutableArray *)findFiles:(NSString *)targetPath HasPrefixPath:(BOOL)hasPrefixPath;
+
+
 +(NSMutableArray *)findFilesOnLevel:(NSString *)targetPath;
 
 
