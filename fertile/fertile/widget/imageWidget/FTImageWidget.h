@@ -55,7 +55,7 @@
 /**
  * @brief 初始化方法
  * @param frame imageView 的 frame
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithFrame:(CGRect)frame;
 
@@ -63,7 +63,7 @@
  * @brief 初始化方法
  * loadNothingImage = nil,loadFailedImage = nil; urlString = nil; delegate = nil;
  * @param placeHoldImage 加载等待图片
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage;
 
@@ -72,7 +72,7 @@
  * loadNothingImage = nil,loadFailedImage = nil; urlString = nil;
  * @param placeHoldImage 加载等待图片
  * @param delegate 下载代理对象
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage delegate:(id<FTImageWidgetDelegate>)aDelegate;
 
@@ -82,7 +82,7 @@
  * @param placeHoldImage 加载等待图片
  * @param urlString 下载地址
  * @param delegate 下载代理对象
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage
                    urlString:(NSString *)urlString
@@ -94,7 +94,7 @@
  * @param placeHoldImage 加载等待图片
  * @param url 下载地址
  * @param delegate 下载代理对象
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage
                          url:(NSURL *)url
@@ -107,7 +107,7 @@
  * @param loadFailedImage 加载失败图片
  * @param urlString 下载地址
  * @param delegate 下载代理
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage
             loadNothingImage:(UIImage *)loadNothingImage
@@ -122,7 +122,7 @@
  * @param loadFailedImage 加载失败图片
  * @param url 下载地址
  * @param delegate 下载代理
- * @return CTImageView对象
+ * @return FTImageView对象
  */
 - (id)initWithPlaceHoldImage:(UIImage *)placeHoldImage
             loadNothingImage:(UIImage *)loadNothingImage
@@ -170,18 +170,18 @@
 @end
 
 
-/// @brief CTImageView代理协议
+/// @brief FTImageView代理协议
 @protocol FTImageWidgetDelegate <NSObject>
 @optional
 /**
  * @brief 下载成功回调
- * @param imageView CTImageView对象
+ * @param imageView FTImageView对象
  */
 - (void)imageViewLoadImageSucceed:(FTImageWidget *)imageView;
 
 /**
  * @brief 下载进度更新回调
- * @param imageView CTImageView对象
+ * @param imageView FTImageView对象
  * @param receivedBytes 接收字节数
  * @param totalBytes 总共字节数
  */
@@ -189,14 +189,14 @@
 
 /**
  * @brief 下载失败回调
- * @param imageView CTImageView对象
+ * @param imageView FTImageView对象
  * @param error 错误对象
  */
 - (void)imageViewLoadImageFailed:(FTImageWidget *)imageView error:(NSError *)error;
 
 /**
  * @brief 下载取消回调
- * @param imageView CTImageView对象
+ * @param imageView FTImageView对象
  */
 - (void)imageViewLoadImageCanceled:(FTImageWidget *)imageView;
 @end

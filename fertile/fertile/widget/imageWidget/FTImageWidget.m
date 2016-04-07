@@ -10,7 +10,7 @@
 #import "SDWebImageOperation.h"
 #import "SDWebImageManager.h"
 
-#define kCTImageViewAnimateTime 0.5
+#define kFTImageViewAnimateTime 0.5
 
 @interface FTImageWidget ()
 @property (nonatomic, strong) id<SDWebImageOperation> operation;
@@ -38,7 +38,7 @@
 #pragma mark - --------------------退出清空--------------------
 - (void)dealloc
 {
-//    TLog(@"CTImageView dealloced.");
+//    TLog(@"FTImageView dealloced.");
     _delegate = nil;
     [_operation cancel];
     _operation = nil;
@@ -211,7 +211,7 @@
 /// 下载入口
 - (void)setUrl:(NSURL *)url
 {
-    if (_url) {//CTImageView 可能被复用，所以必须做清理。
+    if (_url) {//FTImageView 可能被复用，所以必须做清理。
         [self cancelDownloadAction];
         _url = nil;
     }
@@ -307,12 +307,12 @@
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     [animation setFromValue:[NSNumber numberWithFloat:0.0]];
     [animation setToValue:[NSNumber numberWithFloat:1.0]];
-    [animation setDuration:kCTImageViewAnimateTime];
+    [animation setDuration:kFTImageViewAnimateTime];
     
     [self.layer addAnimation:animation forKey:@"fade_in"];
 }
 
-#pragma mark - CTImageViewDownloadDelegate
+#pragma mark - FTImageViewDownloadDelegate
 - (void)downloadDidProgressWithURL:(NSURL *)url receivedBytes:(NSUInteger)receivedBytes totalBytes:(long long)totalBytes
 {
     if (self.delegate && [self.delegate respondsToSelector:@selector(imageViewProgressed:receivedBytes:totalBytes:)]) {
@@ -337,7 +337,7 @@
     [self stopAnimate];
     [self setLoadFailed];
     if (self.delegate && [self.delegate respondsToSelector:@selector(imageViewLoadImageFailed:error:)]) {
-        [self.delegate imageViewLoadImageFailed:self error:[NSError errorWithDomain:@"CTImageViewDownload Failed" code:-401 userInfo:nil]];
+        [self.delegate imageViewLoadImageFailed:self error:[NSError errorWithDomain:@"FTImageViewDownload Failed" code:-401 userInfo:nil]];
     }
 }
 

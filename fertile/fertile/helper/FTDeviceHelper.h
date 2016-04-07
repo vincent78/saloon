@@ -48,4 +48,10 @@
  */
 +(NSString *) systemVersion;
 
+
+
+
+
++(NSString*) deviceString;
+
 @end
