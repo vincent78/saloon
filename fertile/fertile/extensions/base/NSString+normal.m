@@ -15,7 +15,7 @@
     return self.length == 0 ? YES : NO;
 }
 
-+ (BOOL)isNilOrEmpty:(id)obj
++ (BOOL)emptyOrNil:(id)obj
 {
     if (obj == nil || [obj isEqual:[NSNull null]])
         return YES;

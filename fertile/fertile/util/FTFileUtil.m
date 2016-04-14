@@ -198,43 +198,7 @@
     return filesPath;
 }
 
-+(NSString *) readStrFromFile:(NSString *)fileFullName
-{
-    if ([self fileExist:fileFullName])
-    {
-        return [NSString stringWithContentsOfFile:fileFullName encoding:NSUTF8StringEncoding error:nil];
-    }
-    else
-    {
-        return nil;
-    }
-}
 
-+(NSDictionary *) readDicFromFile:(NSString *)fileFullName
-{
-    NSString *tmp = [self readStrFromFile:fileFullName];
-    if (tmp)
-    {
-        return [tmp json2Dic];
-    }
-    else
-    {
-        return nil;
-    }
-}
-
-+(NSArray *) readArrayFromFile:(NSString *)fileFullName
-{
-    NSString *tmp = [self readStrFromFile:fileFullName];
-    if (tmp)
-    {
-        return [tmp json2Array];
-    }
-    else
-    {
-        return nil;
-    }
-}
 
 
 

@@ -24,7 +24,7 @@
  *
  *  @return <#return value description#>
  */
-+(BOOL)isNilOrEmpty:(id)obj;
++(BOOL)emptyOrNil:(id)obj;
 
 /**
  *  @brief  是否包含子串

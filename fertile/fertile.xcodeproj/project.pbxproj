@@ -403,6 +403,8 @@
 		BFF188291CB6082700CC1F77 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1881C1CB6082700CC1F77 /* AFURLResponseSerialization.m */; };
 		BFF1882A1CB6082700CC1F77 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF1881D1CB6082700CC1F77 /* AFURLSessionManager.h */; };
 		BFF1882B1CB6082700CC1F77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */; };
+		BFF246301CBF810A002B5603 /* FTFileUtil+readwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */; };
+		BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */; };
 		BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */; };
 		BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */; };
 		BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */; };
@@ -824,6 +826,8 @@
 		BFF1881C1CB6082700CC1F77 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		BFF1881D1CB6082700CC1F77 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTFileUtil+readwrite.h"; sourceTree = "<group>"; };
+		BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+readwrite.m"; sourceTree = "<group>"; };
 		BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+normal.h"; sourceTree = "<group>"; };
 		BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+normal.m"; sourceTree = "<group>"; };
 		BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+normal.h"; sourceTree = "<group>"; };
@@ -1333,6 +1337,8 @@
 				BF1533C21BE0D14900809493 /* FTUtil.h */,
 				BF1533BE1BE0D13B00809493 /* FTFileUtil.h */,
 				BF1533BF1BE0D13B00809493 /* FTFileUtil.m */,
+				BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */,
+				BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */,
 				BF1533C41BE0D95300809493 /* FTFileUtil+md5.h */,
 				BF1533C51BE0D95300809493 /* FTFileUtil+md5.m */,
 				BFC027431CB671CB008E7087 /* FTFileUtil+zip.h */,
@@ -1689,6 +1695,7 @@
 				BF52E4FD1C3CE1950052A107 /* NSObject+RACKVOWrapper.h in Headers */,
 				BF52E5501C3CE1950052A107 /* RACScheduler+Private.h in Headers */,
 				BFD1F2861BFC71DA00AFD63C /* FTLoggerHelper.h in Headers */,
+				BFF246301CBF810A002B5603 /* FTFileUtil+readwrite.h in Headers */,
 				BF52E57E1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h in Headers */,
 				BF52E4FF1C3CE1950052A107 /* NSObject+RACLifting.h in Headers */,
 				BF52E4DC1C3CE1950052A107 /* EXTKeyPathCoding.h in Headers */,
@@ -2000,6 +2007,7 @@
 				BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */,
 				BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */,
 				BF52E53F1C3CE1950052A107 /* RACKVOProxy.m in Sources */,
+				BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */,
 				BF52E4F21C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.m in Sources */,
 				BFF188251CB6082700CC1F77 /* AFSecurityPolicy.m in Sources */,
 				BF8343D01C3B578A0082A845 /* UIColor+Separate.m in Sources */,

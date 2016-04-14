@@ -116,36 +116,6 @@
 
 
 
-#pragma mark - 读取相关
-
-/**
- *  @brief  从文件中读取字符串
- *
- *  @param fileFullName <#fileFullName description#>
- *
- *  @return <#return value description#>
- */
-+(NSString *) readStrFromFile:(NSString *)fileFullName;
-
-/**
- *  @brief  从文件中读取字典
- *
- *  @param fileFullName <#fileFullName description#>
- *
- *  @return <#return value description#>
- */
-+(NSDictionary *) readDicFromFile:(NSString *)fileFullName;
-
-
-/**
- *  @brief  从文件中读取数组
- *
- *  @param fileFullName <#fileFullName description#>
- *
- *  @return <#return value description#>
- */
-+(NSArray *) readArrayFromFile:(NSString *)fileFullName;
-
 
 
 
