@@ -43,12 +43,13 @@ static FTAppHelper *sharedInstance = nil;
     helperArray = [NSMutableArray arrayWithCapacity:5];
     [helperArray addObject:[FTLoggerHelper sharedInstance]];
     [helperArray addObject:[FTHotfixHelper sharedInstance]];
+    [helperArray addObject:[FTDeviceHelper sharedInstance]];
     [helperArray addObject:[FTSystemHelper sharedInstance]];
     [helperArray addObject:[FTRouteHelper sharedInstance]];
     [helperArray addObject:[FTThreadHelper sharedInstance]];
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
-
+    
 }
 
 -(void)helperRelease

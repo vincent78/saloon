@@ -45,6 +45,7 @@ static FTDeviceHelper *sharedInstance = nil;
 - (void)helperInit
 {
     self.device = [UIDevice currentDevice];
+    
 }
 
 -(void)helperRelease
@@ -59,12 +60,10 @@ static FTDeviceHelper *sharedInstance = nil;
     return FTDeviceHelper.sharedInstance.device.name;
 }
 
-
-+(NSString *) model
++(NSString *) systemModel
 {
     return FTDeviceHelper.sharedInstance.device.model;
 }
-
 
 +(NSString *) localizedModel
 {
@@ -76,12 +75,18 @@ static FTDeviceHelper *sharedInstance = nil;
     return FTDeviceHelper.sharedInstance.device.systemName;
 }
 
-
 +(NSString *) systemVersion
 {
     return FTDeviceHelper.sharedInstance.device.systemVersion;
 }
 
++(NSString *) unameInfo
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+
+}
 
 
 
@@ -151,22 +156,16 @@ static FTDeviceHelper *sharedInstance = nil;
     return uniqueIdentifier;
 }
 
-+ (NSString *)getCombinationUUID
++ (NSString *)getDeviceInfo
 {
-    //UUID|MAC|手机型号|厂商|操作系统版本|网络类型(3G,2G,Wifi)|IDFA
-    //uuid_
-    NSString *uuid = @"";
+    NSString *uuid = [self uniqueIdentifierWithMac];
     //Mac
     NSString *macAddress = [self macaddressWithoutColon];//注意:此macAddress需要去掉冒号.使用[CTDevice macaddressWithoutColon]
-    //手机型号
-    NSString *deviceString = [self deviceString];
     //厂商
     NSString *vendor = @"Apple";
     //操作系统的版本
-    NSString *systemVersion = [UIDevice currentDevice].systemVersion;
-    //网络类型
-//    NSString *netName = [CTNetworkUtil sharedInstance].networkTypeInfo;
-    NSString *netName = @"";
+    NSString *systemVersion = [self systemVersion];
+    NSString *systemName = [self systemName];
     //IDFA
     NSString *idfaString = @"";
     
@@ -174,101 +173,114 @@ static FTDeviceHelper *sharedInstance = nil;
     if(idfaString.length <= 0){
         idfaString = @"";
     }
-    NSString *retStr = [NSString stringWithFormat:@"%@|%@|%@|%@|%@|%@|%@",uuid,macAddress,deviceString,vendor,systemVersion,netName,idfaString];
+    
+    NSString *model = [self systemModel];
+    
+    NSString *retStr = [NSString stringWithFormat:@"%@|%@|%@|%@|%@|%@|%@|%@|%@"
+                        ,uuid
+                        ,vendor
+                        ,model
+                        ,macAddress
+                        ,systemName
+                        ,systemVersion
+                        ,idfaString
+                        ,[self ownerName]
+                        ,[self unameInfo]
+                        ];
     
     return retStr;
 }
 
 
 
-+ (NSString *)deviceString
-{
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString* deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    
-    if ([deviceString isEqualToString:@"iPhone1,1"]) {
-        return @"iPhone 1G";
-    }
-    else if([deviceString isEqualToString:@"iPhone1,2"]){
-        return @"iPhone 3G";
-    }
-    else if([deviceString hasPrefix:@"iPhone2,"]){
-        return @"iPhone 3GS";
-    }
-    else if([deviceString hasPrefix:@"iPhone3,"]){
-        return @"iPhone 4";
-    }
-    else if([deviceString hasPrefix:@"iPhone4,"]){
-        return @"iPhone 4S";
-    }
-    else if([deviceString hasPrefix:@"iPhone5,1"] || [deviceString hasPrefix:@"iPhone5,2"]){
-        return @"iPhone 5";
-    }
-    else if([deviceString hasPrefix:@"iPhone5,3"] || [deviceString hasPrefix:@"iPhone5,4"]){
-        return @"iPhone 5c";
-    }
-    else if([deviceString hasPrefix:@"iPhone6,"]){
-        return @"iPhone 5s";
-    }
-    else if([deviceString hasPrefix:@"iPhone7,2"]){
-        return @"iPhone 6";
-    }
-    else if([deviceString hasPrefix:@"iPhone7,1"]){
-        return @"iPhone 6 Plus";
-    }
-    else if([deviceString hasPrefix:@"iPhone8,1"])
-    {
-        return @"iPhone 6s";
-    }
-    else if([deviceString hasPrefix:@"iPhone8,2"])
-    {
-        return @"iPhone 6s Plus";
-    }
-    else if([deviceString hasPrefix:@"iPod1,"]) {
-        return @"iPod Touch 1G";
-    }
-    else if([deviceString hasPrefix:@"iPod2,"]) {
-        return @"iPod Touch 2G";
-    }
-    else if([deviceString hasPrefix:@"iPod3,"]) {
-        return @"iPod Touch 3G";
-    }
-    else if([deviceString hasPrefix:@"iPod4,"]) {
-        return @"iPod Touch 4G";
-    }
-    else if([deviceString hasPrefix:@"iPod5,"]) {
-        return @"iPod Touch 5G";
-    }
-    else if([deviceString hasPrefix:@"iPad1,"]) {
-        return @"iPad 1G";
-    }
-    else if([deviceString hasPrefix:@"iPad2,1"]||[deviceString hasPrefix:@"iPad2,2"]||[deviceString hasPrefix:@"iPad2,3"]||[deviceString hasPrefix:@"iPad2,4"]) {
-        return @"iPad 2";
-    }
-    else if([deviceString hasPrefix:@"iPad3,1"]||[deviceString hasPrefix:@"iPad3,2"]||[deviceString hasPrefix:@"iPad3,3"]) {
-        return @"iPad 3";
-    }
-    else if([deviceString hasPrefix:@"iPad3,4"]||[deviceString hasPrefix:@"iPad3,5"]||[deviceString hasPrefix:@"iPad3,6"]) {
-        return @"iPad 4";
-    }
-    else if([deviceString hasPrefix:@"iPad4,1"]||[deviceString hasPrefix:@"iPad4,2"]||[deviceString hasPrefix:@"iPad4,3"]) {
-        return @"iPad Air";
-    }
-    else if([deviceString hasPrefix:@"iPad2,5"]||[deviceString hasPrefix:@"iPad2,6"]||[deviceString hasPrefix:@"iPad2,7"]) {
-        return @"iPad mini 1G";
-    }
-    else if([deviceString hasPrefix:@"iPad4,4"]||[deviceString hasPrefix:@"iPad4,5"]||[deviceString hasPrefix:@"iPad4,6"]) {
-        return @"iPad mini 2G";
-    }
-    else if ([deviceString isEqualToString:@"i386"] || [deviceString isEqualToString:@"x86_64"])
-    {
-        return @"Simulator";
-    }
-//    (@"NOTE: Unknown device type: %@", deviceString);
-    
-    return deviceString;
-}
+//+ (NSString *)deviceString
+//{
+//    struct utsname systemInfo;
+//    uname(&systemInfo);
+//    NSString* deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+//    
+//    if ([deviceString isEqualToString:@"iPhone1,1"]) {
+//        return @"iPhone 1G";
+//    }
+//    else if([deviceString isEqualToString:@"iPhone1,2"]){
+//        return @"iPhone 3G";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone2,"]){
+//        return @"iPhone 3GS";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone3,"]){
+//        return @"iPhone 4";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone4,"]){
+//        return @"iPhone 4S";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone5,1"] || [deviceString hasPrefix:@"iPhone5,2"]){
+//        return @"iPhone 5";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone5,3"] || [deviceString hasPrefix:@"iPhone5,4"]){
+//        return @"iPhone 5c";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone6,"]){
+//        return @"iPhone 5s";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone7,2"]){
+//        return @"iPhone 6";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone7,1"]){
+//        return @"iPhone 6 Plus";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone8,1"])
+//    {
+//        return @"iPhone 6s";
+//    }
+//    else if([deviceString hasPrefix:@"iPhone8,2"])
+//    {
+//        return @"iPhone 6s Plus";
+//    }
+//    else if([deviceString hasPrefix:@"iPod1,"]) {
+//        return @"iPod Touch 1G";
+//    }
+//    else if([deviceString hasPrefix:@"iPod2,"]) {
+//        return @"iPod Touch 2G";
+//    }
+//    else if([deviceString hasPrefix:@"iPod3,"]) {
+//        return @"iPod Touch 3G";
+//    }
+//    else if([deviceString hasPrefix:@"iPod4,"]) {
+//        return @"iPod Touch 4G";
+//    }
+//    else if([deviceString hasPrefix:@"iPod5,"]) {
+//        return @"iPod Touch 5G";
+//    }
+//    else if([deviceString hasPrefix:@"iPad1,"]) {
+//        return @"iPad 1G";
+//    }
+//    else if([deviceString hasPrefix:@"iPad2,1"]||[deviceString hasPrefix:@"iPad2,2"]||[deviceString hasPrefix:@"iPad2,3"]||[deviceString hasPrefix:@"iPad2,4"]) {
+//        return @"iPad 2";
+//    }
+//    else if([deviceString hasPrefix:@"iPad3,1"]||[deviceString hasPrefix:@"iPad3,2"]||[deviceString hasPrefix:@"iPad3,3"]) {
+//        return @"iPad 3";
+//    }
+//    else if([deviceString hasPrefix:@"iPad3,4"]||[deviceString hasPrefix:@"iPad3,5"]||[deviceString hasPrefix:@"iPad3,6"]) {
+//        return @"iPad 4";
+//    }
+//    else if([deviceString hasPrefix:@"iPad4,1"]||[deviceString hasPrefix:@"iPad4,2"]||[deviceString hasPrefix:@"iPad4,3"]) {
+//        return @"iPad Air";
+//    }
+//    else if([deviceString hasPrefix:@"iPad2,5"]||[deviceString hasPrefix:@"iPad2,6"]||[deviceString hasPrefix:@"iPad2,7"]) {
+//        return @"iPad mini 1G";
+//    }
+//    else if([deviceString hasPrefix:@"iPad4,4"]||[deviceString hasPrefix:@"iPad4,5"]||[deviceString hasPrefix:@"iPad4,6"]) {
+//        return @"iPad mini 2G";
+//    }
+//    else if ([deviceString isEqualToString:@"i386"] || [deviceString isEqualToString:@"x86_64"])
+//    {
+//        return @"Simulator";
+//    }
+////    (@"NOTE: Unknown device type: %@", deviceString);
+//    
+//    return deviceString;
+//}
 
 
 

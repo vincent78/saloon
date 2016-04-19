@@ -40,9 +40,10 @@ static NSMutableArray* ftFontArray = nil;
 {
     [super helperInit];
 
-    FTLog(@"\n%@\n%@\n\n\n%@\n%@"
+    FTLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n%@"
           ,@"==================="
-          ,[NSString stringWithFormat:@"docPath:\n%@",[FTFileUtil getDocDirectory]]
+          ,[FTFileUtil getDocDirectory]
+          ,[FTDeviceHelper getDeviceInfo]
           ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
                         ,[FTSystemHelper screenWidth]
                         ,[FTSystemHelper screenHeight]

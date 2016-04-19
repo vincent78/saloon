@@ -25,7 +25,7 @@
  *
  *  @return <#return value description#>
  */
-+(NSString *) model;
++(NSString *) systemModel;
 
 /**
  *  @brief 设备本地化的版本
@@ -49,9 +49,9 @@
 +(NSString *) systemVersion;
 
 
++(NSString *)getDeviceInfo;
 
 
-
-+(NSString*) deviceString;
+//+(NSString*) deviceString;
 
 @end

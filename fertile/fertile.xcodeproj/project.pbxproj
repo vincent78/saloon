@@ -1269,9 +1269,9 @@
 			isa = PBXGroup;
 			children = (
 				BF3CF3EB1BF43D4100B80A4B /* README.md */,
+				BF8EAD021BD4E53F004A051D /* fertile */,
 				BF1597581C1722E4000B70D0 /* Resource */,
 				BFC165A01BD7898F00C59C2C /* Dependency */,
-				BF8EAD021BD4E53F004A051D /* fertile */,
 				BF8EAD011BD4E53F004A051D /* Products */,
 			);
 			sourceTree = "<group>";
