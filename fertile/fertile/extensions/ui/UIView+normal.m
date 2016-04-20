@@ -173,17 +173,17 @@
     [self fillInParent:UIEdgeInsetsZero];
 }
 
--(void)fillInParent:(UIEdgeInsets)edgeInsets
+-(void)fillInParent:(UIEdgeInsets)paddingConfig
 {
     if (!self.superview)
         return;
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:self,@"selfView", nil];
-    NSDictionary *metrics1 = @{ @"leftPadding": [NSNumber numberWithFloat:edgeInsets.left]
-                                , @"rightPadding": [NSNumber numberWithFloat:edgeInsets.right] };
+    NSDictionary *metrics1 = @{ @"leftPadding": [NSNumber numberWithFloat:paddingConfig.left]
+                                , @"rightPadding": [NSNumber numberWithFloat:paddingConfig.right] };
     NSString *vfl1 = @"H:|-leftPadding-[selfView]-rightPadding-|";
-    NSDictionary *metrics2 = @{ @"topPadding": [NSNumber numberWithFloat:edgeInsets.top]
-                                , @"bottomPadding": [NSNumber numberWithFloat:edgeInsets.bottom] };
+    NSDictionary *metrics2 = @{ @"topPadding": [NSNumber numberWithFloat:paddingConfig.top]
+                                , @"bottomPadding": [NSNumber numberWithFloat:paddingConfig.bottom] };
     NSString *vfl2 = @"V:|-topPadding-[selfView]-bottomPadding-|";
     [self.superview
      addConstraints:
@@ -191,7 +191,6 @@
     [self.superview
      addConstraints:
      [NSLayoutConstraint constraintsWithVisualFormat:vfl2 options:0 metrics:metrics2 views:dict]];
-
 }
 
 -(void) fillInView:(UIView *)pView
@@ -206,4 +205,69 @@
     [pView addSubview:self];
     [self fillInParent:edgeInsets];
 }
+
+
+- (void)viewCornerRaidusType:(CGFloat)raidus
+             roundingCorners:(UIRectCorner)corners
+                   lineWidth:(CGFloat)lineWidth
+                   lineColor:(UIColor *)lineColor
+             lineDashPattern:(NSArray *)patterns
+{
+    //    NSLog(@"the layer bound %f  %f",self.layer.bounds.size.width,self.layer.bounds.size.height);
+    //    NSLog(@"the view frame %f  %f | %f  %f",self.frame.origin.x,self.frame.origin.y, self.frame.size.width,self.frame.size.height);
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.layer.bounds
+                                                   byRoundingCorners:corners
+                                                         cornerRadii:CGSizeMake(raidus, raidus)];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = CGRectMake(0, 0, self.ftWidth, self.ftHeight);
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+    
+    NSArray *subLayers = self.layer.sublayers;
+    if (subLayers && [subLayers count]) {
+        for (int i = 0; i< [subLayers count]; i++) {
+            CALayer *subLayer = [subLayers objectAtIndex:i];
+            if (subLayer && [subLayer.name length] && [subLayer.name isEqualToString:@"cornerborderlayer254"]) {
+                [subLayer removeFromSuperlayer];
+            }
+        }
+    }
+    
+    CAShapeLayer * cornerBorderLayer = [[CAShapeLayer alloc]init];
+    cornerBorderLayer.opaque = YES;
+    cornerBorderLayer.path = maskPath.CGPath;
+    cornerBorderLayer.strokeColor = [lineColor CGColor];
+    //    cornerBorderLayer.fillColor = [UIColor clearColor].CGColor;
+    cornerBorderLayer.fillColor = [[UIColor whiteColor] CGColor];
+    cornerBorderLayer.lineWidth = lineWidth;
+    cornerBorderLayer.lineDashPattern =patterns;
+    cornerBorderLayer.name = @"cornerborderlayer254";
+    [self.layer insertSublayer:cornerBorderLayer atIndex:0];
+}
+
+
+
+- (id) viewWithXibNamed:(NSString*) xibName owner:(id)owner
+{
+    NSArray* views = [[NSBundle mainBundle] loadNibNamed:xibName owner:owner options:nil] ;
+    if (views.count>0) {
+        for (UIView* view in views) {
+            if ([view isKindOfClass:self.class]) {
+                return view;
+            }
+        }
+    }
+    return nil ;
+}
+
+- (id) viewFromClassXibWithOwner:(id)owner
+{
+    return [self viewWithXibNamed:NSStringFromClass(self.class) owner:owner] ;
+}
+
+
+
+
 @end

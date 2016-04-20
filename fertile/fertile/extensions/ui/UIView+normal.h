@@ -72,7 +72,7 @@
  *  @param fillInView <#fillInView description#>
  *  @param pView      <#pView description#>
  */
--(void)fillInParent:(UIEdgeInsets)edgeInsets;
+-(void)fillInParent:(UIEdgeInsets)paddingConfig;
 
 /**
  *  @brief As its name hints
@@ -88,5 +88,33 @@
  *  @param edgeInsets <#edgeInsets description#>
  */
 -(void) fillInView:(UIView *)pView withEdgeInsets:(UIEdgeInsets)edgeInsets;
+
+/**
+ *  @brief 从xib文件中取得第一个view
+ *
+ *  @param owner <#owner description#>
+ *
+ *  @return <#return value description#>
+ */
+- (id) viewFromClassXibWithOwner:(id)owner;
+
+- (id) viewWithXibNamed:(NSString*) xibName owner:(id)owner;
+
+
+/**
+ *  @brief 圆角View
+ *
+ *  self.ticketBGView.opaque = YES; 这样ticketBGView就不会透明
+ *  @param raidus    <#raidus description#>
+ *  @param corners   <#corners description#>
+ *  @param lineWidth <#lineWidth description#>
+ *  @param lineColor <#lineColor description#>
+ *  @param patterns  <#patterns description#>
+ */
+- (void)viewCornerRaidusType:(CGFloat)raidus
+             roundingCorners:(UIRectCorner)corners
+                   lineWidth:(CGFloat)lineWidth
+                   lineColor:(UIColor *)lineColor
+             lineDashPattern:(NSArray *)patterns;
 
 @end
