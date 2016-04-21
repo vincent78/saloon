@@ -27,6 +27,18 @@
                      withSize:containerSize];
 }
 
+-(CGSize) ftSizeWithFont:(UIFont *)font
+                wihtSize:(CGSize)containerSize
+           withLineSpace:(CGFloat)lineSpace
+{
+    NSMutableParagraphStyle * paraStyle = [[NSMutableParagraphStyle alloc] init];
+    [paraStyle setLineSpacing:lineSpace];
+    return [self ftSizeWithFont:font
+             withParagraphStyle:paraStyle
+                    withOptions:NSStringDrawingTruncatesLastVisibleLine
+                       withSize:containerSize];
+}
+
 
 -(CGSize) ftSizeWithFont:(UIFont *)font
     withParagraphStyle:(NSMutableParagraphStyle *)paragraphStyle

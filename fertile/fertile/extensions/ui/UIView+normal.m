@@ -236,6 +236,7 @@
     }
     
     CAShapeLayer * cornerBorderLayer = [[CAShapeLayer alloc]init];
+    //不透明
     cornerBorderLayer.opaque = YES;
     cornerBorderLayer.path = maskPath.CGPath;
     cornerBorderLayer.strokeColor = [lineColor CGColor];

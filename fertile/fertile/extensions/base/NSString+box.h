@@ -19,6 +19,7 @@
  */
 -(NSDate *)toDate:(NSString *)formatStr;
 
+
 -(int) toInt;
 
 -(NSInteger) toInteger;
@@ -64,5 +65,26 @@
  *  @return <#return value description#>
  */
 -(NSString *) toUnicode;
+
+/**
+ *  @brief 转换成16进制的字符串
+ *
+ *  @return <#return value description#>
+ */
+- (NSString *)toHexString;
+
+/**
+ *  @brief 从16进制的字符串转成字符串
+ *
+ *  @return <#return value description#>
+ */
+- (NSString *)fromHexString;
+
+/**
+ *  @brief 转成NSData
+ *
+ *  @return <#return value description#>
+ */
+-(NSData *) toNSData;
 
 @end

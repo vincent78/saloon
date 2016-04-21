@@ -58,6 +58,8 @@
 		BF50529A1CC8AC2B00B9EDCD /* NSDictionary+object.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */; };
 		BF50529E1CC8C4AD00B9EDCD /* UILabel+rich.h in Headers */ = {isa = PBXBuildFile; fileRef = BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */; };
 		BF50529F1CC8C4AD00B9EDCD /* UILabel+rich.m in Sources */ = {isa = PBXBuildFile; fileRef = BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */; };
+		BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */; };
+		BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */; };
 		BF51B6131C06A7CE00D26E9B /* NSString+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6111C06A7CE00D26E9B /* NSString+box.h */; };
 		BF51B6141C06A7CE00D26E9B /* NSString+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6121C06A7CE00D26E9B /* NSString+box.m */; };
 		BF51B6171C06AC8900D26E9B /* NSDate+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6151C06AC8900D26E9B /* NSDate+box.h */; };
@@ -507,6 +509,8 @@
 		BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+object.m"; sourceTree = "<group>"; };
 		BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+rich.h"; sourceTree = "<group>"; };
 		BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+rich.m"; sourceTree = "<group>"; };
+		BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+box.h"; sourceTree = "<group>"; };
+		BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+box.m"; sourceTree = "<group>"; };
 		BF51B6111C06A7CE00D26E9B /* NSString+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+box.h"; sourceTree = "<group>"; };
 		BF51B6121C06A7CE00D26E9B /* NSString+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+box.m"; sourceTree = "<group>"; };
 		BF51B6151C06AC8900D26E9B /* NSDate+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+box.h"; sourceTree = "<group>"; };
@@ -1586,6 +1590,8 @@
 				BF51B61A1C06E65A00D26E9B /* NSNumber+box.m */,
 				BF5052971CC8AC2B00B9EDCD /* NSDictionary+object.h */,
 				BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */,
+				BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */,
+				BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -1782,6 +1788,7 @@
 				BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */,
 				BF7957C31CC7CCA1000CEB0D /* Masonry.h in Headers */,
 				BF52E5381C3CE1950052A107 /* RACImmediateScheduler.h in Headers */,
+				BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */,
 				BF52E5071C3CE1950052A107 /* NSSet+RACSequenceAdditions.h in Headers */,
 				BFF1882A1CB6082700CC1F77 /* AFURLSessionManager.h in Headers */,
 				BF52E5961C3CE1950052A107 /* UISlider+RACSignalSupport.h in Headers */,
@@ -2169,6 +2176,7 @@
 				BF8343D01C3B578A0082A845 /* UIColor+Separate.m in Sources */,
 				BFF188201CB6082700CC1F77 /* AFHTTPSessionManager.m in Sources */,
 				BF52E58D1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.m in Sources */,
+				BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */,
 				BF7957CF1CC7CCA1000CEB0D /* View+MASAdditions.m in Sources */,
 				BF1533C71BE0D95300809493 /* FTFileUtil+md5.m in Sources */,
 				BFC821B51BDE45BF0066A77C /* NSString+Security.m in Sources */,

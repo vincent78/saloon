@@ -105,11 +105,11 @@
  *  @brief 圆角View
  *
  *  self.ticketBGView.opaque = YES; 这样ticketBGView就不会透明
- *  @param raidus    <#raidus description#>
- *  @param corners   <#corners description#>
- *  @param lineWidth <#lineWidth description#>
- *  @param lineColor <#lineColor description#>
- *  @param patterns  <#patterns description#>
+ *  @param raidus    弯度
+ *  @param corners   哪个角
+ *  @param lineWidth 线条宽度
+ *  @param lineColor 线条颜色
+ *  @param patterns  折线样式
  */
 - (void)viewCornerRaidusType:(CGFloat)raidus
              roundingCorners:(UIRectCorner)corners

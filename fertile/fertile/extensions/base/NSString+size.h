@@ -33,6 +33,19 @@
               withSize:(CGSize) containerSize;
 
 /**
+ *  @brief 计算字符串的长和宽
+ *
+ *  @param font          <#font description#>
+ *  @param containerSize <#containerSize description#>
+ *  @param lineSpace     <#lineSpace description#>
+ *
+ *  @return <#return value description#>
+ */
+-(CGSize) ftSizeWithFont:(UIFont *)font
+                wihtSize:(CGSize)containerSize
+           withLineSpace:(CGFloat)lineSpace;
+
+/**
  *  @brief  计算字符串的长和宽
  *
  *  @param font           指定的字体
