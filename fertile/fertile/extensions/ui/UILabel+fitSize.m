@@ -15,7 +15,7 @@
  *
  *  @return 返回lable显示全部内容需要的实际宽度
  */
-- (CGFloat) ctContentWidth
+- (CGFloat) ftContentWidth
 {
     if (self.text.length==0)
     {
@@ -29,7 +29,7 @@
  *
  *  @return 返回lable显示全部内容需要的实际高度
  */
-- (CGFloat) ctContentHeight
+- (CGFloat) ftContentHeight
 {
     if (self.text.length==0)
     {
@@ -44,7 +44,7 @@
  *
  *  @return 调整后的宽度
  */
-- (CGFloat) ctWidthToFit
+- (CGFloat) ftWidthToFit
 {
     CGRect rect = self.frame;
     CGFloat xOffset = rect.origin.x;
@@ -57,7 +57,7 @@
         xOffset += (rect.size.width / 2.0);
     }
     
-    rect.size.width = [self ctContentWidth];
+    rect.size.width = [self ftContentWidth];
     if (self.textAlignment == NSTextAlignmentRight)
     {
         rect.origin.x = xOffset-rect.size.width ;
@@ -78,19 +78,19 @@
  *
  *  @return 调整后的高度
  */
-- (CGFloat) ctHeightToFit {
+- (CGFloat) ftHeightToFit {
     //调整高度，需要把这个设置一下，不然万一不是0，调整无效
     if(self.numberOfLines!=0)
     {
         self.numberOfLines = 0 ;
     }
-    self.ftHeight = [self ctContentHeight] ;
+    self.ftHeight = [self ftContentHeight] ;
     return self.ftHeight ;
 }
 
 //裁剪字符串长度去适配宽度
-- (void) ctClipLengthToFitWidth {
-    while (self.ctContentWidth>self.ftWidth) {
+- (void) ftClipLengthToFitWidth {
+    while (self.ftContentWidth>self.ftWidth) {
         self.text = [self.text substringToIndex:self.text.length-1] ;
     }
 }

@@ -28,4 +28,14 @@
 
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
 
+/**
+ *  @brief 更改Color的alpha值
+ *
+ *  @param color <#color description#>
+ *  @param alpha <#alpha description#>
+ *
+ *  @return <#return value description#>
+ */
++(UIColor *) change:(UIColor *)color withAlpha:(CGFloat)alpha;
+
 @end

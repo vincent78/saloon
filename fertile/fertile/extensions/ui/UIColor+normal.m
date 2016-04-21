@@ -84,5 +84,9 @@
 }
 
 
++(UIColor *) change:(UIColor *)color withAlpha:(CGFloat)alpha
+{
+    return [color colorWithAlphaComponent:alpha];
+}
 
 @end
