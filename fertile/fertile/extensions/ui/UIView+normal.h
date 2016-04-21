@@ -40,6 +40,17 @@
  *  @brief  As its name hints.
  */
 - (void)removeAllSubView;
+
+
+/**
+ *  @brief As its name hints.
+ *
+ *  @param tag <#tag description#>
+ */
+-(void) removeSubViewByTag:(int)tag;
+
+
+
 /**
  *  @brief As its name hints.
  */
@@ -96,25 +107,17 @@
  *
  *  @return <#return value description#>
  */
-- (id) viewFromClassXibWithOwner:(id)owner;
+- (instancetype) viewFromClassXibWithOwner:(id)owner;
 
-- (id) viewWithXibNamed:(NSString*) xibName owner:(id)owner;
-
+- (instancetype) viewWithXibNamed:(NSString*) xibName owner:(id)owner;
 
 /**
- *  @brief 圆角View
+ *  @brief 将UIView转成UIImage 截屏
  *
- *  self.ticketBGView.opaque = YES; 这样ticketBGView就不会透明
- *  @param raidus    弯度
- *  @param corners   哪个角
- *  @param lineWidth 线条宽度
- *  @param lineColor 线条颜色
- *  @param patterns  折线样式
+ *  @return <#return value description#>
  */
-- (void)viewCornerRaidusType:(CGFloat)raidus
-             roundingCorners:(UIRectCorner)corners
-                   lineWidth:(CGFloat)lineWidth
-                   lineColor:(UIColor *)lineColor
-             lineDashPattern:(NSArray *)patterns;
+- (UIImage *) getImage;
+
+
 
 @end

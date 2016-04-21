@@ -61,12 +61,12 @@
           fontColor:(UIColor *)fontColor1;
 
 
-/**
- *  @brief  转成UIImage
- *
- *  @return <#return value description#>
- */
--(UIImage *) toImage;
+///**
+// *  @brief  转成UIImage
+// *
+// *  @return <#return value description#>
+// */
+//-(UIImage *) toImage;
 
 
 

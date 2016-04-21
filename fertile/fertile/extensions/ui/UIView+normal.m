@@ -207,50 +207,9 @@
 }
 
 
-- (void)viewCornerRaidusType:(CGFloat)raidus
-             roundingCorners:(UIRectCorner)corners
-                   lineWidth:(CGFloat)lineWidth
-                   lineColor:(UIColor *)lineColor
-             lineDashPattern:(NSArray *)patterns
-{
-    //    NSLog(@"the layer bound %f  %f",self.layer.bounds.size.width,self.layer.bounds.size.height);
-    //    NSLog(@"the view frame %f  %f | %f  %f",self.frame.origin.x,self.frame.origin.y, self.frame.size.width,self.frame.size.height);
-    
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.layer.bounds
-                                                   byRoundingCorners:corners
-                                                         cornerRadii:CGSizeMake(raidus, raidus)];
-    
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = CGRectMake(0, 0, self.ftWidth, self.ftHeight);
-    maskLayer.path = maskPath.CGPath;
-    self.layer.mask = maskLayer;
-    
-    NSArray *subLayers = self.layer.sublayers;
-    if (subLayers && [subLayers count]) {
-        for (int i = 0; i< [subLayers count]; i++) {
-            CALayer *subLayer = [subLayers objectAtIndex:i];
-            if (subLayer && [subLayer.name length] && [subLayer.name isEqualToString:@"cornerborderlayer254"]) {
-                [subLayer removeFromSuperlayer];
-            }
-        }
-    }
-    
-    CAShapeLayer * cornerBorderLayer = [[CAShapeLayer alloc]init];
-    //不透明
-    cornerBorderLayer.opaque = YES;
-    cornerBorderLayer.path = maskPath.CGPath;
-    cornerBorderLayer.strokeColor = [lineColor CGColor];
-    //    cornerBorderLayer.fillColor = [UIColor clearColor].CGColor;
-    cornerBorderLayer.fillColor = [[UIColor whiteColor] CGColor];
-    cornerBorderLayer.lineWidth = lineWidth;
-    cornerBorderLayer.lineDashPattern =patterns;
-    cornerBorderLayer.name = @"cornerborderlayer254";
-    [self.layer insertSublayer:cornerBorderLayer atIndex:0];
-}
 
 
-
-- (id) viewWithXibNamed:(NSString*) xibName owner:(id)owner
+- (instancetype) viewWithXibNamed:(NSString*) xibName owner:(id)owner
 {
     NSArray* views = [[NSBundle mainBundle] loadNibNamed:xibName owner:owner options:nil] ;
     if (views.count>0) {
@@ -263,12 +222,34 @@
     return nil ;
 }
 
-- (id) viewFromClassXibWithOwner:(id)owner
+- (instancetype) viewFromClassXibWithOwner:(id)owner
 {
     return [self viewWithXibNamed:NSStringFromClass(self.class) owner:owner] ;
 }
 
 
+-(void) removeSubViewByTag:(int)tag
+{
+    
+    for (UIView *subView in self.subviews)
+    {
+        if (subView.tag == tag)
+        {
+            [subView removeFromSuperview];
+            return;
+        }
+    }
+}
+
+
+- (UIImage *) getImage
+{
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *thumbnailImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return thumbnailImage;
+}
 
 
 @end

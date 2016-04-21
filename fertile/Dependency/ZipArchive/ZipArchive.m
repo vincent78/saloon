@@ -311,11 +311,21 @@
 		[_delegate ErrorMessage:msg];
 }
 
+-(void) ErrorMessage
+{
+    
+}
+
 -(BOOL) OverWrite:(NSString*) file
 {
 	if( _delegate && [_delegate respondsToSelector:@selector(OverWriteOperation)] )
 		return [_delegate OverWriteOperation:file];
 	return YES;
+}
+
+-(void)OverWriteOperation
+{
+    
 }
 
 #pragma mark get NSDate object for 1980-01-01

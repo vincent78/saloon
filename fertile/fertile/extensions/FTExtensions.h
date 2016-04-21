@@ -12,6 +12,7 @@
 //base
 #import "NSData+Hash.h"
 #import "NSData+base64.h"
+#import "NSData+box.h"
 
 #import "NSDate+box.h"
 #import "NSDate+normal.h"
@@ -30,15 +31,28 @@
 #import "NSArray+json.h"
 #import "NSArray+normal.h"
 #import "NSMutableArray+normal.h"
+
 #import "NSDictionary+json.h"
+#import "NSDictionary+object.h"
 #import "NSMutableDictionary+normal.h"
-#import "NSMutableArray+normal.h"
+
+
+
 
 //ui
+
+#import "UILabel+rich.h"
+#import "UILabel+fitSize.h"
+
 #import "UIView+normal.h"
+#import "UIView+layer.h"
+
 #import "UITableViewCell+normal.h"
 
 #import "UIColor+normal.h"
+#import "UIImage+normal.h"
+
+
 
 
 #endif /* FTExtensions_h */

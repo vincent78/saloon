@@ -21,7 +21,7 @@
     return [[FTVectorView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)
                                                          fontFamilyName:fontFamilyName
                                                                fontName:text
-                                                              fontColor:color].toImage;
+                                                              fontColor:color].getImage;
 }
 
 @end

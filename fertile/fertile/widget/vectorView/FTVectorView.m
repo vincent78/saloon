@@ -185,14 +185,14 @@
     _autoSizable = autoSizable;
 }
 
--(UIImage*)toImage
-{
-    CGSize imageSize = self.bounds.size;
-    UIGraphicsBeginImageContextWithOptions(imageSize, NO, [[UIScreen mainScreen] scale]);
-    [self.vectorLabel.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
-    return retImage;
-}
+//-(UIImage*)toImage
+//{
+//    CGSize imageSize = self.bounds.size;
+//    UIGraphicsBeginImageContextWithOptions(imageSize, NO, [[UIScreen mainScreen] scale]);
+//    [self.vectorLabel.layer renderInContext:UIGraphicsGetCurrentContext()];
+//    UIImage *retImage = UIGraphicsGetImageFromCurrentImageContext();
+//    return retImage;
+//}
 
 
 @end

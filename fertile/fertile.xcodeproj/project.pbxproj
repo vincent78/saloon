@@ -60,6 +60,10 @@
 		BF50529F1CC8C4AD00B9EDCD /* UILabel+rich.m in Sources */ = {isa = PBXBuildFile; fileRef = BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */; };
 		BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */; };
 		BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */; };
+		BF5052A61CC8D80000B9EDCD /* UIView+layer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A41CC8D80000B9EDCD /* UIView+layer.h */; };
+		BF5052A71CC8D80000B9EDCD /* UIView+layer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A51CC8D80000B9EDCD /* UIView+layer.m */; };
+		BF5052DB1CC8DC0500B9EDCD /* UIImage+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */; };
+		BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */; };
 		BF51B6131C06A7CE00D26E9B /* NSString+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6111C06A7CE00D26E9B /* NSString+box.h */; };
 		BF51B6141C06A7CE00D26E9B /* NSString+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6121C06A7CE00D26E9B /* NSString+box.m */; };
 		BF51B6171C06AC8900D26E9B /* NSDate+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6151C06AC8900D26E9B /* NSDate+box.h */; };
@@ -511,6 +515,10 @@
 		BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+rich.m"; sourceTree = "<group>"; };
 		BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+box.h"; sourceTree = "<group>"; };
 		BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+box.m"; sourceTree = "<group>"; };
+		BF5052A41CC8D80000B9EDCD /* UIView+layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+layer.h"; sourceTree = "<group>"; };
+		BF5052A51CC8D80000B9EDCD /* UIView+layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+layer.m"; sourceTree = "<group>"; };
+		BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+normal.h"; sourceTree = "<group>"; };
+		BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+normal.m"; sourceTree = "<group>"; };
 		BF51B6111C06A7CE00D26E9B /* NSString+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+box.h"; sourceTree = "<group>"; };
 		BF51B6121C06A7CE00D26E9B /* NSString+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+box.m"; sourceTree = "<group>"; };
 		BF51B6151C06AC8900D26E9B /* NSDate+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+box.h"; sourceTree = "<group>"; };
@@ -1562,12 +1570,14 @@
 				BFC821A11BDE45BF0066A77C /* NSData+base64.m */,
 				BFC821A21BDE45BF0066A77C /* NSData+Hash.h */,
 				BFC821A31BDE45BF0066A77C /* NSData+Hash.m */,
+				BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */,
+				BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */,
 				BF1533B91BE0B40F00809493 /* NSDictionary+json.h */,
 				BF1533BA1BE0B40F00809493 /* NSDictionary+json.m */,
-				BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */,
-				BFFAD90C1BE35FFF0050A21B /* NSMutableArray+normal.m */,
 				BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */,
 				BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */,
+				BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */,
+				BFFAD90C1BE35FFF0050A21B /* NSMutableArray+normal.m */,
 				BF1533B11BE0A8CD00809493 /* NSString+json.h */,
 				BF1533B21BE0A8CD00809493 /* NSString+json.m */,
 				BFC821A41BDE45BF0066A77C /* NSString+normal.h */,
@@ -1590,8 +1600,6 @@
 				BF51B61A1C06E65A00D26E9B /* NSNumber+box.m */,
 				BF5052971CC8AC2B00B9EDCD /* NSDictionary+object.h */,
 				BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */,
-				BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */,
-				BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -1603,6 +1611,8 @@
 				BFC821BA1BDE462E0066A77C /* UITableViewCell+normal.m */,
 				BFC821BB1BDE462E0066A77C /* UIView+normal.h */,
 				BFC821BC1BDE462E0066A77C /* UIView+normal.m */,
+				BF5052A41CC8D80000B9EDCD /* UIView+layer.h */,
+				BF5052A51CC8D80000B9EDCD /* UIView+layer.m */,
 				BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */,
 				BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */,
 				BF14C5A21BE3081100B49989 /* UIWebView+normal.h */,
@@ -1613,6 +1623,8 @@
 				BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */,
 				BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */,
 				BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */,
+				BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */,
+				BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -1815,6 +1827,7 @@
 				BF7957BC1CC7CCA1000CEB0D /* MASConstraint+Private.h in Headers */,
 				BF6C2B501C3A04EC00CDA1E8 /* MKAnnotationView+WebCache.h in Headers */,
 				BF52E4E31C3CE1950052A107 /* NSArray+RACSequenceAdditions.h in Headers */,
+				BF5052DB1CC8DC0500B9EDCD /* UIImage+normal.h in Headers */,
 				BF5F6FC01CB66A2100463D9F /* ioapi.h in Headers */,
 				BF52E4ED1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.h in Headers */,
 				BF5F6FC21CB66A2100463D9F /* mztools.h in Headers */,
@@ -1906,6 +1919,7 @@
 				BF1533C01BE0D13B00809493 /* FTFileUtil.h in Headers */,
 				BF52E5511C3CE1950052A107 /* RACScheduler+Subclass.h in Headers */,
 				BF43F6C71BDE25E100A1389B /* FTBaseModel.h in Headers */,
+				BF5052A61CC8D80000B9EDCD /* UIView+layer.h in Headers */,
 				BFB57D181C33C0B4005187B6 /* Aspects.h in Headers */,
 				BF6C2B581C3A04EC00CDA1E8 /* SDWebImageDecoder.h in Headers */,
 				BF52E5711C3CE1950052A107 /* RACTestScheduler.h in Headers */,
@@ -2046,6 +2060,7 @@
 				BF52E5041C3CE1950052A107 /* NSObject+RACSelectorSignal.m in Sources */,
 				BF52E4EC1C3CE1950052A107 /* NSDictionary+RACSequenceAdditions.m in Sources */,
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
+				BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */,
 				BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */,
 				BF52E5161C3CE1950052A107 /* RACArraySequence.m in Sources */,
 				BF6C2B661C3A04EC00CDA1E8 /* UIImage+GIF.m in Sources */,
@@ -2111,6 +2126,7 @@
 				BF52E5741C3CE1950052A107 /* RACTuple.m in Sources */,
 				BFC821B71BDE45BF0066A77C /* NSString+size.m in Sources */,
 				BF52E5721C3CE1950052A107 /* RACTestScheduler.m in Sources */,
+				BF5052A71CC8D80000B9EDCD /* UIView+layer.m in Sources */,
 				BF52E5531C3CE1950052A107 /* RACScheduler.m in Sources */,
 				BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */,
 				BF52E5311C3CE1950052A107 /* RACEmptySignal.m in Sources */,
