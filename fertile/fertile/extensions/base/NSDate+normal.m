@@ -171,7 +171,7 @@ static NSCalendar *currCalendar;
 }
 
 
-+ (NSString *)lunarForSolar:(NSDate *)solarDate
+- (NSString *)lunarForSolar
 {
     //天干名称
     //    NSArray *cTianGan = [NSArray arrayWithObjects:@"甲",@"乙",@"丙",@"丁",@"戊",@"己",@"庚",@"辛",@"壬",@"癸", nil];
@@ -209,7 +209,7 @@ static NSCalendar *currCalendar;
     static NSInteger nTheDate,nIsEnd,m,k,n,i,nBit;
     
     //取当前公历年、月、日
-    NSDateComponents *components = [[NSDate getCurrentCalendar] components:NSCalendarUnitDay |NSCalendarUnitMonth | NSCalendarUnitYear fromDate:solarDate];
+    NSDateComponents *components = [[NSDate getCurrentCalendar] components:NSCalendarUnitDay |NSCalendarUnitMonth | NSCalendarUnitYear fromDate:self];
     wCurYear = [components year];
     wCurMonth = [components month];
     wCurDay = [components day];

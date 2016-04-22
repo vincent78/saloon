@@ -130,4 +130,11 @@ typedef NS_ENUM(NSInteger,FTDATEFIELD) {
  */
 - (NSInteger)getWeek;
 
+/**
+ *  @brief 获取公历
+ *
+ *  @return <#return value description#>
+ */
+- (NSString *)lunarForSolar;
+
 @end
