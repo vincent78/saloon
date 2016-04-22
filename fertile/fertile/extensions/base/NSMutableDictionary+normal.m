@@ -10,7 +10,7 @@
 
 @implementation NSMutableDictionary (normal)
 
-- (void)setSafeObject:(id)anObject forKey:(id)aKey {
+- (void)setObjectForFT:(id)anObject forKey:(id)aKey {
     if (aKey == nil) {
         NSAssert(false, @"aKey is NULL, crashed");
     }
@@ -19,7 +19,7 @@
     }
     else if ([aKey conformsToProtocol:@protocol(NSCopying)]) {
         if (anObject == NULL) {
-            [self removeSafeObjectForKey:aKey];
+            [self removeObjectForKeyForFT:aKey];
         }
         else {
             [self setObject:anObject forKey:aKey];
@@ -27,7 +27,7 @@
     }
 }
 
-- (void)removeSafeObjectForKey:(id)aKey
+- (void)removeObjectForKeyForFT:(id)aKey
 {
     if (!aKey) {
         NSAssert(false, @"aKey is NULL, crashed");

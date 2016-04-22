@@ -45,7 +45,7 @@
                                     options:nil];
     UIView* view = nil;
     if (array) {
-        view = [array safeObjectAtIndex:index];
+        view = [array objectAtIndexForFT:index];
     }
 
     return view;

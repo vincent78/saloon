@@ -69,12 +69,12 @@
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     SNFontImgCell *tmpCell = (SNFontImgCell *)cell;
-    NSString *fontText = [[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"];
+    NSString *fontText = [[items objectAtIndexForFT:indexPath.row] objectForKey:@"code"];
     fontText = [fontText stringByReplacingOccurrencesOfString:@"&#x" withString:@"\\U0000"];
     [tmpCell initWithImg:fontText
-                withTxt1:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]
-                withTxt2:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]
-                withTxt3:[[items safeObjectAtIndex:indexPath.row] objectForKey:@"code"]];
+                withTxt1:[[items objectAtIndexForFT:indexPath.row] objectForKey:@"code"]
+                withTxt2:[[items objectAtIndexForFT:indexPath.row] objectForKey:@"code"]
+                withTxt3:[[items objectAtIndexForFT:indexPath.row] objectForKey:@"code"]];
 }
 
 

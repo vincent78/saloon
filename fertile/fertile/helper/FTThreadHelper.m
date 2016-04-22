@@ -41,7 +41,7 @@ static FTThreadHelper *sharedInstance = nil;
     serialQueue = [NSMutableDictionary dictionaryWithCapacity:1];
     defaultSerialQueueIdentifier = [[[NSBundle mainBundle] bundleIdentifier] stringByAppendingString:@".defaultSerialQueue"];
     dispatch_queue_t defaultSerialQueue = dispatch_queue_create([defaultSerialQueueIdentifier UTF8String], DISPATCH_QUEUE_SERIAL);
-    [serialQueue setSafeObject:defaultSerialQueue forKey:defaultSerialQueueIdentifier];
+    [serialQueue setObjectForFT:defaultSerialQueue forKey:defaultSerialQueueIdentifier];
 
     concurrentQueue = [NSMutableDictionary dictionaryWithCapacity:3];
 }

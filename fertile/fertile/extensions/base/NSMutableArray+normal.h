@@ -10,6 +10,6 @@
 
 @interface NSMutableArray (normal)
 
-- (void)safeAddObject:(id)obj;
+- (void)addObjectForFT:(id)obj;
 
 @end

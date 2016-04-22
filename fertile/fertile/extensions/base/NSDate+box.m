@@ -30,7 +30,7 @@ static NSMutableDictionary * dateFormatters ;
         [dateFormater setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
         [dateFormater setTimeZone:[NSTimeZone timeZoneWithAbbreviation:ftTimeZone_CN]];
         [dateFormater setDateFormat:str];
-        [dateFormatters setSafeObject:dateFormater forKey:str];
+        [dateFormatters setObjectForFT:dateFormater forKey:str];
     }
     
     return dateFormater;

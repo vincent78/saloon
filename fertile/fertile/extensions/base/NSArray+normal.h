@@ -10,6 +10,6 @@
 
 @interface NSArray (normal)
 
-- (id)safeObjectAtIndex:(NSUInteger)index;
+- (id)objectAtIndexForFT:(NSUInteger)index;
 
 @end

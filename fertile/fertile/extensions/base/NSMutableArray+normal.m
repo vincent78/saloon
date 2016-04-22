@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (normal)
 
-- (void)safeAddObject:(id)obj {
+- (void)addObjectForFT:(id)obj {
     if (obj != NULL) {
         [self addObject:obj];
     }

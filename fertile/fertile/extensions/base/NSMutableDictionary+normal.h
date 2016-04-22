@@ -10,9 +10,9 @@
 
 @interface NSMutableDictionary (normal)
 
-- (void)setSafeObject:(id)anObject forKey:(id)aKey;
+- (void)setObjectForFT:(id)anObject forKey:(id)aKey;
 
 
-- (void)removeSafeObjectForKey:(id)aKey;
+- (void)removeObjectForKeyForFT:(id)aKey;
 
 @end

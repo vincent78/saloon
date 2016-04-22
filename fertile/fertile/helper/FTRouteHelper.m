@@ -74,7 +74,7 @@ static FTRouteHelper *sharedInstance = nil;
         model = [FTNavigateControllerModel new];
         model.key = key;
         model.parentKey = currModel?currModel.key:@"";
-        [navDic setSafeObject:model forKey:model.key];
+        [navDic setObjectForFT:model forKey:model.key];
     }
     
     currNav = model.nav;

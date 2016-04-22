@@ -10,7 +10,8 @@
 
 @implementation NSArray (normal)
 
-- (id)safeObjectAtIndex:(NSUInteger)index {
+- (id)objectAtIndexForFT:(NSUInteger)index
+{
     if (index < self.count) {
         return [self objectAtIndex:index];
     }
