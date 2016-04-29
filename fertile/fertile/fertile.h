@@ -10,6 +10,7 @@
 
 
 #import "MJExtension.h"
+#import "masonry.h"
 
 
 #import "FTConfiguration.h"

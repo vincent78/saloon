@@ -445,6 +445,8 @@
 		BFF1882B1CB6082700CC1F77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */; };
 		BFF246301CBF810A002B5603 /* FTFileUtil+readwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */; };
 		BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */; };
+		BFF8D81E1CD0752C009E6927 /* UIView+autoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */; };
+		BFF8D81F1CD0752C009E6927 /* UIView+autoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */; };
 		BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */; };
 		BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */; };
 		BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */; };
@@ -908,6 +910,8 @@
 		BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTFileUtil+readwrite.h"; sourceTree = "<group>"; };
 		BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+readwrite.m"; sourceTree = "<group>"; };
+		BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+autoLayout.h"; sourceTree = "<group>"; };
+		BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+autoLayout.m"; sourceTree = "<group>"; };
 		BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+normal.h"; sourceTree = "<group>"; };
 		BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+normal.m"; sourceTree = "<group>"; };
 		BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+normal.h"; sourceTree = "<group>"; };
@@ -1613,6 +1617,8 @@
 				BFC821BC1BDE462E0066A77C /* UIView+normal.m */,
 				BF5052A41CC8D80000B9EDCD /* UIView+layer.h */,
 				BF5052A51CC8D80000B9EDCD /* UIView+layer.m */,
+				BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */,
+				BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */,
 				BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */,
 				BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */,
 				BF14C5A21BE3081100B49989 /* UIWebView+normal.h */,
@@ -1725,6 +1731,7 @@
 				BF52E5901C3CE1950052A107 /* UIImagePickerController+RACSignalSupport.h in Headers */,
 				BF52E5091C3CE1950052A107 /* NSString+RACKeyPathUtilities.h in Headers */,
 				BF52E5471C3CE1950052A107 /* RACPassthroughSubscriber.h in Headers */,
+				BFF8D81E1CD0752C009E6927 /* UIView+autoLayout.h in Headers */,
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BF0B84741BE7322D009C76E1 /* FTAlertUtil.h in Headers */,
@@ -2165,6 +2172,7 @@
 				BF52E5571C3CE1950052A107 /* RACSequence.m in Sources */,
 				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
+				BFF8D81F1CD0752C009E6927 /* UIView+autoLayout.m in Sources */,
 				BF52E5371C3CE1950052A107 /* RACGroupedSignal.m in Sources */,
 				BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */,
 				BF50529A1CC8AC2B00B9EDCD /* NSDictionary+object.m in Sources */,

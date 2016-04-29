@@ -158,6 +158,22 @@
                "desc": "ViewController之间的跳转",
                "params": [],
                "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "界面布局",
+               "desc": "处理界面上布局的问题",
+               "subitems": [
+                    {
+                    "icon": "",
+                    "title": "masonry",
+                    "desc": "masonry的使用",
+                    "params": [],
+                    "viewcontroller": "SNOperationAutoLayoutMasonryViewController"
+                    }
+               ],
+               "params": [],
+               "viewcontroller": ""
                }
                ],
   "params": [],

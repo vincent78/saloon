@@ -56,49 +56,6 @@
  */
 - (void)printPosition;
 
-/**
- *  As its name hints.
- **/
-- (void)centerHorizontally;
-
-/**
- *  As its name hints.
- **/
-- (void)centerVertically;
-
-/**
- *  @brief  As its name hints.
- */
-- (void)centerInParent;
-
-/**
- *  @brief  As its name hints.
-    充满容器大小，随容器的变化而变化
- */
--(void)fillInParent;
-
-/**
- *  @brief <#Description#>
- *
- *  @param fillInView <#fillInView description#>
- *  @param pView      <#pView description#>
- */
--(void)fillInParent:(UIEdgeInsets)paddingConfig;
-
-/**
- *  @brief As its name hints
- *
- *  @param pView <#pView description#>
- */
--(void) fillInView:(UIView *)pView;
-
-/**
- *  @brief <#Description#>
- *
- *  @param pView      <#pView description#>
- *  @param edgeInsets <#edgeInsets description#>
- */
--(void) fillInView:(UIView *)pView withEdgeInsets:(UIEdgeInsets)edgeInsets;
 
 /**
  *  @brief 从xib文件中取得第一个view

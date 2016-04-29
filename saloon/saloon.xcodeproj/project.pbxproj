@@ -28,6 +28,8 @@
 		BFB57CEF1C3384F6005187B6 /* fertile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFB57CEB1C33848A005187B6 /* fertile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFD777541C4CDDF800E35DDA /* SNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD777521C4CDDF800E35DDA /* SNTestViewController.m */; };
 		BFD777551C4CDDF800E35DDA /* SNTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD777531C4CDDF800E35DDA /* SNTestViewController.xib */; };
+		BFF8D8291CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8D8271CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m */; };
+		BFF8D82A1CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF8D8281CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,9 @@
 		BFD777511C4CDDF800E35DDA /* SNTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTestViewController.h; sourceTree = "<group>"; };
 		BFD777521C4CDDF800E35DDA /* SNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNTestViewController.m; sourceTree = "<group>"; };
 		BFD777531C4CDDF800E35DDA /* SNTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNTestViewController.xib; sourceTree = "<group>"; };
+		BFF8D8261CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNOperationAutoLayoutMasonryViewController.h; sourceTree = "<group>"; };
+		BFF8D8271CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNOperationAutoLayoutMasonryViewController.m; sourceTree = "<group>"; };
+		BFF8D8281CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNOperationAutoLayoutMasonryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +173,7 @@
 		BFB57CC41C3383BA005187B6 /* saloon */ = {
 			isa = PBXGroup;
 			children = (
+				BFF8D8201CD081CD009E6927 /* operation */,
 				BFBE5ADA1C478B8E00CF84EC /* animation */,
 				BFB3E6121C45E2100041E614 /* widget */,
 				BFB57CC81C3383BA005187B6 /* AppDelegate.h */,
@@ -231,6 +237,16 @@
 				BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */,
 			);
 			path = animation;
+			sourceTree = "<group>";
+		};
+		BFF8D8201CD081CD009E6927 /* operation */ = {
+			isa = PBXGroup;
+			children = (
+				BFF8D8261CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.h */,
+				BFF8D8271CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m */,
+				BFF8D8281CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib */,
+			);
+			path = operation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +331,7 @@
 				BF5432BE1C4CCEEA00BA9C5C /* FontImgItem.json in Resources */,
 				BFB57CD21C3383BA005187B6 /* Assets.xcassets in Resources */,
 				BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */,
+				BFF8D82A1CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib in Resources */,
 				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
 				BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */,
 				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
@@ -337,6 +354,7 @@
 				BF9B35F71C43A02300858C4C /* SNItemListScene.m in Sources */,
 				BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */,
 				BF5432BB1C4CCA6700BA9C5C /* SNFontImgCell.m in Sources */,
+				BFF8D8291CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m in Sources */,
 				BF30EB581C4E34F50032FB9D /* SNUIViewAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

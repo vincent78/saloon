@@ -46,6 +46,8 @@
 
 #import "UIView+normal.h"
 #import "UIView+layer.h"
+#import "UIView+autoLayout.h"
+
 
 #import "UITableViewCell+normal.h"
 

@@ -21,8 +21,13 @@
         return YES;
     else {
         if ([obj isKindOfClass:[NSString class]]) {
-            NSString* tmpStr = obj;
-            return tmpStr.isEmpty;
+//            NSString* tmpStr = obj;
+//            return tmpStr.isEmpty;
+            return [obj isEqualToString:@""];
+        }
+        else if ([obj isKindOfClass:[NSNumber class]])
+        {
+            return [obj isEqualToNumber:@0];
         }
     }
     return NO;

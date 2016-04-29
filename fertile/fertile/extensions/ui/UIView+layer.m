@@ -29,28 +29,26 @@
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
     
-//    NSArray *subLayers = self.layer.sublayers;
-//    if (subLayers && [subLayers count]) {
-//        for (int i = 0; i< [subLayers count]; i++) {
-//            CALayer *subLayer = [subLayers objectAtIndex:i];
-//            if (subLayer && [subLayer.name length] && [subLayer.name isEqualToString:@"cornerborderlayer254"]) {
-//                [subLayer removeFromSuperlayer];
-//            }
-//        }
-//    }
-    
     CAShapeLayer * cornerBorderLayer = [[CAShapeLayer alloc]init];
     //不透明
     cornerBorderLayer.opaque = YES;
     cornerBorderLayer.path = maskPath.CGPath;
     cornerBorderLayer.strokeColor = [borderColor CGColor];
-    //    cornerBorderLayer.fillColor = [UIColor clearColor].CGColor;
     cornerBorderLayer.fillColor = [[UIColor whiteColor] CGColor];
     cornerBorderLayer.lineWidth = borderWidth;
     cornerBorderLayer.lineDashPattern =patterns;
-//    cornerBorderLayer.name = @"cornerborderlayer254";
-//    [self.layer insertSublayer:cornerBorderLayer atIndex:0];
     self.layer.mask = cornerBorderLayer;
+    
+    
+//    //添加圆角
+//    CGRect coverFrame = CGRectMake(0, 0, CTScreenWidth - 16, 39);
+//    UIBezierPath *cornerPath = [UIBezierPath bezierPathWithRoundedRect:coverFrame
+//                                                     byRoundingCorners:UIRectCornerBottomLeft | UIRectCornerBottomRight
+//                                                           cornerRadii:CGSizeMake(5.0f, 5.0f)];
+//    CAShapeLayer * topSingleLayer = [[CAShapeLayer alloc]init];
+//    topSingleLayer.frame = coverFrame;
+//    topSingleLayer.path = cornerPath.CGPath;
+//    backgroudView.layer.mask = topSingleLayer;
 }
 
 -(void)viewCornerRaidusType:(CGFloat)raidus
