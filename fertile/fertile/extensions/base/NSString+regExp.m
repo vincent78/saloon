@@ -72,6 +72,23 @@
 }
 
 
+-(BOOL) isMobileNumber:(NSString *) mobile
+{
+    bool isMobile = false;
+    
+    if(mobile != nil && mobile.length == 11)
+    {
+        NSString *numberStr = @"^((13[0-9])|(15[^4,\\D])|(17[0,6-8])|(147)|(145)|(18[0-9]))\\d{8}$";
+        
+        NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", numberStr];
+        
+        isMobile = [pred evaluateWithObject:mobile];
+    }
+    return isMobile;
+}
+
+
+
 -(BOOL) verifyID:(NSString *)idcard
 {
     if(idcard == nil || [idcard isEqualToString:@""])

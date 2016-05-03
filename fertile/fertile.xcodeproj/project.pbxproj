@@ -36,6 +36,8 @@
 		BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */; };
 		BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */; };
 		BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */; };
+		BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */; };
+		BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */; };
 		BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */; };
 		BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */; };
 		BF43F6501BDDF18B00A1389B /* FTBaseWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */; };
@@ -491,6 +493,8 @@
 		BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDashLineWidget.m; sourceTree = "<group>"; };
 		BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fitSize.h"; sourceTree = "<group>"; };
 		BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+fitSize.m"; sourceTree = "<group>"; };
+		BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClickPointCollectionWidget.h; sourceTree = "<group>"; };
+		BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClickPointCollectionWidget.m; sourceTree = "<group>"; };
 		BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToastWidget.h; sourceTree = "<group>"; };
 		BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToastWidget.m; sourceTree = "<group>"; };
 		BF3CF3EB1BF43D4100B80A4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -961,6 +965,15 @@
 			children = (
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		BF2DB8FB1CD3300B00EB7E70 /* actionWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */,
+				BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */,
+			);
+			path = actionWidget;
 			sourceTree = "<group>";
 		};
 		BF3AD2711CA3F6EA006F6F99 /* toastTipWidget */ = {
@@ -1476,6 +1489,7 @@
 				BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */,
 				BF1912311C34D0D2007D9924 /* FTBaseWidgetController.h */,
 				BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */,
+				BF2DB8FB1CD3300B00EB7E70 /* actionWidget */,
 				BF3AD2711CA3F6EA006F6F99 /* toastTipWidget */,
 				BFD180531CC47BE300A59394 /* loadingWidget */,
 				BFD1804E1CC4787400A59394 /* alertWidget */,
@@ -1854,6 +1868,7 @@
 				BFB16F481BEB06A700CEEBC9 /* FTNavigateControllerModel.h in Headers */,
 				BF52E55C1C3CE1950052A107 /* RACSignal.h in Headers */,
 				BF52E5421C3CE1950052A107 /* RACMulticastConnection+Private.h in Headers */,
+				BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */,
 				BF52E5111C3CE1950052A107 /* NSURLConnection+RACSupport.h in Headers */,
 				BFC75D951C72C1360085B4E3 /* NSObject+MJCoding.h in Headers */,
 				BF52E5171C3CE1950052A107 /* RACBehaviorSubject.h in Headers */,
@@ -2172,6 +2187,7 @@
 				BF52E5571C3CE1950052A107 /* RACSequence.m in Sources */,
 				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
+				BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */,
 				BFF8D81F1CD0752C009E6927 /* UIView+autoLayout.m in Sources */,
 				BF52E5371C3CE1950052A107 /* RACGroupedSignal.m in Sources */,
 				BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */,
