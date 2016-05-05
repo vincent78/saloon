@@ -63,6 +63,15 @@ typedef NS_ENUM(NSInteger,FTDATEFIELD) {
 
 
 /**
+ *  @brief 计算当前日期的内容
+ *
+ *  @param field  <#field description#>
+ *  @param amount <#amount description#>
+ *
+ *  @return <#return value description#>
+ */
+-(NSDate *) calculate:(FTDATEFIELD)field amount:(int)amount;
+/**
  *  @brief  当前日期减去指定日期
  *
  *  @param otherDate <#otherDate description#>
@@ -104,6 +113,12 @@ typedef NS_ENUM(NSInteger,FTDATEFIELD) {
 
 
 #pragma mark - 特殊日期
+
+
+-(NSInteger)getYear;
+-(NSInteger)getMonth;
+-(NSInteger)getDay;
+
 /**
  *  @brief  得到指定日期当月的最后一天
  *

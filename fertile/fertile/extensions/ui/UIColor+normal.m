@@ -77,6 +77,8 @@
                            alpha:alpha];
 }
 
+
+
 //默认alpha值为1
 + (UIColor *)colorWithHexString:(NSString *)color
 {

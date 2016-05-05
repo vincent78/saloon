@@ -62,6 +62,12 @@ static NSCalendar *currCalendar;
     return  [calendar dateFromComponents:comps];
 }
 
+-(NSDate *) calculate:(FTDATEFIELD)field amount:(int)amount
+{
+    return [[self class] calculateDate:self field:field amount:amount];
+}
+
+
 -(long long) subtract:(NSDate *)otherDate
 {
     NSTimeInterval time = [self timeIntervalSinceDate:otherDate];
@@ -72,6 +78,8 @@ static NSCalendar *currCalendar;
 {
     return [self dateByAddingTimeInterval:milliSecond];
 }
+
+
 
 #pragma mark - 日期比较
 
@@ -153,8 +161,34 @@ static NSCalendar *currCalendar;
     }
     
     return dateStr;
-
 }
+
+-(NSDateComponents *) getComponents
+{
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    
+    NSCalendar *calendar = [NSDate getCurrentCalendar];
+    
+    return  [calendar components:unitFlags fromDate:self];
+}
+
+-(NSInteger)getYear
+{
+
+    return [[self getComponents] year];
+}
+
+-(NSInteger)getMonth
+{
+    return [[self getComponents] month];
+}
+
+-(NSInteger)getDay
+{
+    return [[self getComponents] day];
+}
+
+
 
 
 - (NSInteger)getWeek
@@ -291,7 +325,4 @@ static NSCalendar *currCalendar;
     
     return lunarDate;
 }
-
-
-
 @end
