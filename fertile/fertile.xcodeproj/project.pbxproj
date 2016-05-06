@@ -100,6 +100,8 @@
 		BF3B70C51CDC6C0F00A711BE /* UIImage+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70891CDC6C0F00A711BE /* UIImage+BlocksKit.m */; };
 		BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B708A1CDC6C0F00A711BE /* UIView+BlocksKit.h */; };
 		BF3B70C71CDC6C0F00A711BE /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B708B1CDC6C0F00A711BE /* UIView+BlocksKit.m */; };
+		BF3B70CF1CDC720700A711BE /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70CD1CDC720700A711BE /* Reachability.h */; };
+		BF3B70D01CDC720700A711BE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70CE1CDC720700A711BE /* Reachability.m */; };
 		BF43F6501BDDF18B00A1389B /* FTBaseWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */; };
 		BF43F6511BDDF18B00A1389B /* FTBaseWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */; };
 		BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F6561BDDF24700A1389B /* FTBaseHelper.h */; };
@@ -617,6 +619,8 @@
 		BF3B70891CDC6C0F00A711BE /* UIImage+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlocksKit.m"; sourceTree = "<group>"; };
 		BF3B708A1CDC6C0F00A711BE /* UIView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlocksKit.h"; sourceTree = "<group>"; };
 		BF3B708B1CDC6C0F00A711BE /* UIView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70CD1CDC720700A711BE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BF3B70CE1CDC720700A711BE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BF3CF3EB1BF43D4100B80A4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseWidget.h; sourceTree = "<group>"; };
 		BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidget.m; sourceTree = "<group>"; };
@@ -1204,6 +1208,15 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		BF3B70CC1CDC720700A711BE /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B70CD1CDC720700A711BE /* Reachability.h */,
+				BF3B70CE1CDC720700A711BE /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		BF43F6C41BDE255200A1389B /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1755,6 +1768,7 @@
 		BFC165A01BD7898F00C59C2C /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				BF3B70CC1CDC720700A711BE /* Reachability */,
 				BF3B704B1CDC6C0F00A711BE /* BlocksKit */,
 				BF79579E1CC7CCA1000CEB0D /* Masonry */,
 				BFC027411CB67120008E7087 /* libz.tbd */,
@@ -1958,6 +1972,7 @@
 				BFC821AE1BDE45BF0066A77C /* NSData+Hash.h in Headers */,
 				BF7957C71CC7CCA1000CEB0D /* MASViewConstraint.h in Headers */,
 				BF52E5641C3CE1950052A107 /* RACStringSequence.h in Headers */,
+				BF3B70CF1CDC720700A711BE /* Reachability.h in Headers */,
 				BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */,
 				BF8343CB1C3B578A0082A845 /* SXColorLabel.h in Headers */,
 				BF52E5861C3CE1950052A107 /* UICollectionReusableView+RACSignalSupport.h in Headers */,
@@ -2338,6 +2353,7 @@
 				BF52E5041C3CE1950052A107 /* NSObject+RACSelectorSignal.m in Sources */,
 				BF3B70C51CDC6C0F00A711BE /* UIImage+BlocksKit.m in Sources */,
 				BF52E4EC1C3CE1950052A107 /* NSDictionary+RACSequenceAdditions.m in Sources */,
+				BF3B70D01CDC720700A711BE /* Reachability.m in Sources */,
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
 				BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */,
 				BF3B70A91CDC6C0F00A711BE /* NSObject+BKBlockExecution.m in Sources */,
