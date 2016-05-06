@@ -40,6 +40,66 @@
 		BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */; };
 		BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */; };
 		BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */; };
+		BF3B708C1CDC6C0F00A711BE /* BKDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B704C1CDC6C0F00A711BE /* BKDefines.h */; };
+		BF3B708D1CDC6C0F00A711BE /* BlocksKit+UIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B704D1CDC6C0F00A711BE /* BlocksKit+UIKit.h */; };
+		BF3B708E1CDC6C0F00A711BE /* BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B704E1CDC6C0F00A711BE /* BlocksKit.h */; };
+		BF3B708F1CDC6C0F00A711BE /* BKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70501CDC6C0F00A711BE /* BKMacros.h */; };
+		BF3B70901CDC6C0F00A711BE /* NSArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70511CDC6C0F00A711BE /* NSArray+BlocksKit.h */; };
+		BF3B70911CDC6C0F00A711BE /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70521CDC6C0F00A711BE /* NSArray+BlocksKit.m */; };
+		BF3B70921CDC6C0F00A711BE /* NSDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70531CDC6C0F00A711BE /* NSDictionary+BlocksKit.h */; };
+		BF3B70931CDC6C0F00A711BE /* NSDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70541CDC6C0F00A711BE /* NSDictionary+BlocksKit.m */; };
+		BF3B70941CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70551CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h */; };
+		BF3B70951CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70561CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m */; };
+		BF3B70961CDC6C0F00A711BE /* NSInvocation+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70571CDC6C0F00A711BE /* NSInvocation+BlocksKit.h */; };
+		BF3B70971CDC6C0F00A711BE /* NSInvocation+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70581CDC6C0F00A711BE /* NSInvocation+BlocksKit.m */; };
+		BF3B70981CDC6C0F00A711BE /* NSMapTable+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70591CDC6C0F00A711BE /* NSMapTable+BlocksKit.h */; };
+		BF3B70991CDC6C0F00A711BE /* NSMapTable+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B705A1CDC6C0F00A711BE /* NSMapTable+BlocksKit.m */; };
+		BF3B709A1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B705B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h */; };
+		BF3B709B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B705C1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m */; };
+		BF3B709C1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B705D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h */; };
+		BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B705E1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m */; };
+		BF3B709E1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B705F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h */; };
+		BF3B709F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70601CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m */; };
+		BF3B70A01CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70611CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h */; };
+		BF3B70A11CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70621CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.m */; };
+		BF3B70A21CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70631CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h */; };
+		BF3B70A31CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70641CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m */; };
+		BF3B70A41CDC6C0F00A711BE /* NSNumber+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70651CDC6C0F00A711BE /* NSNumber+BlocksKit.h */; };
+		BF3B70A51CDC6C0F00A711BE /* NSNumber+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70661CDC6C0F00A711BE /* NSNumber+BlocksKit.m */; };
+		BF3B70A61CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70671CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h */; };
+		BF3B70A71CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70681CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m */; };
+		BF3B70A81CDC6C0F00A711BE /* NSObject+BKBlockExecution.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70691CDC6C0F00A711BE /* NSObject+BKBlockExecution.h */; };
+		BF3B70A91CDC6C0F00A711BE /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B706A1CDC6C0F00A711BE /* NSObject+BKBlockExecution.m */; };
+		BF3B70AA1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B706B1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h */; };
+		BF3B70AB1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B706C1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m */; };
+		BF3B70AC1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B706D1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h */; };
+		BF3B70AD1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B706E1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m */; };
+		BF3B70AE1CDC6C0F00A711BE /* NSSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B706F1CDC6C0F00A711BE /* NSSet+BlocksKit.h */; };
+		BF3B70AF1CDC6C0F00A711BE /* NSSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70701CDC6C0F00A711BE /* NSSet+BlocksKit.m */; };
+		BF3B70B01CDC6C0F00A711BE /* NSTimer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70711CDC6C0F00A711BE /* NSTimer+BlocksKit.h */; };
+		BF3B70B11CDC6C0F00A711BE /* NSTimer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70721CDC6C0F00A711BE /* NSTimer+BlocksKit.m */; };
+		BF3B70B21CDC6C0F00A711BE /* A2BlockInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70741CDC6C0F00A711BE /* A2BlockInvocation.h */; };
+		BF3B70B31CDC6C0F00A711BE /* A2BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70751CDC6C0F00A711BE /* A2BlockInvocation.m */; };
+		BF3B70B41CDC6C0F00A711BE /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70761CDC6C0F00A711BE /* A2DynamicDelegate.h */; };
+		BF3B70B51CDC6C0F00A711BE /* A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70771CDC6C0F00A711BE /* A2DynamicDelegate.m */; };
+		BF3B70B61CDC6C0F00A711BE /* NSCache+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70791CDC6C0F00A711BE /* NSCache+BlocksKit.h */; };
+		BF3B70B71CDC6C0F00A711BE /* NSCache+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B707A1CDC6C0F00A711BE /* NSCache+BlocksKit.m */; };
+		BF3B70B81CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B707B1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h */; };
+		BF3B70B91CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B707C1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m */; };
+		BF3B70BA1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B707D1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.h */; };
+		BF3B70BB1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B707E1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m */; };
+		BF3B70BC1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B707F1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h */; };
+		BF3B70BD1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70801CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m */; };
+		BF3B70BE1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70821CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h */; };
+		BF3B70BF1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70831CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.m */; };
+		BF3B70C01CDC6C0F00A711BE /* UIControl+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70841CDC6C0F00A711BE /* UIControl+BlocksKit.h */; };
+		BF3B70C11CDC6C0F00A711BE /* UIControl+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70851CDC6C0F00A711BE /* UIControl+BlocksKit.m */; };
+		BF3B70C21CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70861CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h */; };
+		BF3B70C31CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70871CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.m */; };
+		BF3B70C41CDC6C0F00A711BE /* UIImage+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B70881CDC6C0F00A711BE /* UIImage+BlocksKit.h */; };
+		BF3B70C51CDC6C0F00A711BE /* UIImage+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B70891CDC6C0F00A711BE /* UIImage+BlocksKit.m */; };
+		BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B708A1CDC6C0F00A711BE /* UIView+BlocksKit.h */; };
+		BF3B70C71CDC6C0F00A711BE /* UIView+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B708B1CDC6C0F00A711BE /* UIView+BlocksKit.m */; };
 		BF43F6501BDDF18B00A1389B /* FTBaseWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */; };
 		BF43F6511BDDF18B00A1389B /* FTBaseWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */; };
 		BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F6561BDDF24700A1389B /* FTBaseHelper.h */; };
@@ -497,6 +557,66 @@
 		BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClickPointCollectionWidget.m; sourceTree = "<group>"; };
 		BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToastWidget.h; sourceTree = "<group>"; };
 		BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToastWidget.m; sourceTree = "<group>"; };
+		BF3B704C1CDC6C0F00A711BE /* BKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDefines.h; sourceTree = "<group>"; };
+		BF3B704D1CDC6C0F00A711BE /* BlocksKit+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BlocksKit+UIKit.h"; sourceTree = "<group>"; };
+		BF3B704E1CDC6C0F00A711BE /* BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksKit.h; sourceTree = "<group>"; };
+		BF3B70501CDC6C0F00A711BE /* BKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMacros.h; sourceTree = "<group>"; };
+		BF3B70511CDC6C0F00A711BE /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70521CDC6C0F00A711BE /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70531CDC6C0F00A711BE /* NSDictionary+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70541CDC6C0F00A711BE /* NSDictionary+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70551CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70561CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70571CDC6C0F00A711BE /* NSInvocation+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70581CDC6C0F00A711BE /* NSInvocation+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70591CDC6C0F00A711BE /* NSMapTable+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B705A1CDC6C0F00A711BE /* NSMapTable+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMapTable+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B705B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B705C1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B705D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B705E1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B705F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableIndexSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70601CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableIndexSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70611CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70621CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70631CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70641CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70651CDC6C0F00A711BE /* NSNumber+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70661CDC6C0F00A711BE /* NSNumber+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70671CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKAssociatedObjects.h"; sourceTree = "<group>"; };
+		BF3B70681CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKAssociatedObjects.m"; sourceTree = "<group>"; };
+		BF3B70691CDC6C0F00A711BE /* NSObject+BKBlockExecution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKBlockExecution.h"; sourceTree = "<group>"; };
+		BF3B706A1CDC6C0F00A711BE /* NSObject+BKBlockExecution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKBlockExecution.m"; sourceTree = "<group>"; };
+		BF3B706B1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKBlockObservation.h"; sourceTree = "<group>"; };
+		BF3B706C1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKBlockObservation.m"; sourceTree = "<group>"; };
+		BF3B706D1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B706E1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOrderedSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B706F1CDC6C0F00A711BE /* NSSet+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70701CDC6C0F00A711BE /* NSSet+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70711CDC6C0F00A711BE /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70721CDC6C0F00A711BE /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70741CDC6C0F00A711BE /* A2BlockInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2BlockInvocation.h; sourceTree = "<group>"; };
+		BF3B70751CDC6C0F00A711BE /* A2BlockInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2BlockInvocation.m; sourceTree = "<group>"; };
+		BF3B70761CDC6C0F00A711BE /* A2DynamicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A2DynamicDelegate.h; sourceTree = "<group>"; };
+		BF3B70771CDC6C0F00A711BE /* A2DynamicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A2DynamicDelegate.m; sourceTree = "<group>"; };
+		BF3B70791CDC6C0F00A711BE /* NSCache+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCache+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B707A1CDC6C0F00A711BE /* NSCache+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCache+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B707B1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B707C1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B707D1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+A2BlockDelegate.h"; sourceTree = "<group>"; };
+		BF3B707E1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+A2BlockDelegate.m"; sourceTree = "<group>"; };
+		BF3B707F1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+A2DynamicDelegate.h"; sourceTree = "<group>"; };
+		BF3B70801CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+A2DynamicDelegate.m"; sourceTree = "<group>"; };
+		BF3B70821CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70831CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70841CDC6C0F00A711BE /* UIControl+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70851CDC6C0F00A711BE /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70861CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70871CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B70881CDC6C0F00A711BE /* UIImage+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B70891CDC6C0F00A711BE /* UIImage+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlocksKit.m"; sourceTree = "<group>"; };
+		BF3B708A1CDC6C0F00A711BE /* UIView+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BlocksKit.h"; sourceTree = "<group>"; };
+		BF3B708B1CDC6C0F00A711BE /* UIView+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlocksKit.m"; sourceTree = "<group>"; };
 		BF3CF3EB1BF43D4100B80A4B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF43F64E1BDDF18B00A1389B /* FTBaseWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseWidget.h; sourceTree = "<group>"; };
 		BF43F64F1BDDF18B00A1389B /* FTBaseWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidget.m; sourceTree = "<group>"; };
@@ -983,6 +1103,105 @@
 				BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */,
 			);
 			path = toastTipWidget;
+			sourceTree = "<group>";
+		};
+		BF3B704B1CDC6C0F00A711BE /* BlocksKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B704C1CDC6C0F00A711BE /* BKDefines.h */,
+				BF3B704D1CDC6C0F00A711BE /* BlocksKit+UIKit.h */,
+				BF3B704E1CDC6C0F00A711BE /* BlocksKit.h */,
+				BF3B704F1CDC6C0F00A711BE /* Core */,
+				BF3B70731CDC6C0F00A711BE /* DynamicDelegate */,
+				BF3B70811CDC6C0F00A711BE /* UIKit */,
+			);
+			path = BlocksKit;
+			sourceTree = "<group>";
+		};
+		BF3B704F1CDC6C0F00A711BE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B70501CDC6C0F00A711BE /* BKMacros.h */,
+				BF3B70511CDC6C0F00A711BE /* NSArray+BlocksKit.h */,
+				BF3B70521CDC6C0F00A711BE /* NSArray+BlocksKit.m */,
+				BF3B70531CDC6C0F00A711BE /* NSDictionary+BlocksKit.h */,
+				BF3B70541CDC6C0F00A711BE /* NSDictionary+BlocksKit.m */,
+				BF3B70551CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h */,
+				BF3B70561CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m */,
+				BF3B70571CDC6C0F00A711BE /* NSInvocation+BlocksKit.h */,
+				BF3B70581CDC6C0F00A711BE /* NSInvocation+BlocksKit.m */,
+				BF3B70591CDC6C0F00A711BE /* NSMapTable+BlocksKit.h */,
+				BF3B705A1CDC6C0F00A711BE /* NSMapTable+BlocksKit.m */,
+				BF3B705B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h */,
+				BF3B705C1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m */,
+				BF3B705D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h */,
+				BF3B705E1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m */,
+				BF3B705F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h */,
+				BF3B70601CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m */,
+				BF3B70611CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h */,
+				BF3B70621CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.m */,
+				BF3B70631CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h */,
+				BF3B70641CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m */,
+				BF3B70651CDC6C0F00A711BE /* NSNumber+BlocksKit.h */,
+				BF3B70661CDC6C0F00A711BE /* NSNumber+BlocksKit.m */,
+				BF3B70671CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h */,
+				BF3B70681CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m */,
+				BF3B70691CDC6C0F00A711BE /* NSObject+BKBlockExecution.h */,
+				BF3B706A1CDC6C0F00A711BE /* NSObject+BKBlockExecution.m */,
+				BF3B706B1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h */,
+				BF3B706C1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m */,
+				BF3B706D1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h */,
+				BF3B706E1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m */,
+				BF3B706F1CDC6C0F00A711BE /* NSSet+BlocksKit.h */,
+				BF3B70701CDC6C0F00A711BE /* NSSet+BlocksKit.m */,
+				BF3B70711CDC6C0F00A711BE /* NSTimer+BlocksKit.h */,
+				BF3B70721CDC6C0F00A711BE /* NSTimer+BlocksKit.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BF3B70731CDC6C0F00A711BE /* DynamicDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B70741CDC6C0F00A711BE /* A2BlockInvocation.h */,
+				BF3B70751CDC6C0F00A711BE /* A2BlockInvocation.m */,
+				BF3B70761CDC6C0F00A711BE /* A2DynamicDelegate.h */,
+				BF3B70771CDC6C0F00A711BE /* A2DynamicDelegate.m */,
+				BF3B70781CDC6C0F00A711BE /* Foundation */,
+				BF3B707D1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.h */,
+				BF3B707E1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m */,
+				BF3B707F1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h */,
+				BF3B70801CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m */,
+			);
+			path = DynamicDelegate;
+			sourceTree = "<group>";
+		};
+		BF3B70781CDC6C0F00A711BE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B70791CDC6C0F00A711BE /* NSCache+BlocksKit.h */,
+				BF3B707A1CDC6C0F00A711BE /* NSCache+BlocksKit.m */,
+				BF3B707B1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h */,
+				BF3B707C1CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		BF3B70811CDC6C0F00A711BE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B70821CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h */,
+				BF3B70831CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.m */,
+				BF3B70841CDC6C0F00A711BE /* UIControl+BlocksKit.h */,
+				BF3B70851CDC6C0F00A711BE /* UIControl+BlocksKit.m */,
+				BF3B70861CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h */,
+				BF3B70871CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.m */,
+				BF3B70881CDC6C0F00A711BE /* UIImage+BlocksKit.h */,
+				BF3B70891CDC6C0F00A711BE /* UIImage+BlocksKit.m */,
+				BF3B708A1CDC6C0F00A711BE /* UIView+BlocksKit.h */,
+				BF3B708B1CDC6C0F00A711BE /* UIView+BlocksKit.m */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		BF43F6C41BDE255200A1389B /* model */ = {
@@ -1536,6 +1755,7 @@
 		BFC165A01BD7898F00C59C2C /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				BF3B704B1CDC6C0F00A711BE /* BlocksKit */,
 				BF79579E1CC7CCA1000CEB0D /* Masonry */,
 				BFC027411CB67120008E7087 /* libz.tbd */,
 				BF5F6FB11CB66A2100463D9F /* ZipArchive */,
@@ -1727,6 +1947,7 @@
 			files = (
 				BF5F6FC71CB66A2100463D9F /* ZipArchive.h in Headers */,
 				BF6C2B251C3A01DB00CDA1E8 /* FTIndicatorWidget.h in Headers */,
+				BF3B70941CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h in Headers */,
 				BF51B61B1C06E65A00D26E9B /* NSNumber+box.h in Headers */,
 				BF7957BA1CC7CCA1000CEB0D /* MASCompositeConstraint.h in Headers */,
 				BF52E5051C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
@@ -1743,20 +1964,24 @@
 				BF52E4EF1C3CE1950052A107 /* NSFileHandle+RACSupport.h in Headers */,
 				BF6C2B671C3A04EC00CDA1E8 /* UIImage+MultiFormat.h in Headers */,
 				BF52E5901C3CE1950052A107 /* UIImagePickerController+RACSignalSupport.h in Headers */,
+				BF3B70B61CDC6C0F00A711BE /* NSCache+BlocksKit.h in Headers */,
 				BF52E5091C3CE1950052A107 /* NSString+RACKeyPathUtilities.h in Headers */,
 				BF52E5471C3CE1950052A107 /* RACPassthroughSubscriber.h in Headers */,
 				BFF8D81E1CD0752C009E6927 /* UIView+autoLayout.h in Headers */,
+				BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */,
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BF0B84741BE7322D009C76E1 /* FTAlertUtil.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */,
 				BF52E4E11C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.h in Headers */,
+				BF3B708E1CDC6C0F00A711BE /* BlocksKit.h in Headers */,
 				BF52E52E1C3CE1950052A107 /* RACEmptySequence.h in Headers */,
 				BFC821BD1BDE462E0066A77C /* UITableViewCell+normal.h in Headers */,
 				BF52E58C1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.h in Headers */,
 				BF52E4F91C3CE1950052A107 /* NSObject+RACDeallocating.h in Headers */,
 				BF52E5541C3CE1950052A107 /* RACScopedDisposable.h in Headers */,
+				BF3B70921CDC6C0F00A711BE /* NSDictionary+BlocksKit.h in Headers */,
 				BF8343C91C3B578A0082A845 /* SXColorGradientView.h in Headers */,
 				BFC75D891C72C1360085B4E3 /* MJExtensionConst.h in Headers */,
 				BF52E5611C3CE1950052A107 /* RACStream+Private.h in Headers */,
@@ -1767,6 +1992,8 @@
 				BFF188211CB6082700CC1F77 /* AFNetworking.h in Headers */,
 				BF5F6FC41CB66A2100463D9F /* unzip.h in Headers */,
 				BF52E5221C3CE1950052A107 /* RACDelegateProxy.h in Headers */,
+				BF3B70A41CDC6C0F00A711BE /* NSNumber+BlocksKit.h in Headers */,
+				BF3B70BE1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h in Headers */,
 				BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */,
 				BF52E4FB1C3CE1950052A107 /* NSObject+RACDescription.h in Headers */,
 				BF5E5F351CA8C6FB00EA69B6 /* FTDeviceHelper.h in Headers */,
@@ -1774,6 +2001,8 @@
 				BF52E54A1C3CE1950052A107 /* RACQueueScheduler.h in Headers */,
 				BFC027451CB671CB008E7087 /* FTFileUtil+zip.h in Headers */,
 				BF7957CE1CC7CCA1000CEB0D /* View+MASAdditions.h in Headers */,
+				BF3B70981CDC6C0F00A711BE /* NSMapTable+BlocksKit.h in Headers */,
+				BF3B70AE1CDC6C0F00A711BE /* NSSet+BlocksKit.h in Headers */,
 				BF52E5771C3CE1950052A107 /* RACUnarySequence.h in Headers */,
 				BF52E56F1C3CE1950052A107 /* RACTargetQueueScheduler.h in Headers */,
 				BF52E5801C3CE1950052A107 /* UIAlertView+RACSignalSupport.h in Headers */,
@@ -1781,12 +2010,16 @@
 				BF52E58A1C3CE1950052A107 /* UIControl+RACSignalSupportPrivate.h in Headers */,
 				BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */,
 				BF52E54C1C3CE1950052A107 /* RACReplaySubject.h in Headers */,
+				BF3B70C21CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h in Headers */,
 				BF52E50B1C3CE1950052A107 /* NSString+RACSequenceAdditions.h in Headers */,
 				BFFAD9161BE36AAF0050A21B /* NSString+file.h in Headers */,
 				BF9C3CB71CA2778A007FE0EA /* FTProgressView.h in Headers */,
+				BF3B70C01CDC6C0F00A711BE /* UIControl+BlocksKit.h in Headers */,
+				BF3B70B81CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h in Headers */,
 				BF52E57B1C3CE1950052A107 /* RACValueTransformer.h in Headers */,
 				BFC75D971C72C1360085B4E3 /* NSObject+MJKeyValue.h in Headers */,
 				BF6C2B561C3A04EC00CDA1E8 /* SDWebImageCompat.h in Headers */,
+				BF3B709A1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h in Headers */,
 				BF1533C61BE0D95300809493 /* FTFileUtil+md5.h in Headers */,
 				BF7957CB1CC7CCA1000CEB0D /* NSArray+MASShorthandAdditions.h in Headers */,
 				BF50529E1CC8C4AD00B9EDCD /* UILabel+rich.h in Headers */,
@@ -1808,10 +2041,13 @@
 				BF1533B71BE0B30E00809493 /* NSArray+json.h in Headers */,
 				BF1533B31BE0A8CD00809493 /* NSString+json.h in Headers */,
 				BF5F6FBE1CB66A2100463D9F /* crypt.h in Headers */,
+				BF3B708F1CDC6C0F00A711BE /* BKMacros.h in Headers */,
 				BF1533C31BE0D15400809493 /* FTUtil.h in Headers */,
 				BF52E5131C3CE1950052A107 /* NSUserDefaults+RACSupport.h in Headers */,
+				BF3B70B21CDC6C0F00A711BE /* A2BlockInvocation.h in Headers */,
 				BF7957C11CC7CCA1000CEB0D /* MASLayoutConstraint.h in Headers */,
 				BF52E4E01C3CE1950052A107 /* metamacros.h in Headers */,
+				BF3B70A81CDC6C0F00A711BE /* NSObject+BKBlockExecution.h in Headers */,
 				BF52E57D1C3CE1950052A107 /* ReactiveCocoa.h in Headers */,
 				BF7957C51CC7CCA1000CEB0D /* MASViewAttribute.h in Headers */,
 				BF52E5321C3CE1950052A107 /* RACErrorSignal.h in Headers */,
@@ -1824,6 +2060,7 @@
 				BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */,
 				BF52E5071C3CE1950052A107 /* NSSet+RACSequenceAdditions.h in Headers */,
 				BFF1882A1CB6082700CC1F77 /* AFURLSessionManager.h in Headers */,
+				BF3B70A21CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h in Headers */,
 				BF52E5961C3CE1950052A107 /* UISlider+RACSignalSupport.h in Headers */,
 				BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */,
 				BF52E56B1C3CE1950052A107 /* RACSubscriptingAssignmentTrampoline.h in Headers */,
@@ -1836,8 +2073,11 @@
 				BF52E5191C3CE1950052A107 /* RACBlockTrampoline.h in Headers */,
 				BF6C2B521C3A04EC00CDA1E8 /* NSData+ImageContentType.h in Headers */,
 				BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */,
+				BF3B70BC1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h in Headers */,
 				BFD180561CC47C1100A59394 /* FTLoadingWidget.h in Headers */,
+				BF3B70AC1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h in Headers */,
 				BF6C2B691C3A04EC00CDA1E8 /* UIImage+WebP.h in Headers */,
+				BF3B70B01CDC6C0F00A711BE /* NSTimer+BlocksKit.h in Headers */,
 				BF51B6251C06F5FC00D26E9B /* FTLineWidget.h in Headers */,
 				BF52E5301C3CE1950052A107 /* RACEmptySignal.h in Headers */,
 				BF52E56D1C3CE1950052A107 /* RACSubscriptionScheduler.h in Headers */,
@@ -1866,12 +2106,15 @@
 				BF52E5431C3CE1950052A107 /* RACMulticastConnection.h in Headers */,
 				BF5F6FC61CB66A2100463D9F /* zip.h in Headers */,
 				BFB16F481BEB06A700CEEBC9 /* FTNavigateControllerModel.h in Headers */,
+				BF3B709C1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h in Headers */,
 				BF52E55C1C3CE1950052A107 /* RACSignal.h in Headers */,
 				BF52E5421C3CE1950052A107 /* RACMulticastConnection+Private.h in Headers */,
 				BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */,
 				BF52E5111C3CE1950052A107 /* NSURLConnection+RACSupport.h in Headers */,
 				BFC75D951C72C1360085B4E3 /* NSObject+MJCoding.h in Headers */,
+				BF3B70901CDC6C0F00A711BE /* NSArray+BlocksKit.h in Headers */,
 				BF52E5171C3CE1950052A107 /* RACBehaviorSubject.h in Headers */,
+				BF3B708D1CDC6C0F00A711BE /* BlocksKit+UIKit.h in Headers */,
 				BF52E5011C3CE1950052A107 /* NSObject+RACPropertySubscribing.h in Headers */,
 				BF52E52A1C3CE1950052A107 /* RACDynamicSignal.h in Headers */,
 				BF52E4FD1C3CE1950052A107 /* NSObject+RACKVOWrapper.h in Headers */,
@@ -1886,17 +2129,21 @@
 				BF52E53E1C3CE1950052A107 /* RACKVOProxy.h in Headers */,
 				BF52E53A1C3CE1950052A107 /* RACIndexSetSequence.h in Headers */,
 				BF52E5341C3CE1950052A107 /* RACEvent.h in Headers */,
+				BF3B70961CDC6C0F00A711BE /* NSInvocation+BlocksKit.h in Headers */,
 				BF52E5261C3CE1950052A107 /* RACDynamicPropertySuperclass.h in Headers */,
 				BF52E5401C3CE1950052A107 /* RACKVOTrampoline.h in Headers */,
 				BF43F6C01BDE153200A1389B /* FTAppHelper.h in Headers */,
 				BFC75D9B1C72C1360085B4E3 /* NSString+MJExtension.h in Headers */,
 				BF7957BD1CC7CCA1000CEB0D /* MASConstraint.h in Headers */,
 				BF52E5621C3CE1950052A107 /* RACStream.h in Headers */,
+				BF3B709E1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h in Headers */,
 				BF43F6BC1BDE150100A1389B /* FTSystemHelper.h in Headers */,
 				BF52E4E91C3CE1950052A107 /* NSData+RACSupport.h in Headers */,
 				BF52E5361C3CE1950052A107 /* RACGroupedSignal.h in Headers */,
 				BF52E4DF1C3CE1950052A107 /* EXTScope.h in Headers */,
 				BFC821BF1BDE462E0066A77C /* UIView+normal.h in Headers */,
+				BF3B70A61CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h in Headers */,
+				BF3B708C1CDC6C0F00A711BE /* BKDefines.h in Headers */,
 				BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */,
 				BF5052991CC8AC2B00B9EDCD /* NSDictionary+object.h in Headers */,
 				BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */,
@@ -1907,6 +2154,7 @@
 				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
 				BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */,
 				BF6C2B631C3A04EC00CDA1E8 /* UIButton+WebCache.h in Headers */,
+				BF3B70A01CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h in Headers */,
 				BF52E5791C3CE1950052A107 /* RACUnit.h in Headers */,
 				BF6C2B5C1C3A04EC00CDA1E8 /* SDWebImageDownloaderOperation.h in Headers */,
 				BF52E4F51C3CE1950052A107 /* NSNotificationCenter+RACSupport.h in Headers */,
@@ -1925,6 +2173,7 @@
 				BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */,
 				BF52E58E1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.h in Headers */,
 				BF7957C41CC7CCA1000CEB0D /* MASUtilities.h in Headers */,
+				BF3B70AA1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h in Headers */,
 				BF52E4F11C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.h in Headers */,
 				BF52E5561C3CE1950052A107 /* RACSequence.h in Headers */,
 				BF52E5841C3CE1950052A107 /* UIButton+RACCommandSupport.h in Headers */,
@@ -1940,6 +2189,7 @@
 				BF52E4EB1C3CE1950052A107 /* NSDictionary+RACSequenceAdditions.h in Headers */,
 				BF1533C01BE0D13B00809493 /* FTFileUtil.h in Headers */,
 				BF52E5511C3CE1950052A107 /* RACScheduler+Subclass.h in Headers */,
+				BF3B70C41CDC6C0F00A711BE /* UIImage+BlocksKit.h in Headers */,
 				BF43F6C71BDE25E100A1389B /* FTBaseModel.h in Headers */,
 				BF5052A61CC8D80000B9EDCD /* UIView+layer.h in Headers */,
 				BFB57D181C33C0B4005187B6 /* Aspects.h in Headers */,
@@ -1955,8 +2205,10 @@
 				BF43F6721BDE0BC900A1389B /* FTMaskWidget.h in Headers */,
 				BF52E5821C3CE1950052A107 /* UIBarButtonItem+RACCommandSupport.h in Headers */,
 				BF6C2B541C3A04EC00CDA1E8 /* SDImageCache.h in Headers */,
+				BF3B70B41CDC6C0F00A711BE /* A2DynamicDelegate.h in Headers */,
 				BFF188221CB6082700CC1F77 /* AFNetworkReachabilityManager.h in Headers */,
 				BFB861D61BE6F9300051BE20 /* FTDateUtil.h in Headers */,
+				BF3B70BA1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.h in Headers */,
 				BF52E51D1C3CE1950052A107 /* RACCommand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2034,10 +2286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3B70C31CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.m in Sources */,
 				BF52E59B1C3CE1950052A107 /* UISwitch+RACSignalSupport.m in Sources */,
 				BF52E54D1C3CE1950052A107 /* RACReplaySubject.m in Sources */,
 				BF52E5231C3CE1950052A107 /* RACDelegateProxy.m in Sources */,
 				BF52E58F1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.m in Sources */,
+				BF3B709B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m in Sources */,
 				BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */,
 				BF52E5651C3CE1950052A107 /* RACStringSequence.m in Sources */,
 				BF52E5631C3CE1950052A107 /* RACStream.m in Sources */,
@@ -2048,7 +2302,9 @@
 				BF52E5351C3CE1950052A107 /* RACEvent.m in Sources */,
 				BFC75D9C1C72C1360085B4E3 /* NSString+MJExtension.m in Sources */,
 				BF6C2B5F1C3A04EC00CDA1E8 /* SDWebImageManager.m in Sources */,
+				BF3B70AB1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m in Sources */,
 				BF43F6731BDE0BC900A1389B /* FTMaskWidget.m in Sources */,
+				BF3B70BF1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.m in Sources */,
 				BF52E5A11C3CE1950052A107 /* UITextField+RACSignalSupport.m in Sources */,
 				BF7957C21CC7CCA1000CEB0D /* MASLayoutConstraint.m in Sources */,
 				BF52E5061C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
@@ -2080,14 +2336,17 @@
 				BFC75D8A1C72C1360085B4E3 /* MJExtensionConst.m in Sources */,
 				BF51B62A1C0709CA00D26E9B /* FT3DLineWidget.m in Sources */,
 				BF52E5041C3CE1950052A107 /* NSObject+RACSelectorSignal.m in Sources */,
+				BF3B70C51CDC6C0F00A711BE /* UIImage+BlocksKit.m in Sources */,
 				BF52E4EC1C3CE1950052A107 /* NSDictionary+RACSequenceAdditions.m in Sources */,
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
 				BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */,
+				BF3B70A91CDC6C0F00A711BE /* NSObject+BKBlockExecution.m in Sources */,
 				BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */,
 				BF52E5161C3CE1950052A107 /* RACArraySequence.m in Sources */,
 				BF6C2B661C3A04EC00CDA1E8 /* UIImage+GIF.m in Sources */,
 				BF52E5271C3CE1950052A107 /* RACDynamicPropertySuperclass.m in Sources */,
 				BFC75D981C72C1360085B4E3 /* NSObject+MJKeyValue.m in Sources */,
+				BF3B70A51CDC6C0F00A711BE /* NSNumber+BlocksKit.m in Sources */,
 				BFC75D921C72C1360085B4E3 /* MJPropertyType.m in Sources */,
 				BF52E5781C3CE1950052A107 /* RACUnarySequence.m in Sources */,
 				BF43F6591BDDF24700A1389B /* FTBaseHelper.m in Sources */,
@@ -2100,6 +2359,7 @@
 				BF43F65D1BDDF26600A1389B /* FTAnimateHelper.m in Sources */,
 				BF8343CC1C3B578A0082A845 /* SXColorLabel.m in Sources */,
 				BF6C2B261C3A01DB00CDA1E8 /* FTIndicatorWidget.m in Sources */,
+				BF3B70B31CDC6C0F00A711BE /* A2BlockInvocation.m in Sources */,
 				BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */,
 				BFC821BE1BDE462E0066A77C /* UITableViewCell+normal.m in Sources */,
 				BFC75D8C1C72C1360085B4E3 /* MJFoundation.m in Sources */,
@@ -2118,6 +2378,7 @@
 				BF52E5601C3CE1950052A107 /* RACSignalSequence.m in Sources */,
 				BF7957CA1CC7CCA1000CEB0D /* NSArray+MASAdditions.m in Sources */,
 				BF52E53D1C3CE1950052A107 /* RACKVOChannel.m in Sources */,
+				BF3B70B11CDC6C0F00A711BE /* NSTimer+BlocksKit.m in Sources */,
 				BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */,
 				BF6C2B641C3A04EC00CDA1E8 /* UIButton+WebCache.m in Sources */,
 				BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */,
@@ -2153,6 +2414,8 @@
 				BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */,
 				BF52E5311C3CE1950052A107 /* RACEmptySignal.m in Sources */,
 				BF52E5081C3CE1950052A107 /* NSSet+RACSequenceAdditions.m in Sources */,
+				BF3B70A71CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m in Sources */,
+				BF3B70B71CDC6C0F00A711BE /* NSCache+BlocksKit.m in Sources */,
 				BF52E5831C3CE1950052A107 /* UIBarButtonItem+RACCommandSupport.m in Sources */,
 				BF7957C81CC7CCA1000CEB0D /* MASViewConstraint.m in Sources */,
 				BF52E4F01C3CE1950052A107 /* NSFileHandle+RACSupport.m in Sources */,
@@ -2165,6 +2428,7 @@
 				BFC027461CB671CB008E7087 /* FTFileUtil+zip.m in Sources */,
 				BFC75D8E1C72C1360085B4E3 /* MJProperty.m in Sources */,
 				BF52E59F1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
+				BF3B70971CDC6C0F00A711BE /* NSInvocation+BlocksKit.m in Sources */,
 				BF52E5761C3CE1950052A107 /* RACTupleSequence.m in Sources */,
 				BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */,
 				BF52E50A1C3CE1950052A107 /* NSString+RACKeyPathUtilities.m in Sources */,
@@ -2176,15 +2440,19 @@
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BFC75D901C72C1360085B4E3 /* MJPropertyKey.m in Sources */,
+				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
 				BF52E5291C3CE1950052A107 /* RACDynamicSequence.m in Sources */,
 				BF52E51E1C3CE1950052A107 /* RACCommand.m in Sources */,
 				BFC821C61BDE47920066A77C /* FTBaseViewController.m in Sources */,
 				BF52E4FC1C3CE1950052A107 /* NSObject+RACDescription.m in Sources */,
+				BF3B70B51CDC6C0F00A711BE /* A2DynamicDelegate.m in Sources */,
 				BFF1882B1CB6082700CC1F77 /* AFURLSessionManager.m in Sources */,
 				BFC821B31BDE45BF0066A77C /* NSString+regExp.m in Sources */,
 				BFC821AD1BDE45BF0066A77C /* NSData+base64.m in Sources */,
 				BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */,
 				BF52E5571C3CE1950052A107 /* RACSequence.m in Sources */,
+				BF3B70911CDC6C0F00A711BE /* NSArray+BlocksKit.m in Sources */,
+				BF3B70A31CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m in Sources */,
 				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
 				BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */,
@@ -2193,10 +2461,12 @@
 				BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */,
 				BF50529A1CC8AC2B00B9EDCD /* NSDictionary+object.m in Sources */,
 				BF52E56E1C3CE1950052A107 /* RACSubscriptionScheduler.m in Sources */,
+				BF3B70B91CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m in Sources */,
 				BF7957BB1CC7CCA1000CEB0D /* MASCompositeConstraint.m in Sources */,
 				BF52E51C1C3CE1950052A107 /* RACChannel.m in Sources */,
 				BF52E5021C3CE1950052A107 /* NSObject+RACPropertySubscribing.m in Sources */,
 				BF52E5121C3CE1950052A107 /* NSURLConnection+RACSupport.m in Sources */,
+				BF3B70AF1CDC6C0F00A711BE /* NSSet+BlocksKit.m in Sources */,
 				BF6C2B591C3A04EC00CDA1E8 /* SDWebImageDecoder.m in Sources */,
 				BF7957CD1CC7CCA1000CEB0D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				BF52E50E1C3CE1950052A107 /* NSString+RACSupport.m in Sources */,
@@ -2212,8 +2482,10 @@
 				BF52E53F1C3CE1950052A107 /* RACKVOProxy.m in Sources */,
 				BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */,
 				BF52E4F21C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.m in Sources */,
+				BF3B70BB1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m in Sources */,
 				BFF188251CB6082700CC1F77 /* AFSecurityPolicy.m in Sources */,
 				BF8343D01C3B578A0082A845 /* UIColor+Separate.m in Sources */,
+				BF3B709F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m in Sources */,
 				BFF188201CB6082700CC1F77 /* AFHTTPSessionManager.m in Sources */,
 				BF52E58D1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.m in Sources */,
 				BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */,
@@ -2228,19 +2500,26 @@
 				BFB861D31BE6F8790051BE20 /* NSDate+normal.m in Sources */,
 				BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */,
 				BF52E5181C3CE1950052A107 /* RACBehaviorSubject.m in Sources */,
+				BF3B70931CDC6C0F00A711BE /* NSDictionary+BlocksKit.m in Sources */,
 				BF6C2B551C3A04EC00CDA1E8 /* SDImageCache.m in Sources */,
 				BF5F6FC11CB66A2100463D9F /* mztools.c in Sources */,
 				BF51B6261C06F5FC00D26E9B /* FTLineWidget.m in Sources */,
 				BF5F6FC31CB66A2100463D9F /* unzip.c in Sources */,
 				BF50529F1CC8C4AD00B9EDCD /* UILabel+rich.m in Sources */,
 				BF52E5951C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.m in Sources */,
+				BF3B70AD1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m in Sources */,
+				BF3B70BD1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m in Sources */,
 				BF6C2B511C3A04EC00CDA1E8 /* MKAnnotationView+WebCache.m in Sources */,
 				BF52E5991C3CE1950052A107 /* UIStepper+RACSignalSupport.m in Sources */,
 				BF52E52D1C3CE1950052A107 /* RACEagerSequence.m in Sources */,
+				BF3B70C11CDC6C0F00A711BE /* UIControl+BlocksKit.m in Sources */,
 				BF51B6141C06A7CE00D26E9B /* NSString+box.m in Sources */,
+				BF3B70991CDC6C0F00A711BE /* NSMapTable+BlocksKit.m in Sources */,
 				BF43F6BD1BDE150100A1389B /* FTSystemHelper.m in Sources */,
 				BF52E4F41C3CE1950052A107 /* NSInvocation+RACTypeParsing.m in Sources */,
 				BF6C2B5D1C3A04EC00CDA1E8 /* SDWebImageDownloaderOperation.m in Sources */,
+				BF3B70A11CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.m in Sources */,
+				BF3B70C71CDC6C0F00A711BE /* UIView+BlocksKit.m in Sources */,
 				BF6C2B531C3A04EC00CDA1E8 /* NSData+ImageContentType.m in Sources */,
 				BF52E4F61C3CE1950052A107 /* NSNotificationCenter+RACSupport.m in Sources */,
 				BF6C2B6C1C3A04EC00CDA1E8 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -2248,6 +2527,7 @@
 				BFC821B11BDE45BF0066A77C /* NSString+normal.m in Sources */,
 				BFC75D941C72C1360085B4E3 /* NSObject+MJClass.m in Sources */,
 				BF52E5481C3CE1950052A107 /* RACPassthroughSubscriber.m in Sources */,
+				BF3B70951CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
