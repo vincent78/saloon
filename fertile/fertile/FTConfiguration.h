@@ -18,4 +18,11 @@
 #define FTLog(format, ...) [FTLoggerHelper log4Debug:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
 
 
+/** 本地化语言 */
+#define NSLocalizedString(key, comment) \
+[[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
+#define FT_STRING(__POINTER)    NSLocalizedString(__POINTER, nil)
+
+
+
 #endif /* FTConfiguration_h */
