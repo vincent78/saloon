@@ -67,6 +67,19 @@ static FTThreadHelper *sharedInstance = nil;
 
 
 
-
+void FTExecuteOnMainThread(dispatch_block_t block, BOOL sync)
+{
+    if ([NSThread isMainThread]) {
+        block();
+    } else if (sync) {
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            block();
+        });
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            block();
+        });
+    }
+}
 
 @end

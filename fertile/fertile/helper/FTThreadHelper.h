@@ -21,4 +21,18 @@
  */
 -(void) doInDefaultSerialQueue:(void(^)(void))block;
 
+
+/**
+ *  @brief 运行在主线程中
+ */
+void FTExecuteOnMainThread(dispatch_block_t block, BOOL sync);
+
+
+
+
+// Execute the specified block on the main thread. Unlike dispatch_sync/async
+// this will not context-switch if we're already running on the main thread.
+FT_EXTERN void FTExecuteOnMainThread(dispatch_block_t block, BOOL sync);
+
 @end
+
