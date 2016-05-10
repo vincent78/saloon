@@ -17,6 +17,8 @@
  */
 -(UIImage *)toImage;
 
+-(UIImage *)toImageWithRect:(CGRect)rect;
+
 /**
  *  @brief  按#FFFFFF生成UIColor
  *

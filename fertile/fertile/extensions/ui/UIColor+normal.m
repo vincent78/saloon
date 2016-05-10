@@ -12,7 +12,11 @@
 
 - (UIImage *)toImage
 {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    return [self toImageWithRect:CGRectMake(0.0f, 0.0f, 1.0f, 1.0f)];
+}
+
+- (UIImage *)toImageWithRect:(CGRect)rect
+{
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context =UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [self CGColor]);

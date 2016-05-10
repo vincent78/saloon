@@ -9,6 +9,9 @@
 #import "SNTestViewController.h"
 
 @interface SNTestViewController ()
+{
+    NSTimer *timer;
+}
 
 @end
 
@@ -23,15 +26,37 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)testAction:(id)sender {
+    [self beginTimer];
+//    [self performSelectorInBackground:@selector(beginTimer) withObject:nil];
+//    [self performSelector:@selector(stopTimer) withObject:nil afterDelay:2];
 }
-*/
+
+-(void) beginTimer
+{
+    timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(test) userInfo:nil repeats:YES];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//    [[NSRunLoop currentRunLoop] run];
+    FTLog(@"thread %@",[NSThread currentThread]);
+    [timer fire];
+}
+
+-(void)stopTimer
+{
+    FTLog(@"timer set to nil");
+    if (timer.isValid)
+    {
+        timer = nil;
+    }
+//        [timer setFireDate:[NSDate distantFuture]];
+}
+
+-(void)test
+{
+    FTLog(@"testtest.....");
+    FTLog(@"thread %@",[NSThread currentThread]);
+}
+
+
 
 @end

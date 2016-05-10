@@ -8,26 +8,6 @@
 
 
 
-/**
- * Make global functions usable in C++
- */
-#if defined(__cplusplus)
-#define FT_EXTERN extern "C" __attribute__((visibility("default")))
-#else
-#define FT_EXTERN extern __attribute__((visibility("default")))
-#endif
-
-
-/**
- * Throw an assertion for unimplemented methods.
- */
-#define FT_NOT_IMPLEMENTED(method) \
-_Pragma("clang diagnostic push") \
-_Pragma("clang diagnostic ignored \"-Wmissing-method-return-type\"") \
-_Pragma("clang diagnostic ignored \"-Wunused-parameter\"") \
-FT_EXTERN NSException *_FTNotImplementedException(SEL, Class); \
-method NS_UNAVAILABLE { @throw _FTNotImplementedException(_cmd, [self class]); } \
-_Pragma("clang diagnostic pop")
 
 
 #ifdef __OBJC__
@@ -36,8 +16,11 @@ _Pragma("clang diagnostic pop")
 #import <Foundation/Foundation.h>
 #import "MJExtension.h"
 #import "masonry.h"
+#import "Aspects.h"
+#import "BlocksKit+UIKit.h"
+#import "Reachability.h"
 
-#import "FTConfiguration.h"
+#import "FTMacro.h"
 #import "FTExtensions.h"
 #import "FTModel.h"
 #import "FTUtil.h"

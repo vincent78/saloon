@@ -52,6 +52,24 @@
     return [predicate evaluateWithObject:self];
 }
 
+
+-(BOOL) isValidSBCWithString
+{
+    for (int i = 0;i <self.length; i++)
+    {
+        const char *p;
+        NSString * isChar = [self substringWithRange:NSMakeRange(i, 1)];
+        if(![isChar isValidCN]){
+            p = [isChar UTF8String];
+            // 判断是不是全角字符
+            if ((*p)&0x80) {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
 -(BOOL)isValidCN
 {
     NSString *match=@"(^[\u4e00-\u9fa5]+$)";

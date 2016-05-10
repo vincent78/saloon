@@ -111,6 +111,11 @@ static NSMutableArray* ftFontArray = nil;
     return (1 / [UIScreen mainScreen].scale) / 2;
 }
 
+
+
+
+
+
 #pragma mark - 字体相关
 
 + (void)printSysAllFontInfo

@@ -47,6 +47,16 @@
  */
 -(BOOL)isValidCN;
 
+
+/**
+ *  对字符中全角字符的验证
+ *
+ *  @param aString 需要判断的字符串
+ *
+ *  @return YES:是全角 NO:不是全角
+ */
+-(BOOL) isValidSBCWithString;
+
 /**
  *  @brief  是否正确的Email格式字符串
  *

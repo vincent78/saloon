@@ -1,6 +1,14 @@
  [
   {
   "icon": "",
+  "title": "测试使用的VC",
+  "desc": "这个是开发中的VC",
+  "subitems": [],
+  "params": [],
+  "viewcontroller": "SNTestViewController"
+  },
+  {
+  "icon": "",
   "title": "系统UI组件",
   "desc": "系统提供的UI组件的使用经验",
   "subitems": [
@@ -179,12 +187,4 @@
   "params": [],
   "viewcontroller": "FTTAppHelperDelegate"
   }
-  ,  {
-  "icon": "",
-  "title": "测试使用的VC",
-  "desc": "这个是开发中的VC",
-  "subitems": [],
-  "params": [],
-  "viewcontroller": "SNTestViewController"
-  }
-  ]
+]

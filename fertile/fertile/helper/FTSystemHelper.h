@@ -14,6 +14,10 @@
 
 + (FTSystemHelper*)sharedInstance;
 
+
+
+#pragma mark - 系统属性
+
 /**
  *  @brief  状态栏的高度
  *
@@ -55,6 +59,8 @@
  *  @return <#return value description#>
  */
 +(CGFloat)onePixeWidth;
+
+
 
 
 /**
