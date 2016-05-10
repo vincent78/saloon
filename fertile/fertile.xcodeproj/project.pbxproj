@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		BF098BE31C0822A500ED81C3 /* UIColor+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF098BE11C0822A500ED81C3 /* UIColor+normal.h */; };
 		BF098BE41C0822A500ED81C3 /* UIColor+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF098BE21C0822A500ED81C3 /* UIColor+normal.m */; };
-		BF0B84741BE7322D009C76E1 /* FTAlertUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF0B84721BE7322D009C76E1 /* FTAlertUtil.h */; };
-		BF0B84751BE7322D009C76E1 /* FTAlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0B84731BE7322D009C76E1 /* FTAlertUtil.m */; };
 		BF14C5A41BE3081100B49989 /* UIWebView+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF14C5A21BE3081100B49989 /* UIWebView+normal.h */; };
 		BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14C5A31BE3081100B49989 /* UIWebView+normal.m */; };
 		BF14C5A91BE30AF800B49989 /* FTNetWorkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF14C5A71BE30AF800B49989 /* FTNetWorkHelper.h */; };
@@ -349,6 +347,10 @@
 		BF5F6FC61CB66A2100463D9F /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5F6FBB1CB66A2100463D9F /* zip.h */; };
 		BF5F6FC71CB66A2100463D9F /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5F6FBC1CB66A2100463D9F /* ZipArchive.h */; };
 		BF5F6FC81CB66A2100463D9F /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5F6FBD1CB66A2100463D9F /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BF6A00E41CE1746A0076B549 /* FTObjectUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6A00E21CE1746A0076B549 /* FTObjectUtil.h */; };
+		BF6A00E51CE1746A0076B549 /* FTObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6A00E31CE1746A0076B549 /* FTObjectUtil.m */; };
+		BF6A00E81CE179090076B549 /* FTObjectUtil+clone.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6A00E61CE179090076B549 /* FTObjectUtil+clone.h */; };
+		BF6A00E91CE179090076B549 /* FTObjectUtil+clone.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6A00E71CE179090076B549 /* FTObjectUtil+clone.m */; };
 		BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */; };
 		BF6C2B221C3A010C00CDA1E8 /* FTImageWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */; };
 		BF6C2B251C3A01DB00CDA1E8 /* FTIndicatorWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */; };
@@ -389,6 +391,8 @@
 		BF6C2B6E1C3A04EC00CDA1E8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */; };
 		BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */; };
 		BF6C2B701C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */; };
+		BF78A71A1CE0BF5F001D3064 /* FTMoveAndScaleAnim.h in Headers */ = {isa = PBXBuildFile; fileRef = BF78A7181CE0BF5F001D3064 /* FTMoveAndScaleAnim.h */; };
+		BF78A71B1CE0BF5F001D3064 /* FTMoveAndScaleAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = BF78A7191CE0BF5F001D3064 /* FTMoveAndScaleAnim.m */; };
 		BF7957B91CC7CCA1000CEB0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF79579F1CC7CCA1000CEB0D /* Info.plist */; };
 		BF7957BA1CC7CCA1000CEB0D /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7957A01CC7CCA1000CEB0D /* MASCompositeConstraint.h */; };
 		BF7957BB1CC7CCA1000CEB0D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7957A11CC7CCA1000CEB0D /* MASCompositeConstraint.m */; };
@@ -530,8 +534,6 @@
 /* Begin PBXFileReference section */
 		BF098BE11C0822A500ED81C3 /* UIColor+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+normal.h"; sourceTree = "<group>"; };
 		BF098BE21C0822A500ED81C3 /* UIColor+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+normal.m"; sourceTree = "<group>"; };
-		BF0B84721BE7322D009C76E1 /* FTAlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAlertUtil.h; sourceTree = "<group>"; };
-		BF0B84731BE7322D009C76E1 /* FTAlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAlertUtil.m; sourceTree = "<group>"; };
 		BF14C5A21BE3081100B49989 /* UIWebView+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+normal.h"; sourceTree = "<group>"; };
 		BF14C5A31BE3081100B49989 /* UIWebView+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+normal.m"; sourceTree = "<group>"; };
 		BF14C5A71BE30AF800B49989 /* FTNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNetWorkHelper.h; sourceTree = "<group>"; };
@@ -873,6 +875,10 @@
 		BF5F6FBC1CB66A2100463D9F /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
 		BF5F6FBD1CB66A2100463D9F /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
 		BF64746A1C7013CD00569048 /* FTConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTConfiguration.h; sourceTree = "<group>"; };
+		BF6A00E21CE1746A0076B549 /* FTObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTObjectUtil.h; sourceTree = "<group>"; };
+		BF6A00E31CE1746A0076B549 /* FTObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTObjectUtil.m; sourceTree = "<group>"; };
+		BF6A00E61CE179090076B549 /* FTObjectUtil+clone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTObjectUtil+clone.h"; sourceTree = "<group>"; };
+		BF6A00E71CE179090076B549 /* FTObjectUtil+clone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTObjectUtil+clone.m"; sourceTree = "<group>"; };
 		BF6C2B1F1C3A010C00CDA1E8 /* FTImageWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImageWidget.h; sourceTree = "<group>"; };
 		BF6C2B201C3A010C00CDA1E8 /* FTImageWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTImageWidget.m; sourceTree = "<group>"; };
 		BF6C2B231C3A01DB00CDA1E8 /* FTIndicatorWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIndicatorWidget.h; sourceTree = "<group>"; };
@@ -913,6 +919,8 @@
 		BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		BF78A7181CE0BF5F001D3064 /* FTMoveAndScaleAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMoveAndScaleAnim.h; sourceTree = "<group>"; };
+		BF78A7191CE0BF5F001D3064 /* FTMoveAndScaleAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMoveAndScaleAnim.m; sourceTree = "<group>"; };
 		BF79579F1CC7CCA1000CEB0D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7957A01CC7CCA1000CEB0D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		BF7957A11CC7CCA1000CEB0D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -1582,6 +1590,15 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		BF78A7171CE0BE79001D3064 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				BF78A7181CE0BF5F001D3064 /* FTMoveAndScaleAnim.h */,
+				BF78A7191CE0BF5F001D3064 /* FTMoveAndScaleAnim.m */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
 		BF79579E1CC7CCA1000CEB0D /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1682,6 +1699,7 @@
 		BF8EAD1E1BD4E57C004A051D /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				BF78A7171CE0BE79001D3064 /* animation */,
 				BF43F6D41BDE29F100A1389B /* FTHelper.h */,
 				BF43F6561BDDF24700A1389B /* FTBaseHelper.h */,
 				BF43F6571BDDF24700A1389B /* FTBaseHelper.m */,
@@ -1721,8 +1739,10 @@
 				BFC027441CB671CB008E7087 /* FTFileUtil+zip.m */,
 				BFB861D41BE6F92F0051BE20 /* FTDateUtil.h */,
 				BFB861D51BE6F92F0051BE20 /* FTDateUtil.m */,
-				BF0B84721BE7322D009C76E1 /* FTAlertUtil.h */,
-				BF0B84731BE7322D009C76E1 /* FTAlertUtil.m */,
+				BF6A00E21CE1746A0076B549 /* FTObjectUtil.h */,
+				BF6A00E31CE1746A0076B549 /* FTObjectUtil.m */,
+				BF6A00E61CE179090076B549 /* FTObjectUtil+clone.h */,
+				BF6A00E71CE179090076B549 /* FTObjectUtil+clone.m */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -2000,7 +2020,6 @@
 				BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */,
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
-				BF0B84741BE7322D009C76E1 /* FTAlertUtil.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */,
 				BF52E4E11C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.h in Headers */,
@@ -2093,6 +2112,7 @@
 				BF52E5961C3CE1950052A107 /* UISlider+RACSignalSupport.h in Headers */,
 				BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */,
 				BF52E56B1C3CE1950052A107 /* RACSubscriptingAssignmentTrampoline.h in Headers */,
+				BF6A00E41CE1746A0076B549 /* FTObjectUtil.h in Headers */,
 				BF52E5731C3CE1950052A107 /* RACTuple.h in Headers */,
 				BF51B6291C0709CA00D26E9B /* FT3DLineWidget.h in Headers */,
 				BFC75D911C72C1360085B4E3 /* MJPropertyType.h in Headers */,
@@ -2104,6 +2124,7 @@
 				BF6C2B211C3A010C00CDA1E8 /* FTImageWidget.h in Headers */,
 				BF3B70BC1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.h in Headers */,
 				BFD180561CC47C1100A59394 /* FTLoadingWidget.h in Headers */,
+				BF78A71A1CE0BF5F001D3064 /* FTMoveAndScaleAnim.h in Headers */,
 				BF3B70AC1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.h in Headers */,
 				BF6C2B691C3A04EC00CDA1E8 /* UIImage+WebP.h in Headers */,
 				BF3B70B01CDC6C0F00A711BE /* NSTimer+BlocksKit.h in Headers */,
@@ -2142,6 +2163,7 @@
 				BF52E5111C3CE1950052A107 /* NSURLConnection+RACSupport.h in Headers */,
 				BFC75D951C72C1360085B4E3 /* NSObject+MJCoding.h in Headers */,
 				BF3B70901CDC6C0F00A711BE /* NSArray+BlocksKit.h in Headers */,
+				BF6A00E81CE179090076B549 /* FTObjectUtil+clone.h in Headers */,
 				BF52E5171C3CE1950052A107 /* RACBehaviorSubject.h in Headers */,
 				BF3B708D1CDC6C0F00A711BE /* BlocksKit+UIKit.h in Headers */,
 				BF52E5011C3CE1950052A107 /* NSObject+RACPropertySubscribing.h in Headers */,
@@ -2384,6 +2406,8 @@
 				BF43F6591BDDF24700A1389B /* FTBaseHelper.m in Sources */,
 				BF52E54F1C3CE1950052A107 /* RACReturnSignal.m in Sources */,
 				BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */,
+				BF6A00E51CE1746A0076B549 /* FTObjectUtil.m in Sources */,
+				BF6A00E91CE179090076B549 /* FTObjectUtil+clone.m in Sources */,
 				BF52E59D1C3CE1950052A107 /* UITableViewCell+RACSignalSupport.m in Sources */,
 				BF7957D21CC7CCA1000CEB0D /* ViewController+MASAdditions.m in Sources */,
 				BF6C2B621C3A04EC00CDA1E8 /* SDWebImagePrefetcher.m in Sources */,
@@ -2468,7 +2492,6 @@
 				BF52E5851C3CE1950052A107 /* UIButton+RACCommandSupport.m in Sources */,
 				BF52E5441C3CE1950052A107 /* RACMulticastConnection.m in Sources */,
 				BF52E54B1C3CE1950052A107 /* RACQueueScheduler.m in Sources */,
-				BF0B84751BE7322D009C76E1 /* FTAlertUtil.m in Sources */,
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BFC75D901C72C1360085B4E3 /* MJPropertyKey.m in Sources */,
@@ -2508,6 +2531,7 @@
 				BF51B6181C06AC8900D26E9B /* NSDate+box.m in Sources */,
 				BF1533B41BE0A8CD00809493 /* NSString+json.m in Sources */,
 				BF52E55E1C3CE1950052A107 /* RACSignalProvider.d in Sources */,
+				BF78A71B1CE0BF5F001D3064 /* FTMoveAndScaleAnim.m in Sources */,
 				BFC821AF1BDE45BF0066A77C /* NSData+Hash.m in Sources */,
 				BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */,
 				BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */,

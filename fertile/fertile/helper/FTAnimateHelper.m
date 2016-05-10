@@ -42,6 +42,10 @@ static FTAnimateHelper *sharedInstance = nil;
 
 #pragma mark - custom area
 
+//[[UIApplication sharedApplication] beginIgnoringInteractionEvents]
+//[[UIApplication sharedApplication] endIgnoringInteractionEvents]
+
+
 -(void) doSimpleAnimated
 {
     
