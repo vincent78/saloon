@@ -37,7 +37,7 @@
         }
     }
     
-//    CLog(@"查到数据count = %d calss:%@",resuleArray.count,NSStringFromClass(classType));
+//    FTLog(@"查到数据count = %d calss:%@",resuleArray.count,NSStringFromClass(classType));
     return resuleArray;
 }
 

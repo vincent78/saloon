@@ -47,9 +47,9 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *path1 = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
     NSString *documentPath = [path1 objectAtIndex:0];
-//    //  CLog(@"path=%@=",documentPath);
+//    //  FTLog(@"path=%@=",documentPath);
     NSString *path = [documentPath stringByAppendingPathComponent:_databaseName];
-//    //   CLog(@"path=%@=",path);
+//    //   FTLog(@"path=%@=",path);
 //    NSBundle *mainBundle = [NSBundle mainBundle];
 //    NSString *fromPath = [[mainBundle resourcePath] stringByAppendingPathComponent:_databaseName];
 //    
@@ -59,7 +59,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
 //         BOOL bo = [fileManager copyItemAtPath:fromPath toPath:path error:NULL];
 //        
 //        if (!bo) {
-//            CLog(@"Copy File Err!!!");
+//            FTLog(@"Copy File Err!!!");
 //        }
 //    }
 //    
@@ -77,7 +77,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     }
     else
     {
-        CLog(@"数据库文件不存在，请检查！！！！");
+        FTLog(@"数据库文件不存在，请检查！！！！");
     }
 }
 
@@ -101,7 +101,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!saveresult)
         {
-            CLog(@"error -- 记录更新失败！");
+            FTLog(@"error -- 记录更新失败！");
         }
         return saveresult;
     }];
@@ -132,7 +132,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
         {
-            CLog(@"Error--- the classInfo or tableName is null");
+            FTLog(@"Error--- the classInfo or tableName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return NO;
         }
@@ -149,7 +149,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -182,7 +182,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!updateresult)
         {
-            CLog(@"error -- 记录更新失败！");
+            FTLog(@"error -- 记录更新失败！");
         }
         return updateresult;
     }];
@@ -213,7 +213,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
         {
-            CLog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
+            FTLog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:SqliteExeFailed];
             return NO;
         }
@@ -230,7 +230,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -262,7 +262,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!deleresult)
         {
-            CLog(@"error -- 记录删除失败！");
+            FTLog(@"error -- 记录删除失败！");
         }
         return deleresult;
     }];
@@ -292,7 +292,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
         {
-            CLog(@"the classInfo or mTableName or mPrimarykeyName is null");
+            FTLog(@"the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return NO;
         }
@@ -309,7 +309,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -341,7 +341,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     
     if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName])
     {
-        CLog(@"the classInfo or mTableName is null");
+        FTLog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -360,7 +360,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (success != SQLITE_OK)
         {
-            CLog(@"出错了。。。。。");
+            FTLog(@"出错了。。。。。");
             NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
         }
@@ -403,7 +403,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     
     if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName])
     {
-        CLog(@"the classInfo or mTableName is null");
+        FTLog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -426,7 +426,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         if (success != SQLITE_OK)
         {
             NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-            CLog(@"%@",errorMsg);
+            FTLog(@"%@",errorMsg);
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
         }
         
@@ -480,7 +480,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             
             if (!classInfo)
             {
-                CLog(@"the classInfo is null");
+                FTLog(@"the classInfo is null");
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
                 return nil;
             }
@@ -505,7 +505,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errmsg =[[NSString alloc]initWithFormat:@"执行出错了，sqlIDStr = %@ \n sql = %@",sqlIDStr,sql];
-                CLog(@"%@",errmsg);
+                FTLog(@"%@",errmsg);
             }
             
             //返回的是字典数组
@@ -561,7 +561,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
 {
     if (!paramsObject || ! modelClass || !sqlIDStr)
     {
-        CLog(@"the paramsObject or modelClass or sqlIDStr is null");
+        FTLog(@"the paramsObject or modelClass or sqlIDStr is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -580,7 +580,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!classInfo)
         {
-            CLog(@"the classInfo is null");
+            FTLog(@"the classInfo is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return nil;
         }
@@ -617,7 +617,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!updateResult)
         {
-            CLog(@"error -- sql 执行失败！");
+            FTLog(@"error -- sql 执行失败！");
         }
         return updateResult;
     }];
@@ -661,7 +661,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             else
@@ -676,7 +676,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     }
     else
     {
-        CLog(@"传入参数有误！");
+        FTLog(@"传入参数有误！");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
     }
     
@@ -700,7 +700,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             
             if (success != SQLITE_OK) {
                 NSString *errmsg =[[NSString alloc]initWithFormat:@"执行出错了:sql = %@",sql];
-                CLog(@"%@",errmsg);
+                FTLog(@"%@",errmsg);
             } else {
                 //初始化一个以数据库结果集合，集合存放数据为model类型
                 FTListMapHandler *listMapHandler = [[FTListMapHandler alloc]init];
@@ -732,7 +732,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK) {
                 NSError *error = [NSError errorWithDomain:@"sql执行出错" code:-1001 userInfo:@{@"sql":sql}];
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:&error descrip:errorMsg errorCode:SqliteExeFailed];
             } else {
                 result = YES;
@@ -767,7 +767,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         
         if (!updateResult)
         {
-            CLog(@"error -- sql 执行失败！");
+            FTLog(@"error -- sql 执行失败！");
         }
         return updateResult;
     }];
@@ -816,7 +816,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             else
@@ -857,7 +857,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     
     if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
     {
-        CLog(@"the classInfo or mPrimarykeyName is null");
+        FTLog(@"the classInfo or mPrimarykeyName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -946,7 +946,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                CLog(@"%@",errorMsg);
+                FTLog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             

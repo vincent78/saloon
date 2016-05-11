@@ -32,9 +32,9 @@ static NSString *CTRIP_USERINFO_NAME = @"ctrip_userinfo.db";
             NSFileManager *fileManager = [NSFileManager defaultManager];
             NSArray *path1 = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
             NSString *documentPath = [path1 objectAtIndex:0];
-          //  CLog(@"path=%@=",documentPath);
+          //  FTLog(@"path=%@=",documentPath);
             NSString *path = [documentPath stringByAppendingPathComponent:databaseName];
-         //   CLog(@"path=%@=",path);
+         //   FTLog(@"path=%@=",path);
             NSBundle *mainBundle = [NSBundle mainBundle];
             NSString *fromPath = [[mainBundle resourcePath] stringByAppendingPathComponent:databaseName];
             
@@ -69,7 +69,7 @@ static NSString *CTRIP_USERINFO_NAME = @"ctrip_userinfo.db";
 //
 //                    }else
 //                    {
-//                        CLog(@"数据库文件拷贝失败");
+//                        FTLog(@"数据库文件拷贝失败");
 //                    }
 //                }else
 //                {

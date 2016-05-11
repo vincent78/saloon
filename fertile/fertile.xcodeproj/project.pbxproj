@@ -64,6 +64,7 @@
 		BF33A8831CE2BF16006C92C6 /* FTResultSetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8651CE2BF15006C92C6 /* FTResultSetHandler.m */; };
 		BF33A8841CE2BF16006C92C6 /* FTSqlStatmentUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8671CE2BF15006C92C6 /* FTSqlStatmentUtils.h */; };
 		BF33A8851CE2BF16006C92C6 /* FTSqlStatmentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8681CE2BF15006C92C6 /* FTSqlStatmentUtils.m */; };
+		BF33A8891CE302CE006C92C6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF33A8881CE302CE006C92C6 /* libsqlite3.tbd */; };
 		BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */; };
 		BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */; };
 		BF3B708C1CDC6C0F00A711BE /* BKDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B704C1CDC6C0F00A711BE /* BKDefines.h */; };
@@ -627,6 +628,7 @@
 		BF33A8651CE2BF15006C92C6 /* FTResultSetHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTResultSetHandler.m; sourceTree = "<group>"; };
 		BF33A8671CE2BF15006C92C6 /* FTSqlStatmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSqlStatmentUtils.h; sourceTree = "<group>"; };
 		BF33A8681CE2BF15006C92C6 /* FTSqlStatmentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSqlStatmentUtils.m; sourceTree = "<group>"; };
+		BF33A8881CE302CE006C92C6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToastWidget.h; sourceTree = "<group>"; };
 		BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToastWidget.m; sourceTree = "<group>"; };
 		BF3B704C1CDC6C0F00A711BE /* BKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDefines.h; sourceTree = "<group>"; };
@@ -1147,6 +1149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF33A8891CE302CE006C92C6 /* libsqlite3.tbd in Frameworks */,
 				BFC027421CB67120008E7087 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2018,12 +2021,13 @@
 		BFC165A01BD7898F00C59C2C /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				BF33A8881CE302CE006C92C6 /* libsqlite3.tbd */,
+				BFC027411CB67120008E7087 /* libz.tbd */,
 				BF6A01301CE201340076B549 /* RSA */,
 				BF6A01281CE1DDFB0076B549 /* JSPatch */,
 				BF3B70CC1CDC720700A711BE /* Reachability */,
 				BF3B704B1CDC6C0F00A711BE /* BlocksKit */,
 				BF79579E1CC7CCA1000CEB0D /* Masonry */,
-				BFC027411CB67120008E7087 /* libz.tbd */,
 				BF5F6FB11CB66A2100463D9F /* ZipArchive */,
 				BFF188111CB6082700CC1F77 /* AFNetworking */,
 				BFC75D721C72C1360085B4E3 /* MJExtension */,
