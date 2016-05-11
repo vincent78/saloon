@@ -13,6 +13,8 @@
 2、需要添加到Embedded binariesx
 
 
+Build Setting--> Apple LLVM 6.0 - Preprocessing--> Enable Strict Checking of objc_msgSend Calls  改为 NO
+
 
 待处理：
 1、框架中需要加载JSPatch

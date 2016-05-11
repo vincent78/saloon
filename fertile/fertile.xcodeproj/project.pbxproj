@@ -36,6 +36,34 @@
 		BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */; };
 		BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */; };
 		BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */; };
+		BF33A86A1CE2BF15006C92C6 /* FTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8431CE2BF15006C92C6 /* FTDatabase.h */; };
+		BF33A86B1CE2BF15006C92C6 /* FTDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8441CE2BF15006C92C6 /* FTDatabase.m */; };
+		BF33A86C1CE2BF15006C92C6 /* FTClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8471CE2BF15006C92C6 /* FTClassInfo.h */; };
+		BF33A86D1CE2BF15006C92C6 /* FTClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8481CE2BF15006C92C6 /* FTClassInfo.m */; };
+		BF33A86E1CE2BF15006C92C6 /* FTFieldInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8491CE2BF15006C92C6 /* FTFieldInfo.h */; };
+		BF33A86F1CE2BF15006C92C6 /* FTFieldInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A84A1CE2BF15006C92C6 /* FTFieldInfo.m */; };
+		BF33A8701CE2BF15006C92C6 /* FTDB.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A84C1CE2BF15006C92C6 /* FTDB.h */; };
+		BF33A8711CE2BF15006C92C6 /* FTDB.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A84D1CE2BF15006C92C6 /* FTDB.m */; };
+		BF33A8721CE2BF15006C92C6 /* FTDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A84F1CE2BF15006C92C6 /* FTDBHelper.h */; };
+		BF33A8731CE2BF15006C92C6 /* FTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8501CE2BF15006C92C6 /* FTDBHelper.m */; };
+		BF33A8741CE2BF15006C92C6 /* FTDbManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8521CE2BF15006C92C6 /* FTDbManager.h */; };
+		BF33A8751CE2BF15006C92C6 /* FTDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8531CE2BF15006C92C6 /* FTDbManager.m */; };
+		BF33A8761CE2BF15006C92C6 /* FTDBModelUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8551CE2BF15006C92C6 /* FTDBModelUtil.h */; };
+		BF33A8771CE2BF15006C92C6 /* FTDBModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8561CE2BF15006C92C6 /* FTDBModelUtil.m */; };
+		BF33A8781CE2BF15006C92C6 /* DBStringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8571CE2BF15006C92C6 /* DBStringUtil.h */; };
+		BF33A8791CE2BF15006C92C6 /* DBStringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8581CE2BF15006C92C6 /* DBStringUtil.m */; };
+		BF33A87A1CE2BF15006C92C6 /* FTOrmErrorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A85A1CE2BF15006C92C6 /* FTOrmErrorUtil.h */; };
+		BF33A87B1CE2BF15006C92C6 /* FTOrmErrorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A85B1CE2BF15006C92C6 /* FTOrmErrorUtil.m */; };
+		BF33A87C1CE2BF15006C92C6 /* FTPropertyUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A85D1CE2BF15006C92C6 /* FTPropertyUtil.h */; };
+		BF33A87D1CE2BF15006C92C6 /* FTPropertyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A85E1CE2BF15006C92C6 /* FTPropertyUtil.m */; };
+		BF33A87E1CE2BF15006C92C6 /* FTListBeanHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8601CE2BF15006C92C6 /* FTListBeanHandler.h */; };
+		BF33A87F1CE2BF15006C92C6 /* FTListBeanHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8611CE2BF15006C92C6 /* FTListBeanHandler.m */; };
+		BF33A8801CE2BF15006C92C6 /* FTListMapHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8621CE2BF15006C92C6 /* FTListMapHandler.h */; };
+		BF33A8811CE2BF15006C92C6 /* FTListMapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8631CE2BF15006C92C6 /* FTListMapHandler.m */; };
+		BF33A8821CE2BF15006C92C6 /* FTResultSetHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8641CE2BF15006C92C6 /* FTResultSetHandler.h */; };
+		BF33A8831CE2BF16006C92C6 /* FTResultSetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8651CE2BF15006C92C6 /* FTResultSetHandler.m */; };
+		BF33A8841CE2BF16006C92C6 /* FTSqlStatmentUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8671CE2BF15006C92C6 /* FTSqlStatmentUtils.h */; };
+		BF33A8851CE2BF16006C92C6 /* FTSqlStatmentUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BF33A8681CE2BF15006C92C6 /* FTSqlStatmentUtils.m */; };
 		BF3AD2741CA3F73C006F6F99 /* FTToastWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */; };
 		BF3AD2751CA3F73C006F6F99 /* FTToastWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */; };
 		BF3B708C1CDC6C0F00A711BE /* BKDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BF3B704C1CDC6C0F00A711BE /* BKDefines.h */; };
@@ -571,6 +599,34 @@
 		BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+fitSize.m"; sourceTree = "<group>"; };
 		BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClickPointCollectionWidget.h; sourceTree = "<group>"; };
 		BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClickPointCollectionWidget.m; sourceTree = "<group>"; };
+		BF33A8431CE2BF15006C92C6 /* FTDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDatabase.h; sourceTree = "<group>"; };
+		BF33A8441CE2BF15006C92C6 /* FTDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDatabase.m; sourceTree = "<group>"; };
+		BF33A8471CE2BF15006C92C6 /* FTClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClassInfo.h; sourceTree = "<group>"; };
+		BF33A8481CE2BF15006C92C6 /* FTClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClassInfo.m; sourceTree = "<group>"; };
+		BF33A8491CE2BF15006C92C6 /* FTFieldInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFieldInfo.h; sourceTree = "<group>"; };
+		BF33A84A1CE2BF15006C92C6 /* FTFieldInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFieldInfo.m; sourceTree = "<group>"; };
+		BF33A84C1CE2BF15006C92C6 /* FTDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDB.h; sourceTree = "<group>"; };
+		BF33A84D1CE2BF15006C92C6 /* FTDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDB.m; sourceTree = "<group>"; };
+		BF33A84F1CE2BF15006C92C6 /* FTDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDBHelper.h; sourceTree = "<group>"; };
+		BF33A8501CE2BF15006C92C6 /* FTDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDBHelper.m; sourceTree = "<group>"; };
+		BF33A8521CE2BF15006C92C6 /* FTDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDbManager.h; sourceTree = "<group>"; };
+		BF33A8531CE2BF15006C92C6 /* FTDbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDbManager.m; sourceTree = "<group>"; };
+		BF33A8551CE2BF15006C92C6 /* FTDBModelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDBModelUtil.h; sourceTree = "<group>"; };
+		BF33A8561CE2BF15006C92C6 /* FTDBModelUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDBModelUtil.m; sourceTree = "<group>"; };
+		BF33A8571CE2BF15006C92C6 /* DBStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBStringUtil.h; sourceTree = "<group>"; };
+		BF33A8581CE2BF15006C92C6 /* DBStringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStringUtil.m; sourceTree = "<group>"; };
+		BF33A85A1CE2BF15006C92C6 /* FTOrmErrorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTOrmErrorUtil.h; sourceTree = "<group>"; };
+		BF33A85B1CE2BF15006C92C6 /* FTOrmErrorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTOrmErrorUtil.m; sourceTree = "<group>"; };
+		BF33A85D1CE2BF15006C92C6 /* FTPropertyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTPropertyUtil.h; sourceTree = "<group>"; };
+		BF33A85E1CE2BF15006C92C6 /* FTPropertyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTPropertyUtil.m; sourceTree = "<group>"; };
+		BF33A8601CE2BF15006C92C6 /* FTListBeanHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListBeanHandler.h; sourceTree = "<group>"; };
+		BF33A8611CE2BF15006C92C6 /* FTListBeanHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListBeanHandler.m; sourceTree = "<group>"; };
+		BF33A8621CE2BF15006C92C6 /* FTListMapHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTListMapHandler.h; sourceTree = "<group>"; };
+		BF33A8631CE2BF15006C92C6 /* FTListMapHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTListMapHandler.m; sourceTree = "<group>"; };
+		BF33A8641CE2BF15006C92C6 /* FTResultSetHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTResultSetHandler.h; sourceTree = "<group>"; };
+		BF33A8651CE2BF15006C92C6 /* FTResultSetHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTResultSetHandler.m; sourceTree = "<group>"; };
+		BF33A8671CE2BF15006C92C6 /* FTSqlStatmentUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSqlStatmentUtils.h; sourceTree = "<group>"; };
+		BF33A8681CE2BF15006C92C6 /* FTSqlStatmentUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTSqlStatmentUtils.m; sourceTree = "<group>"; };
 		BF3AD2721CA3F73C006F6F99 /* FTToastWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTToastWidget.h; sourceTree = "<group>"; };
 		BF3AD2731CA3F73C006F6F99 /* FTToastWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTToastWidget.m; sourceTree = "<group>"; };
 		BF3B704C1CDC6C0F00A711BE /* BKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKDefines.h; sourceTree = "<group>"; };
@@ -1130,6 +1186,121 @@
 				BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */,
 			);
 			path = actionWidget;
+			sourceTree = "<group>";
+		};
+		BF33A8411CE2BF15006C92C6 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8431CE2BF15006C92C6 /* FTDatabase.h */,
+				BF33A8441CE2BF15006C92C6 /* FTDatabase.m */,
+				BF33A8451CE2BF15006C92C6 /* orm */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		BF33A8451CE2BF15006C92C6 /* orm */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8461CE2BF15006C92C6 /* ClassInfo */,
+				BF33A84B1CE2BF15006C92C6 /* DB */,
+				BF33A84E1CE2BF15006C92C6 /* DBHelper */,
+				BF33A8511CE2BF15006C92C6 /* DbManage */,
+				BF33A8541CE2BF15006C92C6 /* DBModelUtil */,
+				BF33A8571CE2BF15006C92C6 /* DBStringUtil.h */,
+				BF33A8581CE2BF15006C92C6 /* DBStringUtil.m */,
+				BF33A8591CE2BF15006C92C6 /* OrmErrorUtil */,
+				BF33A85C1CE2BF15006C92C6 /* PropertyUtil */,
+				BF33A85F1CE2BF15006C92C6 /* ResultSetHandler */,
+				BF33A8661CE2BF15006C92C6 /* SqlStatmentUtils */,
+			);
+			path = orm;
+			sourceTree = "<group>";
+		};
+		BF33A8461CE2BF15006C92C6 /* ClassInfo */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8471CE2BF15006C92C6 /* FTClassInfo.h */,
+				BF33A8481CE2BF15006C92C6 /* FTClassInfo.m */,
+				BF33A8491CE2BF15006C92C6 /* FTFieldInfo.h */,
+				BF33A84A1CE2BF15006C92C6 /* FTFieldInfo.m */,
+			);
+			path = ClassInfo;
+			sourceTree = "<group>";
+		};
+		BF33A84B1CE2BF15006C92C6 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A84C1CE2BF15006C92C6 /* FTDB.h */,
+				BF33A84D1CE2BF15006C92C6 /* FTDB.m */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		BF33A84E1CE2BF15006C92C6 /* DBHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A84F1CE2BF15006C92C6 /* FTDBHelper.h */,
+				BF33A8501CE2BF15006C92C6 /* FTDBHelper.m */,
+			);
+			path = DBHelper;
+			sourceTree = "<group>";
+		};
+		BF33A8511CE2BF15006C92C6 /* DbManage */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8521CE2BF15006C92C6 /* FTDbManager.h */,
+				BF33A8531CE2BF15006C92C6 /* FTDbManager.m */,
+			);
+			path = DbManage;
+			sourceTree = "<group>";
+		};
+		BF33A8541CE2BF15006C92C6 /* DBModelUtil */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8551CE2BF15006C92C6 /* FTDBModelUtil.h */,
+				BF33A8561CE2BF15006C92C6 /* FTDBModelUtil.m */,
+			);
+			path = DBModelUtil;
+			sourceTree = "<group>";
+		};
+		BF33A8591CE2BF15006C92C6 /* OrmErrorUtil */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A85A1CE2BF15006C92C6 /* FTOrmErrorUtil.h */,
+				BF33A85B1CE2BF15006C92C6 /* FTOrmErrorUtil.m */,
+			);
+			path = OrmErrorUtil;
+			sourceTree = "<group>";
+		};
+		BF33A85C1CE2BF15006C92C6 /* PropertyUtil */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A85D1CE2BF15006C92C6 /* FTPropertyUtil.h */,
+				BF33A85E1CE2BF15006C92C6 /* FTPropertyUtil.m */,
+			);
+			path = PropertyUtil;
+			sourceTree = "<group>";
+		};
+		BF33A85F1CE2BF15006C92C6 /* ResultSetHandler */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8601CE2BF15006C92C6 /* FTListBeanHandler.h */,
+				BF33A8611CE2BF15006C92C6 /* FTListBeanHandler.m */,
+				BF33A8621CE2BF15006C92C6 /* FTListMapHandler.h */,
+				BF33A8631CE2BF15006C92C6 /* FTListMapHandler.m */,
+				BF33A8641CE2BF15006C92C6 /* FTResultSetHandler.h */,
+				BF33A8651CE2BF15006C92C6 /* FTResultSetHandler.m */,
+			);
+			path = ResultSetHandler;
+			sourceTree = "<group>";
+		};
+		BF33A8661CE2BF15006C92C6 /* SqlStatmentUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BF33A8671CE2BF15006C92C6 /* FTSqlStatmentUtils.h */,
+				BF33A8681CE2BF15006C92C6 /* FTSqlStatmentUtils.m */,
+			);
+			path = SqlStatmentUtils;
 			sourceTree = "<group>";
 		};
 		BF3AD2711CA3F6EA006F6F99 /* toastTipWidget */ = {
@@ -1741,6 +1912,7 @@
 		BF8EAD1E1BD4E57C004A051D /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				BF33A8411CE2BF15006C92C6 /* database */,
 				BF78A7171CE0BE79001D3064 /* animation */,
 				BF43F6D41BDE29F100A1389B /* FTHelper.h */,
 				BF43F6561BDDF24700A1389B /* FTBaseHelper.h */,
@@ -2042,6 +2214,7 @@
 				BF5F6FC71CB66A2100463D9F /* ZipArchive.h in Headers */,
 				BF6C2B251C3A01DB00CDA1E8 /* FTIndicatorWidget.h in Headers */,
 				BF3B70941CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h in Headers */,
+				BF33A8841CE2BF16006C92C6 /* FTSqlStatmentUtils.h in Headers */,
 				BF51B61B1C06E65A00D26E9B /* NSNumber+box.h in Headers */,
 				BF7957BA1CC7CCA1000CEB0D /* MASCompositeConstraint.h in Headers */,
 				BF52E5051C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
@@ -2095,12 +2268,14 @@
 				BF6C2B6D1C3A04EC00CDA1E8 /* UIImageView+WebCache.h in Headers */,
 				BF52E54A1C3CE1950052A107 /* RACQueueScheduler.h in Headers */,
 				BFC027451CB671CB008E7087 /* FTFileUtil+zip.h in Headers */,
+				BF33A8701CE2BF15006C92C6 /* FTDB.h in Headers */,
 				BF7957CE1CC7CCA1000CEB0D /* View+MASAdditions.h in Headers */,
 				BF3B70981CDC6C0F00A711BE /* NSMapTable+BlocksKit.h in Headers */,
 				BF3B70AE1CDC6C0F00A711BE /* NSSet+BlocksKit.h in Headers */,
 				BF52E5771C3CE1950052A107 /* RACUnarySequence.h in Headers */,
 				BF52E56F1C3CE1950052A107 /* RACTargetQueueScheduler.h in Headers */,
 				BF52E5801C3CE1950052A107 /* UIAlertView+RACSignalSupport.h in Headers */,
+				BF33A8781CE2BF15006C92C6 /* DBStringUtil.h in Headers */,
 				BF52E52C1C3CE1950052A107 /* RACEagerSequence.h in Headers */,
 				BF52E58A1C3CE1950052A107 /* UIControl+RACSignalSupportPrivate.h in Headers */,
 				BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */,
@@ -2121,6 +2296,7 @@
 				BF52E59E1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */,
 				BF52E4DD1C3CE1950052A107 /* EXTRuntimeExtensions.h in Headers */,
 				BF52E5A01C3CE1950052A107 /* UITextField+RACSignalSupport.h in Headers */,
+				BF33A8801CE2BF15006C92C6 /* FTListMapHandler.h in Headers */,
 				BF52E5A21C3CE1950052A107 /* UITextView+RACSignalSupport.h in Headers */,
 				BF7957CC1CC7CCA1000CEB0D /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
 				BFB16F771BEB501D00CEEBC9 /* FTImgBtn.h in Headers */,
@@ -2153,6 +2329,7 @@
 				BF7957C31CC7CCA1000CEB0D /* Masonry.h in Headers */,
 				BF52E5381C3CE1950052A107 /* RACImmediateScheduler.h in Headers */,
 				BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */,
+				BF33A86C1CE2BF15006C92C6 /* FTClassInfo.h in Headers */,
 				BF52E5071C3CE1950052A107 /* NSSet+RACSequenceAdditions.h in Headers */,
 				BFF1882A1CB6082700CC1F77 /* AFURLSessionManager.h in Headers */,
 				BF3B70A21CDC6C0F00A711BE /* NSMutableSet+BlocksKit.h in Headers */,
@@ -2199,11 +2376,13 @@
 				BF52E51B1C3CE1950052A107 /* RACChannel.h in Headers */,
 				BFC821B41BDE45BF0066A77C /* NSString+Security.h in Headers */,
 				BFC821B01BDE45BF0066A77C /* NSString+normal.h in Headers */,
+				BF33A8741CE2BF15006C92C6 /* FTDbManager.h in Headers */,
 				BF7957C91CC7CCA1000CEB0D /* NSArray+MASAdditions.h in Headers */,
 				BF52E5431C3CE1950052A107 /* RACMulticastConnection.h in Headers */,
 				BF5F6FC61CB66A2100463D9F /* zip.h in Headers */,
 				BFB16F481BEB06A700CEEBC9 /* FTNavigateControllerModel.h in Headers */,
 				BF3B709C1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.h in Headers */,
+				BF33A87A1CE2BF15006C92C6 /* FTOrmErrorUtil.h in Headers */,
 				BF52E55C1C3CE1950052A107 /* RACSignal.h in Headers */,
 				BF52E5421C3CE1950052A107 /* RACMulticastConnection+Private.h in Headers */,
 				BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */,
@@ -2222,6 +2401,7 @@
 				BFF246301CBF810A002B5603 /* FTFileUtil+readwrite.h in Headers */,
 				BF52E57E1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.h in Headers */,
 				BF52E4FF1C3CE1950052A107 /* NSObject+RACLifting.h in Headers */,
+				BF33A86E1CE2BF15006C92C6 /* FTFieldInfo.h in Headers */,
 				BF52E4DC1C3CE1950052A107 /* EXTKeyPathCoding.h in Headers */,
 				BFF188281CB6082700CC1F77 /* AFURLResponseSerialization.h in Headers */,
 				BF52E53E1C3CE1950052A107 /* RACKVOProxy.h in Headers */,
@@ -2235,6 +2415,7 @@
 				BF7957BD1CC7CCA1000CEB0D /* MASConstraint.h in Headers */,
 				BF52E5621C3CE1950052A107 /* RACStream.h in Headers */,
 				BF3B709E1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h in Headers */,
+				BF33A8721CE2BF15006C92C6 /* FTDBHelper.h in Headers */,
 				BF43F6BC1BDE150100A1389B /* FTSystemHelper.h in Headers */,
 				BF52E4E91C3CE1950052A107 /* NSData+RACSupport.h in Headers */,
 				BF52E5361C3CE1950052A107 /* RACGroupedSignal.h in Headers */,
@@ -2249,6 +2430,7 @@
 				BFB861D21BE6F8790051BE20 /* NSDate+normal.h in Headers */,
 				BF8EAD041BD4E53F004A051D /* fertile.h in Headers */,
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
+				BF33A8761CE2BF15006C92C6 /* FTDBModelUtil.h in Headers */,
 				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
 				BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */,
 				BF6C2B631C3A04EC00CDA1E8 /* UIButton+WebCache.h in Headers */,
@@ -2262,6 +2444,7 @@
 				BF52E59C1C3CE1950052A107 /* UITableViewCell+RACSignalSupport.h in Headers */,
 				BF14C5A91BE30AF800B49989 /* FTNetWorkHelper.h in Headers */,
 				BF6C2B601C3A04EC00CDA1E8 /* SDWebImageOperation.h in Headers */,
+				BF33A8821CE2BF15006C92C6 /* FTResultSetHandler.h in Headers */,
 				BF51B6171C06AC8900D26E9B /* NSDate+box.h in Headers */,
 				BF43F65C1BDDF26600A1389B /* FTAnimateHelper.h in Headers */,
 				BF52E4F31C3CE1950052A107 /* NSInvocation+RACTypeParsing.h in Headers */,
@@ -2272,6 +2455,7 @@
 				BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */,
 				BF3B70D61CDC7D4500A711BE /* FTAssert.h in Headers */,
 				BF52E58E1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.h in Headers */,
+				BF33A87C1CE2BF15006C92C6 /* FTPropertyUtil.h in Headers */,
 				BF7957C41CC7CCA1000CEB0D /* MASUtilities.h in Headers */,
 				BF3B70AA1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h in Headers */,
 				BF52E4F11C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.h in Headers */,
@@ -2300,10 +2484,12 @@
 				BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */,
 				BF52E5941C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.h in Headers */,
 				BF8343CF1C3B578A0082A845 /* UIColor+Separate.h in Headers */,
+				BF33A87E1CE2BF15006C92C6 /* FTListBeanHandler.h in Headers */,
 				BFD180511CC478A400A59394 /* FTAlertWidget.h in Headers */,
 				BFC821C51BDE47920066A77C /* FTBaseViewController.h in Headers */,
 				BFB16F6E1BEB370500CEEBC9 /* FTNavigateWidget.h in Headers */,
 				BF43F6721BDE0BC900A1389B /* FTMaskWidget.h in Headers */,
+				BF33A86A1CE2BF15006C92C6 /* FTDatabase.h in Headers */,
 				BF52E5821C3CE1950052A107 /* UIBarButtonItem+RACCommandSupport.h in Headers */,
 				BF6C2B541C3A04EC00CDA1E8 /* SDImageCache.h in Headers */,
 				BF3B70B41CDC6C0F00A711BE /* A2DynamicDelegate.h in Headers */,
@@ -2395,8 +2581,10 @@
 				BF52E54D1C3CE1950052A107 /* RACReplaySubject.m in Sources */,
 				BF52E5231C3CE1950052A107 /* RACDelegateProxy.m in Sources */,
 				BF52E58F1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.m in Sources */,
+				BF33A8811CE2BF15006C92C6 /* FTListMapHandler.m in Sources */,
 				BF3B709B1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.m in Sources */,
 				BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */,
+				BF33A8751CE2BF15006C92C6 /* FTDbManager.m in Sources */,
 				BF52E5651C3CE1950052A107 /* RACStringSequence.m in Sources */,
 				BF52E5631C3CE1950052A107 /* RACStream.m in Sources */,
 				BF52E5331C3CE1950052A107 /* RACErrorSignal.m in Sources */,
@@ -2419,8 +2607,10 @@
 				BF52E5971C3CE1950052A107 /* UISlider+RACSignalSupport.m in Sources */,
 				BF7957C01CC7CCA1000CEB0D /* MASConstraintMaker.m in Sources */,
 				BF14C5AA1BE30AF800B49989 /* FTNetWorkHelper.m in Sources */,
+				BF33A8791CE2BF15006C92C6 /* DBStringUtil.m in Sources */,
 				BF52E4EA1C3CE1950052A107 /* NSData+RACSupport.m in Sources */,
 				BF7957C61CC7CCA1000CEB0D /* MASViewAttribute.m in Sources */,
+				BF33A8771CE2BF15006C92C6 /* FTDBModelUtil.m in Sources */,
 				BF52E5931C3CE1950052A107 /* UIRefreshControl+RACCommandSupport.m in Sources */,
 				BF52E5551C3CE1950052A107 /* RACScopedDisposable.m in Sources */,
 				BF52E57A1C3CE1950052A107 /* RACUnit.m in Sources */,
@@ -2458,10 +2648,12 @@
 				BF52E5781C3CE1950052A107 /* RACUnarySequence.m in Sources */,
 				BF43F6591BDDF24700A1389B /* FTBaseHelper.m in Sources */,
 				BF52E54F1C3CE1950052A107 /* RACReturnSignal.m in Sources */,
+				BF33A87B1CE2BF15006C92C6 /* FTOrmErrorUtil.m in Sources */,
 				BF1912301C34CDD7007D9924 /* FTNavigateWidgetController.m in Sources */,
 				BF6A00E51CE1746A0076B549 /* FTObjectUtil.m in Sources */,
 				BF6A00E91CE179090076B549 /* FTObjectUtil+clone.m in Sources */,
 				BF52E59D1C3CE1950052A107 /* UITableViewCell+RACSignalSupport.m in Sources */,
+				BF33A86D1CE2BF15006C92C6 /* FTClassInfo.m in Sources */,
 				BF7957D21CC7CCA1000CEB0D /* ViewController+MASAdditions.m in Sources */,
 				BF6C2B621C3A04EC00CDA1E8 /* SDWebImagePrefetcher.m in Sources */,
 				BFFC5D561BE8BF3200F005F2 /* FTVectorView.m in Sources */,
@@ -2478,6 +2670,7 @@
 				BF52E5411C3CE1950052A107 /* RACKVOTrampoline.m in Sources */,
 				BFD1F2871BFC71DA00AFD63C /* FTLoggerHelper.m in Sources */,
 				BFFAD9121BE360A80050A21B /* NSArray+normal.m in Sources */,
+				BF33A87F1CE2BF15006C92C6 /* FTListBeanHandler.m in Sources */,
 				BF52E4EE1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.m in Sources */,
 				BF52E5911C3CE1950052A107 /* UIImagePickerController+RACSignalSupport.m in Sources */,
 				BF5F6FBF1CB66A2100463D9F /* ioapi.c in Sources */,
@@ -2501,11 +2694,14 @@
 				BF52E5701C3CE1950052A107 /* RACTargetQueueScheduler.m in Sources */,
 				BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */,
 				BF9C3CB81CA2778A007FE0EA /* FTProgressView.m in Sources */,
+				BF33A8851CE2BF16006C92C6 /* FTSqlStatmentUtils.m in Sources */,
 				BF52E56C1C3CE1950052A107 /* RACSubscriptingAssignmentTrampoline.m in Sources */,
 				BF52E57F1C3CE1950052A107 /* UIActionSheet+RACSignalSupport.m in Sources */,
 				BF52E55D1C3CE1950052A107 /* RACSignal.m in Sources */,
 				BF6C2B6A1C3A04EC00CDA1E8 /* UIImage+WebP.m in Sources */,
+				BF33A8731CE2BF15006C92C6 /* FTDBHelper.m in Sources */,
 				BF52E52B1C3CE1950052A107 /* RACDynamicSignal.m in Sources */,
+				BF33A8831CE2BF16006C92C6 /* FTResultSetHandler.m in Sources */,
 				BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */,
 				BFF188271CB6082700CC1F77 /* AFURLRequestSerialization.m in Sources */,
 				BFC821C01BDE462E0066A77C /* UIView+normal.m in Sources */,
@@ -2534,6 +2730,7 @@
 				BF1533B81BE0B30E00809493 /* NSArray+json.m in Sources */,
 				BFF188291CB6082700CC1F77 /* AFURLResponseSerialization.m in Sources */,
 				BFB57D191C33C0B4005187B6 /* Aspects.m in Sources */,
+				BF33A8711CE2BF15006C92C6 /* FTDB.m in Sources */,
 				BFC027461CB671CB008E7087 /* FTFileUtil+zip.m in Sources */,
 				BFC75D8E1C72C1360085B4E3 /* MJProperty.m in Sources */,
 				BF52E59F1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
@@ -2543,12 +2740,14 @@
 				BF52E50A1C3CE1950052A107 /* NSString+RACKeyPathUtilities.m in Sources */,
 				BFFAD91B1BE370BD0050A21B /* FTThreadHelper.m in Sources */,
 				BF52E5851C3CE1950052A107 /* UIButton+RACCommandSupport.m in Sources */,
+				BF33A87D1CE2BF15006C92C6 /* FTPropertyUtil.m in Sources */,
 				BF52E5441C3CE1950052A107 /* RACMulticastConnection.m in Sources */,
 				BF52E54B1C3CE1950052A107 /* RACQueueScheduler.m in Sources */,
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BFC75D901C72C1360085B4E3 /* MJPropertyKey.m in Sources */,
 				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
+				BF33A86B1CE2BF15006C92C6 /* FTDatabase.m in Sources */,
 				BF52E5291C3CE1950052A107 /* RACDynamicSequence.m in Sources */,
 				BF52E51E1C3CE1950052A107 /* RACCommand.m in Sources */,
 				BFC821C61BDE47920066A77C /* FTBaseViewController.m in Sources */,
@@ -2560,6 +2759,7 @@
 				BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */,
 				BF52E5571C3CE1950052A107 /* RACSequence.m in Sources */,
 				BF3B70911CDC6C0F00A711BE /* NSArray+BlocksKit.m in Sources */,
+				BF33A86F1CE2BF15006C92C6 /* FTFieldInfo.m in Sources */,
 				BF3B70A31CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m in Sources */,
 				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
@@ -2743,6 +2943,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fertile/fertile-Prefix.pch";
@@ -2769,6 +2970,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fertile/fertile-Prefix.pch";
