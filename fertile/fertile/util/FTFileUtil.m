@@ -239,11 +239,83 @@
     }
 }
 
+
+
 + (void)removeItem:(NSString *)fullName
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error = nil;
     [fileManager removeItemAtPath:fullName error:&error];
+}
+
+
+
+#pragma mark 文件属性
+
+
++ (BOOL)addSkipBackUpFileWithPath:(NSString *)path
+{
+    
+    BOOL isDir = NO;
+    BOOL isExist =[[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDir];
+    NSURL *url = NULL;
+    if (isExist) {
+        url = [NSURL fileURLWithPath:path isDirectory:isDir];
+    }
+    
+    BOOL ret = NO;
+    
+    if (url) {
+        ret = [self addSkipBackupAttributeToItemAtURL:url];
+    }
+    
+    return ret;
+}
+
+
++ (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
+{
+    assert([[NSFileManager defaultManager] fileExistsAtPath: [URL path]]);
+    
+    NSError *error = nil;
+    BOOL success = [URL setResourceValue:[NSNumber numberWithBool: YES]
+                                  forKey: NSURLIsExcludedFromBackupKey error: &error];
+    if(!success){
+        NSLog(@"Error excluding %@ from backup %@", [URL lastPathComponent], error);
+    }
+    
+    return success;
+}
+
++ (BOOL)checkSkipBackupAttributeToItemAtURL:(NSURL *)URL
+{
+    NSError *error;
+    id flag = nil;
+    [URL getResourceValue: &flag
+                   forKey: NSURLIsExcludedFromBackupKey error: &error];
+//    NSLog (@"NSURLIsExcludedFromBackupKey flag value is %@", flag);
+    return flag;
+}
+
+
+//获取文件大小,失败返回0
++(unsigned long long)getFileSizeWithFilePath:(NSString *)filePath
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if([self exist:filePath])
+    {
+        NSError *error = nil;
+        NSDictionary* fileAttrDic = [fileManager attributesOfItemAtPath:filePath error:&error];
+        if(fileAttrDic != nil){
+            return [fileAttrDic fileSize];
+        }else{
+            FTLog(@"获取文件大小失败 description %@, failureReason %@",[error localizedDescription],[error localizedFailureReason]);
+            return 0;
+        }
+    }else{
+        return 0;
+    }
 }
 
 

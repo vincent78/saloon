@@ -11,4 +11,19 @@
 
 @interface FTFileUtil (zip)
 
+/**
+ *  @brief 解压缩
+ *
+ *  @param zipFile   <#zipFile description#>
+ *  @param unzipPath <#unzipPath description#>
+ */
++ (void)unZip:(NSString *)zipFile unzipto:(NSString *)unzipPath;
+
+/**
+ *  @brief  压缩文件
+ *
+ *  @param itemFullName <#itemFullName description#>
+ *  @param zipFileName  <#zipFileName description#>
+ */
++ (void)zip:(NSString *)zipPath toZipFile:(NSString *)zipFileName;
 @end

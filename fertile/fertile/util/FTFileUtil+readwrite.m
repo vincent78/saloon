@@ -11,7 +11,7 @@
 @implementation FTFileUtil (readwrite)
 
 
-
+#pragma mark 读文件
 
 +(NSString *) readStrFromFile:(NSString *)fileFullName
 {
@@ -51,6 +51,36 @@
     }
 }
 
+
+
+// 读取文件
++ (NSData *)readDataFromFile:(NSString *)filePath
+{
+    NSData *data = nil;
+    
+    if([self exist:filePath])
+    {
+        data = [NSData dataWithContentsOfFile:filePath];
+    }
+    
+    return data;
+}
+
+
++(NSMutableDictionary *) readPListFile:(NSString *)fileName
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
+    if ([NSString emptyOrNil:plistPath]
+        || ![self exist:plistPath])
+    {
+        return nil;
+    }
+    return [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+}
+
+
+#pragma mark 写文件
+
 +(void) strAppendToFile:(NSString *)fileFullName with:(NSString *)str
 {
     if (!str || [str isEmpty])
@@ -78,5 +108,38 @@
     [outFile closeFile];
     
 }
+
+
+
+// 写文件
++ (BOOL)writeData:(NSData *)data filePath:(NSString *)filePath
+{
+    BOOL isSuccess = NO;
+    
+    if(data != nil)
+    {
+        isSuccess = [data writeToFile:filePath atomically:YES];
+    }
+    
+    return isSuccess;
+}
+
+
+// 写字符串 到文件
++ (BOOL)writeContent:(NSString *)content filePath:(NSString *)filePath
+{
+    BOOL isSuccess = NO;
+    
+    if(content != nil)
+    {
+        isSuccess = [content writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    }
+    
+    return isSuccess;
+}
+
+
+
+
 
 @end

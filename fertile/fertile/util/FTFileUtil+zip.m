@@ -25,12 +25,6 @@
     }
 }
 
-/**
- *  @brief  压缩文件
- *
- *  @param itemFullName <#itemFullName description#>
- *  @param zipFileName  <#zipFileName description#>
- */
 + (void)zip:(NSString *)zipPath toZipFile:(NSString *)zipFileName
 {
     //判断文件是否存在，如果存在则删除文件

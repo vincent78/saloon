@@ -106,7 +106,7 @@
 +(NSMutableArray *)findFiles:(NSString *)subDirPath;
 
 
-+ (NSMutableArray *)findFiles:(NSString *)targetPath HasPrefixPath:(BOOL)hasPrefixPath;
++(NSMutableArray *)findFiles:(NSString *)targetPath HasPrefixPath:(BOOL)hasPrefixPath;
 
 
 +(NSMutableArray *)findFilesOnLevel:(NSString *)targetPath;
@@ -137,6 +137,47 @@
  *  @param fullName <#fullName description#>
  */
 + (void)removeItem:(NSString *)fullName;
+
+
+#pragma mark - 文件属性
+
+/**
+ *  @brief 阻止itune在应用中保存数据（标记不备份文件）
+ *
+ *  @param path <#path description#>
+ *
+ *  @return <#return value description#>
+ */
++ (BOOL)addSkipBackUpFileWithPath:(NSString *)path;
+
+/**
+ *  @brief 阻止itune在应用中保存数据（标记不备份文件）
+ *
+ *  @param URL <#URL description#>
+ *
+ *  @return <#return value description#>
+ */
++ (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL;
+
+/**
+ *  @brief 是否已阻止itune在应用中保存数据
+ *
+ *  @param URL <#URL description#>
+ *
+ *  @return <#return value description#>
+ */
++ (BOOL)checkSkipBackupAttributeToItemAtURL:(NSURL *)URL;
+
+
+/**
+ *  @brief 获取文件大小,失败返回0
+ *
+ *  @param filePath <#filePath description#>
+ *
+ *  @return <#return value description#>
+ */
++(unsigned long long)getFileSizeWithFilePath:(NSString *)filePath;
+
 
 
 @end
