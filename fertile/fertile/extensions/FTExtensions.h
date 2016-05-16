@@ -10,49 +10,51 @@
 #define FTExtensions_h
 
 //base
-#import "NSData+Hash.h"
-#import "NSData+base64.h"
-#import "NSData+box.h"
+#import "NSData+FTHash.h"
+#import "NSData+FTBase64.h"
+#import "NSData+FTBox.h"
 
-#import "NSDate+box.h"
-#import "NSDate+normal.h"
+#import "NSDate+FTBox.h"
+#import "NSDate+FTNormal.h"
 
-#import "NSString+Security.h"
-#import "NSString+size.h"
-#import "NSString+regExp.h"
-#import "NSString+json.h"
-#import "NSString+file.h"
-#import "NSString+box.h"
-#import "NSString+normal.h"
+#import "NSString+FTSecurity.h"
+#import "NSString+FTSize.h"
+#import "NSString+FTRegExp.h"
+#import "NSString+FTJson.h"
+#import "NSString+FTFile.h"
+#import "NSString+FTBox.h"
+#import "NSString+FTNormal.h"
 
 
-#import "NSNumber+box.h"
+#import "NSNumber+FTBox.h"
 
-#import "NSArray+json.h"
-#import "NSArray+normal.h"
-#import "NSMutableArray+normal.h"
+#import "NSArray+FTJson.h"
+#import "NSArray+FTNormal.h"
+#import "NSMutableArray+FTNormal.h"
 
-#import "NSDictionary+json.h"
-#import "NSDictionary+object.h"
-#import "NSMutableDictionary+normal.h"
+#import "NSDictionary+FTJson.h"
+#import "NSDictionary+FTObject.h"
+#import "NSMutableDictionary+FTNormal.h"
 
+#import "NSObject+FTRuntime.h"
+#import "NSObject+FTProperty.h"
 
 
 
 //ui
 
-#import "UILabel+rich.h"
-#import "UILabel+fitSize.h"
+#import "UILabel+FTRich.h"
+#import "UILabel+FTFitSize.h"
 
-#import "UIView+normal.h"
-#import "UIView+layer.h"
-#import "UIView+autoLayout.h"
+#import "UIView+FTNormal.h"
+#import "UIView+FTLayer.h"
+#import "UIView+FTAutoLayout.h"
 
 
-#import "UITableViewCell+normal.h"
+#import "UITableViewCell+FTNormal.h"
 
-#import "UIColor+normal.h"
-#import "UIImage+normal.h"
+#import "UIColor+FTNormal.h"
+#import "UIImage+FTNormal.h"
 
 
 

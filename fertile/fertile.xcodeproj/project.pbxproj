@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF098BE31C0822A500ED81C3 /* UIColor+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF098BE11C0822A500ED81C3 /* UIColor+normal.h */; };
-		BF098BE41C0822A500ED81C3 /* UIColor+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF098BE21C0822A500ED81C3 /* UIColor+normal.m */; };
-		BF14C5A41BE3081100B49989 /* UIWebView+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF14C5A21BE3081100B49989 /* UIWebView+normal.h */; };
-		BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14C5A31BE3081100B49989 /* UIWebView+normal.m */; };
+		BF098BE31C0822A500ED81C3 /* UIColor+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF098BE11C0822A500ED81C3 /* UIColor+FTNormal.h */; };
+		BF098BE41C0822A500ED81C3 /* UIColor+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF098BE21C0822A500ED81C3 /* UIColor+FTNormal.m */; };
+		BF14C5A41BE3081100B49989 /* UIWebView+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF14C5A21BE3081100B49989 /* UIWebView+FTNormal.h */; };
+		BF14C5A51BE3081100B49989 /* UIWebView+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14C5A31BE3081100B49989 /* UIWebView+FTNormal.m */; };
 		BF14C5A91BE30AF800B49989 /* FTNetWorkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF14C5A71BE30AF800B49989 /* FTNetWorkHelper.h */; };
 		BF14C5AA1BE30AF800B49989 /* FTNetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14C5A81BE30AF800B49989 /* FTNetWorkHelper.m */; };
-		BF1533B31BE0A8CD00809493 /* NSString+json.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B11BE0A8CD00809493 /* NSString+json.h */; };
-		BF1533B41BE0A8CD00809493 /* NSString+json.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533B21BE0A8CD00809493 /* NSString+json.m */; };
-		BF1533B71BE0B30E00809493 /* NSArray+json.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B51BE0B30E00809493 /* NSArray+json.h */; };
-		BF1533B81BE0B30E00809493 /* NSArray+json.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533B61BE0B30E00809493 /* NSArray+json.m */; };
-		BF1533BB1BE0B40F00809493 /* NSDictionary+json.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B91BE0B40F00809493 /* NSDictionary+json.h */; };
-		BF1533BC1BE0B40F00809493 /* NSDictionary+json.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533BA1BE0B40F00809493 /* NSDictionary+json.m */; };
+		BF1533B31BE0A8CD00809493 /* NSString+FTJson.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B11BE0A8CD00809493 /* NSString+FTJson.h */; };
+		BF1533B41BE0A8CD00809493 /* NSString+FTJson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533B21BE0A8CD00809493 /* NSString+FTJson.m */; };
+		BF1533B71BE0B30E00809493 /* NSArray+FTJson.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B51BE0B30E00809493 /* NSArray+FTJson.h */; };
+		BF1533B81BE0B30E00809493 /* NSArray+FTJson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533B61BE0B30E00809493 /* NSArray+FTJson.m */; };
+		BF1533BB1BE0B40F00809493 /* NSDictionary+FTJson.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533B91BE0B40F00809493 /* NSDictionary+FTJson.h */; };
+		BF1533BC1BE0B40F00809493 /* NSDictionary+FTJson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533BA1BE0B40F00809493 /* NSDictionary+FTJson.m */; };
 		BF1533C01BE0D13B00809493 /* FTFileUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533BE1BE0D13B00809493 /* FTFileUtil.h */; };
 		BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1533BF1BE0D13B00809493 /* FTFileUtil.m */; };
 		BF1533C31BE0D15400809493 /* FTUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1533C21BE0D14900809493 /* FTUtil.h */; };
@@ -32,8 +32,8 @@
 		BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */; };
 		BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */; };
 		BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */; };
-		BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */; };
-		BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */; };
+		BF2BF48C1C224BE800175579 /* UILabel+FTFitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+FTFitSize.h */; };
+		BF2BF48D1C224BE800175579 /* UILabel+FTFitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+FTFitSize.m */; };
 		BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */; };
 		BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */; };
 		BF33A86A1CE2BF15006C92C6 /* FTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = BF33A8431CE2BF15006C92C6 /* FTDatabase.h */; };
@@ -147,22 +147,22 @@
 		BF43F6C81BDE25E100A1389B /* FTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F6C61BDE25E100A1389B /* FTBaseModel.m */; };
 		BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F6CD1BDE261600A1389B /* FTAnimateModel.h */; };
 		BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F6CE1BDE261600A1389B /* FTAnimateModel.m */; };
-		BF5052991CC8AC2B00B9EDCD /* NSDictionary+object.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052971CC8AC2B00B9EDCD /* NSDictionary+object.h */; };
-		BF50529A1CC8AC2B00B9EDCD /* NSDictionary+object.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */; };
-		BF50529E1CC8C4AD00B9EDCD /* UILabel+rich.h in Headers */ = {isa = PBXBuildFile; fileRef = BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */; };
-		BF50529F1CC8C4AD00B9EDCD /* UILabel+rich.m in Sources */ = {isa = PBXBuildFile; fileRef = BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */; };
-		BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */; };
-		BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */; };
-		BF5052A61CC8D80000B9EDCD /* UIView+layer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A41CC8D80000B9EDCD /* UIView+layer.h */; };
-		BF5052A71CC8D80000B9EDCD /* UIView+layer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A51CC8D80000B9EDCD /* UIView+layer.m */; };
-		BF5052DB1CC8DC0500B9EDCD /* UIImage+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */; };
-		BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */; };
-		BF51B6131C06A7CE00D26E9B /* NSString+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6111C06A7CE00D26E9B /* NSString+box.h */; };
-		BF51B6141C06A7CE00D26E9B /* NSString+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6121C06A7CE00D26E9B /* NSString+box.m */; };
-		BF51B6171C06AC8900D26E9B /* NSDate+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6151C06AC8900D26E9B /* NSDate+box.h */; };
-		BF51B6181C06AC8900D26E9B /* NSDate+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6161C06AC8900D26E9B /* NSDate+box.m */; };
-		BF51B61B1C06E65A00D26E9B /* NSNumber+box.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6191C06E65A00D26E9B /* NSNumber+box.h */; };
-		BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B61A1C06E65A00D26E9B /* NSNumber+box.m */; };
+		BF5052991CC8AC2B00B9EDCD /* NSDictionary+FTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052971CC8AC2B00B9EDCD /* NSDictionary+FTObject.h */; };
+		BF50529A1CC8AC2B00B9EDCD /* NSDictionary+FTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052981CC8AC2B00B9EDCD /* NSDictionary+FTObject.m */; };
+		BF50529E1CC8C4AD00B9EDCD /* UILabel+FTRich.h in Headers */ = {isa = PBXBuildFile; fileRef = BF50529C1CC8C4AD00B9EDCD /* UILabel+FTRich.h */; };
+		BF50529F1CC8C4AD00B9EDCD /* UILabel+FTRich.m in Sources */ = {isa = PBXBuildFile; fileRef = BF50529D1CC8C4AD00B9EDCD /* UILabel+FTRich.m */; };
+		BF5052A21CC8CF0F00B9EDCD /* NSData+FTBox.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A01CC8CF0F00B9EDCD /* NSData+FTBox.h */; };
+		BF5052A31CC8CF0F00B9EDCD /* NSData+FTBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A11CC8CF0F00B9EDCD /* NSData+FTBox.m */; };
+		BF5052A61CC8D80000B9EDCD /* UIView+FTLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052A41CC8D80000B9EDCD /* UIView+FTLayer.h */; };
+		BF5052A71CC8D80000B9EDCD /* UIView+FTLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052A51CC8D80000B9EDCD /* UIView+FTLayer.m */; };
+		BF5052DB1CC8DC0500B9EDCD /* UIImage+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052D91CC8DC0500B9EDCD /* UIImage+FTNormal.h */; };
+		BF5052DC1CC8DC0500B9EDCD /* UIImage+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052DA1CC8DC0500B9EDCD /* UIImage+FTNormal.m */; };
+		BF51B6131C06A7CE00D26E9B /* NSString+FTBox.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6111C06A7CE00D26E9B /* NSString+FTBox.h */; };
+		BF51B6141C06A7CE00D26E9B /* NSString+FTBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6121C06A7CE00D26E9B /* NSString+FTBox.m */; };
+		BF51B6171C06AC8900D26E9B /* NSDate+FTBox.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6151C06AC8900D26E9B /* NSDate+FTBox.h */; };
+		BF51B6181C06AC8900D26E9B /* NSDate+FTBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6161C06AC8900D26E9B /* NSDate+FTBox.m */; };
+		BF51B61B1C06E65A00D26E9B /* NSNumber+FTBox.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6191C06E65A00D26E9B /* NSNumber+FTBox.h */; };
+		BF51B61C1C06E65A00D26E9B /* NSNumber+FTBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B61A1C06E65A00D26E9B /* NSNumber+FTBox.m */; };
 		BF51B6251C06F5FC00D26E9B /* FTLineWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6231C06F5FC00D26E9B /* FTLineWidget.h */; };
 		BF51B6261C06F5FC00D26E9B /* FTLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF51B6241C06F5FC00D26E9B /* FTLineWidget.m */; };
 		BF51B6291C0709CA00D26E9B /* FT3DLineWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF51B6271C0709CA00D26E9B /* FT3DLineWidget.h */; };
@@ -473,8 +473,8 @@
 		BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF935AE91BDE71E500824D6E /* FTRouteHelper.m */; };
 		BF9C3CB71CA2778A007FE0EA /* FTProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9C3CB51CA2778A007FE0EA /* FTProgressView.h */; };
 		BF9C3CB81CA2778A007FE0EA /* FTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */; };
-		BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */; };
-		BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */; };
+		BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+FTNormal.h */; };
+		BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+FTNormal.m */; };
 		BFB16F421BEAF9F700CEEBC9 /* FTTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */; };
 		BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F411BEAF9F700CEEBC9 /* FTTableViewController.m */; };
 		BFB16F481BEB06A700CEEBC9 /* FTNavigateControllerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F461BEB06A700CEEBC9 /* FTNavigateControllerModel.h */; };
@@ -483,10 +483,14 @@
 		BFB16F6F1BEB370500CEEBC9 /* FTNavigateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F6D1BEB370500CEEBC9 /* FTNavigateWidget.m */; };
 		BFB16F771BEB501D00CEEBC9 /* FTImgBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F751BEB501D00CEEBC9 /* FTImgBtn.h */; };
 		BFB16F781BEB501D00CEEBC9 /* FTImgBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F761BEB501D00CEEBC9 /* FTImgBtn.m */; };
+		BFB20FC91CE977650058649D /* NSObject+FTRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB20FC71CE977650058649D /* NSObject+FTRuntime.h */; };
+		BFB20FCA1CE977650058649D /* NSObject+FTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */; };
+		BFB20FCD1CE9784B0058649D /* NSObject+FTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */; };
+		BFB20FCE1CE9784B0058649D /* NSObject+FTProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB20FCC1CE9784B0058649D /* NSObject+FTProperty.m */; };
 		BFB57D181C33C0B4005187B6 /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB57D161C33C0B4005187B6 /* Aspects.h */; };
 		BFB57D191C33C0B4005187B6 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB57D171C33C0B4005187B6 /* Aspects.m */; };
-		BFB861D21BE6F8790051BE20 /* NSDate+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB861D01BE6F8790051BE20 /* NSDate+normal.h */; };
-		BFB861D31BE6F8790051BE20 /* NSDate+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB861D11BE6F8790051BE20 /* NSDate+normal.m */; };
+		BFB861D21BE6F8790051BE20 /* NSDate+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB861D01BE6F8790051BE20 /* NSDate+FTNormal.h */; };
+		BFB861D31BE6F8790051BE20 /* NSDate+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB861D11BE6F8790051BE20 /* NSDate+FTNormal.m */; };
 		BFB861D61BE6F9300051BE20 /* FTDateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB861D41BE6F92F0051BE20 /* FTDateUtil.h */; };
 		BFB861D71BE6F9300051BE20 /* FTDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB861D51BE6F92F0051BE20 /* FTDateUtil.m */; };
 		BFC027421CB67120008E7087 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC027411CB67120008E7087 /* libz.tbd */; };
@@ -513,22 +517,22 @@
 		BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D851C72C1360085B4E3 /* NSObject+MJProperty.m */; };
 		BFC75D9B1C72C1360085B4E3 /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D861C72C1360085B4E3 /* NSString+MJExtension.h */; };
 		BFC75D9C1C72C1360085B4E3 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D871C72C1360085B4E3 /* NSString+MJExtension.m */; };
-		BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A01BDE45BF0066A77C /* NSData+base64.h */; };
-		BFC821AD1BDE45BF0066A77C /* NSData+base64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A11BDE45BF0066A77C /* NSData+base64.m */; };
-		BFC821AE1BDE45BF0066A77C /* NSData+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A21BDE45BF0066A77C /* NSData+Hash.h */; };
-		BFC821AF1BDE45BF0066A77C /* NSData+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A31BDE45BF0066A77C /* NSData+Hash.m */; };
-		BFC821B01BDE45BF0066A77C /* NSString+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A41BDE45BF0066A77C /* NSString+normal.h */; };
-		BFC821B11BDE45BF0066A77C /* NSString+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A51BDE45BF0066A77C /* NSString+normal.m */; };
-		BFC821B21BDE45BF0066A77C /* NSString+regExp.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A61BDE45BF0066A77C /* NSString+regExp.h */; };
-		BFC821B31BDE45BF0066A77C /* NSString+regExp.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A71BDE45BF0066A77C /* NSString+regExp.m */; };
-		BFC821B41BDE45BF0066A77C /* NSString+Security.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A81BDE45BF0066A77C /* NSString+Security.h */; };
-		BFC821B51BDE45BF0066A77C /* NSString+Security.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A91BDE45BF0066A77C /* NSString+Security.m */; };
-		BFC821B61BDE45BF0066A77C /* NSString+size.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821AA1BDE45BF0066A77C /* NSString+size.h */; };
-		BFC821B71BDE45BF0066A77C /* NSString+size.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821AB1BDE45BF0066A77C /* NSString+size.m */; };
-		BFC821BD1BDE462E0066A77C /* UITableViewCell+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821B91BDE462E0066A77C /* UITableViewCell+normal.h */; };
-		BFC821BE1BDE462E0066A77C /* UITableViewCell+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821BA1BDE462E0066A77C /* UITableViewCell+normal.m */; };
-		BFC821BF1BDE462E0066A77C /* UIView+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821BB1BDE462E0066A77C /* UIView+normal.h */; };
-		BFC821C01BDE462E0066A77C /* UIView+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821BC1BDE462E0066A77C /* UIView+normal.m */; };
+		BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A01BDE45BF0066A77C /* NSData+FTBase64.h */; };
+		BFC821AD1BDE45BF0066A77C /* NSData+FTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A11BDE45BF0066A77C /* NSData+FTBase64.m */; };
+		BFC821AE1BDE45BF0066A77C /* NSData+FTHash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A21BDE45BF0066A77C /* NSData+FTHash.h */; };
+		BFC821AF1BDE45BF0066A77C /* NSData+FTHash.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A31BDE45BF0066A77C /* NSData+FTHash.m */; };
+		BFC821B01BDE45BF0066A77C /* NSString+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A41BDE45BF0066A77C /* NSString+FTNormal.h */; };
+		BFC821B11BDE45BF0066A77C /* NSString+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A51BDE45BF0066A77C /* NSString+FTNormal.m */; };
+		BFC821B21BDE45BF0066A77C /* NSString+FTRegExp.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A61BDE45BF0066A77C /* NSString+FTRegExp.h */; };
+		BFC821B31BDE45BF0066A77C /* NSString+FTRegExp.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A71BDE45BF0066A77C /* NSString+FTRegExp.m */; };
+		BFC821B41BDE45BF0066A77C /* NSString+FTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A81BDE45BF0066A77C /* NSString+FTSecurity.h */; };
+		BFC821B51BDE45BF0066A77C /* NSString+FTSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A91BDE45BF0066A77C /* NSString+FTSecurity.m */; };
+		BFC821B61BDE45BF0066A77C /* NSString+FTSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821AA1BDE45BF0066A77C /* NSString+FTSize.h */; };
+		BFC821B71BDE45BF0066A77C /* NSString+FTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821AB1BDE45BF0066A77C /* NSString+FTSize.m */; };
+		BFC821BD1BDE462E0066A77C /* UITableViewCell+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821B91BDE462E0066A77C /* UITableViewCell+FTNormal.h */; };
+		BFC821BE1BDE462E0066A77C /* UITableViewCell+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821BA1BDE462E0066A77C /* UITableViewCell+FTNormal.m */; };
+		BFC821BF1BDE462E0066A77C /* UIView+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821BB1BDE462E0066A77C /* UIView+FTNormal.h */; };
+		BFC821C01BDE462E0066A77C /* UIView+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821BC1BDE462E0066A77C /* UIView+FTNormal.m */; };
 		BFC821C51BDE47920066A77C /* FTBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821C31BDE47920066A77C /* FTBaseViewController.h */; };
 		BFC821C61BDE47920066A77C /* FTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821C41BDE47920066A77C /* FTBaseViewController.m */; };
 		BFD180511CC478A400A59394 /* FTAlertWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD1804F1CC478A400A59394 /* FTAlertWidget.h */; };
@@ -554,16 +558,16 @@
 		BFF1882B1CB6082700CC1F77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */; };
 		BFF246301CBF810A002B5603 /* FTFileUtil+readwrite.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */; };
 		BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */; };
-		BFF8D81E1CD0752C009E6927 /* UIView+autoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */; };
-		BFF8D81F1CD0752C009E6927 /* UIView+autoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */; };
-		BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */; };
-		BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */; };
-		BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */; };
-		BFFAD90E1BE35FFF0050A21B /* NSMutableArray+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD90C1BE35FFF0050A21B /* NSMutableArray+normal.m */; };
-		BFFAD9111BE360A80050A21B /* NSArray+normal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90F1BE360A80050A21B /* NSArray+normal.h */; };
-		BFFAD9121BE360A80050A21B /* NSArray+normal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9101BE360A80050A21B /* NSArray+normal.m */; };
-		BFFAD9161BE36AAF0050A21B /* NSString+file.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9141BE36AAF0050A21B /* NSString+file.h */; };
-		BFFAD9171BE36AAF0050A21B /* NSString+file.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9151BE36AAF0050A21B /* NSString+file.m */; };
+		BFF8D81E1CD0752C009E6927 /* UIView+FTAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF8D81C1CD0752C009E6927 /* UIView+FTAutoLayout.h */; };
+		BFF8D81F1CD0752C009E6927 /* UIView+FTAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8D81D1CD0752C009E6927 /* UIView+FTAutoLayout.m */; };
+		BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+FTNormal.h */; };
+		BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+FTNormal.m */; };
+		BFFAD90D1BE35FFF0050A21B /* NSMutableArray+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90B1BE35FFF0050A21B /* NSMutableArray+FTNormal.h */; };
+		BFFAD90E1BE35FFF0050A21B /* NSMutableArray+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD90C1BE35FFF0050A21B /* NSMutableArray+FTNormal.m */; };
+		BFFAD9111BE360A80050A21B /* NSArray+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD90F1BE360A80050A21B /* NSArray+FTNormal.h */; };
+		BFFAD9121BE360A80050A21B /* NSArray+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9101BE360A80050A21B /* NSArray+FTNormal.m */; };
+		BFFAD9161BE36AAF0050A21B /* NSString+FTFile.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9141BE36AAF0050A21B /* NSString+FTFile.h */; };
+		BFFAD9171BE36AAF0050A21B /* NSString+FTFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9151BE36AAF0050A21B /* NSString+FTFile.m */; };
 		BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFAD9181BE370BD0050A21B /* FTThreadHelper.h */; };
 		BFFAD91B1BE370BD0050A21B /* FTThreadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFAD9191BE370BD0050A21B /* FTThreadHelper.m */; };
 		BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFC5D531BE8BF3200F005F2 /* FTVectorView.h */; };
@@ -571,18 +575,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF098BE11C0822A500ED81C3 /* UIColor+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+normal.h"; sourceTree = "<group>"; };
-		BF098BE21C0822A500ED81C3 /* UIColor+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+normal.m"; sourceTree = "<group>"; };
-		BF14C5A21BE3081100B49989 /* UIWebView+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+normal.h"; sourceTree = "<group>"; };
-		BF14C5A31BE3081100B49989 /* UIWebView+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+normal.m"; sourceTree = "<group>"; };
+		BF098BE11C0822A500ED81C3 /* UIColor+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FTNormal.h"; sourceTree = "<group>"; };
+		BF098BE21C0822A500ED81C3 /* UIColor+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FTNormal.m"; sourceTree = "<group>"; };
+		BF14C5A21BE3081100B49989 /* UIWebView+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+FTNormal.h"; sourceTree = "<group>"; };
+		BF14C5A31BE3081100B49989 /* UIWebView+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+FTNormal.m"; sourceTree = "<group>"; };
 		BF14C5A71BE30AF800B49989 /* FTNetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNetWorkHelper.h; sourceTree = "<group>"; };
 		BF14C5A81BE30AF800B49989 /* FTNetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTNetWorkHelper.m; sourceTree = "<group>"; };
-		BF1533B11BE0A8CD00809493 /* NSString+json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+json.h"; sourceTree = "<group>"; };
-		BF1533B21BE0A8CD00809493 /* NSString+json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+json.m"; sourceTree = "<group>"; };
-		BF1533B51BE0B30E00809493 /* NSArray+json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+json.h"; sourceTree = "<group>"; };
-		BF1533B61BE0B30E00809493 /* NSArray+json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+json.m"; sourceTree = "<group>"; };
-		BF1533B91BE0B40F00809493 /* NSDictionary+json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+json.h"; sourceTree = "<group>"; };
-		BF1533BA1BE0B40F00809493 /* NSDictionary+json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+json.m"; sourceTree = "<group>"; };
+		BF1533B11BE0A8CD00809493 /* NSString+FTJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTJson.h"; sourceTree = "<group>"; };
+		BF1533B21BE0A8CD00809493 /* NSString+FTJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTJson.m"; sourceTree = "<group>"; };
+		BF1533B51BE0B30E00809493 /* NSArray+FTJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FTJson.h"; sourceTree = "<group>"; };
+		BF1533B61BE0B30E00809493 /* NSArray+FTJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FTJson.m"; sourceTree = "<group>"; };
+		BF1533B91BE0B40F00809493 /* NSDictionary+FTJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FTJson.h"; sourceTree = "<group>"; };
+		BF1533BA1BE0B40F00809493 /* NSDictionary+FTJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FTJson.m"; sourceTree = "<group>"; };
 		BF1533BE1BE0D13B00809493 /* FTFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTFileUtil.h; sourceTree = "<group>"; };
 		BF1533BF1BE0D13B00809493 /* FTFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTFileUtil.m; sourceTree = "<group>"; };
 		BF1533C21BE0D14900809493 /* FTUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTUtil.h; sourceTree = "<group>"; };
@@ -596,8 +600,8 @@
 		BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidgetController.m; sourceTree = "<group>"; };
 		BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDashLineWidget.h; sourceTree = "<group>"; };
 		BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDashLineWidget.m; sourceTree = "<group>"; };
-		BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+fitSize.h"; sourceTree = "<group>"; };
-		BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+fitSize.m"; sourceTree = "<group>"; };
+		BF2BF48A1C224BE800175579 /* UILabel+FTFitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FTFitSize.h"; sourceTree = "<group>"; };
+		BF2BF48B1C224BE800175579 /* UILabel+FTFitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FTFitSize.m"; sourceTree = "<group>"; };
 		BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClickPointCollectionWidget.h; sourceTree = "<group>"; };
 		BF2DB8FD1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTClickPointCollectionWidget.m; sourceTree = "<group>"; };
 		BF33A8431CE2BF15006C92C6 /* FTDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDatabase.h; sourceTree = "<group>"; };
@@ -713,22 +717,22 @@
 		BF43F6CD1BDE261600A1389B /* FTAnimateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAnimateModel.h; sourceTree = "<group>"; };
 		BF43F6CE1BDE261600A1389B /* FTAnimateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAnimateModel.m; sourceTree = "<group>"; };
 		BF43F6D41BDE29F100A1389B /* FTHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTHelper.h; sourceTree = "<group>"; };
-		BF5052971CC8AC2B00B9EDCD /* NSDictionary+object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+object.h"; sourceTree = "<group>"; };
-		BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+object.m"; sourceTree = "<group>"; };
-		BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+rich.h"; sourceTree = "<group>"; };
-		BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+rich.m"; sourceTree = "<group>"; };
-		BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+box.h"; sourceTree = "<group>"; };
-		BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+box.m"; sourceTree = "<group>"; };
-		BF5052A41CC8D80000B9EDCD /* UIView+layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+layer.h"; sourceTree = "<group>"; };
-		BF5052A51CC8D80000B9EDCD /* UIView+layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+layer.m"; sourceTree = "<group>"; };
-		BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+normal.h"; sourceTree = "<group>"; };
-		BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+normal.m"; sourceTree = "<group>"; };
-		BF51B6111C06A7CE00D26E9B /* NSString+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+box.h"; sourceTree = "<group>"; };
-		BF51B6121C06A7CE00D26E9B /* NSString+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+box.m"; sourceTree = "<group>"; };
-		BF51B6151C06AC8900D26E9B /* NSDate+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+box.h"; sourceTree = "<group>"; };
-		BF51B6161C06AC8900D26E9B /* NSDate+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+box.m"; sourceTree = "<group>"; };
-		BF51B6191C06E65A00D26E9B /* NSNumber+box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+box.h"; sourceTree = "<group>"; };
-		BF51B61A1C06E65A00D26E9B /* NSNumber+box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+box.m"; sourceTree = "<group>"; };
+		BF5052971CC8AC2B00B9EDCD /* NSDictionary+FTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FTObject.h"; sourceTree = "<group>"; };
+		BF5052981CC8AC2B00B9EDCD /* NSDictionary+FTObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FTObject.m"; sourceTree = "<group>"; };
+		BF50529C1CC8C4AD00B9EDCD /* UILabel+FTRich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FTRich.h"; sourceTree = "<group>"; };
+		BF50529D1CC8C4AD00B9EDCD /* UILabel+FTRich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FTRich.m"; sourceTree = "<group>"; };
+		BF5052A01CC8CF0F00B9EDCD /* NSData+FTBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FTBox.h"; sourceTree = "<group>"; };
+		BF5052A11CC8CF0F00B9EDCD /* NSData+FTBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FTBox.m"; sourceTree = "<group>"; };
+		BF5052A41CC8D80000B9EDCD /* UIView+FTLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FTLayer.h"; sourceTree = "<group>"; };
+		BF5052A51CC8D80000B9EDCD /* UIView+FTLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FTLayer.m"; sourceTree = "<group>"; };
+		BF5052D91CC8DC0500B9EDCD /* UIImage+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FTNormal.h"; sourceTree = "<group>"; };
+		BF5052DA1CC8DC0500B9EDCD /* UIImage+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FTNormal.m"; sourceTree = "<group>"; };
+		BF51B6111C06A7CE00D26E9B /* NSString+FTBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTBox.h"; sourceTree = "<group>"; };
+		BF51B6121C06A7CE00D26E9B /* NSString+FTBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTBox.m"; sourceTree = "<group>"; };
+		BF51B6151C06AC8900D26E9B /* NSDate+FTBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FTBox.h"; sourceTree = "<group>"; };
+		BF51B6161C06AC8900D26E9B /* NSDate+FTBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FTBox.m"; sourceTree = "<group>"; };
+		BF51B6191C06E65A00D26E9B /* NSNumber+FTBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+FTBox.h"; sourceTree = "<group>"; };
+		BF51B61A1C06E65A00D26E9B /* NSNumber+FTBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+FTBox.m"; sourceTree = "<group>"; };
 		BF51B6231C06F5FC00D26E9B /* FTLineWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLineWidget.h; sourceTree = "<group>"; };
 		BF51B6241C06F5FC00D26E9B /* FTLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLineWidget.m; sourceTree = "<group>"; };
 		BF51B6271C0709CA00D26E9B /* FT3DLineWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FT3DLineWidget.h; sourceTree = "<group>"; };
@@ -1043,8 +1047,8 @@
 		BF935AE91BDE71E500824D6E /* FTRouteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTRouteHelper.m; sourceTree = "<group>"; };
 		BF9C3CB51CA2778A007FE0EA /* FTProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTProgressView.h; sourceTree = "<group>"; };
 		BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTProgressView.m; sourceTree = "<group>"; };
-		BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+normal.h"; sourceTree = "<group>"; };
-		BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+normal.m"; sourceTree = "<group>"; };
+		BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+FTNormal.h"; sourceTree = "<group>"; };
+		BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+FTNormal.m"; sourceTree = "<group>"; };
 		BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewController.h; sourceTree = "<group>"; };
 		BFB16F411BEAF9F700CEEBC9 /* FTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewController.m; sourceTree = "<group>"; };
 		BFB16F461BEB06A700CEEBC9 /* FTNavigateControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNavigateControllerModel.h; sourceTree = "<group>"; };
@@ -1053,10 +1057,14 @@
 		BFB16F6D1BEB370500CEEBC9 /* FTNavigateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTNavigateWidget.m; path = ../FTNavigateWidget.m; sourceTree = "<group>"; };
 		BFB16F751BEB501D00CEEBC9 /* FTImgBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImgBtn.h; sourceTree = "<group>"; };
 		BFB16F761BEB501D00CEEBC9 /* FTImgBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTImgBtn.m; sourceTree = "<group>"; };
+		BFB20FC71CE977650058649D /* NSObject+FTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FTRuntime.h"; sourceTree = "<group>"; };
+		BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FTRuntime.m"; sourceTree = "<group>"; };
+		BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FTProperty.h"; sourceTree = "<group>"; };
+		BFB20FCC1CE9784B0058649D /* NSObject+FTProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FTProperty.m"; sourceTree = "<group>"; };
 		BFB57D161C33C0B4005187B6 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
 		BFB57D171C33C0B4005187B6 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
-		BFB861D01BE6F8790051BE20 /* NSDate+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+normal.h"; sourceTree = "<group>"; };
-		BFB861D11BE6F8790051BE20 /* NSDate+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+normal.m"; sourceTree = "<group>"; };
+		BFB861D01BE6F8790051BE20 /* NSDate+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FTNormal.h"; sourceTree = "<group>"; };
+		BFB861D11BE6F8790051BE20 /* NSDate+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FTNormal.m"; sourceTree = "<group>"; };
 		BFB861D41BE6F92F0051BE20 /* FTDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDateUtil.h; sourceTree = "<group>"; };
 		BFB861D51BE6F92F0051BE20 /* FTDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDateUtil.m; sourceTree = "<group>"; };
 		BFC027411CB67120008E7087 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -1086,22 +1094,22 @@
 		BFC821881BDE2C1A0066A77C /* FTExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTExtensions.h; sourceTree = "<group>"; };
 		BFC821891BDE2C630066A77C /* FTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTModel.h; sourceTree = "<group>"; };
 		BFC8218A1BDE2CAC0066A77C /* FTWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTWidget.h; sourceTree = "<group>"; };
-		BFC821A01BDE45BF0066A77C /* NSData+base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+base64.h"; sourceTree = "<group>"; };
-		BFC821A11BDE45BF0066A77C /* NSData+base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+base64.m"; sourceTree = "<group>"; };
-		BFC821A21BDE45BF0066A77C /* NSData+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hash.h"; sourceTree = "<group>"; };
-		BFC821A31BDE45BF0066A77C /* NSData+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hash.m"; sourceTree = "<group>"; };
-		BFC821A41BDE45BF0066A77C /* NSString+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+normal.h"; sourceTree = "<group>"; };
-		BFC821A51BDE45BF0066A77C /* NSString+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+normal.m"; sourceTree = "<group>"; };
-		BFC821A61BDE45BF0066A77C /* NSString+regExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+regExp.h"; sourceTree = "<group>"; };
-		BFC821A71BDE45BF0066A77C /* NSString+regExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+regExp.m"; sourceTree = "<group>"; };
-		BFC821A81BDE45BF0066A77C /* NSString+Security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Security.h"; sourceTree = "<group>"; };
-		BFC821A91BDE45BF0066A77C /* NSString+Security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Security.m"; sourceTree = "<group>"; };
-		BFC821AA1BDE45BF0066A77C /* NSString+size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+size.h"; sourceTree = "<group>"; };
-		BFC821AB1BDE45BF0066A77C /* NSString+size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+size.m"; sourceTree = "<group>"; };
-		BFC821B91BDE462E0066A77C /* UITableViewCell+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+normal.h"; sourceTree = "<group>"; };
-		BFC821BA1BDE462E0066A77C /* UITableViewCell+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+normal.m"; sourceTree = "<group>"; };
-		BFC821BB1BDE462E0066A77C /* UIView+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+normal.h"; sourceTree = "<group>"; };
-		BFC821BC1BDE462E0066A77C /* UIView+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+normal.m"; sourceTree = "<group>"; };
+		BFC821A01BDE45BF0066A77C /* NSData+FTBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FTBase64.h"; sourceTree = "<group>"; };
+		BFC821A11BDE45BF0066A77C /* NSData+FTBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FTBase64.m"; sourceTree = "<group>"; };
+		BFC821A21BDE45BF0066A77C /* NSData+FTHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+FTHash.h"; sourceTree = "<group>"; };
+		BFC821A31BDE45BF0066A77C /* NSData+FTHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+FTHash.m"; sourceTree = "<group>"; };
+		BFC821A41BDE45BF0066A77C /* NSString+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTNormal.h"; sourceTree = "<group>"; };
+		BFC821A51BDE45BF0066A77C /* NSString+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTNormal.m"; sourceTree = "<group>"; };
+		BFC821A61BDE45BF0066A77C /* NSString+FTRegExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTRegExp.h"; sourceTree = "<group>"; };
+		BFC821A71BDE45BF0066A77C /* NSString+FTRegExp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTRegExp.m"; sourceTree = "<group>"; };
+		BFC821A81BDE45BF0066A77C /* NSString+FTSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTSecurity.h"; sourceTree = "<group>"; };
+		BFC821A91BDE45BF0066A77C /* NSString+FTSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTSecurity.m"; sourceTree = "<group>"; };
+		BFC821AA1BDE45BF0066A77C /* NSString+FTSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTSize.h"; sourceTree = "<group>"; };
+		BFC821AB1BDE45BF0066A77C /* NSString+FTSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTSize.m"; sourceTree = "<group>"; };
+		BFC821B91BDE462E0066A77C /* UITableViewCell+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FTNormal.h"; sourceTree = "<group>"; };
+		BFC821BA1BDE462E0066A77C /* UITableViewCell+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FTNormal.m"; sourceTree = "<group>"; };
+		BFC821BB1BDE462E0066A77C /* UIView+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FTNormal.h"; sourceTree = "<group>"; };
+		BFC821BC1BDE462E0066A77C /* UIView+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FTNormal.m"; sourceTree = "<group>"; };
 		BFC821C21BDE476A0066A77C /* FTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		BFC821C31BDE47920066A77C /* FTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTBaseViewController.h; sourceTree = "<group>"; };
 		BFC821C41BDE47920066A77C /* FTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseViewController.m; sourceTree = "<group>"; };
@@ -1128,16 +1136,16 @@
 		BFF1881E1CB6082700CC1F77 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		BFF2462E1CBF810A002B5603 /* FTFileUtil+readwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTFileUtil+readwrite.h"; sourceTree = "<group>"; };
 		BFF2462F1CBF810A002B5603 /* FTFileUtil+readwrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+readwrite.m"; sourceTree = "<group>"; };
-		BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+autoLayout.h"; sourceTree = "<group>"; };
-		BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+autoLayout.m"; sourceTree = "<group>"; };
-		BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+normal.h"; sourceTree = "<group>"; };
-		BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+normal.m"; sourceTree = "<group>"; };
-		BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+normal.h"; sourceTree = "<group>"; };
-		BFFAD90C1BE35FFF0050A21B /* NSMutableArray+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+normal.m"; sourceTree = "<group>"; };
-		BFFAD90F1BE360A80050A21B /* NSArray+normal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+normal.h"; sourceTree = "<group>"; };
-		BFFAD9101BE360A80050A21B /* NSArray+normal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+normal.m"; sourceTree = "<group>"; };
-		BFFAD9141BE36AAF0050A21B /* NSString+file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+file.h"; sourceTree = "<group>"; };
-		BFFAD9151BE36AAF0050A21B /* NSString+file.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+file.m"; sourceTree = "<group>"; };
+		BFF8D81C1CD0752C009E6927 /* UIView+FTAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FTAutoLayout.h"; sourceTree = "<group>"; };
+		BFF8D81D1CD0752C009E6927 /* UIView+FTAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FTAutoLayout.m"; sourceTree = "<group>"; };
+		BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+FTNormal.h"; sourceTree = "<group>"; };
+		BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+FTNormal.m"; sourceTree = "<group>"; };
+		BFFAD90B1BE35FFF0050A21B /* NSMutableArray+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+FTNormal.h"; sourceTree = "<group>"; };
+		BFFAD90C1BE35FFF0050A21B /* NSMutableArray+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+FTNormal.m"; sourceTree = "<group>"; };
+		BFFAD90F1BE360A80050A21B /* NSArray+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FTNormal.h"; sourceTree = "<group>"; };
+		BFFAD9101BE360A80050A21B /* NSArray+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FTNormal.m"; sourceTree = "<group>"; };
+		BFFAD9141BE36AAF0050A21B /* NSString+FTFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FTFile.h"; sourceTree = "<group>"; };
+		BFFAD9151BE36AAF0050A21B /* NSString+FTFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FTFile.m"; sourceTree = "<group>"; };
 		BFFAD9181BE370BD0050A21B /* FTThreadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTThreadHelper.h; sourceTree = "<group>"; };
 		BFFAD9191BE370BD0050A21B /* FTThreadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTThreadHelper.m; sourceTree = "<group>"; };
 		BFFC5D531BE8BF3200F005F2 /* FTVectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTVectorView.h; sourceTree = "<group>"; };
@@ -2070,44 +2078,48 @@
 		BFC8219F1BDE45BF0066A77C /* base */ = {
 			isa = PBXGroup;
 			children = (
-				BF1533B51BE0B30E00809493 /* NSArray+json.h */,
-				BF1533B61BE0B30E00809493 /* NSArray+json.m */,
-				BFFAD90F1BE360A80050A21B /* NSArray+normal.h */,
-				BFFAD9101BE360A80050A21B /* NSArray+normal.m */,
-				BFC821A01BDE45BF0066A77C /* NSData+base64.h */,
-				BFC821A11BDE45BF0066A77C /* NSData+base64.m */,
-				BFC821A21BDE45BF0066A77C /* NSData+Hash.h */,
-				BFC821A31BDE45BF0066A77C /* NSData+Hash.m */,
-				BF5052A01CC8CF0F00B9EDCD /* NSData+box.h */,
-				BF5052A11CC8CF0F00B9EDCD /* NSData+box.m */,
-				BF1533B91BE0B40F00809493 /* NSDictionary+json.h */,
-				BF1533BA1BE0B40F00809493 /* NSDictionary+json.m */,
-				BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+normal.h */,
-				BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+normal.m */,
-				BFFAD90B1BE35FFF0050A21B /* NSMutableArray+normal.h */,
-				BFFAD90C1BE35FFF0050A21B /* NSMutableArray+normal.m */,
-				BF1533B11BE0A8CD00809493 /* NSString+json.h */,
-				BF1533B21BE0A8CD00809493 /* NSString+json.m */,
-				BFC821A41BDE45BF0066A77C /* NSString+normal.h */,
-				BFC821A51BDE45BF0066A77C /* NSString+normal.m */,
-				BFC821A61BDE45BF0066A77C /* NSString+regExp.h */,
-				BFC821A71BDE45BF0066A77C /* NSString+regExp.m */,
-				BFC821A81BDE45BF0066A77C /* NSString+Security.h */,
-				BFC821A91BDE45BF0066A77C /* NSString+Security.m */,
-				BFC821AA1BDE45BF0066A77C /* NSString+size.h */,
-				BFC821AB1BDE45BF0066A77C /* NSString+size.m */,
-				BFFAD9141BE36AAF0050A21B /* NSString+file.h */,
-				BFFAD9151BE36AAF0050A21B /* NSString+file.m */,
-				BF51B6111C06A7CE00D26E9B /* NSString+box.h */,
-				BF51B6121C06A7CE00D26E9B /* NSString+box.m */,
-				BFB861D01BE6F8790051BE20 /* NSDate+normal.h */,
-				BFB861D11BE6F8790051BE20 /* NSDate+normal.m */,
-				BF51B6151C06AC8900D26E9B /* NSDate+box.h */,
-				BF51B6161C06AC8900D26E9B /* NSDate+box.m */,
-				BF51B6191C06E65A00D26E9B /* NSNumber+box.h */,
-				BF51B61A1C06E65A00D26E9B /* NSNumber+box.m */,
-				BF5052971CC8AC2B00B9EDCD /* NSDictionary+object.h */,
-				BF5052981CC8AC2B00B9EDCD /* NSDictionary+object.m */,
+				BF1533B51BE0B30E00809493 /* NSArray+FTJson.h */,
+				BF1533B61BE0B30E00809493 /* NSArray+FTJson.m */,
+				BFFAD90F1BE360A80050A21B /* NSArray+FTNormal.h */,
+				BFFAD9101BE360A80050A21B /* NSArray+FTNormal.m */,
+				BFC821A01BDE45BF0066A77C /* NSData+FTBase64.h */,
+				BFC821A11BDE45BF0066A77C /* NSData+FTBase64.m */,
+				BFC821A21BDE45BF0066A77C /* NSData+FTHash.h */,
+				BFC821A31BDE45BF0066A77C /* NSData+FTHash.m */,
+				BF5052A01CC8CF0F00B9EDCD /* NSData+FTBox.h */,
+				BF5052A11CC8CF0F00B9EDCD /* NSData+FTBox.m */,
+				BF1533B91BE0B40F00809493 /* NSDictionary+FTJson.h */,
+				BF1533BA1BE0B40F00809493 /* NSDictionary+FTJson.m */,
+				BFFAD9071BE35F7F0050A21B /* NSMutableDictionary+FTNormal.h */,
+				BFFAD9081BE35F7F0050A21B /* NSMutableDictionary+FTNormal.m */,
+				BFFAD90B1BE35FFF0050A21B /* NSMutableArray+FTNormal.h */,
+				BFFAD90C1BE35FFF0050A21B /* NSMutableArray+FTNormal.m */,
+				BF1533B11BE0A8CD00809493 /* NSString+FTJson.h */,
+				BF1533B21BE0A8CD00809493 /* NSString+FTJson.m */,
+				BFC821A41BDE45BF0066A77C /* NSString+FTNormal.h */,
+				BFC821A51BDE45BF0066A77C /* NSString+FTNormal.m */,
+				BFC821A61BDE45BF0066A77C /* NSString+FTRegExp.h */,
+				BFC821A71BDE45BF0066A77C /* NSString+FTRegExp.m */,
+				BFC821A81BDE45BF0066A77C /* NSString+FTSecurity.h */,
+				BFC821A91BDE45BF0066A77C /* NSString+FTSecurity.m */,
+				BFC821AA1BDE45BF0066A77C /* NSString+FTSize.h */,
+				BFC821AB1BDE45BF0066A77C /* NSString+FTSize.m */,
+				BFFAD9141BE36AAF0050A21B /* NSString+FTFile.h */,
+				BFFAD9151BE36AAF0050A21B /* NSString+FTFile.m */,
+				BF51B6111C06A7CE00D26E9B /* NSString+FTBox.h */,
+				BF51B6121C06A7CE00D26E9B /* NSString+FTBox.m */,
+				BFB861D01BE6F8790051BE20 /* NSDate+FTNormal.h */,
+				BFB861D11BE6F8790051BE20 /* NSDate+FTNormal.m */,
+				BF51B6151C06AC8900D26E9B /* NSDate+FTBox.h */,
+				BF51B6161C06AC8900D26E9B /* NSDate+FTBox.m */,
+				BF51B6191C06E65A00D26E9B /* NSNumber+FTBox.h */,
+				BF51B61A1C06E65A00D26E9B /* NSNumber+FTBox.m */,
+				BF5052971CC8AC2B00B9EDCD /* NSDictionary+FTObject.h */,
+				BF5052981CC8AC2B00B9EDCD /* NSDictionary+FTObject.m */,
+				BFB20FC71CE977650058649D /* NSObject+FTRuntime.h */,
+				BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */,
+				BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */,
+				BFB20FCC1CE9784B0058649D /* NSObject+FTProperty.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -2115,26 +2127,26 @@
 		BFC821B81BDE462E0066A77C /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				BFC821B91BDE462E0066A77C /* UITableViewCell+normal.h */,
-				BFC821BA1BDE462E0066A77C /* UITableViewCell+normal.m */,
-				BFC821BB1BDE462E0066A77C /* UIView+normal.h */,
-				BFC821BC1BDE462E0066A77C /* UIView+normal.m */,
-				BF5052A41CC8D80000B9EDCD /* UIView+layer.h */,
-				BF5052A51CC8D80000B9EDCD /* UIView+layer.m */,
-				BFF8D81C1CD0752C009E6927 /* UIView+autoLayout.h */,
-				BFF8D81D1CD0752C009E6927 /* UIView+autoLayout.m */,
-				BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+normal.h */,
-				BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+normal.m */,
-				BF14C5A21BE3081100B49989 /* UIWebView+normal.h */,
-				BF14C5A31BE3081100B49989 /* UIWebView+normal.m */,
-				BF098BE11C0822A500ED81C3 /* UIColor+normal.h */,
-				BF098BE21C0822A500ED81C3 /* UIColor+normal.m */,
-				BF2BF48A1C224BE800175579 /* UILabel+fitSize.h */,
-				BF2BF48B1C224BE800175579 /* UILabel+fitSize.m */,
-				BF50529C1CC8C4AD00B9EDCD /* UILabel+rich.h */,
-				BF50529D1CC8C4AD00B9EDCD /* UILabel+rich.m */,
-				BF5052D91CC8DC0500B9EDCD /* UIImage+normal.h */,
-				BF5052DA1CC8DC0500B9EDCD /* UIImage+normal.m */,
+				BFC821B91BDE462E0066A77C /* UITableViewCell+FTNormal.h */,
+				BFC821BA1BDE462E0066A77C /* UITableViewCell+FTNormal.m */,
+				BFC821BB1BDE462E0066A77C /* UIView+FTNormal.h */,
+				BFC821BC1BDE462E0066A77C /* UIView+FTNormal.m */,
+				BF5052A41CC8D80000B9EDCD /* UIView+FTLayer.h */,
+				BF5052A51CC8D80000B9EDCD /* UIView+FTLayer.m */,
+				BFF8D81C1CD0752C009E6927 /* UIView+FTAutoLayout.h */,
+				BFF8D81D1CD0752C009E6927 /* UIView+FTAutoLayout.m */,
+				BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+FTNormal.h */,
+				BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+FTNormal.m */,
+				BF14C5A21BE3081100B49989 /* UIWebView+FTNormal.h */,
+				BF14C5A31BE3081100B49989 /* UIWebView+FTNormal.m */,
+				BF098BE11C0822A500ED81C3 /* UIColor+FTNormal.h */,
+				BF098BE21C0822A500ED81C3 /* UIColor+FTNormal.m */,
+				BF2BF48A1C224BE800175579 /* UILabel+FTFitSize.h */,
+				BF2BF48B1C224BE800175579 /* UILabel+FTFitSize.m */,
+				BF50529C1CC8C4AD00B9EDCD /* UILabel+FTRich.h */,
+				BF50529D1CC8C4AD00B9EDCD /* UILabel+FTRich.m */,
+				BF5052D91CC8DC0500B9EDCD /* UIImage+FTNormal.h */,
+				BF5052DA1CC8DC0500B9EDCD /* UIImage+FTNormal.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -2219,14 +2231,14 @@
 				BF6C2B251C3A01DB00CDA1E8 /* FTIndicatorWidget.h in Headers */,
 				BF3B70941CDC6C0F00A711BE /* NSIndexSet+BlocksKit.h in Headers */,
 				BF33A8841CE2BF16006C92C6 /* FTSqlStatmentUtils.h in Headers */,
-				BF51B61B1C06E65A00D26E9B /* NSNumber+box.h in Headers */,
+				BF51B61B1C06E65A00D26E9B /* NSNumber+FTBox.h in Headers */,
 				BF7957BA1CC7CCA1000CEB0D /* MASCompositeConstraint.h in Headers */,
 				BF52E5051C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
-				BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+normal.h in Headers */,
+				BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+FTNormal.h in Headers */,
 				BF52E5521C3CE1950052A107 /* RACScheduler.h in Headers */,
 				BFC75D8B1C72C1360085B4E3 /* MJFoundation.h in Headers */,
-				BFC821B61BDE45BF0066A77C /* NSString+size.h in Headers */,
-				BFC821AE1BDE45BF0066A77C /* NSData+Hash.h in Headers */,
+				BFC821B61BDE45BF0066A77C /* NSString+FTSize.h in Headers */,
+				BFC821AE1BDE45BF0066A77C /* NSData+FTHash.h in Headers */,
 				BF7957C71CC7CCA1000CEB0D /* MASViewConstraint.h in Headers */,
 				BF52E5641C3CE1950052A107 /* RACStringSequence.h in Headers */,
 				BF3B70CF1CDC720700A711BE /* Reachability.h in Headers */,
@@ -2239,16 +2251,16 @@
 				BF3B70B61CDC6C0F00A711BE /* NSCache+BlocksKit.h in Headers */,
 				BF52E5091C3CE1950052A107 /* NSString+RACKeyPathUtilities.h in Headers */,
 				BF52E5471C3CE1950052A107 /* RACPassthroughSubscriber.h in Headers */,
-				BFF8D81E1CD0752C009E6927 /* UIView+autoLayout.h in Headers */,
+				BFF8D81E1CD0752C009E6927 /* UIView+FTAutoLayout.h in Headers */,
 				BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */,
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
-				BFC821AC1BDE45BF0066A77C /* NSData+base64.h in Headers */,
+				BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */,
 				BF52E4E11C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.h in Headers */,
 				BF3B708E1CDC6C0F00A711BE /* BlocksKit.h in Headers */,
 				BF52E52E1C3CE1950052A107 /* RACEmptySequence.h in Headers */,
-				BFC821BD1BDE462E0066A77C /* UITableViewCell+normal.h in Headers */,
+				BFC821BD1BDE462E0066A77C /* UITableViewCell+FTNormal.h in Headers */,
 				BF52E58C1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.h in Headers */,
 				BF52E4F91C3CE1950052A107 /* NSObject+RACDeallocating.h in Headers */,
 				BF52E5541C3CE1950052A107 /* RACScopedDisposable.h in Headers */,
@@ -2257,7 +2269,7 @@
 				BFC75D891C72C1360085B4E3 /* MJExtensionConst.h in Headers */,
 				BF52E5611C3CE1950052A107 /* RACStream+Private.h in Headers */,
 				BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */,
-				BF1533BB1BE0B40F00809493 /* NSDictionary+json.h in Headers */,
+				BF1533BB1BE0B40F00809493 /* NSDictionary+FTJson.h in Headers */,
 				BFC75D8F1C72C1360085B4E3 /* MJPropertyKey.h in Headers */,
 				BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */,
 				BFF188211CB6082700CC1F77 /* AFNetworking.h in Headers */,
@@ -2282,11 +2294,11 @@
 				BF33A8781CE2BF15006C92C6 /* DBStringUtil.h in Headers */,
 				BF52E52C1C3CE1950052A107 /* RACEagerSequence.h in Headers */,
 				BF52E58A1C3CE1950052A107 /* UIControl+RACSignalSupportPrivate.h in Headers */,
-				BFFAD90D1BE35FFF0050A21B /* NSMutableArray+normal.h in Headers */,
+				BFFAD90D1BE35FFF0050A21B /* NSMutableArray+FTNormal.h in Headers */,
 				BF52E54C1C3CE1950052A107 /* RACReplaySubject.h in Headers */,
 				BF3B70C21CDC6C0F00A711BE /* UIGestureRecognizer+BlocksKit.h in Headers */,
 				BF52E50B1C3CE1950052A107 /* NSString+RACSequenceAdditions.h in Headers */,
-				BFFAD9161BE36AAF0050A21B /* NSString+file.h in Headers */,
+				BFFAD9161BE36AAF0050A21B /* NSString+FTFile.h in Headers */,
 				BF9C3CB71CA2778A007FE0EA /* FTProgressView.h in Headers */,
 				BF3B70C01CDC6C0F00A711BE /* UIControl+BlocksKit.h in Headers */,
 				BF3B70B81CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h in Headers */,
@@ -2296,7 +2308,7 @@
 				BF3B709A1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h in Headers */,
 				BF1533C61BE0D95300809493 /* FTFileUtil+md5.h in Headers */,
 				BF7957CB1CC7CCA1000CEB0D /* NSArray+MASShorthandAdditions.h in Headers */,
-				BF50529E1CC8C4AD00B9EDCD /* UILabel+rich.h in Headers */,
+				BF50529E1CC8C4AD00B9EDCD /* UILabel+FTRich.h in Headers */,
 				BF52E59E1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.h in Headers */,
 				BF52E4DD1C3CE1950052A107 /* EXTRuntimeExtensions.h in Headers */,
 				BF52E5A01C3CE1950052A107 /* UITextField+RACSignalSupport.h in Headers */,
@@ -2312,9 +2324,10 @@
 				BF52E5881C3CE1950052A107 /* UIControl+RACSignalSupport.h in Headers */,
 				BF935AEA1BDE71E500824D6E /* FTRouteHelper.h in Headers */,
 				BF6C2B5A1C3A04EC00CDA1E8 /* SDWebImageDownloader.h in Headers */,
+				BFB20FC91CE977650058649D /* NSObject+FTRuntime.h in Headers */,
 				BF52E5581C3CE1950052A107 /* RACSerialDisposable.h in Headers */,
-				BF1533B71BE0B30E00809493 /* NSArray+json.h in Headers */,
-				BF1533B31BE0A8CD00809493 /* NSString+json.h in Headers */,
+				BF1533B71BE0B30E00809493 /* NSArray+FTJson.h in Headers */,
+				BF1533B31BE0A8CD00809493 /* NSString+FTJson.h in Headers */,
 				BF5F6FBE1CB66A2100463D9F /* crypt.h in Headers */,
 				BF3B708F1CDC6C0F00A711BE /* BKMacros.h in Headers */,
 				BF1533C31BE0D15400809493 /* FTUtil.h in Headers */,
@@ -2332,7 +2345,7 @@
 				BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */,
 				BF7957C31CC7CCA1000CEB0D /* Masonry.h in Headers */,
 				BF52E5381C3CE1950052A107 /* RACImmediateScheduler.h in Headers */,
-				BF5052A21CC8CF0F00B9EDCD /* NSData+box.h in Headers */,
+				BF5052A21CC8CF0F00B9EDCD /* NSData+FTBox.h in Headers */,
 				BF33A86C1CE2BF15006C92C6 /* FTClassInfo.h in Headers */,
 				BF52E5071C3CE1950052A107 /* NSSet+RACSequenceAdditions.h in Headers */,
 				BFF1882A1CB6082700CC1F77 /* AFURLSessionManager.h in Headers */,
@@ -2366,7 +2379,7 @@
 				BF7957BC1CC7CCA1000CEB0D /* MASConstraint+Private.h in Headers */,
 				BF6C2B501C3A04EC00CDA1E8 /* MKAnnotationView+WebCache.h in Headers */,
 				BF52E4E31C3CE1950052A107 /* NSArray+RACSequenceAdditions.h in Headers */,
-				BF5052DB1CC8DC0500B9EDCD /* UIImage+normal.h in Headers */,
+				BF5052DB1CC8DC0500B9EDCD /* UIImage+FTNormal.h in Headers */,
 				BF5F6FC01CB66A2100463D9F /* ioapi.h in Headers */,
 				BF52E4ED1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.h in Headers */,
 				BF5F6FC21CB66A2100463D9F /* mztools.h in Headers */,
@@ -2375,11 +2388,11 @@
 				BFC75D881C72C1360085B4E3 /* MJExtension.h in Headers */,
 				BF52E5241C3CE1950052A107 /* RACDisposable.h in Headers */,
 				BF52E5981C3CE1950052A107 /* UIStepper+RACSignalSupport.h in Headers */,
-				BF51B6131C06A7CE00D26E9B /* NSString+box.h in Headers */,
+				BF51B6131C06A7CE00D26E9B /* NSString+FTBox.h in Headers */,
 				BF6C2B6B1C3A04EC00CDA1E8 /* UIImageView+HighlightedWebCache.h in Headers */,
 				BF52E51B1C3CE1950052A107 /* RACChannel.h in Headers */,
-				BFC821B41BDE45BF0066A77C /* NSString+Security.h in Headers */,
-				BFC821B01BDE45BF0066A77C /* NSString+normal.h in Headers */,
+				BFC821B41BDE45BF0066A77C /* NSString+FTSecurity.h in Headers */,
+				BFC821B01BDE45BF0066A77C /* NSString+FTNormal.h in Headers */,
 				BF33A8741CE2BF15006C92C6 /* FTDbManager.h in Headers */,
 				BF7957C91CC7CCA1000CEB0D /* NSArray+MASAdditions.h in Headers */,
 				BF52E5431C3CE1950052A107 /* RACMulticastConnection.h in Headers */,
@@ -2419,19 +2432,20 @@
 				BF7957BD1CC7CCA1000CEB0D /* MASConstraint.h in Headers */,
 				BF52E5621C3CE1950052A107 /* RACStream.h in Headers */,
 				BF3B709E1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.h in Headers */,
+				BFB20FCD1CE9784B0058649D /* NSObject+FTProperty.h in Headers */,
 				BF33A8721CE2BF15006C92C6 /* FTDBHelper.h in Headers */,
 				BF43F6BC1BDE150100A1389B /* FTSystemHelper.h in Headers */,
 				BF52E4E91C3CE1950052A107 /* NSData+RACSupport.h in Headers */,
 				BF52E5361C3CE1950052A107 /* RACGroupedSignal.h in Headers */,
 				BF52E4DF1C3CE1950052A107 /* EXTScope.h in Headers */,
-				BFC821BF1BDE462E0066A77C /* UIView+normal.h in Headers */,
+				BFC821BF1BDE462E0066A77C /* UIView+FTNormal.h in Headers */,
 				BF3B70A61CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.h in Headers */,
 				BF3B708C1CDC6C0F00A711BE /* BKDefines.h in Headers */,
 				BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */,
-				BF5052991CC8AC2B00B9EDCD /* NSDictionary+object.h in Headers */,
-				BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+normal.h in Headers */,
+				BF5052991CC8AC2B00B9EDCD /* NSDictionary+FTObject.h in Headers */,
+				BFFAD9091BE35F7F0050A21B /* NSMutableDictionary+FTNormal.h in Headers */,
 				BF52E54E1C3CE1950052A107 /* RACReturnSignal.h in Headers */,
-				BFB861D21BE6F8790051BE20 /* NSDate+normal.h in Headers */,
+				BFB861D21BE6F8790051BE20 /* NSDate+FTNormal.h in Headers */,
 				BF8EAD041BD4E53F004A051D /* fertile.h in Headers */,
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
 				BF33A8761CE2BF15006C92C6 /* FTDBModelUtil.h in Headers */,
@@ -2449,14 +2463,14 @@
 				BF14C5A91BE30AF800B49989 /* FTNetWorkHelper.h in Headers */,
 				BF6C2B601C3A04EC00CDA1E8 /* SDWebImageOperation.h in Headers */,
 				BF33A8821CE2BF15006C92C6 /* FTResultSetHandler.h in Headers */,
-				BF51B6171C06AC8900D26E9B /* NSDate+box.h in Headers */,
+				BF51B6171C06AC8900D26E9B /* NSDate+FTBox.h in Headers */,
 				BF43F65C1BDDF26600A1389B /* FTAnimateHelper.h in Headers */,
 				BF52E4F31C3CE1950052A107 /* NSInvocation+RACTypeParsing.h in Headers */,
 				BFC75D931C72C1360085B4E3 /* NSObject+MJClass.h in Headers */,
-				BFFAD9111BE360A80050A21B /* NSArray+normal.h in Headers */,
+				BFFAD9111BE360A80050A21B /* NSArray+FTNormal.h in Headers */,
 				BF52E55A1C3CE1950052A107 /* RACSignal+Operations.h in Headers */,
 				BF6C2B651C3A04EC00CDA1E8 /* UIImage+GIF.h in Headers */,
-				BF2BF48C1C224BE800175579 /* UILabel+fitSize.h in Headers */,
+				BF2BF48C1C224BE800175579 /* UILabel+FTFitSize.h in Headers */,
 				BF3B70D61CDC7D4500A711BE /* FTAssert.h in Headers */,
 				BF52E58E1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.h in Headers */,
 				BF33A87C1CE2BF15006C92C6 /* FTPropertyUtil.h in Headers */,
@@ -2465,8 +2479,8 @@
 				BF52E4F11C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.h in Headers */,
 				BF52E5561C3CE1950052A107 /* RACSequence.h in Headers */,
 				BF52E5841C3CE1950052A107 /* UIButton+RACCommandSupport.h in Headers */,
-				BF14C5A41BE3081100B49989 /* UIWebView+normal.h in Headers */,
-				BF098BE31C0822A500ED81C3 /* UIColor+normal.h in Headers */,
+				BF14C5A41BE3081100B49989 /* UIWebView+FTNormal.h in Headers */,
+				BF098BE31C0822A500ED81C3 /* UIColor+FTNormal.h in Headers */,
 				BF52E5451C3CE1950052A107 /* RACObjCRuntime.h in Headers */,
 				BF6C2B5E1C3A04EC00CDA1E8 /* SDWebImageManager.h in Headers */,
 				BF52E5281C3CE1950052A107 /* RACDynamicSequence.h in Headers */,
@@ -2479,11 +2493,11 @@
 				BF52E5511C3CE1950052A107 /* RACScheduler+Subclass.h in Headers */,
 				BF3B70C41CDC6C0F00A711BE /* UIImage+BlocksKit.h in Headers */,
 				BF43F6C71BDE25E100A1389B /* FTBaseModel.h in Headers */,
-				BF5052A61CC8D80000B9EDCD /* UIView+layer.h in Headers */,
+				BF5052A61CC8D80000B9EDCD /* UIView+FTLayer.h in Headers */,
 				BFB57D181C33C0B4005187B6 /* Aspects.h in Headers */,
 				BF6C2B581C3A04EC00CDA1E8 /* SDWebImageDecoder.h in Headers */,
 				BF52E5711C3CE1950052A107 /* RACTestScheduler.h in Headers */,
-				BFC821B21BDE45BF0066A77C /* NSString+regExp.h in Headers */,
+				BFC821B21BDE45BF0066A77C /* NSString+FTRegExp.h in Headers */,
 				BF6A01391CE201340076B549 /* RSA.h in Headers */,
 				BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */,
 				BF52E5941C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.h in Headers */,
@@ -2605,7 +2619,7 @@
 				BF52E5A11C3CE1950052A107 /* UITextField+RACSignalSupport.m in Sources */,
 				BF7957C21CC7CCA1000CEB0D /* MASLayoutConstraint.m in Sources */,
 				BF52E5061C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.m in Sources */,
-				BF098BE41C0822A500ED81C3 /* UIColor+normal.m in Sources */,
+				BF098BE41C0822A500ED81C3 /* UIColor+FTNormal.m in Sources */,
 				BF52E5201C3CE1950052A107 /* RACCompoundDisposable.m in Sources */,
 				BF52E5871C3CE1950052A107 /* UICollectionReusableView+RACSignalSupport.m in Sources */,
 				BF52E5971C3CE1950052A107 /* UISlider+RACSignalSupport.m in Sources */,
@@ -2618,14 +2632,14 @@
 				BF52E5931C3CE1950052A107 /* UIRefreshControl+RACCommandSupport.m in Sources */,
 				BF52E5551C3CE1950052A107 /* RACScopedDisposable.m in Sources */,
 				BF52E57A1C3CE1950052A107 /* RACUnit.m in Sources */,
-				BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+normal.m in Sources */,
+				BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+FTNormal.m in Sources */,
 				BF52E5211C3CE1950052A107 /* RACCompoundDisposableProvider.d in Sources */,
 				BF52E5461C3CE1950052A107 /* RACObjCRuntime.m in Sources */,
 				BF52E52F1C3CE1950052A107 /* RACEmptySequence.m in Sources */,
 				BFC75D961C72C1360085B4E3 /* NSObject+MJCoding.m in Sources */,
 				BF43F6511BDDF18B00A1389B /* FTBaseWidget.m in Sources */,
 				BF52E5001C3CE1950052A107 /* NSObject+RACLifting.m in Sources */,
-				BF1533BC1BE0B40F00809493 /* NSDictionary+json.m in Sources */,
+				BF1533BC1BE0B40F00809493 /* NSDictionary+FTJson.m in Sources */,
 				BF52E50C1C3CE1950052A107 /* NSString+RACSequenceAdditions.m in Sources */,
 				BF5F6FC81CB66A2100463D9F /* ZipArchive.m in Sources */,
 				BF6C2B681C3A04EC00CDA1E8 /* UIImage+MultiFormat.m in Sources */,
@@ -2640,7 +2654,7 @@
 				BF52E4EC1C3CE1950052A107 /* NSDictionary+RACSequenceAdditions.m in Sources */,
 				BF3B70D01CDC720700A711BE /* Reachability.m in Sources */,
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
-				BF5052DC1CC8DC0500B9EDCD /* UIImage+normal.m in Sources */,
+				BF5052DC1CC8DC0500B9EDCD /* UIImage+FTNormal.m in Sources */,
 				BF3B70A91CDC6C0F00A711BE /* NSObject+BKBlockExecution.m in Sources */,
 				BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */,
 				BF52E5161C3CE1950052A107 /* RACArraySequence.m in Sources */,
@@ -2665,15 +2679,15 @@
 				BF8343CC1C3B578A0082A845 /* SXColorLabel.m in Sources */,
 				BF6C2B261C3A01DB00CDA1E8 /* FTIndicatorWidget.m in Sources */,
 				BF3B70B31CDC6C0F00A711BE /* A2BlockInvocation.m in Sources */,
-				BF14C5A51BE3081100B49989 /* UIWebView+normal.m in Sources */,
-				BFC821BE1BDE462E0066A77C /* UITableViewCell+normal.m in Sources */,
+				BF14C5A51BE3081100B49989 /* UIWebView+FTNormal.m in Sources */,
+				BFC821BE1BDE462E0066A77C /* UITableViewCell+FTNormal.m in Sources */,
 				BFC75D8C1C72C1360085B4E3 /* MJFoundation.m in Sources */,
 				BFD180521CC478A400A59394 /* FTAlertWidget.m in Sources */,
 				BFF188231CB6082700CC1F77 /* AFNetworkReachabilityManager.m in Sources */,
 				BF8343CE1C3B578A0082A845 /* SXMarquee.m in Sources */,
 				BF52E5411C3CE1950052A107 /* RACKVOTrampoline.m in Sources */,
 				BFD1F2871BFC71DA00AFD63C /* FTLoggerHelper.m in Sources */,
-				BFFAD9121BE360A80050A21B /* NSArray+normal.m in Sources */,
+				BFFAD9121BE360A80050A21B /* NSArray+FTNormal.m in Sources */,
 				BF33A87F1CE2BF15006C92C6 /* FTListBeanHandler.m in Sources */,
 				BF52E4EE1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.m in Sources */,
 				BF52E5911C3CE1950052A107 /* UIImagePickerController+RACSignalSupport.m in Sources */,
@@ -2687,12 +2701,12 @@
 				BF3B70B11CDC6C0F00A711BE /* NSTimer+BlocksKit.m in Sources */,
 				BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */,
 				BF6C2B641C3A04EC00CDA1E8 /* UIButton+WebCache.m in Sources */,
-				BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+normal.m in Sources */,
+				BFFAD90A1BE35F7F0050A21B /* NSMutableDictionary+FTNormal.m in Sources */,
 				BF6C2B6E1C3A04EC00CDA1E8 /* UIImageView+WebCache.m in Sources */,
-				BFFAD9171BE36AAF0050A21B /* NSString+file.m in Sources */,
+				BFFAD9171BE36AAF0050A21B /* NSString+FTFile.m in Sources */,
 				BF52E51A1C3CE1950052A107 /* RACBlockTrampoline.m in Sources */,
 				BF6C2B5B1C3A04EC00CDA1E8 /* SDWebImageDownloader.m in Sources */,
-				BFFAD90E1BE35FFF0050A21B /* NSMutableArray+normal.m in Sources */,
+				BFFAD90E1BE35FFF0050A21B /* NSMutableArray+FTNormal.m in Sources */,
 				BF52E4FA1C3CE1950052A107 /* NSObject+RACDeallocating.m in Sources */,
 				BFB16F491BEB06A700CEEBC9 /* FTNavigateControllerModel.m in Sources */,
 				BF52E5701C3CE1950052A107 /* RACTargetQueueScheduler.m in Sources */,
@@ -2706,9 +2720,9 @@
 				BF33A8731CE2BF15006C92C6 /* FTDBHelper.m in Sources */,
 				BF52E52B1C3CE1950052A107 /* RACDynamicSignal.m in Sources */,
 				BF33A8831CE2BF16006C92C6 /* FTResultSetHandler.m in Sources */,
-				BF2BF48D1C224BE800175579 /* UILabel+fitSize.m in Sources */,
+				BF2BF48D1C224BE800175579 /* UILabel+FTFitSize.m in Sources */,
 				BFF188271CB6082700CC1F77 /* AFURLRequestSerialization.m in Sources */,
-				BFC821C01BDE462E0066A77C /* UIView+normal.m in Sources */,
+				BFC821C01BDE462E0066A77C /* UIView+FTNormal.m in Sources */,
 				BF5E5F361CA8C6FB00EA69B6 /* FTDeviceHelper.m in Sources */,
 				BF52E58B1C3CE1950052A107 /* UIControl+RACSignalSupportPrivate.m in Sources */,
 				BF52E5391C3CE1950052A107 /* RACImmediateScheduler.m in Sources */,
@@ -2716,10 +2730,11 @@
 				BF52E4DE1C3CE1950052A107 /* EXTRuntimeExtensions.m in Sources */,
 				BF52E5591C3CE1950052A107 /* RACSerialDisposable.m in Sources */,
 				BF52E5741C3CE1950052A107 /* RACTuple.m in Sources */,
-				BFC821B71BDE45BF0066A77C /* NSString+size.m in Sources */,
+				BFC821B71BDE45BF0066A77C /* NSString+FTSize.m in Sources */,
 				BF52E5721C3CE1950052A107 /* RACTestScheduler.m in Sources */,
-				BF5052A71CC8D80000B9EDCD /* UIView+layer.m in Sources */,
+				BF5052A71CC8D80000B9EDCD /* UIView+FTLayer.m in Sources */,
 				BF52E5531C3CE1950052A107 /* RACScheduler.m in Sources */,
+				BFB20FCA1CE977650058649D /* NSObject+FTRuntime.m in Sources */,
 				BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */,
 				BF52E5311C3CE1950052A107 /* RACEmptySignal.m in Sources */,
 				BF52E5081C3CE1950052A107 /* NSSet+RACSequenceAdditions.m in Sources */,
@@ -2731,7 +2746,7 @@
 				BF52E53B1C3CE1950052A107 /* RACIndexSetSequence.m in Sources */,
 				BF52E57C1C3CE1950052A107 /* RACValueTransformer.m in Sources */,
 				BFB16F781BEB501D00CEEBC9 /* FTImgBtn.m in Sources */,
-				BF1533B81BE0B30E00809493 /* NSArray+json.m in Sources */,
+				BF1533B81BE0B30E00809493 /* NSArray+FTJson.m in Sources */,
 				BFF188291CB6082700CC1F77 /* AFURLResponseSerialization.m in Sources */,
 				BFB57D191C33C0B4005187B6 /* Aspects.m in Sources */,
 				BF33A8711CE2BF15006C92C6 /* FTDB.m in Sources */,
@@ -2758,20 +2773,21 @@
 				BF52E4FC1C3CE1950052A107 /* NSObject+RACDescription.m in Sources */,
 				BF3B70B51CDC6C0F00A711BE /* A2DynamicDelegate.m in Sources */,
 				BFF1882B1CB6082700CC1F77 /* AFURLSessionManager.m in Sources */,
-				BFC821B31BDE45BF0066A77C /* NSString+regExp.m in Sources */,
-				BFC821AD1BDE45BF0066A77C /* NSData+base64.m in Sources */,
+				BFC821B31BDE45BF0066A77C /* NSString+FTRegExp.m in Sources */,
+				BFB20FCE1CE9784B0058649D /* NSObject+FTProperty.m in Sources */,
+				BFC821AD1BDE45BF0066A77C /* NSData+FTBase64.m in Sources */,
 				BF935AEB1BDE71E500824D6E /* FTRouteHelper.m in Sources */,
 				BF52E5571C3CE1950052A107 /* RACSequence.m in Sources */,
 				BF3B70911CDC6C0F00A711BE /* NSArray+BlocksKit.m in Sources */,
 				BF33A86F1CE2BF15006C92C6 /* FTFieldInfo.m in Sources */,
 				BF3B70A31CDC6C0F00A711BE /* NSMutableSet+BlocksKit.m in Sources */,
-				BF51B61C1C06E65A00D26E9B /* NSNumber+box.m in Sources */,
+				BF51B61C1C06E65A00D26E9B /* NSNumber+FTBox.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
 				BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */,
-				BFF8D81F1CD0752C009E6927 /* UIView+autoLayout.m in Sources */,
+				BFF8D81F1CD0752C009E6927 /* UIView+FTAutoLayout.m in Sources */,
 				BF52E5371C3CE1950052A107 /* RACGroupedSignal.m in Sources */,
 				BF8343CA1C3B578A0082A845 /* SXColorGradientView.m in Sources */,
-				BF50529A1CC8AC2B00B9EDCD /* NSDictionary+object.m in Sources */,
+				BF50529A1CC8AC2B00B9EDCD /* NSDictionary+FTObject.m in Sources */,
 				BF52E56E1C3CE1950052A107 /* RACSubscriptionScheduler.m in Sources */,
 				BF3B70B91CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m in Sources */,
 				BF7957BB1CC7CCA1000CEB0D /* MASCompositeConstraint.m in Sources */,
@@ -2787,11 +2803,11 @@
 				BF6C2B701C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m in Sources */,
 				BFB16F6F1BEB370500CEEBC9 /* FTNavigateWidget.m in Sources */,
 				BF43F6C81BDE25E100A1389B /* FTBaseModel.m in Sources */,
-				BF51B6181C06AC8900D26E9B /* NSDate+box.m in Sources */,
-				BF1533B41BE0A8CD00809493 /* NSString+json.m in Sources */,
+				BF51B6181C06AC8900D26E9B /* NSDate+FTBox.m in Sources */,
+				BF1533B41BE0A8CD00809493 /* NSString+FTJson.m in Sources */,
 				BF52E55E1C3CE1950052A107 /* RACSignalProvider.d in Sources */,
 				BF78A71B1CE0BF5F001D3064 /* FTMoveAndScaleAnim.m in Sources */,
-				BFC821AF1BDE45BF0066A77C /* NSData+Hash.m in Sources */,
+				BFC821AF1BDE45BF0066A77C /* NSData+FTHash.m in Sources */,
 				BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */,
 				BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */,
 				BF52E53F1C3CE1950052A107 /* RACKVOProxy.m in Sources */,
@@ -2803,16 +2819,16 @@
 				BF3B709F1CDC6C0F00A711BE /* NSMutableIndexSet+BlocksKit.m in Sources */,
 				BFF188201CB6082700CC1F77 /* AFHTTPSessionManager.m in Sources */,
 				BF52E58D1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.m in Sources */,
-				BF5052A31CC8CF0F00B9EDCD /* NSData+box.m in Sources */,
+				BF5052A31CC8CF0F00B9EDCD /* NSData+FTBox.m in Sources */,
 				BF7957CF1CC7CCA1000CEB0D /* View+MASAdditions.m in Sources */,
 				BF1533C71BE0D95300809493 /* FTFileUtil+md5.m in Sources */,
-				BFC821B51BDE45BF0066A77C /* NSString+Security.m in Sources */,
+				BFC821B51BDE45BF0066A77C /* NSString+FTSecurity.m in Sources */,
 				BF52E56A1C3CE1950052A107 /* RACSubscriber.m in Sources */,
 				BF52E4E41C3CE1950052A107 /* NSArray+RACSequenceAdditions.m in Sources */,
 				BF7957BE1CC7CCA1000CEB0D /* MASConstraint.m in Sources */,
 				BF52E4E21C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.m in Sources */,
 				BF8343D21C3B578A0082A845 /* UIColor+Wonderful.m in Sources */,
-				BFB861D31BE6F8790051BE20 /* NSDate+normal.m in Sources */,
+				BFB861D31BE6F8790051BE20 /* NSDate+FTNormal.m in Sources */,
 				BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */,
 				BF6A01381CE201340076B549 /* README.md in Sources */,
 				BF52E5181C3CE1950052A107 /* RACBehaviorSubject.m in Sources */,
@@ -2821,7 +2837,7 @@
 				BF5F6FC11CB66A2100463D9F /* mztools.c in Sources */,
 				BF51B6261C06F5FC00D26E9B /* FTLineWidget.m in Sources */,
 				BF5F6FC31CB66A2100463D9F /* unzip.c in Sources */,
-				BF50529F1CC8C4AD00B9EDCD /* UILabel+rich.m in Sources */,
+				BF50529F1CC8C4AD00B9EDCD /* UILabel+FTRich.m in Sources */,
 				BF52E5951C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.m in Sources */,
 				BF3B70AD1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m in Sources */,
 				BF3B70BD1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m in Sources */,
@@ -2829,7 +2845,7 @@
 				BF52E5991C3CE1950052A107 /* UIStepper+RACSignalSupport.m in Sources */,
 				BF52E52D1C3CE1950052A107 /* RACEagerSequence.m in Sources */,
 				BF3B70C11CDC6C0F00A711BE /* UIControl+BlocksKit.m in Sources */,
-				BF51B6141C06A7CE00D26E9B /* NSString+box.m in Sources */,
+				BF51B6141C06A7CE00D26E9B /* NSString+FTBox.m in Sources */,
 				BF3B70991CDC6C0F00A711BE /* NSMapTable+BlocksKit.m in Sources */,
 				BF43F6BD1BDE150100A1389B /* FTSystemHelper.m in Sources */,
 				BF52E4F41C3CE1950052A107 /* NSInvocation+RACTypeParsing.m in Sources */,
@@ -2840,7 +2856,7 @@
 				BF52E4F61C3CE1950052A107 /* NSNotificationCenter+RACSupport.m in Sources */,
 				BF6C2B6C1C3A04EC00CDA1E8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BFD180571CC47C1100A59394 /* FTLoadingWidget.m in Sources */,
-				BFC821B11BDE45BF0066A77C /* NSString+normal.m in Sources */,
+				BFC821B11BDE45BF0066A77C /* NSString+FTNormal.m in Sources */,
 				BFC75D941C72C1360085B4E3 /* NSObject+MJClass.m in Sources */,
 				BF52E5481C3CE1950052A107 /* RACPassthroughSubscriber.m in Sources */,
 				BF3B70951CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m in Sources */,

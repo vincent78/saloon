@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF30EB581C4E34F50032FB9D /* SNUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */; };
 		BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */; };
+		BF3B3A781CE5A5D7003DAACC /* SNOperationSqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B3A761CE5A5D7003DAACC /* SNOperationSqliteViewController.m */; };
+		BF3B3A791CE5A5D7003DAACC /* SNOperationSqliteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3B3A771CE5A5D7003DAACC /* SNOperationSqliteViewController.xib */; };
 		BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */; };
 		BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */; };
 		BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */; };
@@ -74,6 +76,9 @@
 		BF30EB551C4E34F50032FB9D /* SNUIViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUIViewAnimationViewController.h; sourceTree = "<group>"; };
 		BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUIViewAnimationViewController.m; sourceTree = "<group>"; };
 		BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNUIViewAnimationViewController.xib; sourceTree = "<group>"; };
+		BF3B3A751CE5A5D7003DAACC /* SNOperationSqliteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNOperationSqliteViewController.h; sourceTree = "<group>"; };
+		BF3B3A761CE5A5D7003DAACC /* SNOperationSqliteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNOperationSqliteViewController.m; sourceTree = "<group>"; };
+		BF3B3A771CE5A5D7003DAACC /* SNOperationSqliteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNOperationSqliteViewController.xib; sourceTree = "<group>"; };
 		BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_city_switch_circle@3x.png"; sourceTree = "<group>"; };
 		BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animation_switch_circle@2x.png"; sourceTree = "<group>"; };
 		BF5432A11C4CACE500BA9C5C /* SNCABasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNCABasicAnimationViewController.h; sourceTree = "<group>"; };
@@ -245,6 +250,9 @@
 				BFF8D8261CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.h */,
 				BFF8D8271CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.m */,
 				BFF8D8281CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib */,
+				BF3B3A751CE5A5D7003DAACC /* SNOperationSqliteViewController.h */,
+				BF3B3A761CE5A5D7003DAACC /* SNOperationSqliteViewController.m */,
+				BF3B3A771CE5A5D7003DAACC /* SNOperationSqliteViewController.xib */,
 			);
 			path = operation;
 			sourceTree = "<group>";
@@ -336,6 +344,7 @@
 				BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */,
 				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
 				BF5432A51C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib in Resources */,
+				BF3B3A791CE5A5D7003DAACC /* SNOperationSqliteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +357,7 @@
 			files = (
 				BF5432B71C4CC9BB00BA9C5C /* SNFontImgViewController.m in Sources */,
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
+				BF3B3A781CE5A5D7003DAACC /* SNOperationSqliteViewController.m in Sources */,
 				BFD777541C4CDDF800E35DDA /* SNTestViewController.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
 				BF9C3CBC1CA278DB007FE0EA /* SNProgressViewController.m in Sources */,

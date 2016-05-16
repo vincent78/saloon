@@ -183,6 +183,14 @@
                "params": [],
                "viewcontroller": ""
                }
+               ,
+               {
+               "icon": "",
+               "title": "SQLITE相关",
+               "desc": "SQLITE数据库的内容",
+               "params": [],
+               "viewcontroller": "SNOperationSqliteViewController"
+               }
                ],
   "params": [],
   "viewcontroller": "FTTAppHelperDelegate"
