@@ -24,6 +24,7 @@
 #import "NSString+FTFile.h"
 #import "NSString+FTBox.h"
 #import "NSString+FTNormal.h"
+#import "NSString+FTUrl.h"
 
 
 #import "NSNumber+FTBox.h"

@@ -161,6 +161,10 @@
     return (__bridge_transfer NSString*)string;
 }
 
+-(NSString* )toOneDecimal
+{
+    return [NSString stringWithFormat:@"%.1f",(double)[self doubleValue]];
+}
 
 
 

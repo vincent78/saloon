@@ -17,7 +17,16 @@
  *
  *  @return <#return value description#>
  */
-+ (NSString *)getFileMD5WithPath:(NSString *)fileFullPath;
++ (NSString *)getFileMD5:(NSString *)fileFullPath;
 
+
+/**
+ *  @brief 获取文件的MD5(另一种方法）
+ *
+ *  @param filePath <#filePath description#>
+ *
+ *  @return <#return value description#>
+ */
++ (NSString *)fileMD5:(NSString *)filePath;
 
 @end

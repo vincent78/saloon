@@ -12,4 +12,6 @@
 
 - (id)objectAtIndexForFT:(NSUInteger)index;
 
+- (NSArray *)subarrayWithRangeForFT:(NSRange)range;
+
 @end

@@ -18,4 +18,17 @@
     return nil;
 }
 
+- (NSArray *)subarrayWithRangeForFT:(NSRange)range
+{
+    if (range.location+range.length <= self.count)
+    {
+        return [self subarrayWithRange:range];
+    }
+    else
+    {
+        FTLog(@"count:%lu MakeRage(%lu,%lu)", (unsigned long)self.count, (unsigned long)range.location, (unsigned long)range.length);
+        return nil;
+    }
+}
+
 @end

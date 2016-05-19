@@ -105,6 +105,14 @@
  */
 + (NSString *)UUID;
 
+/**
+ * 保留一位小数，第二位小数四舍五入.
+ * 如果value为非数字，返回0.0
+ * @param value
+ * @return
+ */
+-(NSString* )toOneDecimal;
+
 
 
 
