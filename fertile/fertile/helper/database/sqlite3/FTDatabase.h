@@ -9,23 +9,28 @@
 #import <sqlite3.h>
 @class FTClassInfo;
 
-//数据库类型
-typedef enum {
-    DBType_CtripBusiness    = 0x001,  //增量表
-    DBType_CtripUserInfo,       //用户信息表
-    DBType_CtripTrainInfo,      // add 5.7 火车
-    DBType_Common,
-    DBType_Hotel,
-    DBType_Fligh,
-    DBType_Train,
-    DBType_Payment,
-    DBType_Destination,
-    DBType_Schedule
-}DBType;
+////数据库类型
+//typedef NS_OPTIONS(NSInteger,DBType)
+//{
+//    DBType_Common     = 1,
+//    DBType_UserInfo,            //用户信息表
+//    DBType_Config,              //程序配置
+//    DBType_Business,            //增量表
+//    DBType_Model1,
+//    DBType_Model2,
+//    DBType_Model3,
+//    DBType_Model4,
+//    DBType_Model5,
+//    DBType_Model6,
+//    DBType_Model7,
+//    DBType_Model8,
+//    DBType_Model9,
+//    DBType_Tmp,                 //临时表
+//};
 
 typedef BOOL (^DoInOneTxBlock)();  //执行一个事务时候使用该block，调入执行操作
 
-@interface FTDB : NSObject
+@interface FTDatabase : NSObject
 {
     sqlite3 *_database;  //数据库句柄
     NSString *_databaseName;//数据库名称
@@ -317,5 +322,8 @@ typedef BOOL (^DoInOneTxBlock)();  //执行一个事务时候使用该block，�
 
 - (BOOL)excuteBySql:(NSString *)sql;
 
-- (sqlite3 *)handelForDatabase;
+- (sqlite3 *)handleForDatabase;
+
+
+
 @end

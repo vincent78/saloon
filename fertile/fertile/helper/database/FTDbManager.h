@@ -5,12 +5,15 @@
  文件描述 : 表管理类
  *********************************************************************/
 
-#import <Foundation/Foundation.h>
-#import "FTDB.h"
+
+#import "FTDatabase.h"
+#import "FTDBModel.h"
+
+
 
 //数据库类型
 
-@class FTDB;
+@class FTDatabase;
 
 @interface FTDbManager : NSObject
 
@@ -21,12 +24,10 @@
  *
  *  @return DB
  */
-+ (FTDB *)getInstance:(DBType)dbtype;
-
-+ (void)configDBType:(DBType)type withDBFileName:(NSString *)dbFileName;
++ (FTDatabase *)getInstance:(NSString *)dbName;
 
 /**
- *  2个数据库用同一把锁
+ *  多个数据库用同一把锁
  *
  *  @return lock
  */

@@ -248,7 +248,15 @@
     [fileManager removeItemAtPath:fullName error:&error];
 }
 
-
++ (BOOL)createDirectory:(NSString *)path
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    return [fileManager createDirectoryAtPath:path
+                  withIntermediateDirectories:YES
+                                   attributes:nil
+                                        error:&error];
+}
 
 #pragma mark 文件属性
 

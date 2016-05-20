@@ -24,4 +24,9 @@
 
 
 
+#import "FTDbManager.h"
+#import "FTDatabase.h"
+
+
+
 #endif /* FTHelper_h */

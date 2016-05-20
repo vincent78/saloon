@@ -9,6 +9,7 @@
 #import "SNOperationSqliteViewController.h"
 
 @interface SNOperationSqliteViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *txtDBName;
 
 @end
 
@@ -16,22 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)createDBAction:(id)sender {
+    
+    NSString *dbName = _txtDBName.text;
+    [FTDbManager getInstance:dbName];
+    [FTAlertWidget showAlertWithMessage:@"数据库已创建"];
 }
-*/
+- (IBAction)deleteDBAction:(id)sender {
+    NSString *dbFile = [[FTFileUtil getDocDirectory] stringByAppendingPathComponent:@"db"];
+    dbFile = [dbFile stringByAppendingPathComponent:_txtDBName.text];
+    [FTFileUtil removeItem:dbFile];
+    [FTAlertWidget showAlertWithMessage:@"数据库已创建"];
+}
 
 @end

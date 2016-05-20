@@ -8,8 +8,7 @@
 #import "FTDBModelUtil.h"
 #import "FTFieldInfo.h"
 #import "FTClassInfo.h"
-#import "DBStringUtil.h"
-#import "FTDB.h"
+#import "FTDatabase.h"
 #import "FTDbManager.h"
 
 @implementation FTDBModelUtil
@@ -210,10 +209,10 @@
 *
 *  @return 存放有效字段的字典
 */
-+ (NSMutableDictionary *)obtainPropMap:(NSObject *)object dbType:(DBType)dbType
++ (NSMutableDictionary *)obtainPropMap:(NSObject *)object dbName:(NSString *)dbName
 {
     //获取一个DB
-    FTDB *db = [FTDbManager getInstance:dbType];
+    FTDatabase *db = [FTDbManager getInstance:dbName];
       //获取该类型的属性
     FTClassInfo *classInfo = [db obtainClassInfoFromDic:object.class];
     
@@ -275,7 +274,7 @@
             case eNSSTRING:
             {
                 NSString *valueStr = fieldValue;
-                if (![DBStringUtil emptyOrNull:valueStr])
+                if (![NSString emptyOrNil:valueStr])
                 {
                     //字段值存在，值有效
                     result = YES;

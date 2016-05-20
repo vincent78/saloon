@@ -9,7 +9,6 @@
 
 #import "FTFieldInfo.h"
 #import "FTPropertyUtil.h"
-#import "DBStringUtil.h"
 #import <objc/message.h>
 
 @implementation FTClassInfo
@@ -79,7 +78,7 @@
         }
         
         //获取所有属性到数组
-        if (![DBStringUtil emptyOrNull:self.mPrimarykeyName])
+        if (![NSString emptyOrNil:self.mPrimarykeyName])
         {
             //有主键
             self.mFieldArray = [FTPropertyUtil obtainObjClassFieldsToArray:objectClass excludeFieldArr:noPersistenceArray primarykeyName:self.mPrimarykeyName];
@@ -109,7 +108,7 @@
     FTFieldInfo *fieldInfo = nil;
     
     //如果主键存在
-    if (![DBStringUtil emptyOrNull:self.mPrimarykeyName])
+    if (![NSString emptyOrNil:self.mPrimarykeyName])
     {
         //主键默认放在数组第一个
         if (self.mFieldArray.count > 0)
@@ -138,7 +137,7 @@
 {
     FTFieldInfo *fieldInfo = nil;
     
-    if (![DBStringUtil emptyOrNull:fieldName])
+    if (![NSString emptyOrNil:fieldName])
     {
         //轮循查找fieldName同名的FieldInfo
         for (FTFieldInfo *obj in self.mFieldArray)

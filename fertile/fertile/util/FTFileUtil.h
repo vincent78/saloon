@@ -138,6 +138,13 @@
  */
 + (void)removeItem:(NSString *)fullName;
 
+/**
+ *  @brief 创建目录
+ *
+ *  @param path <#path description#>
+ */
++ (BOOL)createDirectory:(NSString *)path;
+
 
 #pragma mark - 文件属性
 

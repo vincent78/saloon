@@ -9,7 +9,6 @@
 #import "FTClassInfo.h"
 #import "FTFieldInfo.h"
 #import "FTDBModelUtil.h"
-#import "DBStringUtil.h"
 #import "FTOrmErrorUtil.h"
 
 @implementation FTSqlStatmentUtils
@@ -41,14 +40,14 @@
             //sql标识
             NSString *sqlID = [sqlByID substringFromIndex:plistHeadStr.length + 1];
             
-            if (![DBStringUtil emptyOrNull:plstName] && ![DBStringUtil emptyOrNull:sqlID])
+            if (![NSString emptyOrNil:plstName] && ![NSString emptyOrNil:sqlID])
             {
                 NSString *plistPath = [[NSBundle mainBundle] pathForResource:plstName ofType:@"plist"];
                 @try {
                     NSDictionary *data = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
                     NSString *str = [[NSString alloc]initWithFormat:@"%@",[data valueForKey:sqlID]];
                     
-                    if (![DBStringUtil emptyOrNull:str] && ![str isEqualToString:@"(null)"])
+                    if (![NSString emptyOrNil:str] && ![str isEqualToString:@"(null)"])
                     {
                         return str;
                     }

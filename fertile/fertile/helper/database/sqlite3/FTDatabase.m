@@ -5,9 +5,8 @@
  文件描述 : 数据库表操作类
  *********************************************************************/
 
-#import "FTDB.h"
+#import "FTDatabase.h"
 
-#import "DBStringUtil.h"
 #import "FTFieldInfo.h"
 #import "FTDBModelUtil.h"
 #import "FTPropertyUtil.h"
@@ -19,15 +18,15 @@
 #import "FTOrmErrorUtil.h"
 #import "FTDbManager.h"
 
-/** 数据库名称 ctrip.db */
-NSString *const CTRIP_BUINESS_NAME = @"ctrip.db";
-NSString *const CTRIP_USERINFO_NAME = @"ctrip_userinfo.db";
-// add 5.7 火车
-NSString *const CTRIP_TRAININFO_NAME = @"ctrip_traininfo.db";
-// add 6.13 酒店
-NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
+///** 数据库名称 ctrip.db */
+//NSString *const CTRIP_BUINESS_NAME = @"ctrip.db";
+//NSString *const CTRIP_USERINFO_NAME = @"ctrip_userinfo.db";
+//// add 5.7 火车
+//NSString *const CTRIP_TRAININFO_NAME = @"ctrip_traininfo.db";
+//// add 6.13 酒店
+//NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
 
-@implementation FTDB
+@implementation FTDatabase
 @synthesize mapModelTable;
 
 -(id)initWithDbFileName:(NSString *)dbFileName {
@@ -40,45 +39,30 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
 }
 
 #pragma mark ------------------------数据库初始化操作 -------------------------------------------------
-// 初始化，数据库 文件，如果不存在，则拷贝文件到 document 文件下
 - (void)initDB
 {
     int retValue = -1;
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSArray *path1 = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES);
-    NSString *documentPath = [path1 objectAtIndex:0];
-//    //  FTLog(@"path=%@=",documentPath);
-    NSString *path = [documentPath stringByAppendingPathComponent:_databaseName];
-//    //   FTLog(@"path=%@=",path);
-//    NSBundle *mainBundle = [NSBundle mainBundle];
-//    NSString *fromPath = [[mainBundle resourcePath] stringByAppendingPathComponent:_databaseName];
-//    
-//    // 文件存在，则打开目录文件
-//    if([fileManager fileExistsAtPath:path] == NO)
-//    {
-//         BOOL bo = [fileManager copyItemAtPath:fromPath toPath:path error:NULL];
-//        
-//        if (!bo) {
-//            FTLog(@"Copy File Err!!!");
-//        }
-//    }
-//    
-    if ([fileManager fileExistsAtPath:path] == YES)
+    NSString *path = [FTFileUtil getDocDirectory];
+    path = [path stringByAppendingPathComponent:@"db"];
+    if (![FTFileUtil exist:path])
     {
-        sqlite3_shutdown();
-        retValue = sqlite3_config(SQLITE_CONFIG_MULTITHREAD);
-        if (retValue != SQLITE_OK) {
-            //                        TLog(@"Database Config Failed!");
-        }
-        sqlite3_initialize();
-        
-        sqlite3_open([path UTF8String], &_database);
-        //                }
+        [FTFileUtil createDirectory:path];
     }
-    else
+    
+    path = [path stringByAppendingPathComponent:_databaseName];
+    
+    if (![FTFileUtil fileExist:path])
     {
-        FTLog(@"数据库文件不存在，请检查！！！！");
+        FTLog(@"将会创建数据库：%@",_databaseName);
     }
+    
+    sqlite3_shutdown();
+    retValue = sqlite3_config(SQLITE_CONFIG_MULTITHREAD);
+    if (retValue != SQLITE_OK) {
+    }
+    sqlite3_initialize();
+    sqlite3_open([path UTF8String], &_database);
+
 }
 
 /*********************************************************************
@@ -130,7 +114,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
+        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
             FTLog(@"Error--- the classInfo or tableName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -211,7 +195,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
+        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
             FTLog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:SqliteExeFailed];
@@ -290,7 +274,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
         //获取model的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName] || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
+        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
             FTLog(@"the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -339,7 +323,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:modelClass];
     
-    if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName])
+    if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
     {
         FTLog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -401,7 +385,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
     
-    if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mTableName])
+    if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
     {
         FTLog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -855,7 +839,7 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
     //获取表信息结构
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:modelClass];
     
-    if (!classInfo || [DBStringUtil emptyOrNull:classInfo.mPrimarykeyName])
+    if (!classInfo || [NSString emptyOrNil:classInfo.mPrimarykeyName])
     {
         FTLog(@"the classInfo or mPrimarykeyName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -1041,9 +1025,10 @@ NSString *const CTRIP_HOTELINFO_NAME = @"ctrip_hotelinfo.db";
 }
 
 
-- (sqlite3 *)handelForDatabase
+- (sqlite3 *)handleForDatabase
 {
     return _database;
 }
+
 
 @end

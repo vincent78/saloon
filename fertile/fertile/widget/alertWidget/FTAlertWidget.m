@@ -111,18 +111,7 @@
 
 - (void)dismissWithClickedButtonIndex:(NSInteger)buttonIndex animated:(BOOL)animated
 {
-//    if (self.numberOfButtons > buttonIndex && buttonIndex >= 0) {
-//        NSString *title = [self buttonTitleAtIndex:buttonIndex];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if ([title isEqualToString:@"呼叫"]) {
-//                [CTBus callData:@"call/makeCall" param:nil];
-//            }
-//        });
-//        [super dismissWithClickedButtonIndex:buttonIndex animated:animated];
-//    } else {
-//        [super dismissWithClickedButtonIndex:self.cancelButtonIndex animated:animated];
-//    }
+    [super dismissWithClickedButtonIndex:buttonIndex animated:animated];
 }
 
 #pragma mark - 内建的alert回调

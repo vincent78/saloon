@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
 #import "FTFieldInfo.h"
-#import "FTDB.h"
-@class FTDB;
+#import "FTDatabase.h"
+@class FTDatabase;
 @class FTClassInfo;
 @class FTFieldInfo;
 
@@ -63,7 +63,7 @@
  *
  *  @return 存放有效字段的字典
  */
-+ (NSMutableDictionary *)obtainPropMap:(NSObject *)object dbType:(DBType)dbType;
++ (NSMutableDictionary *)obtainPropMap:(NSObject *)object dbName:(NSString *)dbName;
 
 
 
