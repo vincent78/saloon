@@ -404,6 +404,13 @@
 		BF6C2B6E1C3A04EC00CDA1E8 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */; };
 		BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */; };
 		BF6C2B701C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */; };
+		BF6C89271D0676F200F025FB /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C89221D0676F200F025FB /* NSObject+YYModel.h */; };
+		BF6C89281D0676F200F025FB /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C89231D0676F200F025FB /* NSObject+YYModel.m */; };
+		BF6C89291D0676F200F025FB /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C89241D0676F200F025FB /* YYClassInfo.h */; };
+		BF6C892A1D0676F200F025FB /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C89251D0676F200F025FB /* YYClassInfo.m */; };
+		BF6C892B1D0676F200F025FB /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C89261D0676F200F025FB /* YYModel.h */; };
+		BF6C892E1D0678D700F025FB /* NSObject+FTJson.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6C892C1D0678D700F025FB /* NSObject+FTJson.h */; };
+		BF6C892F1D0678D700F025FB /* NSObject+FTJson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6C892D1D0678D700F025FB /* NSObject+FTJson.m */; };
 		BF6DA47A1CEEE12F00F45F61 /* FTDbManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6DA4621CEEE12F00F45F61 /* FTDbManager.h */; };
 		BF6DA47B1CEEE12F00F45F61 /* FTDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6DA4631CEEE12F00F45F61 /* FTDbManager.m */; };
 		BF6DA4931CEEF2E200F45F61 /* FTAppConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6DA4911CEEF2E200F45F61 /* FTAppConfigModel.h */; };
@@ -498,27 +505,6 @@
 		BFC027421CB67120008E7087 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC027411CB67120008E7087 /* libz.tbd */; };
 		BFC027451CB671CB008E7087 /* FTFileUtil+zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC027431CB671CB008E7087 /* FTFileUtil+zip.h */; };
 		BFC027461CB671CB008E7087 /* FTFileUtil+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC027441CB671CB008E7087 /* FTFileUtil+zip.m */; };
-		BFC75D881C72C1360085B4E3 /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D731C72C1360085B4E3 /* MJExtension.h */; };
-		BFC75D891C72C1360085B4E3 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D741C72C1360085B4E3 /* MJExtensionConst.h */; };
-		BFC75D8A1C72C1360085B4E3 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D751C72C1360085B4E3 /* MJExtensionConst.m */; };
-		BFC75D8B1C72C1360085B4E3 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D761C72C1360085B4E3 /* MJFoundation.h */; };
-		BFC75D8C1C72C1360085B4E3 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D771C72C1360085B4E3 /* MJFoundation.m */; };
-		BFC75D8D1C72C1360085B4E3 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D781C72C1360085B4E3 /* MJProperty.h */; };
-		BFC75D8E1C72C1360085B4E3 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D791C72C1360085B4E3 /* MJProperty.m */; };
-		BFC75D8F1C72C1360085B4E3 /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D7A1C72C1360085B4E3 /* MJPropertyKey.h */; };
-		BFC75D901C72C1360085B4E3 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D7B1C72C1360085B4E3 /* MJPropertyKey.m */; };
-		BFC75D911C72C1360085B4E3 /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D7C1C72C1360085B4E3 /* MJPropertyType.h */; };
-		BFC75D921C72C1360085B4E3 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D7D1C72C1360085B4E3 /* MJPropertyType.m */; };
-		BFC75D931C72C1360085B4E3 /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D7E1C72C1360085B4E3 /* NSObject+MJClass.h */; };
-		BFC75D941C72C1360085B4E3 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D7F1C72C1360085B4E3 /* NSObject+MJClass.m */; };
-		BFC75D951C72C1360085B4E3 /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D801C72C1360085B4E3 /* NSObject+MJCoding.h */; };
-		BFC75D961C72C1360085B4E3 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D811C72C1360085B4E3 /* NSObject+MJCoding.m */; };
-		BFC75D971C72C1360085B4E3 /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D821C72C1360085B4E3 /* NSObject+MJKeyValue.h */; };
-		BFC75D981C72C1360085B4E3 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D831C72C1360085B4E3 /* NSObject+MJKeyValue.m */; };
-		BFC75D991C72C1360085B4E3 /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D841C72C1360085B4E3 /* NSObject+MJProperty.h */; };
-		BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D851C72C1360085B4E3 /* NSObject+MJProperty.m */; };
-		BFC75D9B1C72C1360085B4E3 /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC75D861C72C1360085B4E3 /* NSString+MJExtension.h */; };
-		BFC75D9C1C72C1360085B4E3 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC75D871C72C1360085B4E3 /* NSString+MJExtension.m */; };
 		BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A01BDE45BF0066A77C /* NSData+FTBase64.h */; };
 		BFC821AD1BDE45BF0066A77C /* NSData+FTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A11BDE45BF0066A77C /* NSData+FTBase64.m */; };
 		BFC821AE1BDE45BF0066A77C /* NSData+FTHash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A21BDE45BF0066A77C /* NSData+FTHash.h */; };
@@ -977,6 +963,13 @@
 		BF6C2B4D1C3A04EC00CDA1E8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		BF6C2B4E1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		BF6C2B4F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		BF6C89221D0676F200F025FB /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		BF6C89231D0676F200F025FB /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		BF6C89241D0676F200F025FB /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		BF6C89251D0676F200F025FB /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		BF6C89261D0676F200F025FB /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		BF6C892C1D0678D700F025FB /* NSObject+FTJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FTJson.h"; sourceTree = "<group>"; };
+		BF6C892D1D0678D700F025FB /* NSObject+FTJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FTJson.m"; sourceTree = "<group>"; };
 		BF6DA4621CEEE12F00F45F61 /* FTDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDbManager.h; sourceTree = "<group>"; };
 		BF6DA4631CEEE12F00F45F61 /* FTDbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDbManager.m; sourceTree = "<group>"; };
 		BF6DA4911CEEF2E200F45F61 /* FTAppConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAppConfigModel.h; sourceTree = "<group>"; };
@@ -1075,27 +1068,6 @@
 		BFC027411CB67120008E7087 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BFC027431CB671CB008E7087 /* FTFileUtil+zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTFileUtil+zip.h"; sourceTree = "<group>"; };
 		BFC027441CB671CB008E7087 /* FTFileUtil+zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+zip.m"; sourceTree = "<group>"; };
-		BFC75D731C72C1360085B4E3 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
-		BFC75D741C72C1360085B4E3 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
-		BFC75D751C72C1360085B4E3 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
-		BFC75D761C72C1360085B4E3 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
-		BFC75D771C72C1360085B4E3 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
-		BFC75D781C72C1360085B4E3 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
-		BFC75D791C72C1360085B4E3 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
-		BFC75D7A1C72C1360085B4E3 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
-		BFC75D7B1C72C1360085B4E3 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
-		BFC75D7C1C72C1360085B4E3 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
-		BFC75D7D1C72C1360085B4E3 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
-		BFC75D7E1C72C1360085B4E3 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
-		BFC75D7F1C72C1360085B4E3 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
-		BFC75D801C72C1360085B4E3 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
-		BFC75D811C72C1360085B4E3 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
-		BFC75D821C72C1360085B4E3 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
-		BFC75D831C72C1360085B4E3 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
-		BFC75D841C72C1360085B4E3 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
-		BFC75D851C72C1360085B4E3 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
-		BFC75D861C72C1360085B4E3 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
-		BFC75D871C72C1360085B4E3 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		BFC821881BDE2C1A0066A77C /* FTExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTExtensions.h; sourceTree = "<group>"; };
 		BFC821891BDE2C630066A77C /* FTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTModel.h; sourceTree = "<group>"; };
 		BFC8218A1BDE2CAC0066A77C /* FTWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTWidget.h; sourceTree = "<group>"; };
@@ -1715,6 +1687,18 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
+		BF6C89211D0676F200F025FB /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF6C89221D0676F200F025FB /* NSObject+YYModel.h */,
+				BF6C89231D0676F200F025FB /* NSObject+YYModel.m */,
+				BF6C89241D0676F200F025FB /* YYClassInfo.h */,
+				BF6C89251D0676F200F025FB /* YYClassInfo.m */,
+				BF6C89261D0676F200F025FB /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 		BF6DA48C1CEEEDB400F45F61 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1981,6 +1965,7 @@
 			children = (
 				BF33A8881CE302CE006C92C6 /* libsqlite3.tbd */,
 				BFC027411CB67120008E7087 /* libz.tbd */,
+				BF6C89211D0676F200F025FB /* YYModel */,
 				BF6A01301CE201340076B549 /* RSA */,
 				BF6A01281CE1DDFB0076B549 /* JSPatch */,
 				BF3B70CC1CDC720700A711BE /* Reachability */,
@@ -1988,7 +1973,6 @@
 				BF79579E1CC7CCA1000CEB0D /* Masonry */,
 				BF5F6FB11CB66A2100463D9F /* ZipArchive */,
 				BFF188111CB6082700CC1F77 /* AFNetworking */,
-				BFC75D721C72C1360085B4E3 /* MJExtension */,
 				BF52E4121C3CE1950052A107 /* ReactiveCocoa */,
 				BF6C2B2E1C3A04EC00CDA1E8 /* SDWebImage */,
 				BF8343BE1C3B578A0082A845 /* Wonderful */,
@@ -1997,37 +1981,11 @@
 			path = Dependency;
 			sourceTree = "<group>";
 		};
-		BFC75D721C72C1360085B4E3 /* MJExtension */ = {
-			isa = PBXGroup;
-			children = (
-				BFC75D731C72C1360085B4E3 /* MJExtension.h */,
-				BFC75D741C72C1360085B4E3 /* MJExtensionConst.h */,
-				BFC75D751C72C1360085B4E3 /* MJExtensionConst.m */,
-				BFC75D761C72C1360085B4E3 /* MJFoundation.h */,
-				BFC75D771C72C1360085B4E3 /* MJFoundation.m */,
-				BFC75D781C72C1360085B4E3 /* MJProperty.h */,
-				BFC75D791C72C1360085B4E3 /* MJProperty.m */,
-				BFC75D7A1C72C1360085B4E3 /* MJPropertyKey.h */,
-				BFC75D7B1C72C1360085B4E3 /* MJPropertyKey.m */,
-				BFC75D7C1C72C1360085B4E3 /* MJPropertyType.h */,
-				BFC75D7D1C72C1360085B4E3 /* MJPropertyType.m */,
-				BFC75D7E1C72C1360085B4E3 /* NSObject+MJClass.h */,
-				BFC75D7F1C72C1360085B4E3 /* NSObject+MJClass.m */,
-				BFC75D801C72C1360085B4E3 /* NSObject+MJCoding.h */,
-				BFC75D811C72C1360085B4E3 /* NSObject+MJCoding.m */,
-				BFC75D821C72C1360085B4E3 /* NSObject+MJKeyValue.h */,
-				BFC75D831C72C1360085B4E3 /* NSObject+MJKeyValue.m */,
-				BFC75D841C72C1360085B4E3 /* NSObject+MJProperty.h */,
-				BFC75D851C72C1360085B4E3 /* NSObject+MJProperty.m */,
-				BFC75D861C72C1360085B4E3 /* NSString+MJExtension.h */,
-				BFC75D871C72C1360085B4E3 /* NSString+MJExtension.m */,
-			);
-			path = MJExtension;
-			sourceTree = "<group>";
-		};
 		BFC8219F1BDE45BF0066A77C /* base */ = {
 			isa = PBXGroup;
 			children = (
+				BF6C892C1D0678D700F025FB /* NSObject+FTJson.h */,
+				BF6C892D1D0678D700F025FB /* NSObject+FTJson.m */,
 				BF1533B51BE0B30E00809493 /* NSArray+FTJson.h */,
 				BF1533B61BE0B30E00809493 /* NSArray+FTJson.m */,
 				BFFAD90F1BE360A80050A21B /* NSArray+FTNormal.h */,
@@ -2185,9 +2143,9 @@
 				BF51B61B1C06E65A00D26E9B /* NSNumber+FTBox.h in Headers */,
 				BF7957BA1CC7CCA1000CEB0D /* MASCompositeConstraint.h in Headers */,
 				BF52E5051C3CE1950052A107 /* NSOrderedSet+RACSequenceAdditions.h in Headers */,
+				BF6C892B1D0676F200F025FB /* YYModel.h in Headers */,
 				BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+FTNormal.h in Headers */,
 				BF52E5521C3CE1950052A107 /* RACScheduler.h in Headers */,
-				BFC75D8B1C72C1360085B4E3 /* MJFoundation.h in Headers */,
 				BFC821B61BDE45BF0066A77C /* NSString+FTSize.h in Headers */,
 				BFC821AE1BDE45BF0066A77C /* NSData+FTHash.h in Headers */,
 				BF7957C71CC7CCA1000CEB0D /* MASViewConstraint.h in Headers */,
@@ -2217,12 +2175,10 @@
 				BF52E5541C3CE1950052A107 /* RACScopedDisposable.h in Headers */,
 				BF3B70921CDC6C0F00A711BE /* NSDictionary+BlocksKit.h in Headers */,
 				BF8343C91C3B578A0082A845 /* SXColorGradientView.h in Headers */,
-				BFC75D891C72C1360085B4E3 /* MJExtensionConst.h in Headers */,
 				BF52E5611C3CE1950052A107 /* RACStream+Private.h in Headers */,
 				BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */,
 				BF1533BB1BE0B40F00809493 /* NSDictionary+FTJson.h in Headers */,
 				BF6DA4C61CEF02AA00F45F61 /* FTOrmErrorUtil.h in Headers */,
-				BFC75D8F1C72C1360085B4E3 /* MJPropertyKey.h in Headers */,
 				BF6C2B6F1C3A04EC00CDA1E8 /* UIView+WebCacheOperation.h in Headers */,
 				BFF188211CB6082700CC1F77 /* AFNetworking.h in Headers */,
 				BF5F6FC41CB66A2100463D9F /* unzip.h in Headers */,
@@ -2253,7 +2209,6 @@
 				BF3B70C01CDC6C0F00A711BE /* UIControl+BlocksKit.h in Headers */,
 				BF3B70B81CDC6C0F00A711BE /* NSURLConnection+BlocksKit.h in Headers */,
 				BF52E57B1C3CE1950052A107 /* RACValueTransformer.h in Headers */,
-				BFC75D971C72C1360085B4E3 /* NSObject+MJKeyValue.h in Headers */,
 				BF6C2B561C3A04EC00CDA1E8 /* SDWebImageCompat.h in Headers */,
 				BF3B709A1CDC6C0F00A711BE /* NSMutableArray+BlocksKit.h in Headers */,
 				BF1533C61BE0D95300809493 /* FTFileUtil+md5.h in Headers */,
@@ -2307,8 +2262,6 @@
 				BF6A00E41CE1746A0076B549 /* FTObjectUtil.h in Headers */,
 				BF52E5731C3CE1950052A107 /* RACTuple.h in Headers */,
 				BF51B6291C0709CA00D26E9B /* FT3DLineWidget.h in Headers */,
-				BFC75D911C72C1360085B4E3 /* MJPropertyType.h in Headers */,
-				BFC75D991C72C1360085B4E3 /* NSObject+MJProperty.h in Headers */,
 				BF52E5681C3CE1950052A107 /* RACSubscriber+Private.h in Headers */,
 				BF52E5151C3CE1950052A107 /* RACArraySequence.h in Headers */,
 				BF52E5191C3CE1950052A107 /* RACBlockTrampoline.h in Headers */,
@@ -2335,9 +2288,8 @@
 				BF5F6FC01CB66A2100463D9F /* ioapi.h in Headers */,
 				BF52E4ED1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.h in Headers */,
 				BF5F6FC21CB66A2100463D9F /* mztools.h in Headers */,
-				BFC75D8D1C72C1360085B4E3 /* MJProperty.h in Headers */,
+				BF6C89291D0676F200F025FB /* YYClassInfo.h in Headers */,
 				BF52E5031C3CE1950052A107 /* NSObject+RACSelectorSignal.h in Headers */,
-				BFC75D881C72C1360085B4E3 /* MJExtension.h in Headers */,
 				BF52E5241C3CE1950052A107 /* RACDisposable.h in Headers */,
 				BF52E5981C3CE1950052A107 /* UIStepper+RACSignalSupport.h in Headers */,
 				BF6DA4971CEEF48800F45F61 /* FTUserInfoModel.h in Headers */,
@@ -2357,7 +2309,6 @@
 				BF52E5421C3CE1950052A107 /* RACMulticastConnection+Private.h in Headers */,
 				BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */,
 				BF52E5111C3CE1950052A107 /* NSURLConnection+RACSupport.h in Headers */,
-				BFC75D951C72C1360085B4E3 /* NSObject+MJCoding.h in Headers */,
 				BF3B70901CDC6C0F00A711BE /* NSArray+BlocksKit.h in Headers */,
 				BF6A00E81CE179090076B549 /* FTObjectUtil+clone.h in Headers */,
 				BF52E5171C3CE1950052A107 /* RACBehaviorSubject.h in Headers */,
@@ -2381,7 +2332,6 @@
 				BF52E5261C3CE1950052A107 /* RACDynamicPropertySuperclass.h in Headers */,
 				BF52E5401C3CE1950052A107 /* RACKVOTrampoline.h in Headers */,
 				BF43F6C01BDE153200A1389B /* FTAppHelper.h in Headers */,
-				BFC75D9B1C72C1360085B4E3 /* NSString+MJExtension.h in Headers */,
 				BF3E67071CEDB6A9001311CD /* NSString+FTUrl.h in Headers */,
 				BF7957BD1CC7CCA1000CEB0D /* MASConstraint.h in Headers */,
 				BF6DA4BA1CEF02AA00F45F61 /* FTClassInfo.h in Headers */,
@@ -2405,6 +2355,7 @@
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
 				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
 				BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */,
+				BF6C89271D0676F200F025FB /* NSObject+YYModel.h in Headers */,
 				BF6C2B631C3A04EC00CDA1E8 /* UIButton+WebCache.h in Headers */,
 				BF3B70A01CDC6C0F00A711BE /* NSMutableOrderedSet+BlocksKit.h in Headers */,
 				BF6A00EC1CE1919E0076B549 /* FTTimeHelper.h in Headers */,
@@ -2419,7 +2370,6 @@
 				BF51B6171C06AC8900D26E9B /* NSDate+FTBox.h in Headers */,
 				BF43F65C1BDDF26600A1389B /* FTAnimateHelper.h in Headers */,
 				BF52E4F31C3CE1950052A107 /* NSInvocation+RACTypeParsing.h in Headers */,
-				BFC75D931C72C1360085B4E3 /* NSObject+MJClass.h in Headers */,
 				BFFAD9111BE360A80050A21B /* NSArray+FTNormal.h in Headers */,
 				BF52E55A1C3CE1950052A107 /* RACSignal+Operations.h in Headers */,
 				BF6C2B651C3A04EC00CDA1E8 /* UIImage+GIF.h in Headers */,
@@ -2428,6 +2378,7 @@
 				BF52E58E1C3CE1950052A107 /* UIGestureRecognizer+RACSignalSupport.h in Headers */,
 				BF7957C41CC7CCA1000CEB0D /* MASUtilities.h in Headers */,
 				BF3B70AA1CDC6C0F00A711BE /* NSObject+BKBlockObservation.h in Headers */,
+				BF6C892E1D0678D700F025FB /* NSObject+FTJson.h in Headers */,
 				BF52E4F11C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.h in Headers */,
 				BF52E5561C3CE1950052A107 /* RACSequence.h in Headers */,
 				BF52E5841C3CE1950052A107 /* UIButton+RACCommandSupport.h in Headers */,
@@ -2562,7 +2513,6 @@
 				BF52E5811C3CE1950052A107 /* UIAlertView+RACSignalSupport.m in Sources */,
 				BF3B70D71CDC7D4500A711BE /* FTAssert.m in Sources */,
 				BF52E5351C3CE1950052A107 /* RACEvent.m in Sources */,
-				BFC75D9C1C72C1360085B4E3 /* NSString+MJExtension.m in Sources */,
 				BF6C2B5F1C3A04EC00CDA1E8 /* SDWebImageManager.m in Sources */,
 				BF3B70AB1CDC6C0F00A711BE /* NSObject+BKBlockObservation.m in Sources */,
 				BF43F6731BDE0BC900A1389B /* FTMaskWidget.m in Sources */,
@@ -2586,7 +2536,6 @@
 				BF6DA4941CEEF2E200F45F61 /* FTAppConfigModel.m in Sources */,
 				BF52E5461C3CE1950052A107 /* RACObjCRuntime.m in Sources */,
 				BF52E52F1C3CE1950052A107 /* RACEmptySequence.m in Sources */,
-				BFC75D961C72C1360085B4E3 /* NSObject+MJCoding.m in Sources */,
 				BF43F6511BDDF18B00A1389B /* FTBaseWidget.m in Sources */,
 				BF52E5001C3CE1950052A107 /* NSObject+RACLifting.m in Sources */,
 				BF1533BC1BE0B40F00809493 /* NSDictionary+FTJson.m in Sources */,
@@ -2597,7 +2546,6 @@
 				BF6C2B221C3A010C00CDA1E8 /* FTImageWidget.m in Sources */,
 				BFB861D71BE6F9300051BE20 /* FTDateUtil.m in Sources */,
 				BFD1F2831BFC714D00AFD63C /* FTHotfixHelper.m in Sources */,
-				BFC75D8A1C72C1360085B4E3 /* MJExtensionConst.m in Sources */,
 				BF51B62A1C0709CA00D26E9B /* FT3DLineWidget.m in Sources */,
 				BF52E5041C3CE1950052A107 /* NSObject+RACSelectorSignal.m in Sources */,
 				BF3B70C51CDC6C0F00A711BE /* UIImage+BlocksKit.m in Sources */,
@@ -2605,15 +2553,14 @@
 				BF3B70D01CDC720700A711BE /* Reachability.m in Sources */,
 				BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */,
 				BF5052DC1CC8DC0500B9EDCD /* UIImage+FTNormal.m in Sources */,
+				BF6C892A1D0676F200F025FB /* YYClassInfo.m in Sources */,
 				BF3B70A91CDC6C0F00A711BE /* NSObject+BKBlockExecution.m in Sources */,
 				BF6DA4C71CEF02AA00F45F61 /* FTOrmErrorUtil.m in Sources */,
 				BF15970E1C167244000B70D0 /* FTCornerView.m in Sources */,
 				BF52E5161C3CE1950052A107 /* RACArraySequence.m in Sources */,
 				BF6C2B661C3A04EC00CDA1E8 /* UIImage+GIF.m in Sources */,
 				BF52E5271C3CE1950052A107 /* RACDynamicPropertySuperclass.m in Sources */,
-				BFC75D981C72C1360085B4E3 /* NSObject+MJKeyValue.m in Sources */,
 				BF3B70A51CDC6C0F00A711BE /* NSNumber+BlocksKit.m in Sources */,
-				BFC75D921C72C1360085B4E3 /* MJPropertyType.m in Sources */,
 				BF52E5781C3CE1950052A107 /* RACUnarySequence.m in Sources */,
 				BF43F6591BDDF24700A1389B /* FTBaseHelper.m in Sources */,
 				BF52E54F1C3CE1950052A107 /* RACReturnSignal.m in Sources */,
@@ -2631,7 +2578,6 @@
 				BF14C5A51BE3081100B49989 /* UIWebView+FTNormal.m in Sources */,
 				BFC821BE1BDE462E0066A77C /* UITableViewCell+FTNormal.m in Sources */,
 				BF6DA4981CEEF48800F45F61 /* FTUserInfoModel.m in Sources */,
-				BFC75D8C1C72C1360085B4E3 /* MJFoundation.m in Sources */,
 				BFD180521CC478A400A59394 /* FTAlertWidget.m in Sources */,
 				BFF188231CB6082700CC1F77 /* AFNetworkReachabilityManager.m in Sources */,
 				BF8343CE1C3B578A0082A845 /* SXMarquee.m in Sources */,
@@ -2700,7 +2646,6 @@
 				BFB57D191C33C0B4005187B6 /* Aspects.m in Sources */,
 				BFC027461CB671CB008E7087 /* FTFileUtil+zip.m in Sources */,
 				BF6DA4C11CEF02AA00F45F61 /* FTFieldInfo.m in Sources */,
-				BFC75D8E1C72C1360085B4E3 /* MJProperty.m in Sources */,
 				BF52E59F1C3CE1950052A107 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				BF3B70971CDC6C0F00A711BE /* NSInvocation+BlocksKit.m in Sources */,
 				BF52E5761C3CE1950052A107 /* RACTupleSequence.m in Sources */,
@@ -2713,7 +2658,6 @@
 				BF52E54B1C3CE1950052A107 /* RACQueueScheduler.m in Sources */,
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
-				BFC75D901C72C1360085B4E3 /* MJPropertyKey.m in Sources */,
 				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
 				BF52E5291C3CE1950052A107 /* RACDynamicSequence.m in Sources */,
 				BF52E51E1C3CE1950052A107 /* RACCommand.m in Sources */,
@@ -2755,10 +2699,10 @@
 				BF43F6C81BDE25E100A1389B /* FTBaseModel.m in Sources */,
 				BF51B6181C06AC8900D26E9B /* NSDate+FTBox.m in Sources */,
 				BF1533B41BE0A8CD00809493 /* NSString+FTJson.m in Sources */,
+				BF6C892F1D0678D700F025FB /* NSObject+FTJson.m in Sources */,
 				BF52E55E1C3CE1950052A107 /* RACSignalProvider.d in Sources */,
 				BF78A71B1CE0BF5F001D3064 /* FTMoveAndScaleAnim.m in Sources */,
 				BFC821AF1BDE45BF0066A77C /* NSData+FTHash.m in Sources */,
-				BFC75D9A1C72C1360085B4E3 /* NSObject+MJProperty.m in Sources */,
 				BF1533C11BE0D13B00809493 /* FTFileUtil.m in Sources */,
 				BF52E53F1C3CE1950052A107 /* RACKVOProxy.m in Sources */,
 				BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */,
@@ -2810,10 +2754,10 @@
 				BF6C2B6C1C3A04EC00CDA1E8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BFD180571CC47C1100A59394 /* FTLoadingWidget.m in Sources */,
 				BFC821B11BDE45BF0066A77C /* NSString+FTNormal.m in Sources */,
-				BFC75D941C72C1360085B4E3 /* NSObject+MJClass.m in Sources */,
 				BF52E5481C3CE1950052A107 /* RACPassthroughSubscriber.m in Sources */,
 				BF6DA4BB1CEF02AA00F45F61 /* FTClassInfo.m in Sources */,
 				BF3B70951CDC6C0F00A711BE /* NSIndexSet+BlocksKit.m in Sources */,
+				BF6C89281D0676F200F025FB /* NSObject+YYModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

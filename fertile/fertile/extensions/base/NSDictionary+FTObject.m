@@ -7,13 +7,12 @@
 //
 
 #import "NSDictionary+FTObject.h"
-#import "MJExtension.h"
 
 @implementation NSDictionary (FTObject)
 
 +(NSDictionary *) fromObject:(NSObject *)obj
 {
-    return obj.mj_keyValues;
+    return [obj yy_modelToJSONObject];
 }
 
 
