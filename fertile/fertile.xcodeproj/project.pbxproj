@@ -121,6 +121,8 @@
 		BF43F6C81BDE25E100A1389B /* FTBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F6C61BDE25E100A1389B /* FTBaseModel.m */; };
 		BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BF43F6CD1BDE261600A1389B /* FTAnimateModel.h */; };
 		BF43F6D01BDE261600A1389B /* FTAnimateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43F6CE1BDE261600A1389B /* FTAnimateModel.m */; };
+		BF49AD161D1D4BDC0050A869 /* FTMoveableWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF49AD141D1D4BDC0050A869 /* FTMoveableWidget.h */; };
+		BF49AD171D1D4BDC0050A869 /* FTMoveableWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF49AD151D1D4BDC0050A869 /* FTMoveableWidget.m */; };
 		BF5052991CC8AC2B00B9EDCD /* NSDictionary+FTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5052971CC8AC2B00B9EDCD /* NSDictionary+FTObject.h */; };
 		BF50529A1CC8AC2B00B9EDCD /* NSDictionary+FTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5052981CC8AC2B00B9EDCD /* NSDictionary+FTObject.m */; };
 		BF50529E1CC8C4AD00B9EDCD /* UILabel+FTRich.h in Headers */ = {isa = PBXBuildFile; fileRef = BF50529C1CC8C4AD00B9EDCD /* UILabel+FTRich.h */; };
@@ -679,6 +681,8 @@
 		BF43F6CD1BDE261600A1389B /* FTAnimateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTAnimateModel.h; sourceTree = "<group>"; };
 		BF43F6CE1BDE261600A1389B /* FTAnimateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTAnimateModel.m; sourceTree = "<group>"; };
 		BF43F6D41BDE29F100A1389B /* FTHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTHelper.h; sourceTree = "<group>"; };
+		BF49AD141D1D4BDC0050A869 /* FTMoveableWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMoveableWidget.h; sourceTree = "<group>"; };
+		BF49AD151D1D4BDC0050A869 /* FTMoveableWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMoveableWidget.m; sourceTree = "<group>"; };
 		BF5052971CC8AC2B00B9EDCD /* NSDictionary+FTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FTObject.h"; sourceTree = "<group>"; };
 		BF5052981CC8AC2B00B9EDCD /* NSDictionary+FTObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FTObject.m"; sourceTree = "<group>"; };
 		BF50529C1CC8C4AD00B9EDCD /* UILabel+FTRich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FTRich.h"; sourceTree = "<group>"; };
@@ -1947,6 +1951,8 @@
 			children = (
 				BFB16F751BEB501D00CEEBC9 /* FTImgBtn.h */,
 				BFB16F761BEB501D00CEEBC9 /* FTImgBtn.m */,
+				BF49AD141D1D4BDC0050A869 /* FTMoveableWidget.h */,
+				BF49AD151D1D4BDC0050A869 /* FTMoveableWidget.m */,
 			);
 			path = btnWidget;
 			sourceTree = "<group>";
@@ -2188,6 +2194,7 @@
 				BF3B70BE1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h in Headers */,
 				BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */,
 				BF52E4FB1C3CE1950052A107 /* NSObject+RACDescription.h in Headers */,
+				BF49AD161D1D4BDC0050A869 /* FTMoveableWidget.h in Headers */,
 				BF5E5F351CA8C6FB00EA69B6 /* FTDeviceHelper.h in Headers */,
 				BF6C2B6D1C3A04EC00CDA1E8 /* UIImageView+WebCache.h in Headers */,
 				BF52E54A1C3CE1950052A107 /* RACQueueScheduler.h in Headers */,
@@ -2728,6 +2735,7 @@
 				BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */,
 				BF6A01381CE201340076B549 /* README.md in Sources */,
 				BF52E5181C3CE1950052A107 /* RACBehaviorSubject.m in Sources */,
+				BF49AD171D1D4BDC0050A869 /* FTMoveableWidget.m in Sources */,
 				BF3B70931CDC6C0F00A711BE /* NSDictionary+BlocksKit.m in Sources */,
 				BF6C2B551C3A04EC00CDA1E8 /* SDImageCache.m in Sources */,
 				BF5F6FC11CB66A2100463D9F /* mztools.c in Sources */,

@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF49B0231D1D4E140050A869 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BF49AEA31D1D4E140050A869 /* README.md */; };
+		BF49B0261D1D4E140050A869 /* debug@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF49AEA91D1D4E140050A869 /* debug@3x.png */; };
 		BF8400061D1CD5C30030EA3D /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8400051D1CD5C30030EA3D /* debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF49AEA31D1D4E140050A869 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF49AEA91D1D4E140050A869 /* debug@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debug@3x.png"; sourceTree = "<group>"; };
 		BF8400021D1CD5C30030EA3D /* debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8400051D1CD5C30030EA3D /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		BF8400071D1CD5C30030EA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +31,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF49AD1A1D1D4E130050A869 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		BF49AE991D1D4E140050A869 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		BF49AEA41D1D4E140050A869 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BF49AEA81D1D4E140050A869 /* image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BF49AEA81D1D4E140050A869 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				BF49AEA91D1D4E140050A869 /* debug@3x.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		BF49AEAD1D1D4E140050A869 /* script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
 		BF8400031D1CD5C30030EA3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -47,7 +88,12 @@
 		BF84FFF81D1CD5C30030EA3D = {
 			isa = PBXGroup;
 			children = (
+				BF49AEA31D1D4E140050A869 /* README.md */,
 				BF8400041D1CD5C30030EA3D /* debug */,
+				BF49AD1A1D1D4E130050A869 /* Dependency */,
+				BF49AE991D1D4E140050A869 /* doc */,
+				BF49AEA41D1D4E140050A869 /* Resource */,
+				BF49AEAD1D1D4E140050A869 /* script */,
 				BF8400031D1CD5C30030EA3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF49B0261D1D4E140050A869 /* debug@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF49B0231D1D4E140050A869 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +316,7 @@
 				BF84000C1D1CD5C30030EA3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF84FFFC1D1CD5C30030EA3D /* Build configuration list for PBXProject "debug" */ = {
 			isa = XCConfigurationList;
