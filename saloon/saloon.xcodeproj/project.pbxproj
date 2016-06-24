@@ -35,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BF8400111D1CD5C40030EA3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF84000D1D1CD5C30030EA3D /* debug.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF8400021D1CD5C30030EA3D;
+			remoteInfo = debug;
+		};
 		BFB57CEA1C33848A005187B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFB57CE61C33848A005187B6 /* fertile.xcodeproj */;
@@ -90,6 +97,7 @@
 		BF5432B91C4CCA6700BA9C5C /* SNFontImgCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFontImgCell.m; sourceTree = "<group>"; };
 		BF5432BA1C4CCA6700BA9C5C /* SNFontImgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNFontImgCell.xib; sourceTree = "<group>"; };
 		BF5432BD1C4CCEEA00BA9C5C /* FontImgItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FontImgItem.json; sourceTree = "<group>"; };
+		BF84000D1D1CD5C30030EA3D /* debug.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = debug.xcodeproj; path = ../../debug/debug.xcodeproj; sourceTree = "<group>"; };
 		BF9B35F41C43A02300858C4C /* SNItemListScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNItemListScene.h; sourceTree = "<group>"; };
 		BF9B35F51C43A02300858C4C /* SNItemListScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNItemListScene.m; sourceTree = "<group>"; };
 		BF9C3CB91CA278DB007FE0EA /* SNProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNProgressViewController.h; sourceTree = "<group>"; };
@@ -132,6 +140,14 @@
 				BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		BF84000E1D1CD5C30030EA3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8400121D1CD5C40030EA3D /* debug.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BFB3E6121C45E2100041E614 /* widget */ = {
@@ -208,6 +224,7 @@
 		BFB57CE21C338428005187B6 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				BF84000D1D1CD5C30030EA3D /* debug.xcodeproj */,
 				BFB57CE61C33848A005187B6 /* fertile.xcodeproj */,
 			);
 			path = Dependency;
@@ -307,6 +324,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = BF84000E1D1CD5C30030EA3D /* Products */;
+					ProjectRef = BF84000D1D1CD5C30030EA3D /* debug.xcodeproj */;
+				},
+				{
 					ProductGroup = BFB57CE71C33848A005187B6 /* Products */;
 					ProjectRef = BFB57CE61C33848A005187B6 /* fertile.xcodeproj */;
 				},
@@ -319,6 +340,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		BF8400121D1CD5C40030EA3D /* debug.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = debug.framework;
+			remoteRef = BF8400111D1CD5C40030EA3D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		BFB57CEB1C33848A005187B6 /* fertile.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
