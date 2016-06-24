@@ -70,6 +70,23 @@
 }
 
 
++(NSString *)getFileName:(NSString *)path hasSufix:(BOOL) hasSufix
+{
+    NSString *fileName = path.lastPathComponent;
+    if (hasSufix)
+    {
+        return fileName;
+    }
+    else
+    {
+        return [fileName stringByDeletingPathExtension];
+    }
+}
+
++(NSString *)getFileExtName:(NSString *)path
+{
+    return [path pathExtension];
+}
 
 
 +(BOOL) exist:(NSString *)fullName

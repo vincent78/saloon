@@ -74,6 +74,27 @@
  */
 +(NSString *)getEmbedFrameworkDirectory;
 
+
+/**
+ *  @brief 获取指定路径中文件名
+ *
+ *  @param path     <#path description#>
+ *  @param hasSufix 是否带后缀
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)getFileName:(NSString *)path hasSufix:(BOOL) hasSufix;
+
+/**
+ *  @brief 获取路径中的文件扩展名
+ *
+ *  @param path <#path description#>
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)getFileExtName:(NSString *)path;
+
+
 #pragma mark - 查找相关
 
 /**
