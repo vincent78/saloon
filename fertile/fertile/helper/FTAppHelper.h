@@ -72,6 +72,28 @@
  */
 +(UIFont *) defaultBoldFont:(CGFloat)size;
 
+#pragma mark - APP的信息
+/**
+ *  @brief 获取bundle的系统内容
+ *
+ *  @return <#return value description#>
+ */
++(NSDictionary *) bundleInfo;
+
+/**
+ *  @brief 获取APP的版本号
+ *
+ *  @return <#return value description#>
+ */
++(NSString *) getVersion;
+
+/**
+ *  @brief 是否为debug环境
+ *
+ *  @return <#return value description#>
+ */
++(BOOL) isDebug;
+
 
 
 

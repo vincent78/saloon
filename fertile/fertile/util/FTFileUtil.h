@@ -51,7 +51,12 @@
  */
 + (NSString *)getCachesDirectory;
 
-
+/**
+ *  @brief 获取library的目录路径
+ *
+ *  @return <#return value description#>
+ */
++ (NSString *)getLibraryDirectory;
 /**
  *  @brief  获取tmp的目录路径
  *

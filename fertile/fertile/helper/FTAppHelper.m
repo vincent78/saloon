@@ -50,6 +50,21 @@ static FTAppHelper *sharedInstance = nil;
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
     
+    
+    FTLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n\nappInfo:\n%@\n%@"
+          ,@"==================="
+          ,[FTFileUtil getDocDirectory]
+          ,[FTDeviceHelper getDeviceInfo]
+          ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
+            ,[FTSystemHelper screenWidth]
+            ,[FTSystemHelper screenHeight]
+            ,[FTSystemHelper scale]]
+            ,[FTAppHelper getVersion]
+          ,@"===================");
+    
+    FTLog("%@",[FTAppHelper getVersion]);
+
+    
 }
 
 -(void)helperRelease
@@ -145,7 +160,7 @@ static FTAppHelper *sharedInstance = nil;
 }
 
 
-#pragma mark - 系统字体
+#pragma mark - APP字体
 
 
 +(UIFont *) defaultFont:(CGFloat)size
@@ -158,7 +173,24 @@ static FTAppHelper *sharedInstance = nil;
     return [UIFont boldSystemFontOfSize:size];
 }
 
+#pragma mark - APP的信息
 
++(NSDictionary *) bundleInfo
+{
+    return [[NSBundle mainBundle] infoDictionary];
+}
 
++(NSString *) getVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
++(BOOL) isDebug
+{
+#if defined(DEBUG)||defined(_DEBUG)
+    return true;
+#endif
+    return false;
+}
 
 @end

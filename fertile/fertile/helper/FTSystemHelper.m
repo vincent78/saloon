@@ -40,15 +40,6 @@ static NSMutableArray* ftFontArray = nil;
 {
     [super helperInit];
 
-    FTLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n%@"
-          ,@"==================="
-          ,[FTFileUtil getDocDirectory]
-          ,[FTDeviceHelper getDeviceInfo]
-          ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
-                        ,[FTSystemHelper screenWidth]
-                        ,[FTSystemHelper screenHeight]
-                        ,[FTSystemHelper scale]]
-          ,@"===================");
 
     NSString * path = [FTFileUtil getResFullPath:@"common" ofType:@"ttf" withFramework:@"fertile" ];
     [FTSystemHelper registFont:path];

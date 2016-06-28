@@ -16,8 +16,8 @@
 
 //#define FLog(format, ...) NSLog((@"%s@%d: " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #define FTLog(format, ...) [FTLoggerHelper log4Debug:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
-
-
+#define FTErrLog(format, ...) [FTLoggerHelper log4Error:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
+#define FTInfoLog(format, ...) [FTLoggerHelper log4Info:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
 
 
 /** 本地化语言 */
