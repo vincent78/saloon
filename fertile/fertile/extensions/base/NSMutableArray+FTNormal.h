@@ -12,4 +12,15 @@
 
 - (void)addObjectForFT:(id)obj;
 
+
+/**
+ *  @brief 判断数组中是否包含指定的对象
+ *
+ *  @param value   <#value description#>
+ *  @param compare <#compare description#>
+ *
+ *  @return <#return value description#>
+ */
+-(BOOL) isContainer:(id)value compare:(BOOL (^)(id value , id obj))compare;
+
 @end

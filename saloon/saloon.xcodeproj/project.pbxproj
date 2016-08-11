@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF2BB2131D5C0E9F0041B587 /* SNButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB2111D5C0E9F0041B587 /* SNButtonViewController.m */; };
+		BF2BB2141D5C0E9F0041B587 /* SNButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2BB2121D5C0E9F0041B587 /* SNButtonViewController.xib */; };
 		BF30EB581C4E34F50032FB9D /* SNUIViewAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */; };
 		BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */; };
 		BF3B3A781CE5A5D7003DAACC /* SNOperationSqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B3A761CE5A5D7003DAACC /* SNOperationSqliteViewController.m */; };
@@ -80,6 +82,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF2BB2101D5C0E9F0041B587 /* SNButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNButtonViewController.h; sourceTree = "<group>"; };
+		BF2BB2111D5C0E9F0041B587 /* SNButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNButtonViewController.m; sourceTree = "<group>"; };
+		BF2BB2121D5C0E9F0041B587 /* SNButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNButtonViewController.xib; sourceTree = "<group>"; };
 		BF30EB551C4E34F50032FB9D /* SNUIViewAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUIViewAnimationViewController.h; sourceTree = "<group>"; };
 		BF30EB561C4E34F50032FB9D /* SNUIViewAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUIViewAnimationViewController.m; sourceTree = "<group>"; };
 		BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNUIViewAnimationViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +138,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF2BB20E1D5C0E590041B587 /* button */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BB2101D5C0E9F0041B587 /* SNButtonViewController.h */,
+				BF2BB2111D5C0E9F0041B587 /* SNButtonViewController.m */,
+				BF2BB2121D5C0E9F0041B587 /* SNButtonViewController.xib */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
 		BF5432901C4C833B00BA9C5C /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,7 @@
 		BFB3E6121C45E2100041E614 /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				BF2BB20E1D5C0E590041B587 /* button */,
 				BFB3E6131C45E2360041E614 /* image */,
 				BF9C3CB91CA278DB007FE0EA /* SNProgressViewController.h */,
 				BF9C3CBA1CA278DB007FE0EA /* SNProgressViewController.m */,
@@ -370,6 +386,7 @@
 				BFF8D82A1CD0836D009E6927 /* SNOperationAutoLayoutMasonryViewController.xib in Resources */,
 				BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */,
 				BF5432BC1C4CCA6700BA9C5C /* SNFontImgCell.xib in Resources */,
+				BF2BB2141D5C0E9F0041B587 /* SNButtonViewController.xib in Resources */,
 				BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */,
 				BF5432A51C4CACE500BA9C5C /* SNCABasicAnimationViewController.xib in Resources */,
 				BF3B3A791CE5A5D7003DAACC /* SNOperationSqliteViewController.xib in Resources */,
@@ -386,6 +403,7 @@
 				BF5432B71C4CC9BB00BA9C5C /* SNFontImgViewController.m in Sources */,
 				BFB57CCA1C3383BA005187B6 /* AppDelegate.m in Sources */,
 				BF3B3A781CE5A5D7003DAACC /* SNOperationSqliteViewController.m in Sources */,
+				BF2BB2131D5C0E9F0041B587 /* SNButtonViewController.m in Sources */,
 				BFD777541C4CDDF800E35DDA /* SNTestViewController.m in Sources */,
 				BFB57CC71C3383BA005187B6 /* main.m in Sources */,
 				BF9C3CBC1CA278DB007FE0EA /* SNProgressViewController.m in Sources */,

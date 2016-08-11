@@ -55,14 +55,6 @@
     self.fillColor = [UIColor whiteColor];
 }
 
-
--(void)drawRect:(CGRect)rect
-{
-    [super drawRect:rect];
-    
-}
-
-
 /*
  
  // Only override drawRect: if you perform custom drawing.
@@ -75,10 +67,10 @@
  self.bottomLineColor = self.fillColor;
  CGFloat width = rect.size.width;
  CGFloat height = rect.size.height;
- if(self.needBottomArrow)
- {
- height -= 7;
- }
+// if(self.needBottomArrow)
+// {
+// height -= 7;
+// }
  // 简便起见，这里把圆角半径设置为长和宽平均值的1/10
  CGFloat arrowWidth = 8;
  //    self.radious = 4;
@@ -87,7 +79,7 @@
  CGContextRef context = UIGraphicsGetCurrentContext();
  
  
- if(self.circleAngleType == CTFlightCircleAngleViewTopType)
+ if(self.circleAngleType == cornerType)
  {
  CGContextBeginPath(context);
  CGContextMoveToPoint(context,0, self.radious);
@@ -282,7 +274,7 @@
  
  - (void)setFlightRadioDispalyWith:(CGRect)newFrame
  newFillColor:(UIColor *)newFillColor
- newAngleType:(CTFlightCircleAngleViewType)newAngleType;
+ newAngleType:(FTCornerType)newAngleType;
  {
  if(self.viewX == newFrame.origin.x
  && self.viewY == newFrame.origin.y
@@ -303,8 +295,8 @@
  }
  
  
- 
  */
+
 
 
 

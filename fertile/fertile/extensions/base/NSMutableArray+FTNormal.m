@@ -16,4 +16,19 @@
     }
 }
 
+-(BOOL) isContainer:(id)value compare:(BOOL (^)(id value , id obj))compare
+{
+    if (value && self.count >0)
+    {
+        for (id obj in self)
+        {
+            if (compare(value,obj))
+            {
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
 @end

@@ -46,7 +46,15 @@
                "desc": "表格控件",
                "params": [],
                "viewcontroller": ""
+               },
+               {
+               "icon": "",
+               "title": "UIButton",
+               "desc": "按钮控件",
+               "params": [],
+               "viewcontroller": "SNButtonViewController"
                }
+               
                ],
   "params": [],
   "viewcontroller": ""
