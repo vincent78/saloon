@@ -26,11 +26,13 @@
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
 
+    [self clearLayerWithName:@"cornerBorderLayer333"];
     CAShapeLayer * cornerBorderLayer = [[CAShapeLayer alloc]init];
     //不透明
     cornerBorderLayer.opaque = YES;
-    CGFloat onePixe = [FTSystemHelper onePixeWidth];
-    UIBezierPath *borderPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(onePixe, onePixe, self.ftWidth-2*onePixe, self.ftHeight-2*onePixe)
+    cornerBorderLayer.name = @"cornerBorderLayer333";
+//    CGFloat onePixe = [FTSystemHelper onePixeWidth];
+    UIBezierPath *borderPath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(borderWidth, borderWidth, self.ftWidth-2*borderWidth, self.ftHeight-2*borderWidth)
                                                    byRoundingCorners:corners
                                                          cornerRadii:CGSizeMake(raidus, raidus)];
     cornerBorderLayer.path = borderPath.CGPath;
@@ -60,6 +62,19 @@
     layer.endPoint = CGPointMake(CGRectGetMaxX(rect),CGRectGetMaxY(rect));
     layer.colors = colors;
     [self.layer addSublayer:layer];
+}
+
+-(void) clearLayerWithName:(NSString *)name
+{
+    NSArray *subLayers = self.layer.sublayers;
+    if (subLayers && [subLayers count]) {
+        for (int i = 0; i< [subLayers count]; i++) {
+            CALayer *subLayer = [subLayers objectAtIndexForFT:i];
+            if (subLayer && [subLayer.name length] && [subLayer.name isEqualToString:name]) {
+                [subLayer removeFromSuperlayer];
+            }
+        }
+    }
 }
 
 @end

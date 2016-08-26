@@ -17,6 +17,7 @@
 #import <objc/runtime.h>
 //#import "MJExtension.h"
 #import "YYModel.h"
+#import "YYCache.h"
 
 #import "masonry.h"
 #import "Aspects.h"

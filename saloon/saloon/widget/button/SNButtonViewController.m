@@ -42,7 +42,7 @@
 {
     [self.btn02 setTitle:@"测试按钮02" forState:UIControlStateNormal];
     self.btn02.backgroundColor = [UIColor yellowColor];
-    [self.btn02 viewCornerRaidusType:4 roundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight borderWidth:1 borderColor:[UIColor redColor] borderDashPattern:@[@2,@1]];
+    [self.btn02 viewCornerRaidusType:4 roundingCorners:UIRectCornerTopLeft|UIRectCornerTopRight borderWidth:[FTSystemHelper onePixeWidth] borderColor:[UIColor redColor] borderDashPattern:@[@2,@1]];
 }
 
 

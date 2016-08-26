@@ -32,6 +32,16 @@
 		BF1912341C34D0D2007D9924 /* FTBaseWidgetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */; };
 		BF26FE8A1C229F2F009BF834 /* FTDashLineWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */; };
 		BF26FE8B1C229F2F009BF834 /* FTDashLineWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */; };
+		BF2BB2201D5C424C0041B587 /* YYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BB2181D5C424C0041B587 /* YYCache.h */; };
+		BF2BB2211D5C424C0041B587 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB2191D5C424C0041B587 /* YYCache.m */; };
+		BF2BB2221D5C424C0041B587 /* YYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BB21A1D5C424C0041B587 /* YYDiskCache.h */; };
+		BF2BB2231D5C424C0041B587 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB21B1D5C424C0041B587 /* YYDiskCache.m */; };
+		BF2BB2241D5C424C0041B587 /* YYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BB21C1D5C424C0041B587 /* YYKVStorage.h */; };
+		BF2BB2251D5C424C0041B587 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB21D1D5C424C0041B587 /* YYKVStorage.m */; };
+		BF2BB2261D5C424C0041B587 /* YYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BB21E1D5C424C0041B587 /* YYMemoryCache.h */; };
+		BF2BB2271D5C424C0041B587 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB21F1D5C424C0041B587 /* YYMemoryCache.m */; };
+		BF2BB22A1D5C45BE0041B587 /* FTLocalStorageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BB2281D5C45BE0041B587 /* FTLocalStorageHelper.h */; };
+		BF2BB22B1D5C45BE0041B587 /* FTLocalStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BB2291D5C45BE0041B587 /* FTLocalStorageHelper.m */; };
 		BF2BF48C1C224BE800175579 /* UILabel+FTFitSize.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2BF48A1C224BE800175579 /* UILabel+FTFitSize.h */; };
 		BF2BF48D1C224BE800175579 /* UILabel+FTFitSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2BF48B1C224BE800175579 /* UILabel+FTFitSize.m */; };
 		BF2DB8FE1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */; };
@@ -590,6 +600,16 @@
 		BF1912321C34D0D2007D9924 /* FTBaseWidgetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTBaseWidgetController.m; sourceTree = "<group>"; };
 		BF26FE881C229F2F009BF834 /* FTDashLineWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDashLineWidget.h; sourceTree = "<group>"; };
 		BF26FE891C229F2F009BF834 /* FTDashLineWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDashLineWidget.m; sourceTree = "<group>"; };
+		BF2BB2181D5C424C0041B587 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		BF2BB2191D5C424C0041B587 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		BF2BB21A1D5C424C0041B587 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		BF2BB21B1D5C424C0041B587 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		BF2BB21C1D5C424C0041B587 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		BF2BB21D1D5C424C0041B587 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		BF2BB21E1D5C424C0041B587 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		BF2BB21F1D5C424C0041B587 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		BF2BB2281D5C45BE0041B587 /* FTLocalStorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLocalStorageHelper.h; sourceTree = "<group>"; };
+		BF2BB2291D5C45BE0041B587 /* FTLocalStorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLocalStorageHelper.m; sourceTree = "<group>"; };
 		BF2BF48A1C224BE800175579 /* UILabel+FTFitSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+FTFitSize.h"; sourceTree = "<group>"; };
 		BF2BF48B1C224BE800175579 /* UILabel+FTFitSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+FTFitSize.m"; sourceTree = "<group>"; };
 		BF2DB8FC1CD330FF00EB7E70 /* FTClickPointCollectionWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTClickPointCollectionWidget.h; sourceTree = "<group>"; };
@@ -1169,6 +1189,21 @@
 			children = (
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		BF2BB2171D5C424C0041B587 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				BF2BB2181D5C424C0041B587 /* YYCache.h */,
+				BF2BB2191D5C424C0041B587 /* YYCache.m */,
+				BF2BB21A1D5C424C0041B587 /* YYDiskCache.h */,
+				BF2BB21B1D5C424C0041B587 /* YYDiskCache.m */,
+				BF2BB21C1D5C424C0041B587 /* YYKVStorage.h */,
+				BF2BB21D1D5C424C0041B587 /* YYKVStorage.m */,
+				BF2BB21E1D5C424C0041B587 /* YYMemoryCache.h */,
+				BF2BB21F1D5C424C0041B587 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
 			sourceTree = "<group>";
 		};
 		BF2DB8FB1CD3300B00EB7E70 /* actionWidget */ = {
@@ -1878,6 +1913,8 @@
 				BFD1F2851BFC71DA00AFD63C /* FTLoggerHelper.m */,
 				BF6A00EA1CE1919E0076B549 /* FTTimeHelper.h */,
 				BF6A00EB1CE1919E0076B549 /* FTTimeHelper.m */,
+				BF2BB2281D5C45BE0041B587 /* FTLocalStorageHelper.h */,
+				BF2BB2291D5C45BE0041B587 /* FTLocalStorageHelper.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -1969,6 +2006,7 @@
 		BFC165A01BD7898F00C59C2C /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
+				BF2BB2171D5C424C0041B587 /* YYCache */,
 				BF33A8881CE302CE006C92C6 /* libsqlite3.tbd */,
 				BFC027411CB67120008E7087 /* libz.tbd */,
 				BF6C89211D0676F200F025FB /* YYModel */,
@@ -2173,9 +2211,11 @@
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */,
 				BF52E4E11C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.h in Headers */,
+				BF2BB2261D5C424C0041B587 /* YYMemoryCache.h in Headers */,
 				BF3B708E1CDC6C0F00A711BE /* BlocksKit.h in Headers */,
 				BF52E52E1C3CE1950052A107 /* RACEmptySequence.h in Headers */,
 				BFC821BD1BDE462E0066A77C /* UITableViewCell+FTNormal.h in Headers */,
+				BF2BB2201D5C424C0041B587 /* YYCache.h in Headers */,
 				BF52E58C1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.h in Headers */,
 				BF52E4F91C3CE1950052A107 /* NSObject+RACDeallocating.h in Headers */,
 				BF52E5541C3CE1950052A107 /* RACScopedDisposable.h in Headers */,
@@ -2339,6 +2379,7 @@
 				BF52E5261C3CE1950052A107 /* RACDynamicPropertySuperclass.h in Headers */,
 				BF52E5401C3CE1950052A107 /* RACKVOTrampoline.h in Headers */,
 				BF43F6C01BDE153200A1389B /* FTAppHelper.h in Headers */,
+				BF2BB22A1D5C45BE0041B587 /* FTLocalStorageHelper.h in Headers */,
 				BF3E67071CEDB6A9001311CD /* NSString+FTUrl.h in Headers */,
 				BF7957BD1CC7CCA1000CEB0D /* MASConstraint.h in Headers */,
 				BF6DA4BA1CEF02AA00F45F61 /* FTClassInfo.h in Headers */,
@@ -2359,6 +2400,7 @@
 				BF52E54E1C3CE1950052A107 /* RACReturnSignal.h in Headers */,
 				BFB861D21BE6F8790051BE20 /* NSDate+FTNormal.h in Headers */,
 				BF8EAD041BD4E53F004A051D /* fertile.h in Headers */,
+				BF2BB2241D5C424C0041B587 /* YYKVStorage.h in Headers */,
 				BF15970D1C167244000B70D0 /* FTCornerView.h in Headers */,
 				BF8343CD1C3B578A0082A845 /* SXMarquee.h in Headers */,
 				BFFC5D551BE8BF3200F005F2 /* FTVectorView.h in Headers */,
@@ -2409,6 +2451,7 @@
 				BF6C2B581C3A04EC00CDA1E8 /* SDWebImageDecoder.h in Headers */,
 				BF52E5711C3CE1950052A107 /* RACTestScheduler.h in Headers */,
 				BFC821B21BDE45BF0066A77C /* NSString+FTRegExp.h in Headers */,
+				BF2BB2221D5C424C0041B587 /* YYDiskCache.h in Headers */,
 				BF6A01391CE201340076B549 /* RSA.h in Headers */,
 				BF43F6581BDDF24700A1389B /* FTBaseHelper.h in Headers */,
 				BF52E5941C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.h in Headers */,
@@ -2663,6 +2706,7 @@
 				BF52E5851C3CE1950052A107 /* UIButton+RACCommandSupport.m in Sources */,
 				BF52E5441C3CE1950052A107 /* RACMulticastConnection.m in Sources */,
 				BF52E54B1C3CE1950052A107 /* RACQueueScheduler.m in Sources */,
+				BF2BB2271D5C424C0041B587 /* YYMemoryCache.m in Sources */,
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
@@ -2689,6 +2733,7 @@
 				BF50529A1CC8AC2B00B9EDCD /* NSDictionary+FTObject.m in Sources */,
 				BF52E56E1C3CE1950052A107 /* RACSubscriptionScheduler.m in Sources */,
 				BF3B70B91CDC6C0F00A711BE /* NSURLConnection+BlocksKit.m in Sources */,
+				BF2BB2211D5C424C0041B587 /* YYCache.m in Sources */,
 				BF7957BB1CC7CCA1000CEB0D /* MASCompositeConstraint.m in Sources */,
 				BF52E51C1C3CE1950052A107 /* RACChannel.m in Sources */,
 				BF6A00ED1CE1919F0076B549 /* FTTimeHelper.m in Sources */,
@@ -2714,6 +2759,7 @@
 				BF52E53F1C3CE1950052A107 /* RACKVOProxy.m in Sources */,
 				BFF246311CBF810A002B5603 /* FTFileUtil+readwrite.m in Sources */,
 				BF6DA4CB1CEF02AA00F45F61 /* FTResultSetHandler.m in Sources */,
+				BF2BB22B1D5C45BE0041B587 /* FTLocalStorageHelper.m in Sources */,
 				BF52E4F21C3CE1950052A107 /* NSIndexSet+RACSequenceAdditions.m in Sources */,
 				BF3B70BB1CDC6C0F00A711BE /* NSObject+A2BlockDelegate.m in Sources */,
 				BFF188251CB6082700CC1F77 /* AFSecurityPolicy.m in Sources */,
@@ -2743,6 +2789,8 @@
 				BF5F6FC31CB66A2100463D9F /* unzip.c in Sources */,
 				BF50529F1CC8C4AD00B9EDCD /* UILabel+FTRich.m in Sources */,
 				BF52E5951C3CE1950052A107 /* UISegmentedControl+RACSignalSupport.m in Sources */,
+				BF2BB2231D5C424C0041B587 /* YYDiskCache.m in Sources */,
+				BF2BB2251D5C424C0041B587 /* YYKVStorage.m in Sources */,
 				BF3B70AD1CDC6C0F00A711BE /* NSOrderedSet+BlocksKit.m in Sources */,
 				BF3B70BD1CDC6C0F00A711BE /* NSObject+A2DynamicDelegate.m in Sources */,
 				BF6C2B511C3A04EC00CDA1E8 /* MKAnnotationView+WebCache.m in Sources */,
