@@ -23,4 +23,7 @@
  */
 -(BOOL) isContainer:(id)value compare:(BOOL (^)(id value , id obj))compare;
 
+
+-(void) reverse;
+
 @end

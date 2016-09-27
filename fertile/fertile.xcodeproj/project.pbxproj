@@ -1862,7 +1862,7 @@
 			children = (
 				BF3B70D31CDC7D0300A711BE /* base */,
 				BF43F6C41BDE255200A1389B /* model */,
-				BF8EAD1B1BD4E57C004A051D /* extensions */,
+				BF8EAD1B1BD4E57C004A051D /* category */,
 				BF8EAD1E1BD4E57C004A051D /* helper */,
 				BF8EAD1F1BD4E57C004A051D /* util */,
 				BF8EAD201BD4E57C004A051D /* widget */,
@@ -1875,13 +1875,14 @@
 			path = fertile;
 			sourceTree = "<group>";
 		};
-		BF8EAD1B1BD4E57C004A051D /* extensions */ = {
+		BF8EAD1B1BD4E57C004A051D /* category */ = {
 			isa = PBXGroup;
 			children = (
 				BFC821881BDE2C1A0066A77C /* FTExtensions.h */,
 				BFC821B81BDE462E0066A77C /* ui */,
 				BFC8219F1BDE45BF0066A77C /* base */,
 			);
+			name = category;
 			path = extensions;
 			sourceTree = "<group>";
 		};
