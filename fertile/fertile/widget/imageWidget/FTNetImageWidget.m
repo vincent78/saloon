@@ -6,18 +6,18 @@
 //  Copyright © 2016年 fruit. All rights reserved.
 //
 
-#import "FTImageWidget.h"
+#import "FTNetImageWidget.h"
 #import "SDWebImageOperation.h"
 #import "SDWebImageManager.h"
 
 #define kFTImageViewAnimateTime 0.5
 
-@interface FTImageWidget ()
+@interface FTNetImageWidget ()
 @property (nonatomic, strong) id<SDWebImageOperation> operation;
 @property (nonatomic, strong) NSArray *whiteList;
 @end
 
-@implementation FTImageWidget
+@implementation FTNetImageWidget
 
 @synthesize url = _url;
 
@@ -155,32 +155,25 @@
 
 - (void)loadStateImages
 {
+    UIImage *defaultImg = [UIImage imageWithColor:[UIColor whiteColor]];
     if (!_placeHoldImage) {
-        if (self.lowMemoryDevice) {
-//            _placeHoldImage = [CTResizableImage imageNamedForCtrip:kCTResizableImageLoading targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        } else {
-//            _placeHoldImage = [CTResizableImage animationImageNamedForCtrip:kCTResizableImageLoading targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        }
+        _placeHoldImage = defaultImg;
     }
     if (!_loadNothingImage) {
-        if (self.lowMemoryDevice) {
-//            _loadNothingImage = [CTResizableImage imageNamedForCtrip:kCTResizableImageLoadNothing targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        }
-        else {
-//            _loadNothingImage = [CTResizableImage animationImageNamedForCtrip:kCTResizableImageLoadNothing targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        }
+        _loadNothingImage = defaultImg;
     }
     if (!_loadFailedImage) {
-        if (self.lowMemoryDevice) {
-//            _loadFailedImage = [CTResizableImage imageNamedForCtrip:kCTResizableImageLoadFailed targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        }
-        else {
-//            _loadFailedImage = [CTResizableImage animationImageNamedForCtrip:kCTResizableImageLoadFailed targetSize:self.bounds.size showType:eCTResizableLoadImageShowTypeSmall];
-        }
+        _loadFailedImage = defaultImg;
     }
 }
 
 #pragma mark - --------------------功能函数--------------------
+
+/**
+ URL的白名单
+
+ @return <#return value description#>
+ */
 - (NSArray *)whiteList
 {
     return @[];

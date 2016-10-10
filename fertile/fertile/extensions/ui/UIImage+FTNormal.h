@@ -38,9 +38,18 @@
  *
  *  @return 图片
  */
-+ (UIImage *)ctd_imageWithColor:(UIColor *)color;
++ (UIImage *)imageWithColor:(UIColor *)color;
 
-+ (UIImage *)ctd_imageWithColorAndSize:(UIColor *)color imageSize:(CGSize)size;
+
+/**
+ 按指定大小和颜色创建图片
+
+ @param color <#color description#>
+ @param size  <#size description#>
+
+ @return <#return value description#>
+ */
++ (UIImage *)imageWithColorAndSize:(UIColor *)color imageSize:(CGSize)size;
 
 
 
@@ -51,7 +60,7 @@
  *
  *  @return 改变颜色后的图片对象
  */
-- (UIImage *)ctd_imageWithTintColor:(UIColor *)tintColor;
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor;
 
 /**
  *UIImage *imageToCrop = <yourImageToCrop>;
@@ -68,10 +77,10 @@
 -(UIImage*)resizedImageToFitInSize:(CGSize)boundingSize
                     scaleIfSmaller:(BOOL)scale;
 
-+ (UIImage *)imageWithColor:(UIColor *)color
-                       size:(CGSize)size;
+//+ (UIImage *)imageWithColor:(UIColor *)color
+//                       size:(CGSize)size;
 
-+ (UIImage *)imageWithColor:(UIColor *)color;
+//+ (UIImage *)imageWithColor:(UIColor *)color;
 
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius
                        tintColor:(UIColor *)tintColor

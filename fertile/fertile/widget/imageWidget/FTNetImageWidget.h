@@ -22,7 +22,7 @@
 @class FTIndicatorWidget;
 @protocol FTImageWidgetDelegate;
 
-@interface FTImageWidget : UIImageView<FTImageViewDownloadProtocol>
+@interface FTNetImageWidget : UIImageView<FTImageViewDownloadProtocol>
 
 
 @property (nonatomic, weak) id<FTImageWidgetDelegate> delegate;/// 代理
@@ -177,7 +177,7 @@
  * @brief 下载成功回调
  * @param imageView FTImageView对象
  */
-- (void)imageViewLoadImageSucceed:(FTImageWidget *)imageView;
+- (void)imageViewLoadImageSucceed:(FTNetImageWidget *)imageView;
 
 /**
  * @brief 下载进度更新回调
@@ -185,18 +185,18 @@
  * @param receivedBytes 接收字节数
  * @param totalBytes 总共字节数
  */
-- (void)imageViewProgressed:(FTImageWidget *)imageView receivedBytes:(NSUInteger)receivedBytes totalBytes:(long long)totalBytes;
+- (void)imageViewProgressed:(FTNetImageWidget *)imageView receivedBytes:(NSUInteger)receivedBytes totalBytes:(long long)totalBytes;
 
 /**
  * @brief 下载失败回调
  * @param imageView FTImageView对象
  * @param error 错误对象
  */
-- (void)imageViewLoadImageFailed:(FTImageWidget *)imageView error:(NSError *)error;
+- (void)imageViewLoadImageFailed:(FTNetImageWidget *)imageView error:(NSError *)error;
 
 /**
  * @brief 下载取消回调
  * @param imageView FTImageView对象
  */
-- (void)imageViewLoadImageCanceled:(FTImageWidget *)imageView;
+- (void)imageViewLoadImageCanceled:(FTNetImageWidget *)imageView;
 @end

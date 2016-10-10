@@ -29,6 +29,8 @@
 
 
 #import "UIImage+font.h"
+#import "FTNetImageWidget.h"
+#import "FTIndicatorWidget.h"
 
 #import "FTProgressView.h"
 

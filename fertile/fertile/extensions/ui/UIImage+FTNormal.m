@@ -144,11 +144,11 @@
 
 
 
-+ (UIImage *)ctd_imageWithColor:(UIColor *)color {
-    return [UIImage ctd_imageWithColorAndSize:color imageSize:CGSizeMake(1.0f, 1.0f)];
++ (UIImage *)imageWithColor:(UIColor *)color {
+    return [UIImage imageWithColorAndSize:color imageSize:CGSizeMake(1.0f, 1.0f)];
 }
 
-+ (UIImage *)ctd_imageWithColorAndSize:(UIColor *)color imageSize:(CGSize)size{
++ (UIImage *)imageWithColorAndSize:(UIColor *)color imageSize:(CGSize)size{
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -187,7 +187,7 @@
 
 
 
-- (UIImage *)ctd_imageWithTintColor:(UIColor *)tintColor
+- (UIImage *)imageWithTintColor:(UIColor *)tintColor
 {
     UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0f);
     [tintColor setFill];
@@ -362,31 +362,31 @@
     return [self resizedImageToSize:dstSize];
 }
 
-+ (UIImage *)imageWithColor:(UIColor *)color
-{
-    CGSize size = CGSizeMake(1, 1);
-    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
-    UIImage * desImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return desImage;
-}
-
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{
-    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
-}
+//+ (UIImage *)imageWithColor:(UIColor *)color
+//{
+//    CGSize size = CGSizeMake(1, 1);
+//    UIGraphicsBeginImageContextWithOptions(size, NO, 0);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    CGContextSetFillColorWithColor(context, [color CGColor]);
+//    CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
+//    UIImage * desImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    return desImage;
+//}
+//
+//+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size{
+//    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+//    UIGraphicsBeginImageContext(rect.size);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSetFillColorWithColor(context, [color CGColor]);
+//    CGContextFillRect(context, rect);
+//    
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    return image;
+//}
 
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage
 {
