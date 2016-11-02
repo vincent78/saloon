@@ -92,7 +92,7 @@
         }
         else
         {
-            FTLog(@"*****Orm未发现Class属性字段：%@",fieldName);
+            FTDLog(@"*****Orm未发现Class属性字段：%@",fieldName);
         }
         
         //将获取到的值存入到字段模型中
@@ -196,7 +196,7 @@
     }
     else
     {
-        FTLog(@"error: object不存在！或传入属性数组不存在！");
+        FTDLog(@"error: object不存在！或传入属性数组不存在！");
     }
 
     return validFieldDic;

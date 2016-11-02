@@ -6,9 +6,9 @@
 //  Copyright © 2015年 fruit. All rights reserved.
 //
 
-#import "FTRouteHelper.h"
+#import "FTNavigationHelper.h"
 
-@interface FTRouteHelper()
+@interface FTNavigationHelper()
 {
     UINavigationController *rootNavigationController;
     UINavigationController *currNav;
@@ -18,17 +18,17 @@
 
 @end
 
-@implementation FTRouteHelper
+@implementation FTNavigationHelper
 
 #pragma mark - single
 
-static FTRouteHelper *sharedInstance = nil;
+static FTNavigationHelper *sharedInstance = nil;
 
-+(FTRouteHelper *) sharedInstance
++(FTNavigationHelper *) sharedInstance
 {    
     static dispatch_once_t onceToken ;
     dispatch_once(&onceToken, ^{
-        sharedInstance = [FTRouteHelper new];
+        sharedInstance = [FTNavigationHelper new];
         [sharedInstance helperInit];
     });
     return sharedInstance;

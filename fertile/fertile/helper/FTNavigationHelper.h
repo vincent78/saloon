@@ -10,9 +10,9 @@
 #import "FTBaseViewController.h"
 
 
-@interface FTRouteHelper : FTBaseHelper
+@interface FTNavigationHelper : FTBaseHelper
 
-+(FTRouteHelper *) sharedInstance;
++(FTNavigationHelper *) sharedInstance;
 
 
 /**

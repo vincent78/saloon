@@ -45,13 +45,13 @@ static FTAppHelper *sharedInstance = nil;
     [helperArray addObject:[FTHotfixHelper sharedInstance]];
     [helperArray addObject:[FTDeviceHelper sharedInstance]];
     [helperArray addObject:[FTSystemHelper sharedInstance]];
-    [helperArray addObject:[FTRouteHelper sharedInstance]];
+    [helperArray addObject:[FTNavigationHelper sharedInstance]];
     [helperArray addObject:[FTThreadHelper sharedInstance]];
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
     
     
-    FTLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n\nappInfo:\n%@\n%@"
+    FTDLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n\nappInfo:\n%@\n%@"
           ,@"==================="
           ,[FTFileUtil getDocDirectory]
           ,[FTDeviceHelper getDeviceInfo]
@@ -62,7 +62,7 @@ static FTAppHelper *sharedInstance = nil;
             ,[FTAppHelper getVersion]
           ,@"===================");
     
-    FTLog("%@",[FTAppHelper getVersion]);
+    FTDLog("%@",[FTAppHelper getVersion]);
 
     
 }

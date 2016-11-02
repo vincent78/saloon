@@ -61,7 +61,7 @@
 {
     _titleLabel.text = _title;
     
-    if ([[FTRouteHelper sharedInstance] getCurrNav].viewControllers.count > 1 )
+    if ([[FTNavigationHelper sharedInstance] getCurrNav].viewControllers.count > 1 )
     {
         [self showBackArrow:YES];
     }

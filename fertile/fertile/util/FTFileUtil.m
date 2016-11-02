@@ -336,7 +336,7 @@
         if(fileAttrDic != nil){
             return [fileAttrDic fileSize];
         }else{
-            FTLog(@"获取文件大小失败 description %@, failureReason %@",[error localizedDescription],[error localizedFailureReason]);
+            FTELog(@"获取文件大小失败 description %@, failureReason %@",[error localizedDescription],[error localizedFailureReason]);
             return 0;
         }
     }else{

@@ -37,7 +37,7 @@
         }
     }
     
-//    FTLog(@"查到数据count = %d calss:%@",resuleArray.count,NSStringFromClass(classType));
+//    FTELog(@"查到数据count = %d calss:%@",resuleArray.count,NSStringFromClass(classType));
     return resuleArray;
 }
 
@@ -60,7 +60,7 @@
         classInfo:(FTClassInfo *)classInfo
 {
     //子类必须继承该方法，覆盖该方法！
-    FTLog(@"ERROR -- 不应该执行该方法！");
+    FTELog(@"ERROR -- 不应该执行该方法！");
     id detailResult = NULL;
     return detailResult;
 }

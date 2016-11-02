@@ -111,15 +111,15 @@ static NSMutableArray* ftFontArray = nil;
 
 + (void)printSysAllFontInfo
 {
-    FTLog(@"======================================");
+    FTDLog(@"======================================");
     for (NSString* fontfamilyname in [UIFont familyNames]) {
-        FTLog(@"family:'%@'", fontfamilyname);
+        FTDLog(@"family:'%@'", fontfamilyname);
         for (NSString* fontName in [UIFont fontNamesForFamilyName:fontfamilyname]) {
-            FTLog(@"\tfont:'%@'", fontName);
+            FTDLog(@"\tfont:'%@'", fontName);
         }
-        FTLog(@"-------------");
+        FTDLog(@"-------------");
     }
-    FTLog(@"======================================");
+    FTDLog(@"======================================");
 }
 
 + (void)registFont:(NSString*)fontFile
@@ -144,7 +144,7 @@ static NSMutableArray* ftFontArray = nil;
     CFErrorRef error;
     if (!CTFontManagerRegisterGraphicsFont(newFont, &error)) {
         CFStringRef errorDescription = CFErrorCopyDescription(error);
-        FTLog(@"Failed to load font: %@", errorDescription);
+        FTELog(@"Failed to load font: %@", errorDescription);
         CFRelease(errorDescription);
     }
     else
@@ -173,7 +173,7 @@ static NSMutableArray* ftFontArray = nil;
     CFErrorRef error;
     if (!CTFontManagerUnregisterGraphicsFont(newFont, &error)) {
         CFStringRef errorDescription = CFErrorCopyDescription(error);
-        FTLog(@"Failed to load font: %@", errorDescription);
+        FTELog(@"Failed to load font: %@", errorDescription);
         CFRelease(errorDescription);
     }
     CFRelease(newFont);

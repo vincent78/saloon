@@ -15,15 +15,16 @@
 
 
 //#define FLog(format, ...) NSLog((@"%s@%d: " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-#define FTLog(format, ...) [FTLoggerHelper log4Debug:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
-#define FTErrLog(format, ...) [FTLoggerHelper log4Error:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
-#define FTInfoLog(format, ...) [FTLoggerHelper log4Info:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
+#define FTDLog(format, ...) [FTLoggerHelper log4Debug:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
+#define FTELog(format, ...) [FTLoggerHelper log4Error:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
+#define FTILog(format, ...) [FTLoggerHelper log4Info:[NSString stringWithFormat:(@"" format),##__VA_ARGS__]];
 
 
 /** 本地化语言 */
-#define NSLocalizedString(key, comment) \
+#define FTLocalizedString(key, comment) \
 [[NSBundle mainBundle] localizedStringForKey:(key) value:@"" table:nil]
-#define FT_STRING(__POINTER)    NSLocalizedString(__POINTER, nil)
+
+#define FT_STRING(__POINTER)    FTLocalizedString(__POINTER, nil)
 
 
 

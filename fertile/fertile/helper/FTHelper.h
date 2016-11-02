@@ -18,7 +18,7 @@
 #import "FTHotfixHelper.h"
 #import "FTSystemHelper.h"
 #import "FTAnimateHelper.h"
-#import "FTRouteHelper.h"
+#import "FTNavigationHelper.h"
 #import "FTNetWorkHelper.h"
 #import "FTThreadHelper.h"
 

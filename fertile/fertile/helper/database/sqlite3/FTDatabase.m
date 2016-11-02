@@ -53,7 +53,7 @@
     
     if (![FTFileUtil fileExist:path])
     {
-        FTLog(@"将会创建数据库：%@",_databaseName);
+        FTDLog(@"将会创建数据库：%@",_databaseName);
     }
     
     sqlite3_shutdown();
@@ -85,7 +85,7 @@
         
         if (!saveresult)
         {
-            FTLog(@"error -- 记录更新失败！");
+            FTELog(@"error -- 记录更新失败！");
         }
         return saveresult;
     }];
@@ -116,7 +116,7 @@
         
         if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
-            FTLog(@"Error--- the classInfo or tableName is null");
+            FTELog(@"Error--- the classInfo or tableName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return NO;
         }
@@ -133,7 +133,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -166,7 +166,7 @@
         
         if (!updateresult)
         {
-            FTLog(@"error -- 记录更新失败！");
+            FTELog(@"error -- 记录更新失败！");
         }
         return updateresult;
     }];
@@ -197,7 +197,7 @@
         
         if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
-            FTLog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
+            FTELog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:SqliteExeFailed];
             return NO;
         }
@@ -214,7 +214,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -246,7 +246,7 @@
         
         if (!deleresult)
         {
-            FTLog(@"error -- 记录删除失败！");
+            FTELog(@"error -- 记录删除失败！");
         }
         return deleresult;
     }];
@@ -276,7 +276,7 @@
         
         if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
         {
-            FTLog(@"the classInfo or mTableName or mPrimarykeyName is null");
+            FTELog(@"the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return NO;
         }
@@ -293,7 +293,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sqlMsg];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
         }
@@ -325,7 +325,7 @@
     
     if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
     {
-        FTLog(@"the classInfo or mTableName is null");
+        FTELog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -344,7 +344,7 @@
         
         if (success != SQLITE_OK)
         {
-            FTLog(@"出错了。。。。。");
+            FTELog(@"出错了。。。。。");
             NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
         }
@@ -387,7 +387,7 @@
     
     if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
     {
-        FTLog(@"the classInfo or mTableName is null");
+        FTELog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -410,7 +410,7 @@
         if (success != SQLITE_OK)
         {
             NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-            FTLog(@"%@",errorMsg);
+            FTELog(@"%@",errorMsg);
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
         }
         
@@ -464,7 +464,7 @@
             
             if (!classInfo)
             {
-                FTLog(@"the classInfo is null");
+                FTELog(@"the classInfo is null");
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
                 return nil;
             }
@@ -489,7 +489,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errmsg =[[NSString alloc]initWithFormat:@"执行出错了，sqlIDStr = %@ \n sql = %@",sqlIDStr,sql];
-                FTLog(@"%@",errmsg);
+                FTELog(@"%@",errmsg);
             }
             
             //返回的是字典数组
@@ -545,7 +545,7 @@
 {
     if (!paramsObject || ! modelClass || !sqlIDStr)
     {
-        FTLog(@"the paramsObject or modelClass or sqlIDStr is null");
+        FTELog(@"the paramsObject or modelClass or sqlIDStr is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -564,7 +564,7 @@
         
         if (!classInfo)
         {
-            FTLog(@"the classInfo is null");
+            FTELog(@"the classInfo is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
             return nil;
         }
@@ -601,7 +601,7 @@
         
         if (!updateResult)
         {
-            FTLog(@"error -- sql 执行失败！");
+            FTELog(@"error -- sql 执行失败！");
         }
         return updateResult;
     }];
@@ -645,7 +645,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             else
@@ -660,7 +660,7 @@
     }
     else
     {
-        FTLog(@"传入参数有误！");
+        FTELog(@"传入参数有误！");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
     }
     
@@ -684,7 +684,7 @@
             
             if (success != SQLITE_OK) {
                 NSString *errmsg =[[NSString alloc]initWithFormat:@"执行出错了:sql = %@",sql];
-                FTLog(@"%@",errmsg);
+                FTELog(@"%@",errmsg);
             } else {
                 //初始化一个以数据库结果集合，集合存放数据为model类型
                 FTListMapHandler *listMapHandler = [[FTListMapHandler alloc]init];
@@ -716,7 +716,7 @@
             if (success != SQLITE_OK) {
                 NSError *error = [NSError errorWithDomain:@"sql执行出错" code:-1001 userInfo:@{@"sql":sql}];
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:&error descrip:errorMsg errorCode:SqliteExeFailed];
             } else {
                 result = YES;
@@ -751,7 +751,7 @@
         
         if (!updateResult)
         {
-            FTLog(@"error -- sql 执行失败！");
+            FTELog(@"error -- sql 执行失败！");
         }
         return updateResult;
     }];
@@ -800,7 +800,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             else
@@ -841,7 +841,7 @@
     
     if (!classInfo || [NSString emptyOrNil:classInfo.mPrimarykeyName])
     {
-        FTLog(@"the classInfo or mPrimarykeyName is null");
+        FTELog(@"the classInfo or mPrimarykeyName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
         return nil;
     }
@@ -930,7 +930,7 @@
             if (success != SQLITE_OK)
             {
                 NSString *errorMsg = [[NSString alloc]initWithFormat:@"SQL执行失败:%@",sql];
-                FTLog(@"%@",errorMsg);
+                FTELog(@"%@",errorMsg);
                 [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqliteExeFailed];
             }
             

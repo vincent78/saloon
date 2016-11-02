@@ -9,6 +9,8 @@
 #import "FTBaseHelper.h"
 
 
+
+
 typedef NS_ENUM(NSUInteger, LOGLEVEL) {
     LOGLEVEL_FATAT   = 0,
     LOGLEVEL_ERROR,

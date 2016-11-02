@@ -42,7 +42,7 @@
     {
         if (!objectClass)
         {
-            FTLog(@"error---- the objectClass is null! ");
+            FTELog(@"error---- the objectClass is null! ");
             return nil;
         }
         
@@ -117,7 +117,7 @@
         }
         else
         {
-            FTLog(@"Error --- get PrimaryKey TabaleInfo error ,can not is null");
+            FTELog(@"Error --- get PrimaryKey TabaleInfo error ,can not is null");
         }
     }
     
@@ -153,7 +153,7 @@
     }
     else
     {
-        FTLog(@"error -- fieldName 不能为空！");
+        FTELog(@"error -- fieldName 不能为空！");
     }
     
     return fieldInfo;

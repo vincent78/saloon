@@ -117,7 +117,7 @@
     {
         SNItemListScene *itemListVC = [[SNItemListScene alloc] init];
         itemListVC.items = subItems;
-        [[FTRouteHelper sharedInstance] pushWithVC:itemListVC];
+        [[FTNavigationHelper sharedInstance] pushWithVC:itemListVC];
     }
     else
     {
@@ -126,7 +126,7 @@
         {
             FTBaseViewController *vc = [NSClassFromString(vcName) new];
 //            [[FTRouteHelper sharedInstance] pushWithClass:NSClassFromString(vcName)];
-            [[FTRouteHelper sharedInstance] pushWithVC:vc];
+            [[FTNavigationHelper sharedInstance] pushWithVC:vc];
         }
     }
 }

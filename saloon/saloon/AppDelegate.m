@@ -22,8 +22,8 @@
     [[FTAppHelper sharedInstance] helper:application didFinishLaunchingWithOptions:launchOptions];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [FTRouteHelper sharedInstance].getCurrNav;
-    [[FTRouteHelper sharedInstance] pushWithVC:[SNItemListScene new]];
+    self.window.rootViewController = [FTNavigationHelper sharedInstance].getCurrNav;
+    [[FTNavigationHelper sharedInstance] pushWithVC:[SNItemListScene new]];
     
     [self.window makeKeyAndVisible];
     

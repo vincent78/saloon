@@ -64,7 +64,7 @@
     }
 
     NSString *errorMsg = [[NSString alloc]initWithFormat:@"获取sql语句失败,sqlByID为: %@ ",sqlByID];
-    FTLog(@"%@",errorMsg);
+    FTELog(@"%@",errorMsg);
     [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:GetSqlFailed];
     return @"";
 }
@@ -250,7 +250,7 @@
             return sqlStr;
         }
     }
-    FTLog(@"Error:没有正确的转换模板数据库");
+    FTELog(@"Error:没有正确的转换模板数据库");
     [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"Error:没有正确的转换模板数据库" errorCode:SqlReplaceFailed];
     
     return @"";
@@ -297,7 +297,7 @@
                     {
                         //为获取到正确的sql语句
                         NSString *errorMsg = [[NSString alloc]initWithFormat:@"未获取到%@有效的替换值,sql: %@",str,paranameSqlStr];
-                        FTLog(@"%@",errorMsg);
+                        FTELog(@"%@",errorMsg);
                         [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqlReplaceFailed];
                         break;
                     }
@@ -378,7 +378,7 @@
                     {
                         //为获取到正确的sql语句
                         NSString *errorMsg = [[NSString alloc]initWithFormat:@"未获取到%@有效的替换值,sql: %@",str,paranameSqlStr];
-                        FTLog(@"%@",errorMsg);
+                        FTELog(@"%@",errorMsg);
                         [FTOrmErrorUtil addOneErrorDescrip:error descrip:errorMsg errorCode:SqlReplaceFailed];
                         break;
                     }

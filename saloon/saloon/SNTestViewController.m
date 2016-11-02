@@ -37,13 +37,13 @@
     timer = [NSTimer timerWithTimeInterval:2 target:self selector:@selector(test) userInfo:nil repeats:YES];
 //    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 //    [[NSRunLoop currentRunLoop] run];
-    FTLog(@"thread %@",[NSThread currentThread]);
+    FTDLog(@"thread %@",[NSThread currentThread]);
     [timer fire];
 }
 
 -(void)stopTimer
 {
-    FTLog(@"timer set to nil");
+    FTDLog(@"timer set to nil");
     if (timer.isValid)
     {
         timer = nil;
@@ -53,8 +53,8 @@
 
 -(void)test
 {
-    FTLog(@"testtest.....");
-    FTLog(@"thread %@",[NSThread currentThread]);
+    FTDLog(@"testtest.....");
+    FTDLog(@"thread %@",[NSThread currentThread]);
 }
 
 

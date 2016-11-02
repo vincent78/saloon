@@ -153,7 +153,7 @@ id cloneObject(id item) {
                         newValue = cloneSet(oldValue);
                     }
                     else {
-                        FTLog(@"Error: unsupport class type==%@, member==%@", className, key);
+                        FTDLog(@"Error: unsupport class type==%@, member==%@", className, key);
                     }
                 }
                 
