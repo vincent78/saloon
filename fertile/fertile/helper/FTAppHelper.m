@@ -37,33 +37,14 @@ static FTAppHelper *sharedInstance = nil;
 {
     [super helperInit];
     self.appDic = [[NSMutableDictionary alloc] init];
-    
     self.vcBackGroundColor = [UIColor colorWithHexString:@"F8F8F8"];
     
-    helperArray = [NSMutableArray arrayWithCapacity:5];
-    [helperArray addObject:[FTLoggerHelper sharedInstance]];
-    [helperArray addObject:[FTHotfixHelper sharedInstance]];
-    [helperArray addObject:[FTDeviceHelper sharedInstance]];
-    [helperArray addObject:[FTSystemHelper sharedInstance]];
-    [helperArray addObject:[FTNavigationHelper sharedInstance]];
-    [helperArray addObject:[FTThreadHelper sharedInstance]];
-    [helperArray addObject:[FTNetWorkHelper sharedInstance]];
-    [helperArray addObject:[FTAnimateHelper sharedInstance]];
+    FTAppDelegate *appDelegate = (FTAppDelegate *) [[UIApplication sharedApplication] delegate];
+    [self subscribeAppDelegateSingals:appDelegate];
     
     
-    FTDLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n\nappInfo:\n%@\n%@"
-          ,@"==================="
-          ,[FTFileUtil getDocDirectory]
-          ,[FTDeviceHelper getDeviceInfo]
-          ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
-            ,[FTSystemHelper screenWidth]
-            ,[FTSystemHelper screenHeight]
-            ,[FTSystemHelper scale]]
-            ,[FTAppHelper getVersion]
-          ,@"===================");
-    
-    FTDLog("%@",[FTAppHelper getVersion]);
-
+    self.printAppInfoSingal = [RACSubject subject];
+    [self subscribeHelperSingals];
     
 }
 
@@ -77,70 +58,10 @@ static FTAppHelper *sharedInstance = nil;
     self.appDic = nil;
 }
 
-- (void)helper:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
-{
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helper:didFinishLaunchingWithOptions:)])
-            [helper helper:application didFinishLaunchingWithOptions:launchOptions];
-    }
-    
 
-}
-
-- (void)helperWillResignActive:(UIApplication*)application
-{
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helperWillResignActive:)])
-            [helper helperWillResignActive:application];
-    }
-}
-
-- (void)helperDidEnterBackground:(UIApplication*)application
-{
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helperDidEnterBackground:)])
-            [helper helperDidEnterBackground:application];
-    }
-}
-
-
-- (void)helperWillEnterForeground:(UIApplication*)application
-{
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helperWillEnterForeground:)])
-            [helper helperWillEnterForeground:application];
-    }
-}
-
-- (void)helperDidBecomeActive:(UIApplication*)application
-{
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helperDidBecomeActive:)])
-            [helper helperDidBecomeActive:application];
-    }
-}
-
-- (void)helperWillTerminate:(UIApplication*)application
-{
-    
-    for(FTBaseHelper *helper in helperArray)
-    {
-        if ([helper respondsToSelector:@selector(helperWillTerminate:)])
-            [helper helperWillTerminate:application];
-    }
-}
 
 - (void)didReceiveMemoryWarning
 {
-    for(FTBaseHelper *helper in helperArray)
-    {
-        [helper didReceiveMemoryWarning];
-    }
 }
 
 #pragma mark - navigate
@@ -192,5 +113,71 @@ static FTAppHelper *sharedInstance = nil;
 #endif
     return false;
 }
+
+#pragma mark - 订阅signals
+
+/**
+ 订阅appDelegate的signal
+
+ @param appDelegate <#appDelegate description#>
+ */
+-(void) subscribeAppDelegateSingals:(FTAppDelegate *)appDelegate
+{
+    WS(weakSelf)
+    [appDelegate.applicationDidFinishLaunchingSignal subscribeNext:^(NSDictionary *launchOptions) {
+        if (launchOptions)
+        {
+            FTDLog(@"launchOptions:%@",[launchOptions yy_modelToJSONString]);
+        }
+        FTDLog(@"%@:didFinishLaunchingSignal",NSStringFromClass(self.class));
+        
+        [weakSelf.printAppInfoSingal sendNext:nil];
+    }];
+    
+    [appDelegate.applicationWillTerminateSignal subscribeNext:^(id x) {
+        [weakSelf helperRelease];
+    }];
+}
+
+/**
+ 订阅本类内的signal
+ */
+-(void) subscribeHelperSingals
+{
+    [self.printAppInfoSingal subscribeNext:^(id x) {
+       
+        FTDLog(@"\n%@\ndocPath:\n%@\n\ndeviceInfo:\n%@\n\n%@\n\nappInfo:\n%@\n%@"
+               ,@"==================="
+               ,[FTFileUtil getDocDirectory]
+               ,[FTDeviceHelper getDeviceInfo]
+               ,[NSString stringWithFormat:@"screenWidth: %.2f  screenHeight: %.2f scale:%.2f"
+                 ,[FTSystemHelper screenWidth]
+                 ,[FTSystemHelper screenHeight]
+                 ,[FTSystemHelper scale]]
+               ,[FTAppHelper getVersion]
+               ,@"===================");
+    }];
+}
+
+
+#pragma mark - 其它操作
+
+/**
+ 初始化其它Helper
+ */
+-(void) initOtherHelpers
+{
+    helperArray = [NSMutableArray arrayWithCapacity:5];
+    [helperArray addObject:[FTLoggerHelper sharedInstance]];
+    [helperArray addObject:[FTHotfixHelper sharedInstance]];
+    [helperArray addObject:[FTDeviceHelper sharedInstance]];
+    [helperArray addObject:[FTSystemHelper sharedInstance]];
+    [helperArray addObject:[FTNavigationHelper sharedInstance]];
+    [helperArray addObject:[FTThreadHelper sharedInstance]];
+    [helperArray addObject:[FTNetWorkHelper sharedInstance]];
+    [helperArray addObject:[FTAnimateHelper sharedInstance]];
+
+}
+
 
 @end

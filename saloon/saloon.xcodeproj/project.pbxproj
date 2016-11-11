@@ -44,6 +44,13 @@
 			remoteGlobalIDString = BF8400021D1CD5C30030EA3D;
 			remoteInfo = debug;
 		};
+		BFAD72AE1DD56952007ED622 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF84000D1D1CD5C30030EA3D /* debug.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8400011D1CD5C30030EA3D;
+			remoteInfo = debug;
+		};
 		BFB57CEA1C33848A005187B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFB57CE61C33848A005187B6 /* fertile.xcodeproj */;
@@ -305,6 +312,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BFAD72AF1DD56952007ED622 /* PBXTargetDependency */,
 				BFB57CED1C3384D5005187B6 /* PBXTargetDependency */,
 				BFB57CF11C3384F6005187B6 /* PBXTargetDependency */,
 			);
@@ -418,6 +426,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BFAD72AF1DD56952007ED622 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = debug;
+			targetProxy = BFAD72AE1DD56952007ED622 /* PBXContainerItemProxy */;
+		};
 		BFB57CED1C3384D5005187B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = fertile;

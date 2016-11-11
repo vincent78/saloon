@@ -11,6 +11,8 @@
 #import "FTBaseHelper.h"
 #import "FTNavigateWidget.h"
 
+#import "FTAppDelegate.h"
+
 
 @protocol FTAppHelperDelegate
 
@@ -38,8 +40,12 @@
 
 @property (nonatomic,strong) NSMutableDictionary *appDic;
 
-
 @property (nonatomic,strong) UIColor *vcBackGroundColor;
+
+
+@property (nonatomic,strong) RACSubject *printAppInfoSingal;
+
+
 
 #pragma mark - navigate
 

@@ -68,6 +68,17 @@
  */
 -(NSString *)trim;
 
+/**
+ *  @brief 计算string中两个字符串之间的范围:
+ *
+ *  @param string：处理的字符串
+ *  @param prefixString:第一个字符串
+ *  @param suffixString:第二个字符串
+ *
+ *  @return 返回两个字符串包含的范围（包含自身）
+ */
+- (NSRange)rangeOfString:(NSString *)string withPrefix:(NSString *)prefixString andSuffix:(NSString *)suffixString;
+
 
 /**
  *  @brief 去掉字符串中所有的空格（包括中间的空格）

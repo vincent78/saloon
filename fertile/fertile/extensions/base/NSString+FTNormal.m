@@ -100,6 +100,22 @@
                      [NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 
+- (NSRange)rangeOfString:(NSString *)string withPrefix:(NSString *)prefixString andSuffix:(NSString *)suffixString
+{
+    if ([string containsString:prefixString]) {
+        NSRange startRange = [string rangeOfString:prefixString];
+        NSInteger index = startRange.location + startRange.length + 1;
+        if (index < string.length) {
+            NSString *subString = [string substringFromIndex:index];
+            if ([subString containsString:suffixString]) {
+                NSRange endRange = [subString rangeOfString:suffixString];
+                return NSMakeRange(startRange.location, startRange.length + endRange.location + endRange.length + 1);
+            }
+        }
+    }
+    return NSMakeRange(0, 0);
+}
+
 - (NSString*)replaceBlankString
 {
     return [self stringByReplacingOccurrencesOfString:@" " withString:@""];

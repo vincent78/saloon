@@ -496,6 +496,8 @@
 		BF9C3CB81CA2778A007FE0EA /* FTProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */; };
 		BFAD6F2D1BDE536000D1D4E7 /* UITableViewController+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+FTNormal.h */; };
 		BFAD6F2E1BDE536000D1D4E7 /* UITableViewController+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+FTNormal.m */; };
+		BFAD72B31DD56AC6007ED622 /* FTAppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */; };
+		BFAD72B41DD56AC6007ED622 /* FTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */; };
 		BFB16F421BEAF9F700CEEBC9 /* FTTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */; };
 		BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F411BEAF9F700CEEBC9 /* FTTableViewController.m */; };
 		BFB16F481BEB06A700CEEBC9 /* FTNavigateControllerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F461BEB06A700CEEBC9 /* FTNavigateControllerModel.h */; };
@@ -1071,6 +1073,8 @@
 		BF9C3CB61CA2778A007FE0EA /* FTProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTProgressView.m; sourceTree = "<group>"; };
 		BFAD6F2B1BDE536000D1D4E7 /* UITableViewController+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+FTNormal.h"; sourceTree = "<group>"; };
 		BFAD6F2C1BDE536000D1D4E7 /* UITableViewController+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+FTNormal.m"; sourceTree = "<group>"; };
+		BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTAppDelegate.h; path = ../FTAppDelegate.h; sourceTree = "<group>"; };
+		BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTAppDelegate.m; path = ../FTAppDelegate.m; sourceTree = "<group>"; };
 		BFB16F401BEAF9F700CEEBC9 /* FTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTTableViewController.h; sourceTree = "<group>"; };
 		BFB16F411BEAF9F700CEEBC9 /* FTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTTableViewController.m; sourceTree = "<group>"; };
 		BFB16F461BEB06A700CEEBC9 /* FTNavigateControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTNavigateControllerModel.h; sourceTree = "<group>"; };
@@ -1860,6 +1864,8 @@
 		BF8EAD021BD4E53F004A051D /* fertile */ = {
 			isa = PBXGroup;
 			children = (
+				BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */,
+				BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */,
 				BF779E481DC7AFB6007A9914 /* component */,
 				BF3B70D31CDC7D0300A711BE /* base */,
 				BF43F6C41BDE255200A1389B /* model */,
@@ -1895,10 +1901,10 @@
 				BF78A7171CE0BE79001D3064 /* animation */,
 				BF43F6561BDDF24700A1389B /* FTBaseHelper.h */,
 				BF43F6571BDDF24700A1389B /* FTBaseHelper.m */,
-				BF5E5F331CA8C6FB00EA69B6 /* FTDeviceHelper.h */,
-				BF5E5F341CA8C6FB00EA69B6 /* FTDeviceHelper.m */,
 				BF43F6BE1BDE153200A1389B /* FTAppHelper.h */,
 				BF43F6BF1BDE153200A1389B /* FTAppHelper.m */,
+				BF5E5F331CA8C6FB00EA69B6 /* FTDeviceHelper.h */,
+				BF5E5F341CA8C6FB00EA69B6 /* FTDeviceHelper.m */,
 				BF43F6BA1BDE150100A1389B /* FTSystemHelper.h */,
 				BF43F6BB1BDE150100A1389B /* FTSystemHelper.m */,
 				BF43F65A1BDDF26600A1389B /* FTAnimateHelper.h */,
@@ -2210,6 +2216,7 @@
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
+				BFAD72B31DD56AC6007ED622 /* FTAppDelegate.h in Headers */,
 				BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */,
 				BF52E4E11C3CE1950052A107 /* MKAnnotationView+RACSignalSupport.h in Headers */,
 				BF2BB2261D5C424C0041B587 /* YYMemoryCache.h in Headers */,
@@ -2711,6 +2718,7 @@
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
+				BFAD72B41DD56AC6007ED622 /* FTAppDelegate.m in Sources */,
 				BF52E5291C3CE1950052A107 /* RACDynamicSequence.m in Sources */,
 				BF52E51E1C3CE1950052A107 /* RACCommand.m in Sources */,
 				BFC821C61BDE47920066A77C /* FTBaseViewController.m in Sources */,

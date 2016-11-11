@@ -22,19 +22,7 @@
 
 - (void)didReceiveMemoryWarning;
 
-@optional
 
-- (void)helper:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions;
-
-- (void)helperWillResignActive:(UIApplication*)application;
-
-- (void)helperDidEnterBackground:(UIApplication*)application;
-
-- (void)helperWillEnterForeground:(UIApplication*)application;
-
-- (void)helperDidBecomeActive:(UIApplication*)application;
-
-- (void)helperWillTerminate:(UIApplication*)application;
 
 @end
 
