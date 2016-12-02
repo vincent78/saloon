@@ -101,16 +101,9 @@
 +(BOOL) fileExist:(NSString *)fullName
 {
     BOOL isDirectory = YES;
-    if ([[NSFileManager defaultManager] fileExistsAtPath:fullName isDirectory:&isDirectory])
+    if ([[NSFileManager defaultManager] fileExistsAtPath:fullName isDirectory:&isDirectory] && !isDirectory)
     {
-        if (!isDirectory)
-        {
-            return TRUE;
-        }
-        else
-        {
-            return FALSE;
-        }
+        return TRUE;
     }
     else
     {

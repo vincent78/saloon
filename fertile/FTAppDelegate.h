@@ -25,4 +25,6 @@
 
 @property (strong, nonatomic) RACSubject *applicationWillTerminateSignal;
 
+@property (strong, nonatomic) RACSubject *didReceiveMemoryWarningSignal;
+
 @end

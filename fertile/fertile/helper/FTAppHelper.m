@@ -64,55 +64,7 @@ static FTAppHelper *sharedInstance = nil;
 {
 }
 
-#pragma mark - navigate
 
--(FTNavigateWidget *)getNavWidget
-{
-    FTNavigateWidget * navWidget ;
-    if (self.delegate)
-    {
-        navWidget = [self.delegate prepareNavigateBar];
-    }
-    else
-    {
-        navWidget = [[FTNavigateWidget alloc] initWithFrame:CGRectMake(0,0,[FTSystemHelper screenWidth],[FTSystemHelper navBarHeight])];
-    }
-    return navWidget;
-}
-
-
-#pragma mark - APP字体
-
-
-+(UIFont *) defaultFont:(CGFloat)size
-{
-    return [UIFont systemFontOfSize:size];
-}
-
-+(UIFont *) defaultBoldFont:(CGFloat)size
-{
-    return [UIFont boldSystemFontOfSize:size];
-}
-
-#pragma mark - APP的信息
-
-+(NSDictionary *) bundleInfo
-{
-    return [[NSBundle mainBundle] infoDictionary];
-}
-
-+(NSString *) getVersion
-{
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-}
-
-+(BOOL) isDebug
-{
-#if defined(DEBUG)||defined(_DEBUG)
-    return true;
-#endif
-    return false;
-}
 
 #pragma mark - 订阅signals
 
@@ -136,6 +88,10 @@ static FTAppHelper *sharedInstance = nil;
     
     [appDelegate.applicationWillTerminateSignal subscribeNext:^(id x) {
         [weakSelf helperRelease];
+    }];
+    
+    [appDelegate.didReceiveMemoryWarningSignal subscribeNext:^(id x) {
+        [weakSelf didReceiveMemoryWarning];
     }];
 }
 
@@ -177,6 +133,106 @@ static FTAppHelper *sharedInstance = nil;
     [helperArray addObject:[FTNetWorkHelper sharedInstance]];
     [helperArray addObject:[FTAnimateHelper sharedInstance]];
 
+}
+
+#pragma mark  navigate
+
+-(FTNavigateWidget *)getNavWidget
+{
+    FTNavigateWidget * navWidget ;
+    if (self.delegate)
+    {
+        navWidget = [self.delegate prepareNavigateBar];
+    }
+    else
+    {
+        navWidget = [[FTNavigateWidget alloc] initWithFrame:CGRectMake(0,0,[FTSystemHelper screenWidth],[FTSystemHelper navBarHeight])];
+    }
+    return navWidget;
+}
+
+
+#pragma mark  APP字体
++(UIFont *) defaultFont:(CGFloat)size
+{
+    return [UIFont systemFontOfSize:size];
+}
+
++(UIFont *) defaultBoldFont:(CGFloat)size
+{
+    return [UIFont boldSystemFontOfSize:size];
+}
+
+#pragma mark  APP的信息
+
++(NSDictionary *) bundleInfo
+{
+    return [[NSBundle mainBundle] infoDictionary];
+}
+
++(NSString *) getVersion
+{
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
++(BOOL) isDebug
+{
+#if defined(DEBUG)||defined(_DEBUG)
+    return true;
+#endif
+    return false;
+}
+
+
+/**
+ 获取当前屏幕显示的viewcontroller
+
+ @return <#return value description#>
+ */
+- (UIViewController *)getCurrentVC
+{
+    UIViewController *result = nil;
+    
+    UIWindow * window = [[UIApplication sharedApplication] keyWindow];
+    if (window.windowLevel != UIWindowLevelNormal)
+    {
+        NSArray *windows = [[UIApplication sharedApplication] windows];
+        for(UIWindow * tmpWin in windows)
+        {
+            if (tmpWin.windowLevel == UIWindowLevelNormal)
+            {
+                window = tmpWin;
+                break;
+            }
+        }
+    }
+    
+    UIView *frontView = [[window subviews] objectAtIndex:0];
+    id nextResponder = [frontView nextResponder];
+    
+    if ([nextResponder isKindOfClass:[UIViewController class]])
+        result = nextResponder;
+    else
+        result = window.rootViewController;
+    
+    return result;
+}
+
+
+/**
+ 获取当前屏幕中present出来的viewcontroller
+
+ @return <#return value description#>
+ */
+- (UIViewController *)getPresentedViewController
+{
+    UIViewController *appRootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    UIViewController *topVC = appRootVC;
+    if (topVC.presentedViewController) {
+        topVC = topVC.presentedViewController;
+    }
+    
+    return topVC;
 }
 
 

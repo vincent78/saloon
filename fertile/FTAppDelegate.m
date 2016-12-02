@@ -61,6 +61,7 @@
     self.applicationWillEnterForegroundSignal = [RACSubject subject];
     self.applicationDidBecomeActiveSignal = [RACSubject subject];
     self.applicationWillTerminateSignal = [RACSubject subject];
+    self.didReceiveMemoryWarningSignal = [RACSubject subject];
 }
 
 

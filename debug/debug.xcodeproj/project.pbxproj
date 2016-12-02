@@ -90,12 +90,20 @@
 			children = (
 				BF49AEA31D1D4E140050A869 /* README.md */,
 				BF8400041D1CD5C30030EA3D /* debug */,
+				BF8FE3D91DF01E9C006D7D6F /* New Group */,
 				BF49AD1A1D1D4E130050A869 /* Dependency */,
 				BF49AE991D1D4E140050A869 /* doc */,
 				BF49AEA41D1D4E140050A869 /* Resource */,
 				BF49AEAD1D1D4E140050A869 /* script */,
 				BF8400031D1CD5C30030EA3D /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BF8FE3D91DF01E9C006D7D6F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

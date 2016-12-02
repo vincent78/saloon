@@ -100,7 +100,19 @@
  */
 +(BOOL) isDebug;
 
+/**
+ 获取当前屏幕显示的viewcontroller
+ 
+ @return <#return value description#>
+ */
+- (UIViewController *)getCurrentVC;
 
+/**
+ 获取当前屏幕中present出来的viewcontroller
+ 
+ @return <#return value description#>
+ */
+- (UIViewController *)getPresentedViewController;
 
 
 @end
