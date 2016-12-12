@@ -521,4 +521,33 @@
     return outputImage;
 }
 
+//图片裁剪
++(UIImage *)getImageFromImage:(UIImage*)superImage subImageRect:(CGRect)subImageRect
+{
+    CGFloat scale = [UIScreen mainScreen].scale;
+    //    CGSize contextSize = CGSizeMake(subImageRect.size.width * scale, subImageRect.size.height * scale);
+    
+    CGImageRef imageRef = superImage.CGImage;
+    CGImageRef subImageRef = CGImageCreateWithImageInRect(imageRef, CGRectMake(subImageRect.origin.x*scale, subImageRect.origin.y*scale, subImageRect.size.width * scale, subImageRect.size.height * scale));
+    
+    UIGraphicsBeginImageContext(subImageRect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, subImageRect, subImageRef);
+    UIImage* returnImage = [UIImage imageWithCGImage:subImageRef];
+    UIGraphicsEndImageContext(); //返回裁剪的部分图像
+    return returnImage;
+}
+
+//图片合并
++(UIImage *)addImage:(UIImage *)image1 toImage:(UIImage *)image2 withRect:(CGRect)targetRect
+{
+    UIGraphicsBeginImageContext(image2.size);
+    //Draw image2
+    [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+    //Draw image1
+    [image1 drawInRect:targetRect];
+    UIImage *resultImage=UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
 @end

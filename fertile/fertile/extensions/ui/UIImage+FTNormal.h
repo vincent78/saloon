@@ -62,13 +62,6 @@
  */
 - (UIImage *)imageWithTintColor:(UIColor *)tintColor;
 
-/**
- *UIImage *imageToCrop = <yourImageToCrop>;
- *CGRect cropRect = <areaYouWantToCrop>;
- *
- *UIImage *croppedImage = [imageToCrop crop:cropRect];
- */
-- (UIImage *)crop:(CGRect)rect;
 
 
 
@@ -77,15 +70,41 @@
 -(UIImage*)resizedImageToFitInSize:(CGSize)boundingSize
                     scaleIfSmaller:(BOOL)scale;
 
-//+ (UIImage *)imageWithColor:(UIColor *)color
-//                       size:(CGSize)size;
-
-//+ (UIImage *)imageWithColor:(UIColor *)color;
-
 - (UIImage *)applyBlurWithRadius:(CGFloat)blurRadius
                        tintColor:(UIColor *)tintColor
            saturationDeltaFactor:(CGFloat)saturationDeltaFactor
                        maskImage:(UIImage *)maskImage;
+
+/**
+ 图片裁剪
+ 
+ *UIImage *imageToCrop = <yourImageToCrop>;
+ *CGRect cropRect = <areaYouWantToCrop>;
+ *
+ *UIImage *croppedImage = [imageToCrop crop:cropRect];
+ */
+- (UIImage *)crop:(CGRect)rect;
+
+
+/**
+ 图片裁剪
+
+ @param superImage <#superImage description#>
+ @param subImageRect <#subImageRect description#>
+ @return <#return value description#>
+ */
++(UIImage *)getImageFromImage:(UIImage*)superImage subImageRect:(CGRect)subImageRect;
+
+
+/**
+ 图片合并
+
+ @param image1 <#image1 description#>
+ @param image2 <#image2 description#>
+ @param targetRect <#targetRect description#>
+ @return <#return value description#>
+ */
++(UIImage *)addImage:(UIImage *)image1 toImage:(UIImage *)image2 withRect:(CGRect)targetRect;
 
 
 
