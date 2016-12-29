@@ -349,8 +349,12 @@
 		BF530C6D1CA0E1EA001B192C /* common.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF530C6B1CA0E1EA001B192C /* common.ttf */; };
 		BF5432B31C4CB72500BA9C5C /* UIImage+font.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5432B11C4CB72500BA9C5C /* UIImage+font.h */; };
 		BF5432B41C4CB72500BA9C5C /* UIImage+font.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432B21C4CB72500BA9C5C /* UIImage+font.m */; };
+		BF552FB01E149F75005188AF /* UIButton+image.h in Headers */ = {isa = PBXBuildFile; fileRef = BF552FAE1E149F75005188AF /* UIButton+image.h */; };
+		BF552FB11E149F75005188AF /* UIButton+image.m in Sources */ = {isa = PBXBuildFile; fileRef = BF552FAF1E149F75005188AF /* UIButton+image.m */; };
 		BF5E5F351CA8C6FB00EA69B6 /* FTDeviceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5E5F331CA8C6FB00EA69B6 /* FTDeviceHelper.h */; };
 		BF5E5F361CA8C6FB00EA69B6 /* FTDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5E5F341CA8C6FB00EA69B6 /* FTDeviceHelper.m */; };
+		BF5EE0101E10FC9A00705DFE /* NSURL+FTNormal.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5EE00E1E10FC9A00705DFE /* NSURL+FTNormal.h */; };
+		BF5EE0111E10FC9A00705DFE /* NSURL+FTNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5EE00F1E10FC9A00705DFE /* NSURL+FTNormal.m */; };
 		BF5F6FBE1CB66A2100463D9F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5F6FB31CB66A2100463D9F /* crypt.h */; };
 		BF5F6FBF1CB66A2100463D9F /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = BF5F6FB41CB66A2100463D9F /* ioapi.c */; };
 		BF5F6FC01CB66A2100463D9F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5F6FB51CB66A2100463D9F /* ioapi.h */; };
@@ -927,8 +931,12 @@
 		BF530C6B1CA0E1EA001B192C /* common.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = common.ttf; sourceTree = "<group>"; };
 		BF5432B11C4CB72500BA9C5C /* UIImage+font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+font.h"; path = "../image/UIImage+font.h"; sourceTree = "<group>"; };
 		BF5432B21C4CB72500BA9C5C /* UIImage+font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+font.m"; path = "../image/UIImage+font.m"; sourceTree = "<group>"; };
+		BF552FAE1E149F75005188AF /* UIButton+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+image.h"; sourceTree = "<group>"; };
+		BF552FAF1E149F75005188AF /* UIButton+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+image.m"; sourceTree = "<group>"; };
 		BF5E5F331CA8C6FB00EA69B6 /* FTDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTDeviceHelper.h; sourceTree = "<group>"; };
 		BF5E5F341CA8C6FB00EA69B6 /* FTDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTDeviceHelper.m; sourceTree = "<group>"; };
+		BF5EE00E1E10FC9A00705DFE /* NSURL+FTNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+FTNormal.h"; sourceTree = "<group>"; };
+		BF5EE00F1E10FC9A00705DFE /* NSURL+FTNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+FTNormal.m"; sourceTree = "<group>"; };
 		BF5F6FB31CB66A2100463D9F /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
 		BF5F6FB41CB66A2100463D9F /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
 		BF5F6FB51CB66A2100463D9F /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
@@ -2093,6 +2101,8 @@
 				BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */,
 				BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */,
 				BFB20FCC1CE9784B0058649D /* NSObject+FTProperty.m */,
+				BF5EE00E1E10FC9A00705DFE /* NSURL+FTNormal.h */,
+				BF5EE00F1E10FC9A00705DFE /* NSURL+FTNormal.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -2120,6 +2130,8 @@
 				BF50529D1CC8C4AD00B9EDCD /* UILabel+FTRich.m */,
 				BF5052D91CC8DC0500B9EDCD /* UIImage+FTNormal.h */,
 				BF5052DA1CC8DC0500B9EDCD /* UIImage+FTNormal.m */,
+				BF552FAE1E149F75005188AF /* UIButton+image.h */,
+				BF552FAF1E149F75005188AF /* UIButton+image.m */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -2256,6 +2268,7 @@
 				BF5F6FC41CB66A2100463D9F /* unzip.h in Headers */,
 				BF52E5221C3CE1950052A107 /* RACDelegateProxy.h in Headers */,
 				BF3B70A41CDC6C0F00A711BE /* NSNumber+BlocksKit.h in Headers */,
+				BF552FB01E149F75005188AF /* UIButton+image.h in Headers */,
 				BF6A012C1CE1DDFB0076B549 /* JPEngine.h in Headers */,
 				BF3B70BE1CDC6C0F00A711BE /* UIBarButtonItem+BlocksKit.h in Headers */,
 				BF43F6CF1BDE261600A1389B /* FTAnimateModel.h in Headers */,
@@ -2333,6 +2346,7 @@
 				BF52E5961C3CE1950052A107 /* UISlider+RACSignalSupport.h in Headers */,
 				BFFAD91A1BE370BD0050A21B /* FTThreadHelper.h in Headers */,
 				BF52E56B1C3CE1950052A107 /* RACSubscriptingAssignmentTrampoline.h in Headers */,
+				BF5EE0101E10FC9A00705DFE /* NSURL+FTNormal.h in Headers */,
 				BF6A00E41CE1746A0076B549 /* FTObjectUtil.h in Headers */,
 				BF52E5731C3CE1950052A107 /* RACTuple.h in Headers */,
 				BFB785B31DF7BF8800771A09 /* FTVectorBaseView.h in Headers */,
@@ -2685,6 +2699,7 @@
 				BF6C2B5B1C3A04EC00CDA1E8 /* SDWebImageDownloader.m in Sources */,
 				BFFAD90E1BE35FFF0050A21B /* NSMutableArray+FTNormal.m in Sources */,
 				BF52E4FA1C3CE1950052A107 /* NSObject+RACDeallocating.m in Sources */,
+				BF5EE0111E10FC9A00705DFE /* NSURL+FTNormal.m in Sources */,
 				BFB16F491BEB06A700CEEBC9 /* FTNavigateControllerModel.m in Sources */,
 				BF52E5701C3CE1950052A107 /* RACTargetQueueScheduler.m in Sources */,
 				BF52E5A31C3CE1950052A107 /* UITextView+RACSignalSupport.m in Sources */,
@@ -2739,6 +2754,7 @@
 				BF52E54B1C3CE1950052A107 /* RACQueueScheduler.m in Sources */,
 				BF2BB2271D5C424C0041B587 /* YYMemoryCache.m in Sources */,
 				BF6C2B571C3A04EC00CDA1E8 /* SDWebImageCompat.m in Sources */,
+				BF552FB11E149F75005188AF /* UIButton+image.m in Sources */,
 				BF52E5671C3CE1950052A107 /* RACSubject.m in Sources */,
 				BF3B709D1CDC6C0F00A711BE /* NSMutableDictionary+BlocksKit.m in Sources */,
 				BFAD72B41DD56AC6007ED622 /* FTAppDelegate.m in Sources */,
