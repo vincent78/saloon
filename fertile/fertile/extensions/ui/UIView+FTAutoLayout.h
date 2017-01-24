@@ -74,4 +74,17 @@
 
 
 
+/**
+ 删除与自身相关的约束
+ */
+-(void) removeAllConstraintOfSelf;
+
+/**
+ 删除指定的约束
+
+ @param constraint <#constraint description#>
+ */
+- (void)removeAllConstraintOfSelf:(NSLayoutConstraint *)constraint;
+
+
 @end

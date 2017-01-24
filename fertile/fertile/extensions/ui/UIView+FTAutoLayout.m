@@ -135,7 +135,27 @@
     }];
 }
 
+-(void) removeAllConstraintOfSelf
+{
+    [self removeConstraints:self.constraints];
+    for (NSLayoutConstraint *constraint in self.superview.constraints) {
+        if ([constraint.firstItem isEqual:self]) {
+            [self.superview removeConstraint:constraint];
+        }
+        else if ([constraint.secondItem isEqual:self]) {
+            [self.superview removeConstraint:constraint];
+        }
+    }
+}
 
+- (void)removeAllConstraintOfSelf:(NSLayoutConstraint *)constraint
+{
+    for (NSLayoutConstraint *constraint in self.superview.constraints) {
+        if ([constraint isEqual:constraint]) {
+            [self.superview removeConstraint:constraint];
+        }
+    }
+}
 
 
 @end
