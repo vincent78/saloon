@@ -8,6 +8,7 @@
 
 #import "MASCompositeConstraint.h"
 #import "MASConstraint+Private.h"
+//#import "CTMutableArray.h"
 
 @interface MASCompositeConstraint () <MASConstraintDelegate>
 
@@ -35,6 +36,7 @@
 - (void)constraint:(MASConstraint *)constraint shouldBeReplacedWithConstraint:(MASConstraint *)replacementConstraint {
     NSUInteger index = [self.childConstraints indexOfObject:constraint];
     NSAssert(index != NSNotFound, @"Could not find constraint %@", constraint);
+//    [self.childConstraints replaceObjectAtIndexForCtrip:index withObject:replacementConstraint];
     [self.childConstraints replaceObjectAtIndex:index withObject:replacementConstraint];
 }
 
@@ -97,7 +99,7 @@
 
 #pragma mark - Animator proxy
 
-#if TARGET_OS_MAC && !(TARGET_OS_IPHONE || TARGET_OS_TV)
+#if TARGET_OS_MAC && !TARGET_OS_IPHONE
 
 - (MASConstraint *)animator {
     for (MASConstraint *constraint in self.childConstraints) {
