@@ -94,6 +94,13 @@
  */
 -(BOOL) isPureInt;
 
+
+/**
+ 是否为数字
+
+ @return <#return value description#>
+ */
+- (BOOL)isNumber;
 /**
  *  @brief 将字符串按lengthes的长度分成n段，并用separateStr连接起来
  

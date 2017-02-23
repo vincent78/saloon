@@ -128,6 +128,32 @@
     return [scan scanInt:&val] && [scan isAtEnd];
 }
 
+- (BOOL)isNumber {
+    int dotCount = 0;
+    BOOL isLeagalNum = YES;
+    
+    for (NSUInteger i = 0; i < self.length; i++) {
+        unichar cha = [self characterAtIndex:i];
+        if (cha == '.') {
+            dotCount++;
+            if (dotCount >= 2) {
+                isLeagalNum = NO;
+                break;
+            }
+        }
+        else if (cha >= '0' && cha <= '9') {
+            ;
+        }
+        else {
+            isLeagalNum = NO;
+            break;
+        }
+        
+    }
+    
+    return isLeagalNum;
+}
+
 
 
 - (NSString*)join:(NSString*)separateStr withLength:(NSNumber*)lengthes, ... NS_REQUIRES_NIL_TERMINATION
