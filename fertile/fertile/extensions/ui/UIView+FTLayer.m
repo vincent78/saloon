@@ -40,7 +40,8 @@
     cornerBorderLayer.fillColor = [[UIColor clearColor] CGColor];
     cornerBorderLayer.lineWidth = borderWidth;
     cornerBorderLayer.lineDashPattern =patterns;
-    [self.layer addSublayer:cornerBorderLayer];
+//    [self.layer addSublayer:cornerBorderLayer];
+    self.layer.mask = cornerBorderLayer;
     
 }
 

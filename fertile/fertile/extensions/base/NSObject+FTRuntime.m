@@ -10,7 +10,224 @@
 
 #import <objc/runtime.h>
 
+static NSString * FL_OBJECT_ASS_KEY = @"com.vincent.OBJECTS";
+
+
 @implementation NSObject (FTRuntime)
+
+
+- (id) ftObjInfo {
+    id ret = objc_getAssociatedObject(self, (__bridge const void *)FL_OBJECT_ASS_KEY) ;
+    return ret ;
+}
+
+- (void) setFtObjInfo:(id)ftInfo {
+    objc_setAssociatedObject(self, (__bridge const void *)FL_OBJECT_ASS_KEY, ftInfo, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+//
+//
+//-(id) getPropertyValueByName:(NSString *)key
+//{
+//    if ([NSString emptyOrNull:key])
+//    {
+//        return nil;
+//    }
+//    __block id tmpObj = self;
+//    NSArray *properties = [key componentsSeparatedByString:@"."];
+//    [properties bk_each:^(id  _Nonnull obj) {
+//        if (tmpObj)
+//        {
+//            tmpObj = [tmpObj valueForKey:(NSString *)obj];
+//        }
+//    }];
+//    return tmpObj;
+//}
+//
+//
+//
+//
+//-(void) setPropertyByName:(NSString *)name withValue:(id)value
+//{
+//    if ([StringUtil emptyOrNull:name])
+//    {
+//        return ;
+//    }
+//    
+//    
+//    if (value)
+//    {
+//        if( [value respondsToSelector:@selector(mutableCopyWithZone:)])
+//        {
+//            value = [value mutableCopy];
+//        }
+//        else if ([value respondsToSelector:@selector(copyWithZone:)])
+//        {
+//            value = [value copy];
+//        }
+//    }
+//    
+//    
+//    
+//    __block id tmpObj = self;
+//    NSString *propertyName = @"";
+//    NSMutableArray *properties = [[name componentsSeparatedByString:@"."] mutableCopy];
+//    propertyName = [properties lastObject];
+//    [properties removeLastObject];
+//    [properties bk_each:^(id  _Nonnull obj) {
+//        if (tmpObj)
+//        {
+//            tmpObj = [tmpObj valueForKey:(NSString *)obj];
+//        }
+//    }];
+//    
+//    if (tmpObj)
+//    {
+//        SEL seletor = NSSelectorFromString(propertyName);
+//        if ([tmpObj respondsToSelector:seletor])
+//        {
+//            [tmpObj setValue:value forKey:propertyName];
+//        }
+//    }
+//}
+//
+//-(BOOL) propertyExist:(NSString *)name
+//{
+//    BOOL exist = NO;
+//    unsigned int outCount = 0;
+//    //获取到所有的成员变量列表
+//    //遍历所有的成员变量
+//    
+//    Class cls = [self class];
+//    while (cls != [NSObject class])
+//    {
+//        
+//        Ivar *vars = class_copyIvarList(cls, &outCount);
+//        if(vars == NULL)
+//        {
+//            cls = class_getSuperclass(cls);
+//            continue;
+//        }
+//        
+//        for (int i =0;i<outCount;i++)
+//        {
+//            Ivar ivar = vars[i];
+//            const char *propertyName = ivar_getName(ivar);
+//            NSString *tmpName = [[NSString alloc] initWithCString:propertyName encoding:NSASCIIStringEncoding];
+//            tmpName = [tmpName substringFromIndex:1];
+//            if ([tmpName isEqualToString:name])
+//            {
+//                return YES;
+//            }
+//        }
+//        
+//        cls = class_getSuperclass(cls);
+//        
+//    }
+//    
+//    
+//    return exist;
+//}
+//
+//
+//-(void) save:(NSString *)sourceName nextCacheBean:(CTCacheBean *)nextCacheBean
+//          to:(NSString *)targetName type:(CTPropertySaveType) type
+//    required:(Boolean)required
+//{
+//    if ([self propertyExist:sourceName])
+//    {
+//        id value = [self getPropertyValueByName:sourceName];
+//        
+//        switch (type) {
+//            case CTPropertySaveTypeRetain:
+//                [self retainPropertyByName:targetName withValue:value nextCacheBean:nextCacheBean required:required];
+//                break;
+//            case CTPropertySaveTypeCopy:
+//                [self copyPropertyWithName:targetName withValue:value nextCacheBean:nextCacheBean required:required];
+//                break;
+//            default:
+//                [self retainPropertyByName:targetName withValue:value nextCacheBean:nextCacheBean required:required];
+//                break;
+//        }
+//    }
+//}
+//
+//
+//-(void) setValueToObj:(NSString *)name withValue:(id)value nextCacheBean:(CTCacheBean *)nextCacheBean
+//{
+//    Class    sourceOjbectClass = [self class];
+//    id       targetObject      = nextCacheBean;
+//    id       parentObject      = nil;
+//    NSArray *keyArray          = [name componentsSeparatedByString:@"."];
+//    NSString *lastKey          = nil;
+//    
+//    for (int i = 0; i < keyArray.count; i++) {
+//        NSString *levelKey = [keyArray objectAtIndexForCtrip:i];
+//        if (levelKey.length > 0) {
+//            objc_property_t childProperty = class_getProperty(sourceOjbectClass, [levelKey UTF8String]);
+//            if (childProperty) {
+//                if (targetObject && [targetObject propertyExist:levelKey]) {
+//                    lastKey      = levelKey;
+//                    parentObject = targetObject;
+//                    targetObject = [targetObject valueForKey:levelKey];
+//                    sourceOjbectClass = [value class];
+//                }
+//                else
+//                {
+//                    TLog(@"对象%@的属性%@，赋值为%@失败。父对象%@", nextCacheBean, name, value, parentObject);
+//                }
+//            }
+//            else
+//            {
+//                TLog(@"对象%@的属性%@，赋值为%@失败。类%@无此信息%@", nextCacheBean, name,  value, sourceOjbectClass, levelKey);
+//            }
+//        }
+//        else
+//        {
+//            //空字符跳过
+//        }
+//    }
+//    
+//    if (parentObject && lastKey.length > 0) {
+//        [parentObject setValue:value forKey:lastKey];
+//    }
+//    
+//}
+//
+//-(void) retainPropertyByName:(NSString *)name withValue:(id)value nextCacheBean:(CTCacheBean *)nextCacheBean required:(Boolean)required
+//{
+//    [self setValueToObj:name withValue:value nextCacheBean:nextCacheBean];
+//}
+//
+//-(void) copyPropertyWithName:(NSString *)name withValue:(id)value nextCacheBean:(CTCacheBean *)nextCacheBean required:(Boolean)required
+//{
+//    SEL copySelector = NULL;
+//    NSString *className = @"";
+//    if(value)
+//    {
+//        className =  NSStringFromClass([value class]);
+//    }
+//    
+//    copySelector = @selector(mutableCopyWithZone:);
+//    
+//    
+//    if ([value respondsToSelector:@selector(mutableCopyWithZone:)])
+//    {
+//        [self setValueToObj:name withValue:[value mutableCopy] nextCacheBean:nextCacheBean];
+//    }
+//    else if ([value respondsToSelector:@selector(copyWithZone:)])
+//    {
+//        [self setValueToObj:name withValue:[value copy] nextCacheBean:nextCacheBean];
+//    }
+//    else
+//    {
+//        
+//        TLog(@"Save源数据不支持Copy，fromKey:%@ fromValue:%@\nFromCacheBean:%@ ToCacheBean:%@", name, value, NSStringFromClass([self class]), nextCacheBean);
+//    }
+//    
+//}
+//
+
 
 - (NSArray *)getAllProperties
 {

@@ -132,6 +132,11 @@
 }
 
 
+/**
+ <#Description#>
+
+ @return <#return value description#>
+ */
 -(NSData *) toNSData
 {
     return [self dataUsingEncoding: NSUTF8StringEncoding];
@@ -151,6 +156,7 @@
 //    free( buf );  
 //    return data;
 }
+
 
 
 

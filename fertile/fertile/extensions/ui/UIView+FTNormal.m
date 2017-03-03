@@ -92,20 +92,7 @@
 #endif
 }
 
-+ (instancetype)extractFromXib {
-  NSString *viewName = NSStringFromClass([self class]);
-  NSArray *views =
-      [[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil];
-  Class targetClass = NSClassFromString(viewName);
 
-  for (UIView *view in views) {
-    if ([view isMemberOfClass:targetClass]) {
-      return view;
-    }
-  }
-
-  return nil;
-}
 
 
 - (void)removeAllSubView {
@@ -138,7 +125,20 @@
 
 
 
-
++ (instancetype)extractFromXib {
+    NSString *viewName = NSStringFromClass([self class]);
+    NSArray *views =
+    [[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil];
+    Class targetClass = NSClassFromString(viewName);
+    
+    for (UIView *view in views) {
+        if ([view isMemberOfClass:targetClass]) {
+            return view;
+        }
+    }
+    
+    return nil;
+}
 
 
 - (instancetype) viewWithXibNamed:(NSString*) xibName owner:(id)owner

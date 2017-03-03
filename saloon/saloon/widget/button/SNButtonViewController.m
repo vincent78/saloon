@@ -35,7 +35,9 @@
 {
     [self.btn01 setTitle:@"测试按钮01" forState:UIControlStateNormal];
     self.btn01.backgroundColor = [UIColor yellowColor];
-    [self.btn01 viewCornerRaidusType:4 borderColor:[UIColor redColor] borderWidth:1];
+    [self.btn01 viewCornerRaidusType:4
+                         borderColor:[UIColor redColor]
+                         borderWidth:[FTSystemHelper onePixeWidth]];
 }
 
 -(void) initBtn02

@@ -29,12 +29,7 @@
  */
 - (void)showBorderWithColor:(UIColor *)color;
 
-/**
- *  @brief  从同名的xib中返回UIView
- *
- *  @return <#return value description#>
- */
-+ (instancetype)extractFromXib;
+
 
 /**
  *  @brief  As its name hints.
@@ -56,6 +51,13 @@
  */
 - (void)printPosition;
 
+
+/**
+ *  @brief  从同名的xib中返回UIView
+ *
+ *  @return <#return value description#>
+ */
++ (instancetype)extractFromXib;
 
 /**
  *  @brief 从xib文件中取得第一个view
