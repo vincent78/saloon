@@ -520,6 +520,8 @@
 		BFB16F6F1BEB370500CEEBC9 /* FTNavigateWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F6D1BEB370500CEEBC9 /* FTNavigateWidget.m */; };
 		BFB16F771BEB501D00CEEBC9 /* FTImgBtn.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB16F751BEB501D00CEEBC9 /* FTImgBtn.h */; };
 		BFB16F781BEB501D00CEEBC9 /* FTImgBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB16F761BEB501D00CEEBC9 /* FTImgBtn.m */; };
+		BFB20A141E84A77000CB3D2A /* FTCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB20A121E84A77000CB3D2A /* FTCalendar.h */; };
+		BFB20A151E84A77000CB3D2A /* FTCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB20A131E84A77000CB3D2A /* FTCalendar.m */; };
 		BFB20FC91CE977650058649D /* NSObject+FTRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB20FC71CE977650058649D /* NSObject+FTRuntime.h */; };
 		BFB20FCA1CE977650058649D /* NSObject+FTRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */; };
 		BFB20FCD1CE9784B0058649D /* NSObject+FTProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */; };
@@ -1113,6 +1115,8 @@
 		BFB16F6D1BEB370500CEEBC9 /* FTNavigateWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTNavigateWidget.m; path = ../FTNavigateWidget.m; sourceTree = "<group>"; };
 		BFB16F751BEB501D00CEEBC9 /* FTImgBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTImgBtn.h; sourceTree = "<group>"; };
 		BFB16F761BEB501D00CEEBC9 /* FTImgBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTImgBtn.m; sourceTree = "<group>"; };
+		BFB20A121E84A77000CB3D2A /* FTCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCalendar.h; sourceTree = "<group>"; };
+		BFB20A131E84A77000CB3D2A /* FTCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCalendar.m; sourceTree = "<group>"; };
 		BFB20FC71CE977650058649D /* NSObject+FTRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FTRuntime.h"; sourceTree = "<group>"; };
 		BFB20FC81CE977650058649D /* NSObject+FTRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FTRuntime.m"; sourceTree = "<group>"; };
 		BFB20FCB1CE9784B0058649D /* NSObject+FTProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FTProperty.h"; sourceTree = "<group>"; };
@@ -2011,6 +2015,7 @@
 		BF8EAD201BD4E57C004A051D /* widget */ = {
 			isa = PBXGroup;
 			children = (
+				BFB20A111E84A72300CB3D2A /* sysCalendar */,
 				BF558FD71E695D620056BEE8 /* dialogWidget */,
 				BFC8218A1BDE2CAC0066A77C /* FTWidget.h */,
 				BF558FD61E695D1B0056BEE8 /* base */,
@@ -2054,6 +2059,15 @@
 				BF49AD151D1D4BDC0050A869 /* FTMoveableWidget.m */,
 			);
 			path = btnWidget;
+			sourceTree = "<group>";
+		};
+		BFB20A111E84A72300CB3D2A /* sysCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				BFB20A121E84A77000CB3D2A /* FTCalendar.h */,
+				BFB20A131E84A77000CB3D2A /* FTCalendar.m */,
+			);
+			path = sysCalendar;
 			sourceTree = "<group>";
 		};
 		BFB57D151C33C0B4005187B6 /* Aspects */ = {
@@ -2391,6 +2405,7 @@
 				BFF188241CB6082700CC1F77 /* AFSecurityPolicy.h in Headers */,
 				BF6C2B501C3A04EC00CDA1E8 /* MKAnnotationView+WebCache.h in Headers */,
 				BF52E4E31C3CE1950052A107 /* NSArray+RACSequenceAdditions.h in Headers */,
+				BFB20A141E84A77000CB3D2A /* FTCalendar.h in Headers */,
 				BF5052DB1CC8DC0500B9EDCD /* UIImage+FTNormal.h in Headers */,
 				BF5F6FC01CB66A2100463D9F /* ioapi.h in Headers */,
 				BF52E4ED1C3CE1950052A107 /* NSEnumerator+RACSequenceAdditions.h in Headers */,
@@ -2844,6 +2859,7 @@
 				BF52E58D1C3CE1950052A107 /* UIDatePicker+RACSignalSupport.m in Sources */,
 				BF5052A31CC8CF0F00B9EDCD /* NSData+FTBox.m in Sources */,
 				BF79D6E91E4C705800AC7441 /* MASViewConstraint.m in Sources */,
+				BFB20A151E84A77000CB3D2A /* FTCalendar.m in Sources */,
 				BF1533C71BE0D95300809493 /* FTFileUtil+md5.m in Sources */,
 				BFC821B51BDE45BF0066A77C /* NSString+FTSecurity.m in Sources */,
 				BF52E56A1C3CE1950052A107 /* RACSubscriber.m in Sources */,
