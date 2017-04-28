@@ -20,18 +20,18 @@
 
 
 
-void runBlockInMainThread(dispatch_block_t block) {
-    if (block == nil) {
-        return;
-    }
-    
-    if ([NSThread isMainThread]) {
-        block();
-    }
-    else {
-        dispatch_sync(dispatch_get_main_queue(), block);
-    }
-}
+//void runBlockInMainThread(dispatch_block_t block) {
+//    if (block == nil) {
+//        return;
+//    }
+//    
+//    if ([NSThread isMainThread]) {
+//        block();
+//    }
+//    else {
+//        dispatch_sync(dispatch_get_main_queue(), block);
+//    }
+//}
 
 @implementation FTThreadHelper
 

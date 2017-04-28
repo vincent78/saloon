@@ -81,12 +81,15 @@
 
 -(BOOL)isValidEMail
 {
-    NSString *match=@"\\S+@(\\S+\\.)+[\\S]{1,6}";
-    //  NSString *match=@"[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\\.)+[a-zA-Z]{1,6}";
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
-    bool valid = [predicate evaluateWithObject:self];
-    
-    return valid;
+//    NSString *match=@"\\S+@(\\S+\\.)+[\\S]{1,6}";
+//    //  NSString *match=@"[a-zA-Z0-9_.-]+@([a-zA-Z0-9]+\\.)+[a-zA-Z]{1,6}";
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
+//    bool valid = [predicate evaluateWithObject:self];
+//    
+//    return valid;
+    NSString *match = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    return ([self rangeOfString:match options:NSRegularExpressionSearch].location != NSNotFound);
+
 }
 
 

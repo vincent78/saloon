@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    FTDLog(@"%@",[@"test@123.com" isValidEMail]?@"YES":@"NO");
+    FTDLog(@"%@",[@"test＠123.com" isValidEMail]?@"YES":@"NO");
+    FTDLog(@"%@",[@"test＠123．com" isValidEMail]?@"YES":@"NO");
 }
 
 - (void)didReceiveMemoryWarning {
