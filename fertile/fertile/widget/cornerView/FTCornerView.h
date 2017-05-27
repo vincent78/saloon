@@ -14,6 +14,7 @@ typedef NS_OPTIONS(NSUInteger, FTCornerType) {
     FTCornerTypeTopRight            = 1 << 1,
     FTCornerTypeDownLeft            = 1 << 2,
     FTCornerTypeDownRight           = 1 << 3,
+    FTCornerTypeAll                 = 1 << 4,
 };
 
 @interface FTCornerView : FTBaseWidget
