@@ -25,4 +25,21 @@
 -(BOOL) isContainer:(id)value compare:(BOOL (^)(id value , id obj))compare;
 
 
+/**
+ 两个数组求交集
+
+ @param otherArray <#otherArray description#>
+ @return 升序返回的交集数组
+ */
+-(NSArray *) intersect:(NSArray *)otherArray;
+
+
+/**
+ 两个数据求并集
+
+ @param otherArray <#otherArray description#>
+ @return 升序返回的并集数组
+ */
+-(NSArray *) unionObj:(NSArray *)otherArray;
+
 @end

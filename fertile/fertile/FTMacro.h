@@ -64,3 +64,28 @@ _Pragma("clang diagnostic pop")
 #define notEmptyStr(str) !emptyStr(str)
 #define emptyStr(str) [NSString emptyOrNil:str]
 
+/**
+ *  App安装包路径
+ */
+#define kAppDir        [[NSBundle mainBundle] bundlePath]
+/**
+ *  App的Tmp目录
+ */
+#define kTmpDir        NSTemporaryDirectory()
+/**
+ *  App的Library目录
+ */
+#define kLibraryDir    [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+/**
+ *  App的Cache目录
+ */
+#define kCacheDir      [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+/**
+ *  App的Documents目录
+ */
+#define kDocDir    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
+#define kPathInDocDir(name) [kDocumentDir stringByAppendingPathComponent:name]
+

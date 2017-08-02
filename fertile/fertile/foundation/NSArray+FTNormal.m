@@ -46,6 +46,43 @@
     return NO;
 }
 
+-(NSArray *) intersect:(NSArray *)otherArray
+{
+    if (!otherArray)
+    {
+        return nil;
+    }
+    NSMutableSet *set1 = [NSMutableSet setWithArray:self];
+    NSSet *set2 = [NSSet setWithArray:otherArray];
+    [set1 intersectSet:set2];
+    return [self sortSet:set1 ascending:YES];
+}
+
+
+-(NSArray *) unionObj:(NSArray *)otherArray
+{
+    if (!otherArray)
+    {
+        return [NSArray arrayWithArray:self];
+    }
+    NSMutableSet *set1 = [NSMutableSet setWithArray:self];
+    NSSet *set2 = [NSSet setWithArray:otherArray];
+    [set1 unionSet:set2];
+    return [self sortSet:set1 ascending:YES];
+}
+
+-(NSArray *) sortSet:(NSSet *)set ascending:(BOOL)asc
+{
+    if (set)
+    {
+        NSArray *sortDesc = @[[[NSSortDescriptor alloc] initWithKey:nil ascending:asc]];
+        return [set sortedArrayUsingDescriptors:sortDesc];
+    }
+    else
+    {
+        return nil;
+    }
+}
 
 
 @end

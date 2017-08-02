@@ -13,7 +13,7 @@
 #import "FTBaseWidgetController.h"
 
 
-#import "FTMoveableWidget.h"
+#import "FTMoveableBtn.h"
 #import "FTImgBtn.h"
 
 #import "FTVectorView.h"
