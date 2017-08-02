@@ -24,13 +24,14 @@ Build Setting--> Apple LLVM 6.0 - Preprocessing--> Enable Strict Checking of obj
 第三方：
 MJExtension(JSON与MODEL的转化)
 https://github.com/CoderMJLee/MJExtension
+
 YYModel(JSON与MODEL的转化)
 https://github.com/ibireme/YYModel
 
 RSA(公钥私钥加密)
 https://github.com/ideawu/Objective-C-RSA
 
-JSPatch(hotfix)
+JSPatch(hotfix)  ** 
 https://github.com/bang590/JSPatch/wiki
 
 Reachability(网络监测）
@@ -41,6 +42,10 @@ https://github.com/zwaldowski/BlocksKit/tree/master/BlocksKit
 
 Masonry(autolayout布局）
 https://github.com/SnapKit/Masonry
+
+MLeaksFinder(内存泄漏检查)
+https://github.com/Zepo/MLeaksFinder
+
 
 ZipArchive(压缩相关）
 

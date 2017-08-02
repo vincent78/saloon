@@ -16,15 +16,10 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 //#import "MJExtension.h"
-#import "BlocksKit.h"
-#import "ReactiveCocoa.h"
-#import "YYModel.h"
-#import "YYCache.h"
 
-#import "masonry.h"
-#import "Aspects.h"
-#import "BlocksKit+UIKit.h"
-#import "Reachability.h"
+
+
+
 
 #import "FTMacro.h"
 #import "FTExtensions.h"
@@ -33,7 +28,7 @@
 #import "FTHelper.h"
 #import "FTWidget.h"
 #import "FTViewController.h"
-
+#import "FTFoundation.h"
 
 
 

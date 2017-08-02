@@ -10,35 +10,6 @@
 #define FTExtensions_h
 
 //base
-#import "NSData+FTHash.h"
-#import "NSData+FTBase64.h"
-#import "NSData+FTBox.h"
-
-#import "NSDate+FTBox.h"
-#import "NSDate+FTNormal.h"
-
-#import "NSString+FTSecurity.h"
-#import "NSString+FTSize.h"
-#import "NSString+FTRegExp.h"
-#import "NSString+FTJson.h"
-#import "NSString+FTFile.h"
-#import "NSString+FTBox.h"
-#import "NSString+FTNormal.h"
-#import "NSString+FTUrl.h"
-
-
-#import "NSNumber+FTBox.h"
-
-#import "NSArray+FTJson.h"
-#import "NSArray+FTNormal.h"
-#import "NSMutableArray+FTNormal.h"
-
-#import "NSDictionary+FTJson.h"
-#import "NSDictionary+FTObject.h"
-#import "NSMutableDictionary+FTNormal.h"
-
-#import "NSObject+FTRuntime.h"
-#import "NSObject+FTProperty.h"
 
 
 
