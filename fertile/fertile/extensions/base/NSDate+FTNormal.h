@@ -91,6 +91,8 @@ typedef NS_ENUM(NSInteger,FTDATEFIELD) {
 -(NSDate *) add:(long long) milliSecond;
 
 
+
+
 #pragma mark - 日期比较
 
 /**

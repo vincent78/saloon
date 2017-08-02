@@ -7,6 +7,7 @@
 //
 
 #import "NSDate+FTNormal.h"
+#import "NSString+FTBox.h"
 
 @implementation NSDate (FTNormal)
 
@@ -80,6 +81,202 @@ static NSCalendar *currCalendar;
 }
 
 
+/**
+ 两个DateTime时间间隔
+ 
+ @param departTime 时间1
+ @param arriveTime 时间2
+ @return x天x时x分
+ */
++(NSString *)getStayTimeInt:(NSString*)departTime arriveTime:(NSString*)arriveTime
+{
+    //    NSDate* departDate = [DateUtil getDateByDateTimeStr:departTime];
+    //    NSDate* arriveDate = [DateUtil getDateByDateTimeStr:arriveTime];
+    //    int allMin = [departDate timeIntervalSinceDate:arriveDate]/60;//总分钟
+    //    allMin = (abs(allMin));
+    int allMin = [self getStayTimeRetInt:departTime arriveTime:arriveTime];
+    
+    NSString* tempStr = [self convertMinutesToEngLishTimeStr:allMin];
+    return tempStr;
+}
+
+/**
+ *  @brief  两个时间间隔
+ *
+ *  @param departTime 时间1
+ *  @param arriveTime 时间2
+ *
+ *  @return 分钟
+ */
++(int) getStayTimeRetInt:(NSString*)departTime arriveTime:(NSString*)arriveTime
+{
+    NSDate *departDate = [departTime toDate:@"yyyyMMddHHmmss"];
+    NSDate *arriveDate = [arriveTime toDate:@"yyyyMMddHHmmss"];
+    int allMin = [departDate timeIntervalSinceDate:arriveDate]/60;//总分钟
+    allMin = (abs(allMin));
+    return allMin;
+}
+
+/**
+ *	将分钟数转换为时间字符串(英文)
+ *
+ *	@param	minutes	分钟数
+ *
+ *	@return	NSString
+ */
++(NSString *)convertMinutesToEngLishTimeStr:(int)minutes{
+    NSString * result = @"";
+    if (minutes <= 0) {
+        return result;
+    }
+    int hour = minutes/60;    //小时
+    int minute = minutes%60;    //分钟
+    if (hour) {
+        result = [NSString stringWithFormat:@"%@%dh",result,hour];
+    }
+    if (minute) {
+        result = [NSString stringWithFormat:@"%@%dm",result,minute];
+    }
+    return result;
+}
+
+/**
+ *  @brief  将分钟数转换为时间字符串（00:00)
+ *
+ *  @param minutes minutes	分钟数
+ *
+ *  @return NSString
+ */
++(NSString *)convertMinutesToShowTimeStr:(int)minutes {
+    if (minutes <= 0) {
+        return @"";
+    }
+    return [NSString stringWithFormat:@"%2d:%2d",minutes/60,minutes%60];
+}
+
+
+/**
+ 计算2个时间的跨天数目
+ 
+ @param startTime 开始时间
+ @param endTime 结束时间
+ @return 2个时间的跨天数目
+ */
++ (NSString *)getSpaceTimeStrWithStartTime:(NSString *)startTime endTime:(NSString *)endTime
+{
+    if([startTime length] == 14 && [endTime length] == 14)
+    {
+        return [self getWtNextDay:startTime arriveTime:endTime];
+    }
+    return @"";
+}
+
+
++ (NSString *)getWtNextDay:(NSString*)departTime arriveTime:(NSString *)arriveTime
+{
+    if (arriveTime == nil || departTime == nil)
+    {
+        return @"Error";
+    }
+    else
+    {
+        if ([departTime length] != 14 || [arriveTime length] != 14
+            ) {
+            return @"length error";
+        }
+        NSString *departYear = [departTime substringToIndex:4];
+        NSString *arriveYear = [arriveTime substringToIndex:4];
+        NSString *departMonth = [departTime substringWithRange:NSMakeRange(4, 2)];
+        NSString *arriveMonth = [arriveTime substringWithRange:NSMakeRange(4, 2)];
+        NSString *departDay = [departTime substringWithRange:NSMakeRange(6, 2)];
+        NSString *arriveDay = [arriveTime substringWithRange:NSMakeRange(6, 2)];
+        if ([departMonth intValue]!=[arriveMonth intValue])
+        {
+            if ([departDay intValue]< [arriveDay intValue]) //8月1日  7月30日
+            {
+                if ([arriveMonth isEqualToString:@"01"]||[arriveMonth isEqualToString:@"03"]||[arriveMonth isEqualToString:@"05"]||[arriveMonth isEqualToString:@"07"]||[arriveMonth isEqualToString:@"08"]||[arriveMonth isEqualToString:@"10"]||[arriveMonth isEqualToString:@"12"]) {
+                    int departNum = [departDay intValue]+31;
+                    if (departNum<10)
+                    {
+                        departDay = [NSString stringWithFormat:@"0%d",departNum];
+                    }
+                    else
+                    {
+                        departDay = [NSString stringWithFormat:@"%d",departNum];
+                    }
+                }
+                else if ([arriveMonth isEqualToString:@"04"]||[arriveMonth isEqualToString:@"06"]||[arriveMonth isEqualToString:@"09"]||[arriveMonth isEqualToString:@"11"])
+                {
+                    int departNum = [departDay intValue]+30;
+                    if (departNum<10)
+                    {
+                        departDay = [NSString stringWithFormat:@"0%d",departNum];
+                    }
+                    else
+                    {
+                        departDay = [NSString stringWithFormat:@"%d",departNum];
+                    }
+                }
+                else if([arriveMonth isEqualToString:@"02"])
+                {
+                    int departNum = [departDay intValue]+28;
+                    if (([arriveYear intValue]%4==0&&[arriveYear intValue]%100!=0)||[arriveYear intValue]%400==0)
+                    {
+                        departNum = [departDay intValue]+29;
+                    }
+                    departDay = [NSString stringWithFormat:@"0%d",departNum];
+                }
+            }
+            else if ([arriveDay intValue]< [departDay intValue])    //8月1日  7月30日
+            {
+                if ([departMonth isEqualToString:@"01"]||[departMonth isEqualToString:@"03"]||[departMonth isEqualToString:@"05"]||[departMonth isEqualToString:@"07"]||[departMonth isEqualToString:@"08"]||[departMonth isEqualToString:@"10"]||[departMonth isEqualToString:@"12"])
+                {
+                    int arriveNum = [arriveDay intValue]+31;
+                    if (arriveNum<10) {
+                        arriveDay = [NSString stringWithFormat:@"0%d",arriveNum];
+                    }
+                    else
+                    {
+                        arriveDay = [NSString stringWithFormat:@"%d",arriveNum];
+                    }
+                }
+                else if ([departMonth isEqualToString:@"04"]||[departMonth isEqualToString:@"06"]||[departMonth isEqualToString:@"09"]||[departMonth isEqualToString:@"11"])
+                {
+                    int arriveNum = [arriveDay intValue]+30;
+                    if (arriveNum<10)
+                    {
+                        arriveDay = [NSString stringWithFormat:@"0%d",arriveNum];
+                    }
+                    else
+                    {
+                        arriveDay = [NSString stringWithFormat:@"%d",arriveNum];
+                    }
+                }
+                else if([departMonth isEqualToString:@"02"])
+                {
+                    int arriveNum = [arriveDay intValue]+28;
+                    if (([departYear intValue]%4==0&&[departYear intValue]%100!=0)||[departYear intValue]%400==0)
+                    {
+                        arriveNum = [arriveDay intValue]+29;
+                    }
+                    arriveDay = [NSString stringWithFormat:@"0%d",arriveNum];
+                }
+            }
+        }
+        
+        NSString *result = @"";
+        if ([arriveDay intValue]-[departDay intValue] > 0)
+        {
+            result = [NSString stringWithFormat:@"+%d天", [arriveDay intValue]-[departDay intValue]];
+        }
+        else if([arriveDay intValue]-[departDay intValue]< 0)
+        {
+            result = [NSString stringWithFormat:@"-%d天", [departDay intValue]-[arriveDay intValue]];
+        }
+        
+        return result;
+    }
+}
 
 #pragma mark - 日期比较
 

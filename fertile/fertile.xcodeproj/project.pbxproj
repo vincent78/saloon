@@ -541,6 +541,10 @@
 		BFC027421CB67120008E7087 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC027411CB67120008E7087 /* libz.tbd */; };
 		BFC027451CB671CB008E7087 /* FTFileUtil+zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC027431CB671CB008E7087 /* FTFileUtil+zip.h */; };
 		BFC027461CB671CB008E7087 /* FTFileUtil+zip.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC027441CB671CB008E7087 /* FTFileUtil+zip.m */; };
+		BFC7C11B1F167AAE0093D818 /* FTCustomAlertWidget.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC7C1191F167AAE0093D818 /* FTCustomAlertWidget.h */; };
+		BFC7C11C1F167AAE0093D818 /* FTCustomAlertWidget.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC7C11A1F167AAE0093D818 /* FTCustomAlertWidget.m */; };
+		BFC7C11F1F167B180093D818 /* FTCustomAlertStyleUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC7C11D1F167B180093D818 /* FTCustomAlertStyleUtil.h */; };
+		BFC7C1201F167B180093D818 /* FTCustomAlertStyleUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC7C11E1F167B180093D818 /* FTCustomAlertStyleUtil.m */; };
 		BFC821AC1BDE45BF0066A77C /* NSData+FTBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A01BDE45BF0066A77C /* NSData+FTBase64.h */; };
 		BFC821AD1BDE45BF0066A77C /* NSData+FTBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC821A11BDE45BF0066A77C /* NSData+FTBase64.m */; };
 		BFC821AE1BDE45BF0066A77C /* NSData+FTHash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFC821A21BDE45BF0066A77C /* NSData+FTHash.h */; };
@@ -1136,6 +1140,10 @@
 		BFC027411CB67120008E7087 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BFC027431CB671CB008E7087 /* FTFileUtil+zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTFileUtil+zip.h"; sourceTree = "<group>"; };
 		BFC027441CB671CB008E7087 /* FTFileUtil+zip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FTFileUtil+zip.m"; sourceTree = "<group>"; };
+		BFC7C1191F167AAE0093D818 /* FTCustomAlertWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCustomAlertWidget.h; sourceTree = "<group>"; };
+		BFC7C11A1F167AAE0093D818 /* FTCustomAlertWidget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCustomAlertWidget.m; sourceTree = "<group>"; };
+		BFC7C11D1F167B180093D818 /* FTCustomAlertStyleUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCustomAlertStyleUtil.h; sourceTree = "<group>"; };
+		BFC7C11E1F167B180093D818 /* FTCustomAlertStyleUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTCustomAlertStyleUtil.m; sourceTree = "<group>"; };
 		BFC821881BDE2C1A0066A77C /* FTExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTExtensions.h; sourceTree = "<group>"; };
 		BFC821891BDE2C630066A77C /* FTModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTModel.h; sourceTree = "<group>"; };
 		BFC8218A1BDE2CAC0066A77C /* FTWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTWidget.h; sourceTree = "<group>"; };
@@ -1662,6 +1670,10 @@
 				BF558FE41E69603A0056BEE8 /* FTPopupWidget.h */,
 				BF558FE51E69603A0056BEE8 /* FTPopupWidget.m */,
 				BF558FE81E6962080056BEE8 /* FTPopupWidget.xib */,
+				BFC7C1191F167AAE0093D818 /* FTCustomAlertWidget.h */,
+				BFC7C11A1F167AAE0093D818 /* FTCustomAlertWidget.m */,
+				BFC7C11D1F167B180093D818 /* FTCustomAlertStyleUtil.h */,
+				BFC7C11E1F167B180093D818 /* FTCustomAlertStyleUtil.m */,
 			);
 			path = dialogWidget;
 			sourceTree = "<group>";
@@ -2275,6 +2287,7 @@
 				BFF8D81E1CD0752C009E6927 /* UIView+FTAutoLayout.h in Headers */,
 				BF3B70C61CDC6C0F00A711BE /* UIView+BlocksKit.h in Headers */,
 				BF52E50D1C3CE1950052A107 /* NSString+RACSupport.h in Headers */,
+				BFC7C11F1F167B180093D818 /* FTCustomAlertStyleUtil.h in Headers */,
 				BF8343D11C3B578A0082A845 /* UIColor+Wonderful.h in Headers */,
 				BF79D6581E4C6C6100AC7441 /* FTNumStepperWidget.h in Headers */,
 				BFD1F2821BFC714D00AFD63C /* FTHotfixHelper.h in Headers */,
@@ -2293,6 +2306,7 @@
 				BF52E5541C3CE1950052A107 /* RACScopedDisposable.h in Headers */,
 				BF3B70921CDC6C0F00A711BE /* NSDictionary+BlocksKit.h in Headers */,
 				BF79D6DB1E4C705800AC7441 /* MASCompositeConstraint.h in Headers */,
+				BFC7C11B1F167AAE0093D818 /* FTCustomAlertWidget.h in Headers */,
 				BF8343C91C3B578A0082A845 /* SXColorGradientView.h in Headers */,
 				BF52E5611C3CE1950052A107 /* RACStream+Private.h in Headers */,
 				BF19122F1C34CDD7007D9924 /* FTNavigateWidgetController.h in Headers */,
@@ -2712,6 +2726,7 @@
 				BF3B70B31CDC6C0F00A711BE /* A2BlockInvocation.m in Sources */,
 				BF14C5A51BE3081100B49989 /* UIWebView+FTNormal.m in Sources */,
 				BF79D6ED1E4C705800AC7441 /* NSArray+MASShorthandAdditions.m in Sources */,
+				BFC7C1201F167B180093D818 /* FTCustomAlertStyleUtil.m in Sources */,
 				BFC821BE1BDE462E0066A77C /* UITableViewCell+FTNormal.m in Sources */,
 				BF6DA4981CEEF48800F45F61 /* FTUserInfoModel.m in Sources */,
 				BFF188231CB6082700CC1F77 /* AFNetworkReachabilityManager.m in Sources */,
@@ -2814,6 +2829,7 @@
 				BF51B61C1C06E65A00D26E9B /* NSNumber+FTBox.m in Sources */,
 				BF52E55B1C3CE1950052A107 /* RACSignal+Operations.m in Sources */,
 				BF2DB8FF1CD330FF00EB7E70 /* FTClickPointCollectionWidget.m in Sources */,
+				BFC7C11C1F167AAE0093D818 /* FTCustomAlertWidget.m in Sources */,
 				BF558FE11E695E6B0056BEE8 /* FTLoadingWidget.m in Sources */,
 				BF79D6DC1E4C705800AC7441 /* MASCompositeConstraint.m in Sources */,
 				BFF8D81F1CD0752C009E6927 /* UIView+FTAutoLayout.m in Sources */,
