@@ -52,3 +52,13 @@ _Pragma("clang diagnostic pop")
 
 
 #endif /* FTConfiguration_h */
+
+
+
+
+#define FTScreenWidth [FTSystemHelper screenWidth]
+#define FTScreenHeight [FTSystemHelper screenHeight]
+#define FTOnePixeWidth [FTSystemHelper onePixeWidth]
+#define FTColor(hexStr) [UIColor colorWithHexString:hexStr]
+
+

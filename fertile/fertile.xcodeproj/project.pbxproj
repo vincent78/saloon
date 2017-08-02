@@ -1996,6 +1996,7 @@
 		BF8EAD021BD4E53F004A051D /* fertile */ = {
 			isa = PBXGroup;
 			children = (
+				BF64746A1C7013CD00569048 /* FTMacro.h */,
 				BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */,
 				BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */,
 				BF19C3131F31CF2200B9D34D /* foundation */,
@@ -2010,7 +2011,6 @@
 				BF8EAD031BD4E53F004A051D /* fertile.h */,
 				BF8EAD231BD4E659004A051D /* fertile-Prefix.pch */,
 				BF8EAD051BD4E53F004A051D /* Info.plist */,
-				BF64746A1C7013CD00569048 /* FTMacro.h */,
 			);
 			path = fertile;
 			sourceTree = "<group>";
