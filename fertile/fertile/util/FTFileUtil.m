@@ -56,7 +56,7 @@
 
 + (NSString *)getTmpDirectory
 {
-    return NSTemporaryDirectory ();
+    return NSTemporaryDirectory();
 }
 
 +(NSString *)getAppDirectory

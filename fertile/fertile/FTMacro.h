@@ -71,21 +71,36 @@ _Pragma("clang diagnostic pop")
 /**
  *  App的Tmp目录
  */
-#define kTmpDir        NSTemporaryDirectory()
+#define kTmpDir        [FTFileUtil getTmpDirectory]
 /**
  *  App的Library目录
  */
-#define kLibraryDir    [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define kLibraryDir    [FTFileUtil getLibraryDirectory]
 
 /**
  *  App的Cache目录
  */
-#define kCacheDir      [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define kCacheDir      [FTFileUtil getCachesDirectory]
 
 /**
  *  App的Documents目录
  */
-#define kDocDir    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define kDocDir    [FTFileUtil getDocDirectory]
 
+/**
+ *  App的Documents中的一级目录
+ */
 #define kPathInDocDir(name) [kDocumentDir stringByAppendingPathComponent:name]
+
+
+
+/** 字体 */
+#define FTFontSysteSize(value)      [UIFont systemFontOfSize:value]     //系统字体
+#define FTFontBoldSysteSize(value)  [UIFont boldSystemFontOfSize:value] //系统字体，粗体
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SS(strongSelf, weakSelf)  __strong __typeof(&*weakSelf)strongSelf = weakSelf;
+
+#define ISIPHONE   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
