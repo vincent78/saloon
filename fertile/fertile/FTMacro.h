@@ -61,4 +61,6 @@ _Pragma("clang diagnostic pop")
 #define FTOnePixeWidth [FTSystemHelper onePixeWidth]
 #define FTColor(hexStr) [UIColor colorWithHexString:hexStr]
 
+#define notEmptyStr(str) !emptyStr(str)
+#define emptyStr(str) [NSString emptyOrNil:str]
 

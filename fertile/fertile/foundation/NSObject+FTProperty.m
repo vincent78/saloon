@@ -26,7 +26,7 @@ static NSString * FT_OBJECT_PROPERTY_TAGOBJ = @"com.fruit.fertile.object.propert
 
 -(id) getPropertyValueByString:(NSString *)key
 {
-    if ([NSString emptyOrNil:key])
+    if (emptyStr(key))
     {
         return nil;
     }
@@ -43,7 +43,7 @@ static NSString * FT_OBJECT_PROPERTY_TAGOBJ = @"com.fruit.fertile.object.propert
 
 -(void) setPropertyByString:(NSString *)name withValue:(id)value
 {
-    if ([NSString emptyOrNil:name])
+    if (emptyStr(name))
     {
         return ;
     }

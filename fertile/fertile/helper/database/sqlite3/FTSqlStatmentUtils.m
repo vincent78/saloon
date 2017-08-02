@@ -40,14 +40,14 @@
             //sql标识
             NSString *sqlID = [sqlByID substringFromIndex:plistHeadStr.length + 1];
             
-            if (![NSString emptyOrNil:plstName] && ![NSString emptyOrNil:sqlID])
+            if ( notEmptyStr(plstName) && notEmptyStr(sqlID))
             {
                 NSString *plistPath = [[NSBundle mainBundle] pathForResource:plstName ofType:@"plist"];
                 @try {
                     NSDictionary *data = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
                     NSString *str = [[NSString alloc]initWithFormat:@"%@",[data valueForKey:sqlID]];
                     
-                    if (![NSString emptyOrNil:str] && ![str isEqualToString:@"(null)"])
+                    if (notEmptyStr(str) && ![str isEqualToString:@"(null)"])
                     {
                         return str;
                     }

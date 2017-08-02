@@ -78,7 +78,7 @@
         }
         
         //获取所有属性到数组
-        if (![NSString emptyOrNil:self.mPrimarykeyName])
+        if (notEmptyStr(self.mPrimarykeyName))
         {
             //有主键
             self.mFieldArray = [FTPropertyUtil obtainObjClassFieldsToArray:objectClass excludeFieldArr:noPersistenceArray primarykeyName:self.mPrimarykeyName];
@@ -108,7 +108,7 @@
     FTFieldInfo *fieldInfo = nil;
     
     //如果主键存在
-    if (![NSString emptyOrNil:self.mPrimarykeyName])
+    if (notEmptyStr(self.mPrimarykeyName))
     {
         //主键默认放在数组第一个
         if (self.mFieldArray.count > 0)
@@ -137,7 +137,7 @@
 {
     FTFieldInfo *fieldInfo = nil;
     
-    if (![NSString emptyOrNil:fieldName])
+    if (notEmptyStr(fieldName))
     {
         //轮循查找fieldName同名的FieldInfo
         for (FTFieldInfo *obj in self.mFieldArray)

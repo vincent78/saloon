@@ -274,7 +274,7 @@
             case eNSSTRING:
             {
                 NSString *valueStr = fieldValue;
-                if (![NSString emptyOrNil:valueStr])
+                if (notEmptyStr(valueStr))
                 {
                     //字段值存在，值有效
                     result = YES;

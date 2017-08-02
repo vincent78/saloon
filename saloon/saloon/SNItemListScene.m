@@ -122,7 +122,7 @@
     else
     {
         NSString * vcName = [item objectForKey:@"viewcontroller"];
-        if (![NSString emptyOrNil:vcName])
+        if (emptyStr(vcName))
         {
             FTBaseViewController *vc = [NSClassFromString(vcName) new];
 //            [[FTRouteHelper sharedInstance] pushWithClass:NSClassFromString(vcName)];

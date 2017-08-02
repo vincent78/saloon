@@ -114,7 +114,7 @@
         //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
+        if (!classInfo || emptyStr(classInfo.mTableName) || emptyStr(classInfo.mPrimarykeyName))
         {
             FTELog(@"Error--- the classInfo or tableName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -195,7 +195,7 @@
         //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
+        if (!classInfo || emptyStr(classInfo.mTableName) || emptyStr(classInfo.mPrimarykeyName))
         {
             FTELog(@"Error--- the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:SqliteExeFailed];
@@ -274,7 +274,7 @@
         //获取model的ClassInfo表信息
         FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
         
-        if (!classInfo || [NSString emptyOrNil:classInfo.mTableName] || [NSString emptyOrNil:classInfo.mPrimarykeyName])
+        if (!classInfo || emptyStr(classInfo.mTableName) || emptyStr(classInfo.mPrimarykeyName))
         {
             FTELog(@"the classInfo or mTableName or mPrimarykeyName is null");
             [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -323,7 +323,7 @@
     //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:modelClass];
     
-    if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
+    if (!classInfo || emptyStr(classInfo.mTableName))
     {
         FTELog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -385,7 +385,7 @@
     //获取mapModelTable字典中dbmodelClass的ClassInfo表信息
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:model.class];
     
-    if (!classInfo || [NSString emptyOrNil:classInfo.mTableName])
+    if (!classInfo || emptyStr(classInfo.mTableName))
     {
         FTELog(@"the classInfo or mTableName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];
@@ -839,7 +839,7 @@
     //获取表信息结构
     FTClassInfo *classInfo = [self obtainClassInfoFromDic:modelClass];
     
-    if (!classInfo || [NSString emptyOrNil:classInfo.mPrimarykeyName])
+    if (!classInfo || emptyStr(classInfo.mPrimarykeyName))
     {
         FTELog(@"the classInfo or mPrimarykeyName is null");
         [FTOrmErrorUtil addOneErrorDescrip:error descrip:@"传入参数有误！" errorCode:InputParamError];

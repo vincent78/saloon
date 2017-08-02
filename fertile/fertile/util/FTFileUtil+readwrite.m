@@ -70,8 +70,7 @@
 +(NSMutableDictionary *) readPListFile:(NSString *)fileName
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"plist"];
-    if ([NSString emptyOrNil:plistPath]
-        || ![self exist:plistPath])
+    if (emptyStr(plistPath) || ![self exist:plistPath])
     {
         return nil;
     }

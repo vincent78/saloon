@@ -34,7 +34,7 @@
                         Boolean hasAlarm = [eventInfo[@"hasAlarm"] boolValue];
                         int remindMinutes = [eventInfo[@"remindMinutes"] intValue];
                         
-                        if([NSString emptyOrNil:title]) {
+                        if(emptyStr(title)) {
                             [resultDictionary setObject:@"(-203)参数错误" forKey:@"errorCode"];
                         }
                         if(start <= 0) {
