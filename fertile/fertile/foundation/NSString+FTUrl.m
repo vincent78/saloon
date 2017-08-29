@@ -182,4 +182,22 @@
     return parameterString;
 }
 
+- (NSString *)encodeURLComponent
+{
+    NSString *string = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, NULL, CFSTR("!*'();:@&=+$,/?%#[]"), kCFStringEncodingUTF8);
+    if (!string) {
+        string = self;
+    }
+    return string;
+}
+
+- (NSString *)decodeURLComponent
+{
+    NSString *string = (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, CFSTR("!*'();:@&=+$,/?%#[]"));
+    if (!string) {
+        string = self;
+    }
+    return string;
+}
+
 @end

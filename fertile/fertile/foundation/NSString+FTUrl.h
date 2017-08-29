@@ -70,4 +70,10 @@
 - (NSString *)getURLParameterString;
 
 
+- (NSString *)encodeURLComponent;
+
+- (NSString *)decodeURLComponent;
+
+
+
 @end
