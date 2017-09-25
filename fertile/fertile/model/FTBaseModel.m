@@ -7,7 +7,15 @@
 //
 
 #import "FTBaseModel.h"
+#import <objc/runtime.h>
+
+
 
 @implementation FTBaseModel
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    return [FTObjectUtil cloneObj:self];
+}
 
 @end

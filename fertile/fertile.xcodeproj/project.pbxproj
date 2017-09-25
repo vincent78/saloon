@@ -1900,13 +1900,6 @@
 			path = sqlite3;
 			sourceTree = "<group>";
 		};
-		BF779E481DC7AFB6007A9914 /* component */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = component;
-			sourceTree = "<group>";
-		};
 		BF78A7171CE0BE79001D3064 /* animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2000,7 +1993,6 @@
 				BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */,
 				BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */,
 				BF19C3131F31CF2200B9D34D /* foundation */,
-				BF779E481DC7AFB6007A9914 /* component */,
 				BF3B70D31CDC7D0300A711BE /* base */,
 				BF43F6C41BDE255200A1389B /* model */,
 				BF8EAD1B1BD4E57C004A051D /* category */,

@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FTBaseModel : NSObject
+@interface FTBaseModel : NSObject<NSCopying>
 
 @end
