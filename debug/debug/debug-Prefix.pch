@@ -1,0 +1,14 @@
+//
+//  debug-Prefix.pch
+//  debug
+//
+//  Created by vincent on 2017/12/16.
+//  Copyright © 2017年 fruit. All rights reserved.
+//
+
+#ifndef debug_Prefix_h
+#define debug_Prefix_h
+
+#import "fertile.h"
+
+#endif /* debug_Prefix_h */

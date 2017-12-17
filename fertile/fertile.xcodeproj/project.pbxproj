@@ -575,6 +575,8 @@
 		BFD1F2831BFC714D00AFD63C /* FTHotfixHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD1F2811BFC714D00AFD63C /* FTHotfixHelper.m */; };
 		BFD1F2861BFC71DA00AFD63C /* FTLoggerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD1F2841BFC71DA00AFD63C /* FTLoggerHelper.h */; };
 		BFD1F2871BFC71DA00AFD63C /* FTLoggerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD1F2851BFC71DA00AFD63C /* FTLoggerHelper.m */; };
+		BFEB7E2E1FE4E5FB0057DFC5 /* FTAppDelegate+ft.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEB7E2C1FE4E5FB0057DFC5 /* FTAppDelegate+ft.h */; };
+		BFEB7E2F1FE4E5FB0057DFC5 /* FTAppDelegate+ft.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEB7E2D1FE4E5FB0057DFC5 /* FTAppDelegate+ft.m */; };
 		BFF1881F1CB6082700CC1F77 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF188121CB6082700CC1F77 /* AFHTTPSessionManager.h */; };
 		BFF188201CB6082700CC1F77 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF188131CB6082700CC1F77 /* AFHTTPSessionManager.m */; };
 		BFF188211CB6082700CC1F77 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF188141CB6082700CC1F77 /* AFNetworking.h */; };
@@ -1179,6 +1181,8 @@
 		BFD1F2811BFC714D00AFD63C /* FTHotfixHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTHotfixHelper.m; sourceTree = "<group>"; };
 		BFD1F2841BFC71DA00AFD63C /* FTLoggerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTLoggerHelper.h; sourceTree = "<group>"; };
 		BFD1F2851BFC71DA00AFD63C /* FTLoggerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTLoggerHelper.m; sourceTree = "<group>"; };
+		BFEB7E2C1FE4E5FB0057DFC5 /* FTAppDelegate+ft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTAppDelegate+ft.h"; sourceTree = "<group>"; };
+		BFEB7E2D1FE4E5FB0057DFC5 /* FTAppDelegate+ft.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTAppDelegate+ft.m"; sourceTree = "<group>"; };
 		BFF188121CB6082700CC1F77 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		BFF188131CB6082700CC1F77 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		BFF188141CB6082700CC1F77 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -1990,6 +1994,8 @@
 			isa = PBXGroup;
 			children = (
 				BF64746A1C7013CD00569048 /* FTMacro.h */,
+				BFEB7E2C1FE4E5FB0057DFC5 /* FTAppDelegate+ft.h */,
+				BFEB7E2D1FE4E5FB0057DFC5 /* FTAppDelegate+ft.m */,
 				BFAD72B11DD56AC6007ED622 /* FTAppDelegate.h */,
 				BFAD72B21DD56AC6007ED622 /* FTAppDelegate.m */,
 				BF19C3131F31CF2200B9D34D /* foundation */,
@@ -2516,6 +2522,7 @@
 				BF52E5451C3CE1950052A107 /* RACObjCRuntime.h in Headers */,
 				BF6DA4C81CEF02AA00F45F61 /* FTPropertyUtil.h in Headers */,
 				BF19C3561F31CFD600B9D34D /* NSDictionary+FTObject.h in Headers */,
+				BFEB7E2E1FE4E5FB0057DFC5 /* FTAppDelegate+ft.h in Headers */,
 				BF6C2B5E1C3A04EC00CDA1E8 /* SDWebImageManager.h in Headers */,
 				BF19C35C1F31CFD600B9D34D /* NSMutableDictionary+FTNormal.h in Headers */,
 				BF52E5281C3CE1950052A107 /* RACDynamicSequence.h in Headers */,
@@ -2779,6 +2786,7 @@
 				BFB16F431BEAF9F700CEEBC9 /* FTTableViewController.m in Sources */,
 				BF52E5311C3CE1950052A107 /* RACEmptySignal.m in Sources */,
 				BF52E5081C3CE1950052A107 /* NSSet+RACSequenceAdditions.m in Sources */,
+				BFEB7E2F1FE4E5FB0057DFC5 /* FTAppDelegate+ft.m in Sources */,
 				BF3B70A71CDC6C0F00A711BE /* NSObject+BKAssociatedObjects.m in Sources */,
 				BF3B70B71CDC6C0F00A711BE /* NSCache+BlocksKit.m in Sources */,
 				BF52E5831C3CE1950052A107 /* UIBarButtonItem+RACCommandSupport.m in Sources */,

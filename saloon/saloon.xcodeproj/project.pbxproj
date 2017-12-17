@@ -13,6 +13,7 @@
 		BF30EB591C4E34F50032FB9D /* SNUIViewAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF30EB571C4E34F50032FB9D /* SNUIViewAnimationViewController.xib */; };
 		BF3B3A781CE5A5D7003DAACC /* SNOperationSqliteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B3A761CE5A5D7003DAACC /* SNOperationSqliteViewController.m */; };
 		BF3B3A791CE5A5D7003DAACC /* SNOperationSqliteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3B3A771CE5A5D7003DAACC /* SNOperationSqliteViewController.xib */; };
+		BF517D561FE51958002327B3 /* debug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8400121D1CD5C40030EA3D /* debug.framework */; };
 		BF5432971C4C841400BA9C5C /* animation_city_switch_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432951C4C841400BA9C5C /* animation_city_switch_circle@3x.png */; };
 		BF5432981C4C841400BA9C5C /* animation_switch_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF5432961C4C841400BA9C5C /* animation_switch_circle@2x.png */; };
 		BF5432A41C4CACE500BA9C5C /* SNCABasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5432A21C4CACE500BA9C5C /* SNCABasicAnimationViewController.m */; };
@@ -138,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF517D561FE51958002327B3 /* debug.framework in Frameworks */,
 				BFB57CEE1C3384F6005187B6 /* fertile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +155,13 @@
 				BF2BB2121D5C0E9F0041B587 /* SNButtonViewController.xib */,
 			);
 			path = button;
+			sourceTree = "<group>";
+		};
+		BF517D551FE51958002327B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BF5432901C4C833B00BA9C5C /* image */ = {
@@ -203,6 +212,7 @@
 				BFB57CE31C33842D005187B6 /* Resource */,
 				BFB57CE21C338428005187B6 /* Dependency */,
 				BFB57CC31C3383BA005187B6 /* Products */,
+				BF517D551FE51958002327B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

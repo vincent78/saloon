@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		BF49B0231D1D4E140050A869 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BF49AEA31D1D4E140050A869 /* README.md */; };
 		BF49B0261D1D4E140050A869 /* debug@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF49AEA91D1D4E140050A869 /* debug@3x.png */; };
+		BF517D4B1FE51338002327B3 /* FTAppDelegate+debug.h in Headers */ = {isa = PBXBuildFile; fileRef = BF517D491FE51338002327B3 /* FTAppDelegate+debug.h */; };
+		BF517D4C1FE51338002327B3 /* FTAppDelegate+debug.m in Sources */ = {isa = PBXBuildFile; fileRef = BF517D4A1FE51338002327B3 /* FTAppDelegate+debug.m */; };
+		BF517D521FE515C6002327B3 /* fertile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF517D531FE515C6002327B3 /* fertile.framework */; };
 		BF8400061D1CD5C30030EA3D /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8400051D1CD5C30030EA3D /* debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF49AEA31D1D4E140050A869 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF49AEA91D1D4E140050A869 /* debug@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debug@3x.png"; sourceTree = "<group>"; };
+		BF517D491FE51338002327B3 /* FTAppDelegate+debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTAppDelegate+debug.h"; sourceTree = "<group>"; };
+		BF517D4A1FE51338002327B3 /* FTAppDelegate+debug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FTAppDelegate+debug.m"; sourceTree = "<group>"; };
+		BF517D511FE51587002327B3 /* fertile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = fertile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF517D531FE515C6002327B3 /* fertile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = fertile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF517D541FE518AA002327B3 /* debug-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "debug-Prefix.pch"; sourceTree = "<group>"; };
 		BF8400021D1CD5C30030EA3D /* debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8400051D1CD5C30030EA3D /* debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
 		BF8400071D1CD5C30030EA3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF517D521FE515C6002327B3 /* fertile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +77,15 @@
 			path = script;
 			sourceTree = "<group>";
 		};
+		BF517D4F1FE51587002327B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF517D531FE515C6002327B3 /* fertile.framework */,
+				BF517D511FE51587002327B3 /* fertile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF8400031D1CD5C30030EA3D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +99,9 @@
 			children = (
 				BF8400051D1CD5C30030EA3D /* debug.h */,
 				BF8400071D1CD5C30030EA3D /* Info.plist */,
+				BF517D491FE51338002327B3 /* FTAppDelegate+debug.h */,
+				BF517D4A1FE51338002327B3 /* FTAppDelegate+debug.m */,
+				BF517D541FE518AA002327B3 /* debug-Prefix.pch */,
 			);
 			path = debug;
 			sourceTree = "<group>";
@@ -96,6 +117,7 @@
 				BF49AEA41D1D4E140050A869 /* Resource */,
 				BF49AEAD1D1D4E140050A869 /* script */,
 				BF8400031D1CD5C30030EA3D /* Products */,
+				BF517D4F1FE51587002327B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8400061D1CD5C30030EA3D /* debug.h in Headers */,
+				BF517D4B1FE51338002327B3 /* FTAppDelegate+debug.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF517D4C1FE51338002327B3 /* FTAppDelegate+debug.m in Sources */,
 				BF49B0231D1D4E140050A869 /* README.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,9 +313,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "debug/debug-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../fertile/**";
 				INFOPLIST_FILE = debug/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "../fertile/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruit.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -305,9 +333,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "debug/debug-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../fertile/**";
 				INFOPLIST_FILE = debug/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "../fertile/**";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fruit.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

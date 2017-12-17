@@ -98,9 +98,5 @@ _Pragma("clang diagnostic pop")
 #define FTFontSysteSize(value)      [UIFont systemFontOfSize:value]     //系统字体
 #define FTFontBoldSysteSize(value)  [UIFont boldSystemFontOfSize:value] //系统字体，粗体
 
-
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-#define SS(strongSelf, weakSelf)  __strong __typeof(&*weakSelf)strongSelf = weakSelf;
-
 #define ISIPHONE   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 

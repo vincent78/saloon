@@ -10,10 +10,25 @@
 
 @implementation FTAppDelegate
 
++(void)load
+{
+    FTDLog(@"class load");
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        FTDLog(@"FTAppDelegate init");
+        [self initApplicationSignals];
+    }
+    return self;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self initApplicationSignals];
+//
+    FTDLog(@"FTAppDelegate didFinishLaunchingWithOptions");
     [FTAppHelper sharedInstance];
     [self.applicationDidFinishLaunchingSignal sendNext:launchOptions];
     
@@ -55,6 +70,7 @@
 
 -(void) initApplicationSignals
 {
+    FTDLog(@"FTAppDelegate initApplicationSignals");
     self.applicationDidFinishLaunchingSignal = [RACSubject subject];
     self.applicationWillResignActiveSignal = [RACSubject subject];
     self.applicationDidEnterBackgroundSignal = [RACSubject subject];
