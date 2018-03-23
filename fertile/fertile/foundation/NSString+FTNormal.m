@@ -28,6 +28,12 @@
             return [obj isEqualToNumber:@0];
         }
     }
+    
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *trimmedStr = [aStr stringByTrimmingCharactersInSet:set];
+    if (trimmedStr.length == 0) {
+        return YES;
+    }
     return NO;
 }
 
