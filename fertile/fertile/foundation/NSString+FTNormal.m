@@ -15,7 +15,7 @@
     return self.length == 0 ? YES : NO;
 }
 
-+ (BOOL)emptyOrNil:(id)obj
+- (BOOL)emptyOrNil:(id)obj
 {
     if (obj == nil || [obj isEqual:[NSNull null]])
         return YES;
@@ -30,7 +30,7 @@
     }
     
     NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-    NSString *trimmedStr = [aStr stringByTrimmingCharactersInSet:set];
+    NSString *trimmedStr = [self stringByTrimmingCharactersInSet:set];
     if (trimmedStr.length == 0) {
         return YES;
     }
